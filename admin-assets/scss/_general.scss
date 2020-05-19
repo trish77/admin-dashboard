@@ -1,0 +1,177 @@
+// General Style
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansLight") format("svg");
+}
+.title {
+  h5 {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+
+  h3 {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 10px;
+  }
+
+  a {
+    font-size: 12px;
+    color: #006699;
+    text-decoration: underline;
+  }
+
+  i {
+    color: #888888;
+    font-size: 20px;
+    top: 4px;
+    position: relative;
+  }
+}
+
+.course-table {
+  h4 {
+    color: $cyan;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  a {
+    text-decoration: underline;
+    
+    &.dropdown-item {
+      text-decoration: none;
+    }
+  }
+  i {
+    font-size: 1.2rem;
+  }
+}
+
+.border-bottom-2 {
+  border-bottom: 2px solid #ced4da !important;
+}
+
+.border-grey {
+  border-color: #ced4da;
+}
+
+.sidebar-wrapper {
+  min-height: 100vh;
+  width: 255px;
+  transition: margin .25s ease-out;
+
+  h4 {
+    padding: .875rem 1.25rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}
+.badge {
+  line-height: 14px;
+
+  .close {
+    line-height: 14px;
+    font-size: 12px;
+    color: #fff;
+    padding-left: 8px;
+    opacity: 1;
+  }
+}
+.form-check-label {
+  font-size: .85rem;
+}
+
+#main_navbar {
+  .nav-link {
+    padding: .6rem !important;
+  }
+}
+
+#button-addon2 {
+  > i {
+    font-size: 1.25rem;
+  }
+}
+
+.search-bar {
+  height: calc(1.5em + 0.75rem + 10px) !important;
+}
+
+.dt-bootstrap4 {
+  .buttons-collection {
+    background-color: $blue;
+    border: none;
+
+    > span > i > span {
+      font-family: $font-family-sans-serif;
+    }
+  }
+
+  .dataTables_length, .dataTables_filter {
+    > label {
+      display: inline-flex !important;
+
+      > input {
+        margin: 0 0 0 10px;
+      }
+    }
+
+    .custom-select {
+      margin: 0 10px;
+    }
+  }
+
+  .dataTables_filter {
+    text-align: right;
+  }
+
+  .dataTables_info {
+    padding-top: 0 !important;
+  }
+
+}
+
+
+/*!
+ * Dropdownhover v1.0.0 (http://bs-dropdownhover.kybarg.com)
+ */
+.dropdown-menu {
+  margin-top: 0;
+
+  .dropdown-toggle::after {
+    vertical-align: middle;
+    border-left: 4px solid;
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+  }
+
+  .dropdown .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin: 0 20px;
+    border-width: 0;
+  }
+
+  > li a:hover,
+  > li.show {
+    background: #007bff;
+    color: white;
+
+    > a {
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown-menu .dropdown .dropdown-menu {
+    margin: 0;
+    border-width: 1px;
+  }
+}

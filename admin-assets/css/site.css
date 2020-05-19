@@ -1,0 +1,238 @@
+/* Site.css */
+form{margin:0;}h1{font-size:120%;font-weight:bold;padding:0;margin:0;}h2{font-size:110%;font-weight:bold;padding:0;margin:0;}h3{font-size:100%;font-weight:bold;padding:0;margin:0;}h4{font-size:90%;font-weight:bold;padding:0;margin:0;}h5{font-size:80%;font-weight:bold;padding:0;margin:0;}h6{font-size:70%;font-weight:normal;padding:0;margin:0;}img{vertical-align:middle;}table{border:0;padding:0;margin:0;}.ts{font-size:90%;}.txs{font-size:75%;}.txxs{font-size:60%;}.red{color:#F00;}.sel{color:#FFF;background-color:#00008B;}.b{font-weight:bold;}.brdr{border:solid 1px #ccc;}.bot{border-bottom:solid 1px #ccc;}.top{border-top:solid 1px #ccc;}.left{border-left:solid 1px #ccc;}.right{border-right:solid 1px #ccc;}.dash{border-bottom:dotted 1px #ccc;}.pl{padding-left:5px;}.pt{padding-top:5px;}.mb{margin-bottom:2px;}.vlst{vertical-align:top;}.vlst ul{clear:both;padding:0 0 1.2em 1em;margin:0;}.vlst li{line-height:1.5em;list-style:none;}.hlst{vertical-align:middle;display:inline;}.hlst ul{padding:0;margin:0;}.hlst li{padding:0 2px 0 2px;display:inline;line-height:1.5em;list-style:none;}.promo{border-left:solid 1px #ccc;width:200px;}.occ{width:98%;margin-left:1%;margin-right:1%;}.occ .af{padding:.4em .4em .4em .4em;}.ft{width:100%;}.ft tr td{padding:.4em;margin:0;}.ftl{vertical-align:top;}.ftl h2{margin:0;padding:0;}.ftl img{float:left;}.ftl h1{margin:0;padding:0;}.ftr{text-align:right;}.fst{width:100%;}.fst tr td{padding:0 .4em .4em 0;margin:0;}.fstl{width:100%;}.fstl img{float:left;}.fstl ul{padding:0;margin:0;}.fstl li{padding:0 2px 0 2px;display:inline;line-height:1.5em;list-style:none;}.icc{height:100%;width:100%;padding:0;}.tree{vertical-align:top;border-right:solid 1px #ccc;height:100%;background-color:#F5F5F5;}.cm{vertical-align:top;padding:0;}.bc{padding-top:1.2em;padding-bottom:1.2em;margin-right:5px}.bc .r{float:right;text-align:right;}.bc .l{float:left;text-align:left;}.bc input{width:100px;}.bc .rightalign{ text-align: right;margin-right: 10px}.scr{margin:5px 5px 5px 5px;}.scr table{width:100%;}.scr table tr th{font-weight:bold;}.scr table tr td{padding:.4em .0em .4em .0em;margin:0;}  .ef{margin:5px 5px 5px 5px;}.ef table{width:100%;}.ef table tr th{font-weight:bold;}.ef table tr td{padding:.4em;margin:0;}.np table tr td{padding:0;}.nb{border:none;}.sth{vertical-align:top;}.sth table{width:100%;}.sth table tr td{padding:.4em;border-bottom:dotted 1px #ccc;}.lst{BORDER:black 1px solid;OVERFLOW:auto;height:100px;}.lst table tr td{padding:0;margin:0;}.vale{padding:15px 0 15px 45px;margin-bottom:5px;color:#FFF;background-color:#F60;background-image:url(/admin-assets/images/iconLG_Error.gif);background-repeat:no-repeat;background-position:center left;}.vale ul{padding-top:0;margin-top:0;}.vals{padding:15px 0 15px 45px;margin-bottom:5px;color:#FFF;background-color:#090;background-image:url(/admin-assets/images/iconLG_Success.gif);background-repeat:no-repeat;background-position:center left;}.vals ul{padding-top:0;margin-top:0;}.vali{padding:15px 0 15px 45px;margin-bottom:5px;color:#00F;border:solid 1px #00F;background-color:#FFF;background-image:url(/admin-assets/images/iconLG_Info.gif);background-repeat:no-repeat;background-position:center left;}.vali ul{padding-top:0;margin-top:0;}.grd tr th{font-weight:bold;speak-header:once;border-bottom:dotted 1px #ccc;}.grd .alt{background-color:#F0F0F0;}.grdDash tr td{border-bottom:dotted 1px #ccc;}.spell{vertical-align:top;cursor:hand;}.src{padding:12px 0 15px 40px;margin:0;height:35px;border-bottom:solid 1px #000;background-color:#FFFFCB;background-position:0 0;background-image:url(/admin-assets/images/iconLG_Info.gif);background-repeat:no-repeat;}.cal{cursor:hand;}.cal img{vertical-align:top;}.rmi{height:20px;cursor:hand;width:20px;text-align:center;}.rmmg{cursor:hand;background-color:#FFF;border:solid 1px #808080;}.rmmi{width:200px;cursor:hand;color:#00F;padding:2px 0 2px 0;text-align:left;}.rmmio{cursor:hand;background-color:#F5F5F5;color:#00F;padding:2px 0 2px 0;text-align:left;text-decoration:underline;}.rmmic{cursor:hand;color:#00F;padding:2px 0 2px 0;text-align:left;text-decoration:underline;}.rmhi{border-bottom:dotted 1px #ccc;text-align:center;}.hl{background:#FF0;}.pn{border:solid 1px #000;padding-left:2px;padding-right:2px;padding-bottom:2px;margin-right:2px;text-decoration:underline;color:#000;background-color:#F5F5F5;}.blueans{color:#00F;font-weight:bolder;}.qc{padding:2px 2px 2px 2px;}.mcq label{vertical-align:middle;}.sect{background-color:#F5F5F5;border-bottom:solid 2px #FFF;}.qt{background-color:#F5F5F5;padding:1px 1px 1px 1px;}.qtable{width:100%;}.warn{color:red;}.RadMenu_HSTM .rmVertical{background-color:#FFF;border:solid 1px #808080;}.RadMenu_HSTM .rmItem{cursor:hand;text-align:left;}.RadMenu_HSTM .rmItem .rmFirst .rmLink:hover{cursor:default;text-decoration:none;background-color:#FFF;}.RadMenu_HSTM .rmItem .rmLink{cursor:hand;text-decoration:none;padding-left:5px;padding-right:5px;}.RadMenu_HSTM .rmItem .hover:hover{cursor:hand;text-decoration:underline;background-color:#F5F5F5;}.RadMenu_HSTM .rmRootGroup .rmDisabled{cursor:default;text-decoration:none;background-color:#FFF;text-align:center;}.RadMenu_HSTM .rmRootGroup .rmDisabled:hover{cursor:default;text-decoration:none;background-color:#FFF;text-align:center;}.RadMenu_HSTM .rmDisabled{color:#aaa;}.RadTreeView_HSTM .rtPlus,.RadTreeView_HSTM .rtMinus{background-image:url(/admin-assets/images/Treeview/PlusMinus.png);}.RadTreeView_HSTM .rtLines .rtLI,.RadTreeView_HSTM .rtLines .rtFirst .rtUL{background-image:url(/admin-assets/images/Treeview/Vertical.png);background-position:0 0;background-repeat:repeat-y;}.RadTreeView_HSTM .rtLines .rtLast .rtTop{background-image:url(/admin-assets/images/Treeview/Horizontal.png);}.RadTreeView_HSTM .rtLines .rtMid{background-image:url(/admin-assets/images/Treeview/Cross.png);}.RadTreeView_HSTM .rtLines .rtBot{background-image:url(/admin-assets/images/Treeview/Bend.png);}.RadTreeView_HSTM .rtLines .rtTop,.RadTreeView_HSTM .rtLines .rtMid,.RadTreeView_HSTM .rtLines .rtBot{background-position:0 0;background-repeat:no-repeat;}.RadTreeView_HSTM .rtIn{color:#00f;cursor:pointer!important;}.RadTreeView_HSTM .rtHover .rtIn{border-width:0!important;text-decoration:underline!important;padding:4px 3px 3px 3px!important;}.RadTreeView_HSTM .rtSelected .rtIn{background-color:#00008B!important;color:#FFF!important;border-width:0!important;}.RadTreeView_HSTM .rtDisabled .rtIn{color:#696969!important;cursor:default!important;text-decoration:none!important;}.rscLinkImg{background-image:url(/admin-assets/images/SpellCheck.gif);background-repeat:no-repeat;text-indent:-9999px;width:25px;height:25px;display:block;outline:none;}.tabs,.tabs ul{margin:0;padding:0;}.tabs ul{width:100%;}.tabs li{list-style:none;list-style-image:none;list-style-position:outside;float:left;margin:0;padding:0;}.tabs li a{float:left;position:relative;}.tabs li a img{margin-top:5px;margin-right:5px;border:0;}.tabs li a.selected{z-index:0;cursor:default;}.tabs li a .wrap,.tabs li a .innerWrap{white-space:nowrap;cursor:pointer;_cursor:hand;}.tabs li a.selected .wrap,.tabs li a.selected .innerWrap{cursor:default;}.atl{text-align:left;}.atr{text-align:right;}.atc{text-align:center;}.divtr{padding:5px 0 5px 0;margin:0;}.nmp{margin:0;padding:0;margin-bottom:-10px;}.mp{margin:0;padding:0;}.tblborder{border-spacing:0;padding:0;margin:0;border-width:thin;}.ui-dialog{font-size:11px!important;}
+/* CSS Friendly */
+div.AspNet-RadioButtonList ul{list-style-type:none;padding:0px;margin:0px;}li.AspNet-RadioButtonList-Item{white-space:nowrap;}ul.AspNet-RadioButtonList-RepeatDirection-Horizontal li{display:inline;}
+div.AspNet-CheckBoxList ul{list-style-type:none;padding:0px;margin:0px;}li.AspNet-CheckBoxList-Item{white-space:normal;}ul.AspNet-CheckBoxList-RepeatDirection-Horizontal li{display:inline;}
+.blueans{color:#0000FF;font-weight: bolder;}
+/* question container */
+.qc{padding: 2px 2px 2px 2px;}
+/* assessment - m/c & m/s questions */
+.mcq label {vertical-align: middle;}
+
+/* assessment - section header */
+.sect{background-color: #F5F5F5;border-bottom: solid 2px #FFF;}
+/* question text */
+.qt{background-color: #F5F5F5;padding: 1px 1px 1px 1px;}
+.qtable{width: 100%;}
+
+/*General warning text */
+.warn {color: red;}
+
+/*instructor app approval status text */
+.statuswarn { color: orange;}
+
+.RadMenu_HSTM{}
+.RadMenu_HSTM .rmVertical{background-color: #FFFFFF;border:solid 1px #808080;}
+.RadMenu_HSTM .rmItem{cursor:hand;text-align:left;}
+.RadMenu_HSTM .rmItem .rmFirst .rmLink:hover{cursor:default;text-decoration:none;background-color:#FFFFFF;}
+.RadMenu_HSTM .rmItem .rmLink{cursor:hand;text-decoration:none;padding-left:5px;padding-right:5px;}
+.RadMenu_HSTM .rmItem .hover:hover{cursor:hand;text-decoration:underline;background-color:#F5F5F5;}
+.RadMenu_HSTM .rmRootGroup .rmDisabled{cursor:default;text-decoration:none;background-color:#FFFFFF;text-align:center;}
+.RadMenu_HSTM .rmRootGroup .rmDisabled:hover{cursor:default;text-decoration:none;background-color:#FFFFFF;text-align:center;}
+.RadMenu_HSTM .rmDisabled{color: #aaaaaa;}
+.RadTreeView_HSTM .rtPlus, .RadTreeView_HSTM .rtMinus{background-image:url(/admin-assets/images/Treeview/PlusMinus.png);}
+.RadTreeView_HSTM .rtLines .rtLI, .RadTreeView_HSTM .rtLines .rtFirst .rtUL{background-image:url(/admin-assets/images/Treeview/Vertical.png);background-position:0 0;background-repeat:repeat-y;}
+.RadTreeView_HSTM .rtLines .rtLast .rtTop{background-image:url(/admin-assets/images/Treeview/Horizontal.png);}
+.RadTreeView_HSTM .rtLines .rtMid{background-image:url(/admin-assets/images/Treeview/Cross.png);}
+.RadTreeView_HSTM .rtLines .rtBot{background-image:url(/admin-assets/images/Treeview/Bend.png);}
+.RadTreeView_HSTM .rtLines .rtTop, .RadTreeView_HSTM .rtLines .rtMid, .RadTreeView_HSTM .rtLines .rtBot{background-position:0 0;background-repeat:no-repeat;}
+.RadTreeView_HSTM .rtIn{color: #0000ff;cursor: pointer !important;}
+.RadTreeView_HSTM .rtHover .rtIn{border-width: 0px !important;text-decoration: underline !important;padding: 4px 3px 3px 3px !important;}
+.RadTreeView_HSTM .rtSelected .rtIn{background-color:#00008B !important;color:#FFFFFF !important;border-width: 0px !important;}
+.RadTreeView_HSTM .rtDisabled .rtIn{color:#696969 !important;cursor:default  !important;text-decoration:none  !important;}
+.rscLinkImg{background-image: url(/admin-assets/images/SpellCheck.gif);background-repeat: no-repeat;text-indent: -9999px;width: 25px;height: 25px;display: block;outline: none;}
+.rscLinkImg.spellCheck_noBorder{border: none;}
+.tabs,.tabs ul{margin:0;padding:0;}
+.tabs ul{width:100%;}
+.tabs li{list-style:none;list-style-image: none;list-style-position:outside;float:left;margin:0;padding:0;}
+.tabs li a{float:left;position:relative;}
+.tabs li a img{margin-top:5px;margin-right:5px;border:0;}
+.tabs li a.selected{z-index:0;cursor:default;}
+.tabs li a .wrap,.tabs li a .innerWrap{white-space:nowrap;cursor:pointer;_cursor:hand;}
+.tabs li a.selected .wrap, .tabs li a.selected .innerWrap{cursor:default;}
+
+
+
+/* Styles for my connections controls.
+    This was placed in the site.css page instead of site2.css because
+    the my connections controls are needed in both the student and admin sides
+    of the HLC.
+*/
+
+div.myconnection-template { margin: 20px 0px 20px 0px; }
+div.myconnection-section
+{
+    border: 1px solid #000066;
+
+    font-family: Sans-Serif;
+    font: Helvetica Neue;
+    font-size: 12px;
+    color: #000066;
+}
+div.myconnection-header
+{
+    padding: 0px 0px 4px 0px;
+
+    font-family: Sans-Serif;
+    font: Helvetica Neue;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+div.myconnection-body { padding: 4px 0px 6px 0px; }
+div.myconnection-item
+{
+     padding-left: 8px;
+     padding-right: 8px;
+     margin: 2px 4px 2px 4px;
+}
+div.myconnection-no-connections
+{
+    color: Gray;
+    padding: 10px 8px 10px 8px;
+    margin: 2px 4px 2px 4px;
+}
+div.myconnection-item-highlight
+{
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+div.myconnection-item-highlight-style1 { background-color: #FBDB5E; }
+div.myconnection-item-highlight-style2 { background-color: #C4DEF8; }
+div.myconnection-item-highlight-style3 { background-color: #CADFBB; }
+div.myconnection-item a
+{
+    color: #000066;
+    text-decoration: none;
+}
+div.myconnection-item a:hover { text-decoration: underline; }
+div.myconnection-separator
+{
+    border-bottom: dotted 1px #808080;
+    margin: 8px 4px 6px 4px;
+}
+div.myconnection-template { margin: 20px 0px 20px 0px; }
+div.myconnection-section
+{
+    border: 1px solid #000066;
+
+    font-family: Sans-Serif;
+    font: Helvetica Neue;
+    font-size: 12px;
+    color: #000066;
+}
+div.myconnection-header
+{
+    padding: 0px 0px 4px 0px;
+
+    font-family: Sans-Serif;
+    font: Helvetica Neue;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+div.myconnection-body { padding: 4px 0px 6px 0px; }
+div.myconnection-item
+{
+     padding-left: 8px;
+     padding-right: 8px;
+     margin: 2px 4px 2px 4px;
+}
+div.myconnection-no-connections
+{
+    color: Gray;
+    padding: 10px 8px 10px 8px;
+    margin: 2px 4px 2px 4px;
+}
+div.myconnection-item-highlight
+{
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+div.myconnection-item-highlight-style1 { background-color: #FBDB5E; }
+div.myconnection-item-highlight-style2 { background-color: #C4DEF8; }
+div.myconnection-item-highlight-style3 { background-color: #CADFBB; }
+div.myconnection-item a
+{
+    color: #000066;
+    text-decoration: none;
+}
+div.myconnection-item a:hover { text-decoration: underline; }
+div.myconnection-separator
+{
+    border-bottom: dotted 1px #808080;
+    margin: 8px 4px 6px 4px;
+}
+/* End my connections styles */
+
+/*PublicCalendar*/
+.publicCalendar .rwBodyRight {
+    padding-left: 0.25em !important;
+}
+.publicCalendar .rwTitlebarControls {
+    text-align: left !important;
+}
+
+/*AdminSettings*/
+
+.defaultResource-pl
+{
+     padding-left: 12px;
+     vertical-align: text-top;
+}
+
+/*highlight ellipsis*/
+.hlt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 250px;
+}
+
+.RadMenu .rmGroup .rmText {
+    text-align: left;
+    margin-left: 0px;
+}
+
+/* New HLC preview link */
+span.preview-new-hlc
+{
+    display:block;
+    background-color: #FFF;
+    background-image: url(/admin-assets/images/iconLG_Info.gif);
+    background-position:left center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #000000;
+    margin: 0;
+    padding: 15px 0 15px 40px;
+}
+.pointer
+{
+    cursor:pointer;
+}
+
+fieldset#hsContainer ul li {
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
+fieldset#hsContainer ul li label {
+    display: inline-block;
+    width: 200px;
+}
+table.thClassie tbody tr > th {
+    text-align: left;
+}
+
+
+#pf.pf {
+    position: relative;
+}
+
+.no-close .ui-dialog-titlebar {
+  display: none;
+}
+.link_style{
+    white-space:nowrap;
+}

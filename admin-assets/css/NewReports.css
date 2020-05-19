@@ -1,0 +1,2293 @@
+
+
+.report-tables table tr td.text-left,.report-tables table tr th.text-left {
+  text-align: left;
+}
+
+
+
+.report-settings {
+  display: block;
+  margin: 5px 0 20px 0;
+  padding: 0 0 0 10px;
+}
+
+.report-settings h3 {
+  margin-top: 0;
+  border-bottom: 1px dotted #999;
+  padding-bottom: 10px;
+}
+
+.report-settings ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 50px;
+}
+
+.report-settings .checkbox-label {
+  font-weight: 400;
+}
+
+.btn.btn-default.btn-settings {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 20px;
+  background: none #eee;
+  border: none;
+  color: #09C;
+}
+
+.btn-loading {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-loading img {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.white-page-bg {
+  background-color: #fff;
+}
+
+.centered {
+  width: 300px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -150px;
+  text-align: center;
+}
+
+.report-tables-extra-margin {
+  margin-bottom: 30px;
+}
+
+.report-tables-extra-margin .report-totals {
+  margin-top: 0;
+}
+
+.additional-info.no-border {
+  border: none;
+}
+
+@media (max-width:767px) {
+  .focus-pageheader .fph-icon i {
+    line-height: 48px;
+    font-size: 28;
+  }
+
+  .focus-pageheader .fph-cell-icon {
+    top: 0;
+  }
+
+  .focus-pageheader .fph-cell-button {
+    width: 100%;
+    padding: 0 0 15px 0;
+    margin: 0;
+  }
+}
+
+@media (max-width:479px) {
+  .focus-pageheader .fph-cell-icon {
+    top: 10px;
+  }
+}
+
+@media print {
+  body {
+    background-color: #fff;
+  }
+
+  .print-logo-header {
+    display: inline-block;
+    float: right;
+  }
+
+  .focus {
+    border: none;
+    background-color: #fff;
+    color: #333;
+  }
+
+  .focus-promo {
+    padding: 0;
+  }
+
+  .focus-pageheader {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-bottom: 2px solid #000;
+  }
+
+  .focus-pageheader .fph-separator {
+    display: none;
+  }
+
+  .focus-pageheader .fph-primary {
+    padding: 10px 0 0 0;
+  }
+
+  .focus-pageheader .fph-primary h1 {
+    text-shadow: none;
+    color: #000;
+  }
+
+  .focus-pageheader .fph-secondary {
+    color: #000;
+    text-shadow: none;
+    padding-top: 0;
+  }
+
+  .focus-pageheader .fph-secondary h2 {
+    background-color: #fff;
+    box-shadow: none;
+  }
+
+  .focus-pageheader .meta {
+    color: #000;
+  }
+
+  .focus-pageheader .fph-cell.fph-cell-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .focus-pageheader .fph-cell.fph-cell-icon {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .focus-pageheader .fph-cell.fph-cell-button {
+    display: none;
+  }
+
+  .section-main {
+    padding: 0;
+  }
+
+  .layout {
+    margin-top: 0;
+  }
+
+  .body-section {
+    box-shadow: none;
+  }
+
+  .report-settings {
+    display: none!important;
+  }
+
+  .report-settings h3 {
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    border: none;
+    font-size: 18px;
+  }
+
+  .report-settings ul li,.report-settings ul.list-unstyled li {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 11px;
+  }
+
+  .report-settings ul li.list-subtitle,.report-settings ul.list-unstyled li.list-subtitle {
+    padding-right: 5px;
+  }
+
+  .report-settings ul li h4,.report-settings ul.list-unstyled li h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .report-settings ul li b,.report-settings ul.list-unstyled li b {
+    font-weight: 400;
+  }
+
+  .section-box {
+    box-shadow: none;
+  }
+
+  .site-footer .legal .divider {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .footer-band {
+    background-color: #000;
+    border-top: 5px solid #000;
+    height: 1px;
+  }
+
+  .footer-logo {
+    margin-left: 20px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .btn.btn-default {
+    display: none;
+  }
+
+  .top-link {
+    display: none;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  .site-footer .logo {
+    display: none;
+  }
+}
+
+article.page-break {
+  margin-bottom: 30px;
+}
+
+article footer.report-footer {
+  background-color: #eee;
+  font-size: 11px;
+  color: #999;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+article footer.report-footer img {
+  width: 115px;
+}
+
+article .item-summary {
+  padding: 20px 0 20px 0;
+  margin: 0;
+  border-bottom: 2px solid #999;
+  min-width: 700px;
+}
+
+article .item-summary table {
+  margin: 0;
+  border: none;
+}
+
+article .item-summary table tr td {
+  text-align: left;
+  padding: 5px;
+}
+
+article .item-summary table tr td:first-child {
+  width: 30%;
+}
+
+article .item-summary table tr td:first-child+td {
+  width: 15%;
+}
+
+article .item-summary table tr td:first-child+td+td {
+  width: 15%;
+}
+
+article .item-summary table.past-due-totals tr td {
+  font-size: 13px;
+}
+
+article .item-summary table.past-due-totals tr td:first-child+td {
+  text-align: right;
+}
+
+article .item-summary.department-summary table tr td {
+  font-weight: 600;
+}
+
+article .item-summary.department-summary tr.title {
+  margin-bottom: 10px;
+}
+
+.additional-info {
+  background-color: #fff;
+  border-bottom: 3px solid #999;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.additional-info.hide-border {
+  border-bottom: none;
+}
+
+.additional-info.test-scores .additional-data .scores {
+  padding-right: 10%;
+}
+
+.additional-info.test-scores .additional-data .scores .text-align-right {
+  padding: 3px 7px;
+}
+
+.additional-info.test-scores .additional-data .scores .failed {
+  color: #d40202;
+  border-radius: 14px;
+  white-space: nowrap;
+}
+
+.additional-info.test-scores .additional-data .scores .passed {
+  color: #093;
+}
+
+.additional-info .additional-info-header {
+  text-align: center;
+  margin-top: -5px;
+}
+
+.additional-info h1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 45px;
+}
+
+.additional-info h3 {
+  margin: 0 0 -5px 0;
+  text-align: center;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.additional-info h4 {
+  margin: 0;
+  text-align: center;
+  line-height: 25px;
+}
+
+.additional-info .info-header-text-block {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.additional-info .additional-data {
+  display: inline-block;
+  width: 100%;
+}
+
+.additional-info .additional-data h4 {
+  text-align: left;
+}
+
+.additional-info .additional-data ul {
+  margin-bottom: 20px;
+  padding: 13px 10px;
+  width: 50%;
+  font-size: 14px;
+}
+
+.additional-info .additional-data ul li {
+  display: inline-block;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2px 0;
+}
+
+.additional-info .additional-data ul.scores {
+  padding-right: 20%;
+}
+
+.additional-info .additional-data ul.scores li {
+  width: 45%;
+  font-weight: 700;
+}
+
+.additional-info .additional-data ul.scores li:first-child {
+  width: 100%;
+}
+
+.additional-info .additional-data ul.pull-right li {
+  text-align: right;
+}
+
+.additional-info .additional-data ul.pull-right li .drill-down-button {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.additional-info .additional-data ul .score-detail {
+  margin: 0;
+  padding: 0 0 0 5px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.additional-info .additional-data ul .score-detail li {
+  width: 45%;
+  font-weight: 400;
+}
+
+.additional-info .additional-data ul .score-detail li:first-child {
+  width: 45%;
+}
+
+.additional-info .additional-data table {
+  margin: -30px 0 20px 0;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.additional-info .additional-data table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.additional-info .additional-data table tr th {
+  display: table-cell;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.additional-info .additional-data table tr th:first-child,.additional-info .additional-data table tr th:first-child+th {
+  text-align: left;
+}
+
+.additional-info .additional-data table tr th h4 {
+  text-align: left;
+}
+
+.additional-info .additional-data table tr td {
+  padding: 10px;
+}
+
+.additional-info .additional-data table tr td:first-child,.additional-info .additional-data table tr td:first-child+td {
+  text-align: left;
+}
+
+.main-pagniation-block {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.btn-answer-img-toggle,.btn-answer-toggle {
+  margin-top: 10px;
+}
+
+.no-results-global {
+  margin-top: -30px;
+  padding: 20px 0 50px 0;
+}
+
+.certificate {
+  height: 564px;
+  width: 630px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.certificate img.cert-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 630px;
+  height: 564px;
+}
+
+.certificate .cert-content {
+  z-index: 100;
+  position: absolute;
+  color: #000;
+  left: 150px;
+  top: 180px;
+  text-align: center;
+}
+
+.certificate.ce {
+  height: 670px;
+  width: 955px;
+}
+
+.certificate.ce img.cert-bg {
+  width: 955px;
+  height: 670px;
+}
+
+.certificate.ce .cert-content {
+  width: 905px;
+  top: 150px;
+  left: 25px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.certificate.ce .cert-content .upsize {
+  font-size: 1.35em;
+}
+
+.certificate.ce.cert-footer .cert-content {
+  top: 0;
+}
+
+.certificate.ce.cert-footer .footer-close-language {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.certificate.ce.cert-footer .footer-close-language p {
+  margin-bottom: 20px;
+}
+
+.certificate.ce.cert-footer .footer-close-language p.hs-info {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.cert-description {
+  text-align: center;
+}
+
+.appendix {
+  padding: 10px;
+  margin: 30px 0 10px 0;
+  border: 1px solid #ddd;
+}
+
+.appendix h3 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.appendix b {
+  font-weight: 600;
+}
+
+.printed-comments,.report-description,.report-notes {
+  margin: 30px 0 0 0;
+}
+
+.title-note {
+  font-size: 12px;
+  background-color: #777;
+  padding: 9px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.footnotes {
+  font-size: 14px;
+  color: #666;
+  padding: 10px;
+}
+
+.footnotes i {
+  color: #bbb;
+  margin-left: 10px;
+}
+
+.footnotes .fa-check-circle,.footnotes .fa-long-arrow-right {
+  color: #093;
+  font-size: 14px;
+}
+
+.footnotes .fa-long-arrow-right {
+  font-size: 14px;
+}
+
+.footnotes .fa-exclamation-circle,.footnotes .fa-times-circle {
+  color: #d40202;
+  font-size: 14px;
+}
+
+.report-tables {
+  overflow-x: auto;
+}
+
+.report-tables .badge.excluded {
+  margin-left: 3px;
+  font-size: 11px;
+}
+
+.report-tables .table-wrapper {
+  min-width: 700px;
+}
+
+.report-tables .sign-in {
+  width: 35%!important;
+}
+
+.report-tables table {
+  width: 100%;
+  display: table;
+  border-bottom: 2px solid #999;
+  margin-top: 30px;
+}
+
+.report-tables table .icon {
+  padding-right: 0;
+  white-space: nowrap;
+  width: 1px;
+  font-size: 21px;
+  color: #bbb;
+}
+
+.report-tables table .icon.i {
+  font-size: 21px;
+}
+
+.report-tables table tr {
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
+  font-size: 12px;
+  display: table-row;
+}
+
+.report-tables table tr td,.report-tables table tr th {
+  display: table-cell;
+  padding: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.report-tables table tr td:first-child,.report-tables table tr th:first-child {
+  text-align: left;
+}
+
+.report-tables table tr td.column-highlight,.report-tables table tr td.totals,.report-tables table tr th.column-highlight,.report-tables table tr th.totals {
+  background-color: #eee;
+}
+
+.report-tables table tr td h2,.report-tables table tr th h2 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.report-tables table tr td {
+  font-weight: 400;
+  text-transform: none;
+  background-clip: padding-box;
+}
+
+.report-tables table tr td hr {
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.report-tables table tr td b {
+  font-weight: 700;
+}
+
+.report-tables table tr td.no-result-message {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 25px 5px;
+  font-style: italic;
+}
+
+.report-tables table tr.title {
+  padding: 0 10px;
+  background-color: #999;
+  color: #fff;
+}
+
+.report-tables table tr.title.icon i {
+  font-size: 16px;
+  line-height: 36px;
+  margin-right: 5px;
+}
+
+.report-tables table tr.title.icon i.icon-as-note {
+  background-color: #777;
+  padding: 0 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  vertical-align: middle;
+  float: right;
+  margin-right: 0;
+}
+
+.report-tables table tr.title td,.report-tables table tr.title th {
+  display: table-cell;
+  margin: 0;
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+
+.report-tables table tr.title td.linked:hover,.report-tables table tr.title th.linked:hover {
+  background-color: #777;
+}
+
+.report-tables table tr.title td a,.report-tables table tr.title th a {
+  color: #fff;
+  display: block;
+  text-decoration: underline;
+}
+
+.report-tables table tr.stripe {
+  background-color: #eee;
+}
+
+.report-tables table tr.stripe td.column-highlight,.report-tables table tr.stripe th.column-highlight {
+  background-color: #e0e0e0;
+}
+
+.report-tables table tr.subheader {
+  background-color: #ddd;
+  border-bottom: 2px solid #ccc;
+  border-top: 2px solid #ccc;
+}
+
+.report-tables table tr.subheader td {
+  font-weight: 600;
+}
+
+.report-tables table tr.totals td {
+  font-size: 14px;
+  font-weight: 600;
+  border-top: 1px solid #ccc;
+}
+
+.report-tables table tr.header-groupings td,.report-tables table tr.header-groupings th {
+  border: 1px solid #fff;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  vertical-align: bottom;
+  text-transform: uppercase;
+  background-clip: padding-box;
+}
+
+.report-tables table tr.header-groupings td:first-child,.report-tables table tr.header-groupings th:first-child {
+  border-left: none;
+}
+
+.report-tables table tr.header-groupings td:last-child,.report-tables table tr.header-groupings th:last-child {
+  border-right: none;
+}
+
+.report-tables table tr.header-groupings.test-question td {
+  text-transform: none;
+  font-size: 14px;
+}
+
+.report-tables table tr.header-groupings.test-question td .question-type {
+  font-style: italic;
+  color: #bbb;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.report-tables table tr.header-groupings.test-question td.correct-answer,.report-tables table tr.header-groupings.test-question td.incorrect-answer {
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.report-tables table tr.nested-primary {
+  padding-top: 10px;
+}
+
+.report-tables table tr.nested td {
+  padding-top: 0;
+}
+
+.report-tables table tr.nested td table {
+  margin-top: 0;
+  border: 1px solid #ddd;
+  border-left: 5px solid #ddd;
+  background-color: #fff;
+}
+
+.report-tables table tr.nested td table tr.nested-title {
+  border-bottom: 1px dotted #ddd;
+}
+
+.report-tables table tr.nested td table tr td,.report-tables table tr.nested td table tr th {
+  text-align: left;
+  padding: 5px;
+}
+
+.report-tables table tr.nested.learning-event td table tr th:first-child+th {
+  text-align: right;
+}
+
+.report-tables table.text-align-left-reset td,.report-tables table.text-align-left-reset th {
+  text-align: left!important;
+}
+
+.report-tables table.with-counter {
+  counter-reset: row-counter;
+}
+
+.report-tables table.with-counter td:first-child+td,.report-tables table.with-counter td:first-child+th,.report-tables table.with-counter th:first-child+td,.report-tables table.with-counter th:first-child+th {
+  text-align: left;
+}
+
+.report-tables table.with-counter td:first-child {
+  counter-increment: row-counter;
+  width: 1px;
+  overflow: visible;
+  padding-right: 0;
+}
+
+.report-tables table.with-counter td:first-child:before {
+  content: counter(row-counter) ".";
+  whitespace-wrap: nowrap;
+}
+
+.report-tables table.with-counter td.count-skip {
+  counter-increment: none;
+}
+
+.report-tables table.with-counter td.count-skip:before {
+  display: none;
+}
+
+.report-tables table.ideas-by-dept {
+  margin-top: 0;
+}
+
+.report-tables table.submitted-ideas {
+  margin: 0;
+}
+
+.report-tables table.submitted-ideas td,.report-tables table.submitted-ideas th {
+  text-align: left;
+  text-transform: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.report-tables table.submitted-ideas th.idea-header {
+  width: 23%;
+}
+
+.report-tables table.submitted-ideas th.column-highlight {
+  background-color: #fafafa;
+}
+
+.report-tables table.submitted-ideas .report-tables table.submitted-ideas th.idea-header {
+  width: 1%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.report-tables table.submitted-ideas .inner-cell {
+  min-width: 33%;
+  width: 33%;
+  display: inline-block;
+  display: inline-flex;
+}
+
+.report-tables table.submitted-ideas .inner-cell small {
+  margin-right: 4px;
+}
+
+.report-tables table.submitted-ideas .inner-cell.compact small {
+  font-weight: 600;
+}
+
+@media (max-width:959px) {
+  .report-tables table.submitted-ideas .inner-cell {
+    min-width: 100%;
+    width: 100%;
+    display: block;
+  }
+}
+
+@media print {
+  .report-tables table.submitted-ideas .inner-cell {
+    min-width: 33%;
+    width: 33%;
+    display: inline-block;
+    float: left;
+    padding-right: 20px;
+  }
+}
+
+.report-tables table.graded-activities {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.graded-activities .header-groupings th {
+  border-left: none;
+  border-right: none;
+}
+
+.report-tables table.graded-activities .header-groupings th:first-child {
+  text-align: left;
+}
+
+.report-tables table.graded-activities .header-groupings th:first-child+th {
+  text-align: right;
+  width: 20%;
+}
+
+.report-tables table.graded-activities td:first-child+td+td+td {
+  text-align: right;
+}
+
+.report-tables table.graded-activities th:first-child+th+th+th {
+  text-align: right;
+}
+
+.report-tables table.graded-activities.report-totals th:first-child+th {
+  text-align: center;
+}
+
+.report-tables table.graded-activities.report-totals .header-groupings th:first-child+th {
+  border: 1px solid #fff;
+}
+
+.report-tables table.graded-activities .course-row td:first-child {
+  padding-left: 20px;
+}
+
+.report-tables table.graded-activities.by-event .subheader td {
+  font-size: 14px;
+}
+
+.report-tables table.graded-activities.by-event td:first-child+td+td+td {
+  text-align: center;
+}
+
+.report-tables table.graded-activities.by-event th:first-child+th+th+th {
+  text-align: center;
+}
+
+.report-tables table.simulation-event-sessions {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.simulation-event-sessions tbody td {
+  width: 33%;
+}
+
+.report-tables table.center-resource-utilization,.report-tables table.resource-utilization-by-event {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.center-resource-utilization td,.report-tables table.center-resource-utilization th,.report-tables table.resource-utilization-by-event td,.report-tables table.resource-utilization-by-event th {
+  text-align: left;
+}
+
+.report-tables table.center-resource-utilization td:first-child+td+td+td+td+td,.report-tables table.resource-utilization-by-event td:first-child+td+td+td+td+td {
+  text-align: right;
+}
+
+.report-tables table.center-resource-utilization th:first-child+th+th+th+th+th,.report-tables table.resource-utilization-by-event th:first-child+th+th+th+th+th {
+  text-align: right;
+}
+
+.report-tables table.center-resource-utilization .header-groupings th,.report-tables table.resource-utilization-by-event .header-groupings th {
+  border: none;
+  text-align: left;
+}
+
+.report-tables table.center-resource-utilization .header-groupings th:first-child+th+th+th,.report-tables table.resource-utilization-by-event .header-groupings th:first-child+th+th+th {
+  text-align: right;
+}
+
+.report-tables table.center-resource-utilization .super-title th,.report-tables table.resource-utilization-by-event .super-title th {
+  padding-bottom: 10px;
+}
+
+.report-tables table.center-resource-utilization .super-title th h2,.report-tables table.resource-utilization-by-event .super-title th h2 {
+  font-size: 21px;
+  color: #000;
+}
+
+.report-tables table.center-resource-utilization .title-note,.report-tables table.resource-utilization-by-event .title-note {
+  margin-top: 2px;
+}
+
+.report-tables table.center-resource-utilization th:first-child,.report-tables table.resource-utilization-by-event th:first-child {
+  text-align: left;
+}
+
+.report-tables table.center-resource-utilization.group-resources,.report-tables table.resource-utilization-by-event.group-resources {
+  margin: 30px 0 0 0;
+}
+
+.report-tables table.center-resource-utilization.group-resources td:first-child+td,.report-tables table.resource-utilization-by-event.group-resources td:first-child+td {
+  text-align: right;
+}
+
+.report-tables table.center-resource-utilization.group-resources th:first-child+th,.report-tables table.resource-utilization-by-event.group-resources th:first-child+th {
+  text-align: right;
+}
+
+.report-tables table.personnel-utilization {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.personnel-utilization td:first-child+td+td+td+td {
+  text-align: right;
+}
+
+.report-tables table.personnel-utilization th:first-child+th+th+th+th {
+  text-align: right;
+}
+
+.report-tables table.personnel-utilization .header-groupings th {
+  border: none;
+}
+
+.report-tables table.personnel-utilization .header-groupings th:first-child {
+  text-align: left;
+}
+
+.report-tables table.personnel-utilization .header-groupings th:first-child+th+th+th {
+  text-align: right;
+}
+
+.report-tables table.personnel-utilization .instructor-type {
+  margin: 6px 0 -7px 0;
+}
+
+.report-tables table.personnel-utilization .title-note {
+  margin-top: 9px;
+}
+
+.report-tables table.personnel-utilization .multiple-departments th {
+  text-transform: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.report-tables table.personnel-utilization .delimiter {
+  color: #ccc;
+  padding: 0 10px;
+}
+
+.report-tables table.personnel-utilization th:first-child {
+  text-align: left;
+}
+
+.report-tables table.personnel-utilization.group-event td:first-child+td+td {
+  text-align: left;
+}
+
+.report-tables table.personnel-utilization.group-event th:first-child+th+th {
+  text-align: left;
+}
+
+.report-tables table.student-hours-encounters {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.student-hours-encounters td:first-child+td+td+td+td {
+  text-align: right;
+}
+
+.report-tables table.student-hours-encounters th:first-child+th+th+th+th {
+  text-align: right;
+}
+
+.report-tables table.student-hours-encounters .header-groupings th {
+  border: none;
+}
+
+.report-tables table.student-hours-encounters .header-groupings th:first-child {
+  text-align: left;
+}
+
+.report-tables table.student-hours-encounters .header-groupings th:first-child+th+th+th {
+  text-align: right;
+}
+
+.report-tables table.student-hours-encounters .title-note {
+  margin-top: 2px;
+}
+
+.report-tables table.student-hours-encounters th:first-child {
+  text-align: left;
+}
+
+.report-tables table.certification-history {
+  margin: -3px 0 30px 0;
+}
+
+.report-tables table.simulation-resource-utilization {
+  margin: -3px 0 30px 0;
+}
+
+.report-tables table.simulation-resource-utilization td,.report-tables table.simulation-resource-utilization th {
+  text-align: left;
+}
+
+.report-tables table.simulation-resource-utilization td:last-child,.report-tables table.simulation-resource-utilization th:last-child {
+  text-align: center;
+}
+
+.report-tables table.simulation-resource-utilization td:only-child,.report-tables table.simulation-resource-utilization th:only-child {
+  text-align: left;
+}
+
+.report-tables table.software-license {
+  margin: -3px 0 30px 0;
+}
+
+.report-tables table.software-license td,.report-tables table.software-license th {
+  text-align: left;
+}
+
+.report-tables table.software-license tbody td,.report-tables table.software-license tbody th {
+  width: 20%;
+}
+
+.report-tables table.expiring-certification {
+  margin-top: -3px;
+}
+
+.report-tables table.expiring-certification td,.report-tables table.expiring-certification th {
+  text-align: left;
+}
+
+.report-tables table.expiring-certification th {
+  vertical-align: bottom;
+}
+
+.report-tables table.ce-credit-courses {
+  margin-top: -3px;
+}
+
+.report-tables table.ce-credit-courses th {
+  vertical-align: bottom;
+}
+
+.report-tables table.ce-credit-courses td:first-child+td {
+  width: 38%;
+  text-align: left;
+}
+
+.report-tables table.ce-credit-courses tr.totals td {
+  text-align: right;
+}
+
+.report-tables table.daily-building-schedule,.report-tables table.daily-equipment-schedule,.report-tables table.simulation-daily-events {
+  margin-top: -3px;
+}
+
+.report-tables table.daily-building-schedule td,.report-tables table.daily-building-schedule th,.report-tables table.daily-equipment-schedule td,.report-tables table.daily-equipment-schedule th,.report-tables table.simulation-daily-events td,.report-tables table.simulation-daily-events th {
+  text-align: left;
+}
+
+.report-tables table.daily-building-schedule tr.nested td:first-child,.report-tables table.daily-equipment-schedule tr.nested td:first-child,.report-tables table.simulation-daily-events tr.nested td:first-child {
+  width: 20%;
+}
+
+.report-tables table.daily-building-schedule tr.accessory-row,.report-tables table.daily-equipment-schedule tr.accessory-row,.report-tables table.simulation-daily-events tr.accessory-row {
+  font-style: italic;
+}
+
+.report-tables table.daily-building-schedule tr.accessory-row td,.report-tables table.daily-equipment-schedule tr.accessory-row td,.report-tables table.simulation-daily-events tr.accessory-row td {
+  padding-left: 20px;
+}
+
+.report-tables table.daily-building-schedule tr.accessory-row.optional,.report-tables table.daily-equipment-schedule tr.accessory-row.optional,.report-tables table.simulation-daily-events tr.accessory-row.optional {
+  border-bottom: 1px solid #eee;
+}
+
+.report-tables table.daily-equipment-schedule {
+  margin-bottom: 30px;
+}
+
+.report-tables table.job-title-listing {
+  margin-top: -3px;
+}
+
+.report-tables table.job-title-listing td,.report-tables table.job-title-listing th {
+  text-align: left;
+}
+
+.report-tables table.class-grading-status td,.report-tables table.class-grading-status th {
+  text-align: left;
+}
+
+.report-tables table.class-grading-status td:last-child,.report-tables table.class-grading-status th:last-child {
+  text-align: center;
+}
+
+.report-tables table.class-grading-status td:only-child,.report-tables table.class-grading-status th:only-child {
+  text-align: left;
+}
+
+.report-tables table.class-grading-status tr.header-groupings th {
+  text-align: left;
+}
+
+.report-tables table.class-grading-status tr.header-groupings th:last-child {
+  text-align: center;
+}
+
+.report-tables table.class-grading-status .column-highlight {
+  text-transform: uppercase;
+  width: 15%;
+}
+
+.report-tables table.class-grading-status .subheader td {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: left!important;
+}
+
+.report-tables table.class-grading-status .subheader.icon {
+  color: #000;
+}
+
+.report-tables table.class-grading-status .subheader.icon i {
+  line-height: 16px;
+  color: #000;
+}
+
+.report-tables table.class-grading-status .subheader.icon i.icon-as-note {
+  vertical-align: middle;
+  float: right;
+  background-color: #eee;
+  padding: 7px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.report-tables table.heart-code-instructor {
+  margin: -3px 0 30px 0;
+}
+
+.report-tables table.heart-code-instructor td,.report-tables table.heart-code-instructor th {
+  text-align: left;
+}
+
+.report-tables table.daily-room-schedule td,.report-tables table.daily-room-schedule th {
+  text-align: left;
+}
+
+.report-tables table.daily-room-schedule td:first-child+td+td,.report-tables table.daily-room-schedule td:first-child+th+th,.report-tables table.daily-room-schedule th:first-child+td+td,.report-tables table.daily-room-schedule th:first-child+th+th {
+  text-align: center;
+}
+
+.report-tables table.daily-room-schedule tr.nested td:first-child {
+  width: 20%;
+}
+
+.report-tables table.failed-courses-department-focus .header-groupings th:first-child {
+  text-align: left;
+}
+
+.report-tables table.failed-courses-department-focus tr td:first-child {
+  padding-left: 20px;
+}
+
+.report-tables table.failed-courses td:first-child+td,.report-tables table.failed-courses td:first-child+td+td,.report-tables table.failed-courses td:first-child+th,.report-tables table.failed-courses td:first-child+th+th,.report-tables table.failed-courses th:first-child+td,.report-tables table.failed-courses th:first-child+td+td,.report-tables table.failed-courses th:first-child+th,.report-tables table.failed-courses th:first-child+th+th {
+  text-align: left;
+}
+
+.report-tables table.enterprise-assignment-completion td:first-child+td,.report-tables table.enterprise-course-completion td:first-child+td {
+  text-align: left;
+}
+
+.report-tables table.enterprise-assignment-completion .totals td:first-child+td,.report-tables table.enterprise-assignment-completion .totals th:first-child+td,.report-tables table.enterprise-course-completion .totals td:first-child+td,.report-tables table.enterprise-course-completion .totals th:first-child+td {
+  text-align: center;
+}
+
+.report-tables table.enterprise-assignment-completion.learning-detail th:first-child+th,.report-tables table.enterprise-course-completion.learning-detail th:first-child+th {
+  text-align: left;
+}
+
+.report-tables table.moc-progress {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.moc-progress td,.report-tables table.moc-progress th {
+  text-align: left;
+}
+
+.report-tables table.moc-progress td:first-child,.report-tables table.moc-progress th:first-child {
+  width: 15%;
+}
+
+.report-tables table.moc-progress td:first-child+td+td+td,.report-tables table.moc-progress td:first-child+td+td+td+td+td,.report-tables table.moc-progress td:first-child+td+td+td+td+td+td,.report-tables table.moc-progress td:first-child+td+td+td+td+td+td+td,.report-tables table.moc-progress td:first-child+th+th+th,.report-tables table.moc-progress td:first-child+th+th+th+th+th,.report-tables table.moc-progress td:first-child+th+th+th+th+th+th,.report-tables table.moc-progress td:first-child+th+th+th+th+th+th+th,.report-tables table.moc-progress th:first-child+td+td+td,.report-tables table.moc-progress th:first-child+td+td+td+td+td,.report-tables table.moc-progress th:first-child+td+td+td+td+td+td,.report-tables table.moc-progress th:first-child+td+td+td+td+td+td+td,.report-tables table.moc-progress th:first-child+th+th+th,.report-tables table.moc-progress th:first-child+th+th+th+th+th,.report-tables table.moc-progress th:first-child+th+th+th+th+th+th,.report-tables table.moc-progress th:first-child+th+th+th+th+th+th+th {
+  text-align: center;
+}
+
+.report-tables table.moc-progress th {
+  text-align: bottom;
+}
+
+.report-tables table.instructor-class-schedule {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.instructor-class-schedule td,.report-tables table.instructor-class-schedule th {
+  text-align: left;
+}
+
+.report-tables table.instructor-class-schedule td:first-child,.report-tables table.instructor-class-schedule td:first-child+td,.report-tables table.instructor-class-schedule th:first-child,.report-tables table.instructor-class-schedule th:first-child+td {
+  width: 30%;
+}
+
+.report-tables table.instructor-class-schedule.instructor-session-detail tr.header-groupings th {
+  text-align: left;
+}
+
+.report-tables table.no-show td,.report-tables table.no-show th {
+  text-align: left;
+}
+
+.report-tables table.delinquent-pd-drill-down td:first-child+td,.report-tables table.delinquent-pd-drill-down td:first-child+th,.report-tables table.delinquent-pd-drill-down th:first-child+td,.report-tables table.delinquent-pd-drill-down th:first-child+th {
+  text-align: left;
+}
+
+.report-tables table.delinquent-pd-drill-down.delinquent-pd-dd-item-detail td:first-child+td,.report-tables table.delinquent-pd-drill-down.delinquent-pd-dd-item-detail td:first-child+th,.report-tables table.delinquent-pd-drill-down.delinquent-pd-dd-item-detail th:first-child+td,.report-tables table.delinquent-pd-drill-down.delinquent-pd-dd-item-detail th:first-child+th {
+  text-align: center;
+}
+
+.report-tables table.organization-hierarchy .tier-0 td {
+  font-weight: 700;
+}
+
+.report-tables table.organization-hierarchy .tier-1 td:first-child {
+  text-indent: 15px;
+}
+
+.report-tables table.organization-hierarchy .tier-2 td:first-child {
+  text-indent: 30px;
+}
+
+.report-tables table.organization-hierarchy .tier-3 td:first-child {
+  text-indent: 45px;
+}
+
+.report-tables table.organization-hierarchy .tier-4 td:first-child {
+  text-indent: 60px;
+}
+
+.report-tables table.organization-hierarchy .tier-5 td:first-child {
+  text-indent: 75px;
+}
+
+.report-tables table.organization-hierarchy .tier-6 td:first-child {
+  text-indent: 90px;
+}
+
+.report-tables table.organization-hierarchy .tier-7 td:first-child {
+  text-indent: 105px;
+}
+
+.report-tables table.organization-hierarchy .tier-8 td:first-child {
+  text-indent: 120px;
+}
+
+.report-tables table.organization-hierarchy .tier-9 td:first-child {
+  text-indent: 135px;
+}
+
+.report-tables table.annotations td,.report-tables table.annotations th {
+  text-align: left;
+  vertical-align: top;
+}
+
+.report-tables table.annotations td:first-child,.report-tables table.annotations th:first-child {
+  width: 5%;
+  font-weight: 700;
+}
+
+.report-tables table.annotations .wysiwyg-override td b {
+  font-weight: 700;
+}
+
+.report-tables table.annotations .wysiwyg-override td em {
+  font-style: italic;
+}
+
+.report-tables table.annotations .wysiwyg-override td p {
+  maring-bottom: 20px;
+}
+
+.report-tables table.annotations .wysiwyg-override td h4 {
+  line-height: 24px;
+}
+
+.report-tables table.course-development-status td:first-child,.report-tables table.course-development-status th:first-child {
+  width: 35%;
+}
+
+.report-tables table.class-contacts td,.report-tables table.class-contacts th {
+  text-align: left;
+}
+
+.report-tables table.top-ten-completions {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.top-ten-completions td:first-child+td,.report-tables table.top-ten-completions td:first-child+th,.report-tables table.top-ten-completions th:first-child+td,.report-tables table.top-ten-completions th:first-child+th {
+  text-align: left;
+}
+
+.report-tables table.upcoming-classes tr.table-row td,.report-tables table.upcoming-classes tr.table-row th {
+  text-align: left;
+}
+
+.report-tables table.upcoming-classes tr.table-row td:last-child,.report-tables table.upcoming-classes tr.table-row th:last-child {
+  text-align: center;
+}
+
+.report-tables table.upcoming-classes tr.header-groupings th {
+  text-align: left;
+}
+
+.report-tables table.upcoming-classes.session-detail tr.table-row td:last-child,.report-tables table.upcoming-classes.session-detail tr.table-row th:last-child {
+  text-align: left;
+}
+
+.report-tables table.sb-import-results,.report-tables table.sc-import-results,.report-tables table.seh-import-results {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.sb-import-results td:first-child+td,.report-tables table.sb-import-results td:first-child+th,.report-tables table.sb-import-results th:first-child+td,.report-tables table.sb-import-results th:first-child+th,.report-tables table.sc-import-results td:first-child+td,.report-tables table.sc-import-results td:first-child+th,.report-tables table.sc-import-results th:first-child+td,.report-tables table.sc-import-results th:first-child+th,.report-tables table.seh-import-results td:first-child+td,.report-tables table.seh-import-results td:first-child+th,.report-tables table.seh-import-results th:first-child+td,.report-tables table.seh-import-results th:first-child+th {
+  text-align: left;
+}
+
+.report-tables table.sb-import-results tr.header-groupings th,.report-tables table.sc-import-results tr.header-groupings th,.report-tables table.seh-import-results tr.header-groupings th {
+  text-align: left;
+}
+
+.report-tables table.sb-import-results.sb-error td,.report-tables table.sb-import-results.sb-error th,.report-tables table.sb-import-results.sc-error td,.report-tables table.sb-import-results.sc-error th,.report-tables table.sb-import-results.seh-error td,.report-tables table.sb-import-results.seh-error th,.report-tables table.sc-import-results.sb-error td,.report-tables table.sc-import-results.sb-error th,.report-tables table.sc-import-results.sc-error td,.report-tables table.sc-import-results.sc-error th,.report-tables table.sc-import-results.seh-error td,.report-tables table.sc-import-results.seh-error th,.report-tables table.seh-import-results.sb-error td,.report-tables table.seh-import-results.sb-error th,.report-tables table.seh-import-results.sc-error td,.report-tables table.seh-import-results.sc-error th,.report-tables table.seh-import-results.seh-error td,.report-tables table.seh-import-results.seh-error th {
+  text-align: left;
+}
+
+.report-tables table.sb-import-results tr.import-error td,.report-tables table.sc-import-results tr.import-error td,.report-tables table.seh-import-results tr.import-error td {
+  padding-top: 0;
+}
+
+.report-tables table.sb-import-results tr.import-error td div,.report-tables table.sc-import-results tr.import-error td div,.report-tables table.seh-import-results tr.import-error td div {
+  margin: 0;
+  border: 1px solid #ddd;
+  border-left: 5px solid #ddd;
+  background-color: #fff;
+  padding: 0;
+}
+
+.report-tables table.sb-import-results tr.import-error td div p,.report-tables table.sc-import-results tr.import-error td div p,.report-tables table.seh-import-results tr.import-error td div p {
+  margin: 10px;
+}
+
+.report-tables table.role-utilization {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.role-utilization td,.report-tables table.role-utilization th {
+  text-align: left;
+}
+
+.report-tables table.role-features {
+  margin: 0 0 30px 0;
+}
+
+.report-tables table.role-features td {
+  width: 15%;
+}
+
+.report-tables table.role-features td:first-child {
+  width: 40%;
+}
+
+.report-tables table.role-features .fa {
+  font-size: 16px;
+}
+
+.report-tables table.role-features .fa-check {
+  color: #093!important;
+}
+
+.report-tables table.role-features .fa-times {
+  color: #999!important;
+}
+
+.report-tables table.instructor-resume td,.report-tables table.instructor-resume th {
+  text-align: left;
+}
+
+.report-tables table.discipline-listing {
+  border-bottom: 1px solid #bbb;
+}
+
+.report-tables table.discipline-listing td.discipline-info {
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+
+.report-tables table.discipline-listing td.discipline-info p {
+  margin-top: 20px;
+}
+
+.report-tables table.test-scores-report .title-note {
+  font-size: 12px;
+  background-color: #555;
+  padding: 4px 9px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.report-tables table.test-scores-report .test-question {
+  border: 1px solid #fff;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  vertical-align: bottom;
+  font-size: 24px;
+}
+
+.report-tables table.test-scores-report .test-question:first-child {
+  border-left: none;
+}
+
+.report-tables table.test-scores-report .test-question:last-child {
+  border-right: none;
+}
+
+.report-tables table.test-scores-report .test-question .correct-answer {
+  color: #fff;
+  background-color: #093;
+  font-size: 16px;
+  text-align: center;
+}
+
+.report-tables table.test-scores-report .test-question .incorrect-answer {
+  color: #fff;
+  background-color: #d40202;
+  font-size: 16px;
+}
+
+.report-tables table.test-scores-report .student-correct-answer {
+  color: #093;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.report-tables table.test-scores-report .student-incorrect-answer {
+  color: #d40202;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.report-tables table.test-scores-report .fa-check-circle {
+  color: #093;
+  font-size: 21px;
+}
+
+.report-tables table.test-scores-report .fa-exclamation-circle,.report-tables table.test-scores-report .fa-times-circle {
+  color: #999;
+  font-size: 21px;
+}
+
+.report-tables table.test-scores-report td:first-child+td,.report-tables table.test-scores-report td:first-child+td+td,.report-tables table.test-scores-report td:first-child+th,.report-tables table.test-scores-report td:first-child+th+th,.report-tables table.test-scores-report th:first-child+td,.report-tables table.test-scores-report th:first-child+td+td,.report-tables table.test-scores-report th:first-child+th,.report-tables table.test-scores-report th:first-child+th+th {
+  text-align: left;
+}
+
+.report-tables table.test-scores-report.test-overview td:first-child+td,.report-tables table.test-scores-report.test-overview td:first-child+td+td,.report-tables table.test-scores-report.test-overview td:first-child+th,.report-tables table.test-scores-report.test-overview td:first-child+th+th,.report-tables table.test-scores-report.test-overview th:first-child+td,.report-tables table.test-scores-report.test-overview th:first-child+td+td,.report-tables table.test-scores-report.test-overview th:first-child+th,.report-tables table.test-scores-report.test-overview th:first-child+th+th {
+  text-align: center;
+}
+
+.report-tables table.test-scores-report.student-info tbody tr {
+  border-top: 1px dotted #ccc;
+}
+
+.report-tables table.test-scores-report.student-info tr.header-groupings td {
+  text-align: left;
+}
+
+.report-tables table.test-scores-report.student-info tr.header-groupings td:first-child+td {
+  text-align: center;
+}
+
+.report-tables table.test-scores-report.student-info td:first-child+td+td,.report-tables table.test-scores-report.student-info td:first-child+td+td+td,.report-tables table.test-scores-report.student-info th:first-child+td+td,.report-tables table.test-scores-report.student-info th:first-child+td+td+td {
+  width: 150px;
+}
+
+.report-tables table.test-scores-report.student-info td:first-child+td+td,.report-tables table.test-scores-report.student-info td:first-child+th+th,.report-tables table.test-scores-report.student-info th:first-child+td+td,.report-tables table.test-scores-report.student-info th:first-child+th+th {
+  text-align: center;
+}
+
+.report-tables table.test-scores-report.student-info.test-question-analysis td:first-child+td,.report-tables table.test-scores-report.student-info.test-question-analysis td:first-child+th,.report-tables table.test-scores-report.student-info.test-question-analysis th:first-child+td,.report-tables table.test-scores-report.student-info.test-question-analysis th:first-child+th {
+  text-align: center;
+}
+
+.report-tables table.test-scores-report.student-info.test-question-analysis tr.correct-answer-row td {
+  font-weight: 700;
+}
+
+.report-tables table.test-scores-report.student-info.test-question-analysis tr.matching-head {
+  border-top: 2px solid #999;
+}
+
+.report-tables table.test-scores-report.student-info.test-question-analysis .matching-head-label {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.report-tables table.test-scores-report.student-info .test-image-row {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ccc;
+}
+
+.report-tables table.test-scores-report.student-info .test-image-row td.wysiwyg-override {
+  overflow: hidden;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.report-tables table.test-scores-report.student-info .test-image-row td.wysiwyg-override b {
+  font-weight: 700;
+}
+
+.report-tables table.test-scores-report.student-info .test-image-row td.wysiwyg-override em {
+  font-style: italic;
+}
+
+.report-tables table.test-scores-report.student-info .test-image-row td.wysiwyg-override p {
+  margin-bottom: 0;
+}
+
+.report-tables table.test-scores-report.student-info .test-image-row td.wysiwyg-override h4 {
+  line-height: 24px;
+}
+
+.report-tables table.test-scores-report.student-info .test-image-row td.wysiwyg-override img {
+  max-width: 750px;
+  margin: 15px auto;
+}
+
+.report-tables table.evaluation-scores {
+  margin-top: 30px;
+}
+
+.report-tables table.evaluation-scores tr td {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.report-tables table.evaluation-scores tr td.column-highlight,.report-tables table.evaluation-scores tr td.row-highlight {
+  background-color: #eee;
+}
+
+.report-tables table.evaluation-scores tr td.row-highlight.column-highlight {
+  background-color: #e0e0e0;
+}
+
+.report-tables table.evaluation-scores tr th {
+  border-bottom: 1px dotted #bbb;
+}
+
+.report-tables table.evaluation-scores tr.totals td {
+  border: none;
+}
+
+.report-tables table.student-import-results tr td:first-child,.report-tables table.student-import-results tr td:first-child+td {
+  text-align: left;
+}
+
+.report-tables table.student-import-results tr th:first-child,.report-tables table.student-import-results tr th:first-child+th {
+  text-align: left;
+}
+
+.report-tables table.student-import-results.error-detail td,.report-tables table.student-import-results.error-detail th {
+  text-align: left;
+}
+
+.report-tables table.department-utilization.with-counter td,.report-tables table.job-title-utilization.with-counter td {
+  text-align: left;
+}
+
+.report-tables table.department-utilization.with-counter td:first-child,.report-tables table.department-utilization.with-counter td:first-child+td+td,.report-tables table.job-title-utilization.with-counter td:first-child,.report-tables table.job-title-utilization.with-counter td:first-child+td+td {
+  counter-increment: row-counter;
+  width: 1px;
+  overflow: visible;
+  padding-right: 0;
+}
+
+.report-tables table.department-utilization.with-counter td:first-child+td+td:before,.report-tables table.department-utilization.with-counter td:first-child:before,.report-tables table.job-title-utilization.with-counter td:first-child+td+td:before,.report-tables table.job-title-utilization.with-counter td:first-child:before {
+  content: counter(row-counter) ".";
+  whitespace-wrap: nowrap;
+}
+
+.report-tables table.student-listing td,.report-tables table.student-listing th {
+  text-align: left;
+}
+
+.report-tables table.course-activity td.totals {
+  background-color: #e0e0e0;
+  font-weight: 700;
+}
+
+.report-tables table.department-listing td,.report-tables table.department-listing th {
+  text-align: left;
+}
+
+.report-tables table.course-listing .icon {
+  font-size: 21px;
+  color: #bbb;
+  padding-right: 10px;
+}
+
+.report-tables table.course-listing .icon i {
+  margin-right: 5px;
+}
+
+.report-tables table.course-listing td:last-child,.report-tables table.course-listing th:last-child {
+  text-align: left;
+}
+
+.report-tables table.course-listing tr.course-description td {
+  padding-top: 0;
+}
+
+.report-tables table.course-listing tr.course-description td div {
+  margin: 0;
+  border: 1px solid #ddd;
+  border-left: 5px solid #ddd;
+  background-color: #fff;
+  padding: 0;
+}
+
+.report-tables table.course-listing tr.course-description td div p {
+  margin: 10px;
+}
+
+.report-tables table.course-completion-dd tr td:first-child,.report-tables table.course-completion-dd tr td:first-child+td {
+  text-align: left;
+}
+
+.report-tables table.course-completion-dd tr.header-groupings td:first-child {
+  text-align: left;
+}
+
+.report-tables table.course-completion-dd tr.header-groupings td:first-child+td {
+  text-align: center;
+}
+
+.report-tables table.course-completion-dd.learning-detail tr td:first-child+td {
+  text-align: center;
+}
+
+.report-tables table.course-completion-dd.learning-detail .notes {
+  text-align: left;
+}
+
+.report-tables table.past-due-delinquent,.report-tables table.student-assignment-completion,.report-tables table.student-group-transcript {
+  margin-top: 0;
+}
+
+.report-tables table.past-due-delinquent tr td:first-child+td,.report-tables table.student-assignment-completion tr td:first-child+td,.report-tables table.student-group-transcript tr td:first-child+td {
+  text-align: left;
+}
+
+.report-tables table.past-due-delinquent.sched td,.report-tables table.past-due-delinquent.sched th,.report-tables table.student-assignment-completion.sched td,.report-tables table.student-assignment-completion.sched th,.report-tables table.student-group-transcript.sched td,.report-tables table.student-group-transcript.sched th {
+  text-align: left;
+}
+
+.report-tables table.past-due-delinquent tr.header-groupings td,.report-tables table.student-assignment-completion tr.header-groupings td,.report-tables table.student-group-transcript tr.header-groupings td {
+  text-align: center;
+}
+
+.report-tables table.past-due-delinquent tr.failed-class,.report-tables table.student-assignment-completion tr.failed-class,.report-tables table.student-group-transcript tr.failed-class {
+  color: #d40202;
+}
+
+.report-tables table.student-assignment-completion td,.report-tables table.student-assignment-completion th {
+  font-size: 11px;
+}
+
+.report-tables table.student-assignment-completion td.icon,.report-tables table.student-assignment-completion th.icon {
+  font-size: 16px;
+}
+
+.report-tables table.student-assignment-completion tr.header-groupings td {
+  text-align: center!important;
+}
+
+.report-tables table.learning-progress tr td,.report-tables table.learning-progress tr th {
+  text-align: center;
+}
+
+.report-tables table.learning-progress tr td:first-child,.report-tables table.learning-progress tr th:first-child {
+  text-align: left;
+}
+
+.report-tables table.learning-progress.student-detail tr td:first-child+td {
+  text-align: left;
+}
+
+.report-tables table.learning-progress.student-detail tr th {
+  text-align: center;
+}
+
+.report-tables table.learning-progress.student-detail tr th:first-child+th {
+  text-align: left;
+}
+
+.report-tables table.report-totals .title {
+  background-color: #000;
+}
+
+.report-tables table.report-totals.course-completion-dd-department td {
+  text-align: center;
+}
+
+.report-tables table.report-totals.course-completion-dd-department td:first-child {
+  text-align: left;
+}
+
+.report-tables table.summary td:first-child,.report-tables table.summary th:first-child {
+  width: 50%;
+}
+
+.report-tables table.summary.summary-dd td:first-child,.report-tables table.summary.summary-dd th:first-child {
+  width: 35%;
+}
+
+.report-tables table.summary.not-dept td:first-child,.report-tables table.summary.not-dept th:first-child {
+  width: 10px;
+}
+
+.report-tables table.summary.not-dept td:first-child+td {
+  text-align: left;
+}
+
+.report-tables table.completion-grid tr th {
+  vertical-align: bottom;
+  font-size: 10px;
+}
+
+.report-tables table.completion-grid tr th:first-child {
+  min-width: 200px;
+}
+
+.report-tables table.completion-grid tr th:first-child+th {
+  min-width: 100px;
+}
+
+.report-tables table.completion-grid tr td {
+  font-size: 10px;
+}
+
+.report-tables table.completion-grid tr.th-bottom th {
+  vertical-align: top;
+}
+
+.report-tables table.completion-grid tr.totals td {
+  font-weight: 700;
+}
+
+.report-tables .responsive-table {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.report-tables .responsive-table li {
+  display: table-cell;
+}
+
+.report-tables .responsive-table label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+}
+
+.report-tables .responsive-table span {
+  display: inline-block;
+}
+
+@media screen and (max-width:767px) {
+  .report-tables .responsive-table {
+    display: block;
+  }
+
+  .report-tables .responsive-table li {
+    display: block;
+    padding: 5px 0;
+  }
+}
+
+.resume-pro {
+  font-family: Georgia,Times!important;
+}
+
+.resume-pro h1,.resume-pro h2,.resume-pro h3,.resume-pro h4,.resume-pro h5,.resume-pro h6 {
+  font-family: Georgia,Times!important;
+  font-style: italic;
+}
+
+.resume-pro .additional-info {
+  border-bottom: none;
+}
+
+.resume-pro .additional-info h1,.resume-pro .additional-info h3 {
+  font-style: normal;
+}
+
+.resume-pro .additional-info-header {
+  text-transform: uppercase;
+}
+
+.resume-pro table.instructor-resume {
+  margin-top: 0;
+  margin-left: 0;
+  border-bottom: none;
+}
+
+.resume-pro table.instructor-resume tr.stripe {
+  background-color: #fff;
+}
+
+.resume-pro table.instructor-resume td {
+  padding-left: 0;
+}
+
+.lazy-loaded-page .report-tables table {
+  margin: 0;
+}
+
+.lazy-loaded-page .report-tables table.report-totals {
+  margin: 0 0 30px 0;
+}
+
+.lazy-loaded-page .report-tables table.course-completion-dd thead th:first-child {
+  text-align: left;
+}
+
+.floating-header-page .sticky-wrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+.floating-header-page .sticky-wrap .sticky-col,.floating-header-page .sticky-wrap .sticky-intersect,.floating-header-page .sticky-wrap .sticky-thead {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 125ms ease-in-out;
+  z-index: 50;
+  width: auto;
+}
+
+@media (min-width:768px) {
+  .floating-header-page .sticky-wrap .sticky-col,.floating-header-page .sticky-wrap .sticky-intersect,.floating-header-page .sticky-wrap .sticky-thead {
+    position: fixed;
+    top: 0!important;
+    left: auto;
+  }
+}
+
+.floating-header-page .sticky-wrap .sticky-thead {
+  box-shadow: 0 .25em .1em -.1em rgba(0,0,0,.125);
+  z-index: 100;
+  width: 100%;
+}
+
+.floating-header-page .sticky-wrap .sticky-intersect {
+  opacity: 1;
+  z-index: 150;
+}
+
+.floating-header-page .sticky-wrap .sticky-intersect th {
+  background-color: #666;
+  color: #eee;
+}
+
+.floating-header-page .sticky-wrap td,.floating-header-page .sticky-wrap th {
+  box-sizing: border-box;
+}
+
+.floating-header-page .report-tables table {
+  margin: 0;
+}
+
+.floating-header-page .report-tables table.report-totals {
+  margin: 0 0 30px 0;
+}
+
+.floating-header-page .report-tables table.sticky-thead tr.header-groupings th:first-child {
+  text-align: left;
+}
+
+.floating-header-page .report-tables table.sticky-thead tr.progress-bar th {
+  padding: 8px 10px;
+  background-color: #333;
+  vertical-align: middle;
+}
+
+.floating-header-page .report-tables table.course-completion-dd tr.progress-bar {
+  display: none;
+}
+
+.floating-header-page .report-tables table.sticky-thead tr.progress-bar {
+  display: table-row;
+}
+
+.floating-header-page .report-tables table.sticky-thead tr.progress-bar th .progress-outer {
+  width: 100%;
+  background-color: #666;
+  display: block;
+}
+
+.floating-header-page .report-tables table.sticky-thead tr.progress-bar th .progress-inner {
+  width: 25%;
+  height: 3px;
+  background-color: #45b5da;
+}
+
+@media (max-width:767px) {
+  .additional-info .additional-data ul.scores {
+    padding-right: 5%;
+  }
+
+  .btn-label {
+    display: none;
+  }
+
+  .report-pagination .active {
+    border-radius: 3px!important;
+  }
+}
+
+@media (max-width:479px) {
+  .section-box {
+    overflow-x: scroll;
+  }
+
+  .report-tables table tr td,.report-tables table tr th {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .report-tables table tr td h2,.report-tables table tr th h2 {
+    font-size: 14px;
+  }
+
+  .report-tables table.test-scores-report td.question {
+    font-size: 13px;
+  }
+
+  .additional-info {
+    margin-top: 20px;
+  }
+
+  .additional-info .additional-data table,.additional-info .additional-data ul li {
+    font-size: 11px;
+  }
+
+  .additional-info .additional-data ul.scores {
+    padding-right: 0;
+  }
+}
+
+@media print {
+  thead {
+    display: table-header-group;
+  }
+
+  .red {
+    color: #d40202!important;
+  }
+
+  tr.failed-class td,tr.failed-class td b {
+    color: #d40202!important;
+  }
+
+  .additional-info {
+    display: inline-block!important;
+    border-bottom: 3px solid #000;
+  }
+
+  .additional-info h1 {
+    font-size: 21px;
+    line-height: 24px;
+  }
+
+  .additional-info .additional-data ul li,.additional-info .info-header-text-block {
+    font-size: 11px;
+  }
+
+  .btn.btn-default.btn-settings {
+    display: none;
+  }
+
+  .btn.btn-default.btn-answer-img-toggle,.btn.btn-default.btn-answer-toggle {
+    display: none;
+  }
+
+  .report-tables {
+    overflow-x: hidden;
+    overflow-y: visible;
+  }
+
+  .report-tables .table-wrapper {
+    min-width: 0;
+  }
+
+  .report-tables table {
+    border-bottom: 2px solid #000;
+    margin-top: 30px;
+  }
+
+  .report-tables table tr {
+    border-bottom: 1px dotted #999;
+    page-break-inside: avoid!important;
+    -webkit-region-break-inside: avoid!important;
+  }
+
+  .report-tables table tr.title {
+    border-bottom: 1px solid #000;
+    background: 0 0;
+  }
+
+  .report-tables table tr th {
+    background-color: #fff;
+  }
+
+  .report-tables table tr td,.report-tables table tr th {
+    page-break-inside: avoid!important;
+    -webkit-region-break-inside: avoid!important;
+  }
+
+  .report-tables table tr td .avoid,.report-tables table tr th .avoid {
+    display: block;
+    page-break-inside: avoid!important;
+    -webkit-region-break-inside: avoid!important;
+  }
+
+  .report-tables table tr td h2,.report-tables table tr th h2 {
+    color: #000;
+  }
+
+  .report-tables table tr.page-break {
+    display: block;
+    page-break-after: always;
+  }
+
+  .report-tables table tr.header-groupings td,.report-tables table tr.header-groupings th {
+    border: 3px solid #fff;
+    border-bottom: 1px solid #222;
+  }
+
+  .report-tables table tr.nested-primary {
+    border-bottom: none;
+  }
+
+  .report-tables table tr.nested-primary.header-row {
+    border-bottom: 1px dotted #999;
+  }
+
+  .report-tables table tr.nested tr.accessory-row,.report-tables table tr.nested tr.resource {
+    border: none;
+  }
+
+  .report-tables .item-summary table tr {
+    border-bottom: none;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  .printed-comments {
+    margin-bottom: 10px;
+  }
+
+  body.certificate-report .cert-description,body.certificate-report .focus-pageheader,body.certificate-report .site-footer {
+    display: none;
+  }
+
+  .correct-answer,.fa-check,.fa-check-circle,.fa-long-arrow-right,.passed,.student-correct-answer {
+    color: #093!important;
+  }
+
+  .fa-times-circle,.fa.fa-exclamation-circle,.failed,.incorrect-answer,.student-incorrect-answer {
+    color: #d40202!important;
+  }
+
+  .fa-times {
+    color: #999!important;
+  }
+
+  .report-tables table.test-question-analysis .fa-times-circle {
+    color: #999!important;
+  }
+
+  #resume-pro .focus-pageheader,#resume-pro .site-footer {
+    display: none;
+  }
+
+  .badge.excluded {
+    border: solid #000!important;
+    border-width: 1px!important;
+    color: #ddd;
+  }
+}
+
+html.ie8 table.class-roster {
+  width: 100%;
+}
+
+html.ie8 .sign-in {
+  width: 35%;
+}
+
+html.ie8 .sign-in hr {
+  display: block;
+  border-top: 1px solid #000!important;
+  width: 100%!important;
+}
+
+.tdwidth {
+  width:33%;
+}
+
+.tdwidth-assignedlearning {
+  width:25%;
+}
+
+.tdwidth-liveeventnoshow {
+  width:20%;
+}
+.barcode
+{
+    width:100px;
+    height:30px;
+}

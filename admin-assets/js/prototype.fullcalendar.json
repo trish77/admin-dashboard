@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Anniversary - Bhattacharya",
+    "description": "Meenakshi Bhattacharya has 7-year work anniversary",
+    "start": "2019-05-12",
+    "classNames": [
+      "fc-event-anniversary"
+    ]
+  },
+  {
+    "title": "Birthday - Hoffman",
+    "description": "Phillis Hoffman is having a birthday",
+    "start": "2019-05-12",
+    "classNames": [
+      "fc-event-birthday"
+    ]
+  },
+  {
+    "title": "License: Registered Nurses - Advanced Registered Nurse Practitioner",
+    "description": "Meenakshi Bhattacharya is having a work anniversary",
+    "start": "2019-05-16",
+    "classNames": [
+      "fc-event-calendar-warning"
+    ]
+  },
+  {
+    "title": "License: Registered Nurses - Advanced Registered Nurse Practitioner",
+    "description": "Phillis Hoffman is having a birthday",
+    "start": "2019-05-16",
+    "classNames": [
+      "fc-event-calendar-danger"
+    ]
+  }
+]

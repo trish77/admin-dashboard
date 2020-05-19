@@ -1,0 +1,2036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Admin Dashboard | HealthStream</title>
+    <link rel="stylesheet" type="text/css" href="./admin-assets/css/bootstrap.min.css?cache=1500665751">
+    <link rel="stylesheet" type="text/css" href="./admin-assets/css/healthstream.plugins.css?cache=1500665751">
+    <link rel="stylesheet" type="text/css" href="./admin-assets/css/healthstream.app.css?cache=1500665751">
+   <!-- <link rel="stylesheet" type="text/css" href="./content/styles/healthstream.prototype.css?cache=1500665751">-->
+    <link rel="stylesheet" type="text/css" href="./admin-assets/css/healthstream.anychart.css?cache=1500665751">
+    <link rel="stylesheet" type="text/css" href="./admin-assets/css/richtext.min.css?cache=1500665751">
+    <link rel="stylesheet" type="text/css" href="./admin-assets/css/admin-dashboard.css">
+    <link rel="stylesheet" type="text/css" href="./admin-assets/css/boot-helpers.css">
+
+    <!-- Google Tag Manager !!!!!! THIS GTM NUMBER WILL NEED TO BE CHANGED !!!!! -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer'
+            ? '&l=' + l
+            : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f
+          .parentNode
+          .insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-TJ7WQRZ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <style></style>
+  </head>
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ7WQRZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="site-switch">
+      <img src="./content/images/Covid-19-white-small2.png">
+      <span>Free COVID-19 Training Courses</span>
+      <a href="catalog.php" id="switch-back-link">Access Now</a>
+    </div>
+    <div class="site-header">
+      <div class="container-fluid">
+        <div class="ph"></div>
+        <div class="row">
+          <div class="col-md-12 bg-white pb-3 ml-3">
+            <span class="text-small">Matt Wilson | Acme General Medical Center | Administrator | Return to My Organization</span>
+            <span class="float-right pr-4">
+              <div class="badge badge-warning">Log Out</div>
+            </span>
+          </div>
+        </div>
+        <nav class="nav-main">
+          <ul class="nav">
+            <li><a href="">People</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Simulation</a></li>
+            <li><a href="">Assessments</a></li>
+            <li><a href="">Education</a></li>
+            <li><a href="">Reports</a></li>
+            <li><a href="">Tools</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">My Profile</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+<!-- /site-header -->
+
+<div class="layout layout-student-profile layout-dashboard-manager">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <section class="profile-return-link">
+          <a href="admin-dashboard.html">
+            <i class="fa fa-fw fa-chevron-left"></i>Return to Admin Dashboard</a>
+        </section>
+        <div class="panel panel-default panel-students">
+          <div class="panel-body text-center clearfix">
+            <div class="upload-photo-btn center-block"></div>
+            <h3 class="mt text-bold">
+              <span class="employee-name">Brad K. Bruno</span>
+              <span class="employee-username">(brunob101)</span>
+              <small>
+                <span class="job-title">Pharmacy</span>
+              </small>
+            </h3>
+            <div class="mv-lg">
+              <div class="badge badge-success">Active</div>
+            </div>
+            <div class="text-center">
+              <a href="#modal-message-single" data-toggle="modal" class="btn btn-blue">Send message</a>
+              <a href="/dashboard-manager-dev-ready.php?proxy" class="btn btn-blue">My Team Dashboard</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default panel-students-actions">
+
+          <div class="panel-body">
+            <a href="#" id="todo" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info active">My Learning</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" id="assignments" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Assignments</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">My Resuscitation Intervals</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">My Learning Plans</div>
+                </div>
+              </div>
+            </a>
+            <a href="transcript" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">My Transcript</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Alerts</div>
+                </div>
+              </div>
+            </a>
+            <a href="assessments" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Assessments</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">My Connections</div>
+                </div>
+              </div>
+            </a>
+            <a href="/dashboard-manager-dev-ready.php" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">My Team</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Goals</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Assignment Completed Report</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Student Groups</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Job Functions</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Licenses</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Certifications</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Resuscitation Credentials</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Advanced Practices</div>
+                </div>
+              </div>
+            </a>
+            <a href="education" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Education</div>
+                </div>
+              </div>
+            </a>
+            <a href="personal" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Personal Information</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Badge</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Job Descriptions</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Documents</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Awards and Recognition</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Other</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Work Experience</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Volunteer Service</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Committee Service</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Memberships and Association</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Teaching and Preceptorships</div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="team-member-link">
+              <div class="media">
+                <div class="media-body pt-xsm">
+                  <div class="slat slat-info">Research and Publication</div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 ">
+        <div id="panelDemo14" class="panel panel-default panel-profile-info">
+          <div class="panel-body">
+            <div role="tabpanel">
+              <!-- Nav tabs-->
+              <!-- <ul role="tablist" class="nav nav-tabs"> <li role="presentation" class="active"><a href="#todo" aria-controls="todo" role="tab" data-toggle="tab">To Do List </a> </li> <li role="presentation"><a href="#completions" aria-controls="completions" role="tab" data-toggle="tab">Completions</a> </li> <li role="presentation"><a href="#goals" aria-controls="goals" role="tab" data-toggle="tab">Goals </a> </li> <li role="presentation"><a href="#notes" aria-controls="notes" role="tab" data-toggle="tab">Notes</a> </li> <li role="presentation"><a href="#personal" aria-controls="personal" role="tab" data-toggle="tab">Personal</a> </li> <li role="presentation"><a href="#professional" aria-controls="professional" role="tab" data-toggle="tab">Professional <span class="badge badge-alert ">2</span></a> </li> </ul> -->
+              <!-- Tab panes-->
+              <div class="tab-content">
+                <div id="personal" role="tabpanel" class="hidden">
+                  <section class="section">
+                    <p class="lead bb">About</p>
+                    <form class="form-horizontal p-20">
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Hire Date</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          Apr. 20, 2017
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Supervisor</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          <a href="#" class="team-member-link">Darcy Crane</a>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Department</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          Radiology
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Job Title</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          Clinical Nurse Supervisor
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Position Status</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          Full Time
+                        </div>
+                      </div>
+                    </form>
+                  </section>
+                  <br>
+                  <section class="section">
+                    <p class="lead bb">Job Descriptions</p>
+                    <div class="slat">
+                      <div class="slat-default">
+                        <div class="title">
+                          <a href="#modal-job-description" data-toggle="modal">Charge Nurse</a>
+                        </div>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#" target="_new">Print
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>Summary</h5>
+                            <p>Supervises daily staff activities for an assigned area or function.</p>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle" data-toggle-text="Show summary|Hide summary">Show summary<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="slat">
+                      <div class="slat-default">
+                        <div class="title">
+                          <a href="#modal-job-description" data-toggle="modal">Registered Nurse</a>
+                        </div>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#" target="_new">Print
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>Summary</h5>
+                            <p>Responsible for the directing of patient care for a designated shift. Reports to the Nursing Coordinator and coordinates with all related departments within limits of patient care issues for a designated shift.</p>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle" data-toggle-text="Show summary|Hide summary">Show summary<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <br>
+                  <section class="section">
+                    <p class="lead bb">Location</p>
+                    <form class="form-horizontal p-20">
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Address</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          2717 Valley View Ln.
+                          <br>Nashville, TN 37217
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Country</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          United States
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Email</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          <a href="mailto:bbruno@jupiterhealth.com">bbruno@jupiterhealth.com</a>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Phone</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          (273)-433-8282
+                        </div>
+                      </div>
+                    </form>
+                  </section>
+                  <br>
+                  <section class="section">
+                    <p class="lead bb">Activity</p>
+                    <form class="form-horizontal p-20">
+                      <div class="form-group">
+                        <div class="col-sm-4">
+                          <strong>Last Login</strong>
+                        </div>
+                        <div class="col-sm-8"></div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4 pl-xl">
+                          <strong>Student Access:</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          Apr. 20, 2017 at 9:20 am
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-4 pl-xl">
+                          <strong>Administrator Access:</strong>
+                        </div>
+                        <div class="col-sm-8">
+                          May 4, 2017 at 11:43 am
+                        </div>
+                      </div>
+                    </form>
+                  </section>
+                </div>
+                <div id="professional" role="tabpanel" class="hidden">
+                  <section class="section">
+                    <p class="lead bb">Licenses</p>
+                    <div class="slat slat-attention">
+                      <div class="slat-default">
+                        <div class="title">AEMT</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-label">State:</span><span class="meta-value">MI</span></li>
+                          <li>
+                            <span class="meta-label">Country:</span><span class="meta-value">United States</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>State Certification Number</h5>
+                            <p>1234567890</p>
+                          </section>
+                          <section class="section">
+                            <h5>National Expiration Date</h5>
+                            <p>Feb 7, 2014</p>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle toggle-text-initialized" data-toggle-text="Show additional information|Hide additional information">Show additional information<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="slat">
+                      <div class="slat-default">
+                        <div class="title">NCAC ll - National Certified Addiction Counsler, Level ll</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-label">State:</span><span class="meta-value">MI</span></li>
+                          <li>
+                            <span class="meta-label">Country:</span><span class="meta-value">United States</span>
+                          </li>
+                          <li>
+                            <span class="meta-label">State License:</span><span class="meta-value">123456789011112</span></li>
+                          <li>
+                            <span class="meta-label">Expires:</span><span class="meta-value">Jan. 1, 2018</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>Certifying Body</h5>
+                            <p>National Association of Alcoholism and Drug Abuse Counselors Certification Commission (NAADAC)</p>
+                          </section>
+                          <section class="section">
+                            <h5>Updated</h5>
+                            <p>Stephanie Juniper, Feb 7, 2016 11:54am</p>
+                          </section>
+                          <section class="section">
+                            <h5>System Managed</h5>
+                            <p>No</p>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle toggle-text-initialized" data-toggle-text="Show additional information|Hide additional information">Show additional information<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <br>
+                  <section class="section">
+                    <p class="lead bb">Certifications</p>
+                    <div class="slat slat-attention">
+                      <div class="slat-default">
+                        <div class="title">CWCA - Certified Wound Care Associate</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-label">Country:</span><span class="meta-value">United States</span>
+                          </li>
+                          <li>
+                            <span class="meta-label">State:</span><span class="meta-value">TN</span></li>
+                          <li>
+                            <span class="meta-label">License:</span><span class="meta-value">123456789011112</span>
+                          </li>
+                          <li>
+                            <span class="meta-label">Expires:
+                            </span><span class="meta-value">Jan 1, 2015</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>Certifying Body</h5>
+                            <p>American Board of Wound Management (ABWM)</p>
+                          </section>
+                          <section class="section">
+                            <h5>Updated</h5>
+                            <p>Stephanie Juniper, Feb 7, 2014 11:54am</p>
+                          </section>
+                          <section class="section">
+                            <h5>System Managed</h5>
+                            <p>No</p>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle toggle-text-initialized" data-toggle-text="Show additional information|Hide additional information">Show additional information<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <br>
+                  <section class="section">
+                    <p class="lead bb">Work Experience</p>
+                    <div class="slat ">
+                      <div class="slat-default">
+                        <div class="title">Ambulance Driver and Attendant, Except Emergency Medical Technician</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-label">SETTING:</span><span class="meta-value">Ambulatory Care</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>Company Name</h5>
+                            <p>ACME Patient Transport</p>
+                          </section>
+                          <section class="section">
+                            <h5>Location</h5>
+                            <p>Hartford, CT</p>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle toggle-text-initialized" data-toggle-text="Show additional information|Hide additional information">Show additional information<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                  <br>
+                  <section class="section">
+                    <p class="lead bb">Education</p>
+                    <div class="slat slat-callout" data-filter-category="0">
+                      <div class="slat-default">
+                        <div class="title">Bachelors</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-label">FIELD OF STUDY:</span>
+                            <span class="meta-value">Agricultural and Food Products Processing</span>
+                          </li>
+                          <li>
+                            <span class="meta-label">School Name:</span>
+                            <span class="meta-value">Frist University</span>
+                          </li>
+                          <li class="meta-callout">
+                            <span class="meta-label">DATES:</span>
+                            <span class="meta-value">
+                              <span class="meta-callout-label">DATES:</span>2014
+                            </span>
+                          </li>
+                        </ul>
+                        <!-- <div class="action"> <a class="btn btn-sm btn-default" data-hijax="true" data-target="#manage-education-modal-container" href="/HSAPP/Education/GetEducationEditorModalDialog?educationLevelId=983b611b-2d9f-e811-9e24-005056b113bb&amp;userEducationModalScreenName=Professional">Manage <i class="visible-xs fa-fw fa-pencil fa"></i></a> </div> -->
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse" style="height: 0px;">
+                          <section class="section">
+                            <h5>City, State/Province</h5>
+                            <p>Frist City, Tennessee</p>
+                          </section>
+                          <section class="section">
+                            <h5>Country</h5>
+                            <p>United States</p>
+                          </section>
+                        </div>
+                        <a class="collapse-toggle toggle-text-initialized" data-toggle-text="Show additional information|Hide additional information" href="javascript:;">Show additional information<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="todo" role="tabpanel" class="active">
+                  <div class="focus-mini">
+                    <ul class="meta">
+                      <li>
+                        <span class="meta-label">Total Tasks:</span><span class="meta-value">10</span></li>
+                      <li>
+                        <span class="meta-label">Requiring Attention:</span><span class="meta-value">2</span></li>
+                    </ul>
+                  </div>
+                  <div class="filter-mini" data-target="tasks">
+                    <div class="filter-row">
+                      <div class="filter-cell">
+                        <div class="filter-toggle">
+                          <div class="hidden-xs">Show:
+                            <i class="fa-fw fa-caret-down fa"></i>
+                          </div>
+                          <div class="visible-xs">Show: All Tasks<span class="badge">10</span>
+                            <i class="fa-fw fa-caret-down fa"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-cell">
+                        <ul>
+                          <li>
+                            <label class="checkbox active">
+                              <input type="checkbox" value="all" checked="">
+                              All Tasks</label>
+                          </li>
+                          <li>
+                            <label class="checkbox">
+                              <input type="checkbox" value="1">
+                              Assignments</label>
+                          </li>
+                          <li>
+                            <label class="checkbox">
+                              <input type="checkbox" value="2">
+                              Live Classes</label>
+                          </li>
+                          <li>
+                            <label class="checkbox">
+                              <input type="checkbox" value="3">
+                              Electives</label>
+                          </li>
+                          <li style="display: none;">
+                            <label class="checkbox">
+                              <input type="checkbox" value="4">
+                              Profile Tasks</label>
+                          </li>
+                          <li>
+                            <label class="checkbox">
+                              <input type="checkbox" value="5">
+                              Assessments</label>
+                          </li>
+                          <li style="display: none;">
+                            <label class="checkbox">
+                              <input type="checkbox" value="6">
+                              Hidden Option with No Matches</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <section class="section filter-target" id="tasks">
+                    <div class="slat slat-attention slat-spaced slat-callout-w active" data-filter-category="1">
+                      <div class="slat-default">
+                        <div class="title">Understanding Chronic Pain Management</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">In Progress</span></li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Complete:</span><span class="meta-value">2 of 3</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value"><span class="meta-callout-label">Due:</span>Dec. 31, 2013 at 12am</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-attention slat-spaced slat-callout-w active" data-filter-category="2">
+                      <div class="slat-default">
+                        <div class="title">Course Name: Class Name</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Live Class</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">Not Registered</span>
+                          </li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Attendance:</span><span class="meta-value">Mandatory</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-spaced slat-callout-w active" data-filter-category="2">
+                      <div class="slat-default">
+                        <div class="title">Course Name: Class Name</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Live Class</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">Registered</span></li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Attendance:</span><span class="meta-value">Mandatory</span></li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Location:</span><span class="meta-value">North Tower: Westmoreland Hall</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Starts:
+                            </span><span class="meta-value"><span class="meta-callout-label">Starts:</span>Jul 15, 2014 at 3:30pm</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-spaced slat-callout-w active" data-filter-category="2">
+                      <div class="slat-default">
+                        <div class="title">Course Name: Live Event Title</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Live Event</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">Registered</span></li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Location:</span><span class="meta-value">Cummins Station: 450</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-value">
+                              <span class="meta-value">
+                                <div>Jul 15, 2014 at 3:30pm -
+                                </div>
+                                <div>Jul 25, 2014 at 3:30pm</div>
+                              </span>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-spaced slat-callout-w active" data-filter-category="2">
+                      <div class="slat-default">
+                        <div class="title">Course Name: Live Event Title</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Live Event</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">Registered</span></li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Location:</span><span class="meta-value">Cummins Station: 450</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-value">
+                              <div>Aug 27, 2014</div>
+                              <div>5:30am - 6:30am</div>
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-spaced slat-callout-w active" data-filter-category="1">
+                      <div class="slat-default">
+                        <div class="title">Choose a Course</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Equivalent</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">Not Enrolled</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value"><span class="meta-callout-label">Due:</span>Sep 1, 2014</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-spaced slat-callout-w active" data-filter-category="1">
+                      <div class="slat-default">
+                        <div class="title">Pain Management Curriculum</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Curriculum</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">In Progress</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value"><span class="meta-callout-label">Due:</span>Sep 1, 2014</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-spaced slat-callout-w active" data-filter-category="1">
+                      <div class="slat-default">
+                        <div class="title">Fire Safety</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">Assigned</span></li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Complete:</span><span class="meta-value">0 of 3</span></li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Institution:</span><span class="meta-value">General Hospital</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value"><span class="meta-callout-label">Due:</span>Sep 15, 2014</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-spaced slat-callout-w active" data-filter-category="5">
+                      <div class="slat-default">
+                        <div class="title">Competency Appraisal - Employee Assesses Self</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Self Assessment</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">In Progress</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value"><span class="meta-callout-label">Due:</span>Aug 11, 2017</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-spaced slat-callout-w active" data-filter-category="3">
+                      <div class="slat-default">
+                        <div class="title">This is an example of an elective</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">Not Yet Started</span>
+                          </li>
+                          <li class="meta-hide-xs">
+                            <span class="meta-label">Enrolled By:</span><span class="meta-value">Self</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value">Elective</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="completions" role="tabpanel" class="hidden">
+                  <div class="focus-mini">
+                    <ul class="meta">
+                      <li>
+                        <span class="meta-label">Total Completions:</span><span class="meta-value">17</span></li>
+                      <li>
+                        <span class="meta-label">Est Learning Time:</span><span class="meta-value">8h 47m</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <section class="section clearfix">
+                    <div class="date-range pull-left " style="">
+                      <div class="form-group date-selector" style="">
+                        <div class="pull-left">
+                          <label class="control-label mt-lg">Date Range:</label>
+                        </div>
+                        <div class="pull-left mt">
+                          <select class="form-control date-range__control">
+                            <optgroup label="Presets">
+                              <option>Since January 1</option>
+                              <option>Last 6 months</option>
+                              <option selected="">Last 12 months</option>
+                              <option>Last 24 months</option>
+                              <option>Previous Calendar Year</option>
+                              <option>Complete History</option>
+                            </optgroup>
+                            <optgroup label="Custom">
+                              <option value="custom">Custom Range</option>
+                            </optgroup>
+                          </select>
+
+                        </div>
+                        <div class="date-range__custom collapse ">
+                          <div class="row">
+                            <div class="col-sm-6 mt">
+                              <div class="form-group">
+                                <label class="control-label">Start:</label>
+                                <div class="input-group date">
+                                  <input type="text" class="form-control">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                      <i class="fa fa-calendar"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 mt">
+                              <div class="form-group">
+                                <label class="control-label">End:</label>
+                                <div class="input-group date">
+                                  <input type="text" class="form-control">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                      <i class="fa fa-calendar"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="pull-right mt">
+                      <a class="btn btn-default btn-print pull-right" href="#modal-print" data-toggle="modal">
+                        <i class="fa fa-print"></i>
+                        Print
+                      </a>
+                    </div>
+                  </section>
+                  <section class="section">
+                    <div class="panel-group panel-group-slats panel-ce-credits" role="tablist" id="panel-group-1" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab">
+                          <a role="button" data-toggle="collapse" data-parent="#panel-group-1" href="#panel-1" class="collapsed">
+                            CE Credit Summary
+                            <div class="panel-heading-icon">
+                              <i class="fa fa-chevron-down panel-heading-icon-closed"></i>
+                              <i class="fa fa-chevron-up panel-heading-icon-open"></i>
+                            </div>
+                          </a>
+                        </div>
+                        <div id="panel-1" class="panel-collapse collapse" role="tabpanel">
+                          <div class="panel-body">
+                            <div class="slat slat-simple">
+                              <div class="slat-default">
+                                <div class="title">AMA PRA Category 1 Credit™</div>
+                                <ul class="meta">
+                                  <li>
+                                    <span class="meta-label">Discipline:</span><span class="meta-value">AEMT</span>
+                                  </li>
+                                  <li>
+                                    <span class="meta-label">Credits:</span><span class="meta-value">5.75</span>
+                                  </li>
+                                  <li>
+                                    <span class="meta-label">Courses:</span><span class="meta-value">2</span></li>
+                                </ul>
+                              </div>
+                            </div>
+                            <div class="slat slat-simple">
+                              <div class="slat-default">
+                                <div class="title">AMA PRA Category 1 Credit™</div>
+                                <ul class="meta">
+                                  <li>
+                                    <span class="meta-label">Discipline:</span><span class="meta-value">Emergency Medical Technician - First Responder</span></li>
+                                  <li>
+                                    <span class="meta-label">Credits:</span><span class="meta-value">4</span></li>
+                                  <li>
+                                    <span class="meta-label">Courses:</span><span class="meta-value">2</span></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section class="section">
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Student-Entered Learning Event</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Learning Event</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">1h</span></li>
+                          <li>
+                            <span class="meta-label">Entry:</span><span class="meta-value">Student</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">May 19, 2013</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>Added</h5>
+                            <p>Stephanie Juniper, Feb 7, 2014 11:54am</p>
+                          </section>
+                          <section class="section">
+                            <h5>Updated</h5>
+                            <p>Stephanie Juniper, Feb 7, 2014 11:57am</p>
+                          </section>
+                          <section class="section">
+                            <h5>Comments</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </section>
+                          <section class="section">
+                            <small class="text-muted">
+                              Enrollment ID: ci:052f3783-1890-e311-8219-001511711350b3|c:88b2b9f46-1890-e311-8219-001511711350b3|v:1
+                            </small>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle toggle-text-initialized" data-toggle-text="Show additional information|Hide additional information">Show additional information<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Understanding Chronic Pain Management</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">2h 10m</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">May 21, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Advanta 2 Med Surg Bed</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">15m</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">May 18, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Content with Video</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">2h</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">May 28, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Content with Video</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">2h</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">May 29, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Content with Video</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">2h</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">May 30, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Admin-Entered Learning Event</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Learning Event</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">1h</span></li>
+                          <li>
+                            <span class="meta-label">Entry:</span><span class="meta-value">Admin</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">July 11, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="slat slat-callout">
+                          <div class="slat-default">
+                            <div class="title">CE - AHIMA</div>
+                            <ul class="meta">
+                              <li>
+                                <span class="meta-label">Discipline:</span><span class="meta-value">Pharmacist, Nuclear</span></li>
+                              <li>
+                                <span class="meta-label">Credits:</span><span class="meta-value">4.00 AMA PRA Category 1 Credit™</span></li>
+                              <li>
+                                <span class="meta-label">License:</span><span class="meta-value">123456789011112</span></li>
+                              <li>
+                                <span class="meta-label">State:</span><span class="meta-value">TN</span></li>
+                            </ul>
+                            <div class="action">
+                              <a class="btn btn-sm btn-default" href="#">Certificate
+                                <i class="fa fa-fw fa-print visible-xs"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>Added</h5>
+                            <p>Admin's Name, Feb 7, 2014 11:54am</p>
+                          </section>
+                          <section class="section">
+                            <h5>Updated</h5>
+                            <p>Admin's Name, Feb 7, 2014 11:54am</p>
+                          </section>
+                          <section class="section">
+                            <h5>Comments</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </section>
+                          <section class="section">
+                            <small class="text-muted">
+                              Enrollment ID: ci:052f3783-1890-e311-8219-001511711350b3|c:88b2b9f46-1890-e311-8219-001511711350b3|v:1
+                            </small>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle toggle-text-initialized" data-toggle-text="Show additional information|Hide additional information">Show additional information<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Admin-Entered Learning Event as a Course</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">1h</span></li>
+                          <li>
+                            <span class="meta-label">Entry:</span><span class="meta-value">Admin</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">July 11, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="collapse-group collapse">
+                          <section class="section">
+                            <h5>Added</h5>
+                            <p>Admin's Name, Feb 7, 2014 11:54am</p>
+                          </section>
+                          <section class="section">
+                            <h5>Updated</h5>
+                            <p>Admin's Name, Feb 7, 2014 11:54am</p>
+                          </section>
+                          <section class="section">
+                            <h5>Comments</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          </section>
+                          <section class="section">
+                            <small class="text-muted">
+                              Enrollment ID: ci:052f3783-1890-e311-8219-001511711350b3|c:88b2b9f46-1890-e311-8219-001511711350b3|v:1
+                            </small>
+                          </section>
+                        </div>
+                        <a href="#" class="collapse-toggle toggle-text-initialized" data-toggle-text="Show additional information|Hide additional information">Show additional information<i class="fa-fw fa-caret-down fa"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Heart Disease and Treatment Options</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">1h</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">Oct 10, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Lippencott - 18-lead electrocardiogram</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">1h</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">Oct 16, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">A Day in the Life of ICD-10</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Course</span></li>
+                          <li>
+                            <span class="meta-label">Est. Time:</span><span class="meta-value">1h</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">Oct 19, 2013</span>
+                          </li>
+                        </ul>
+                        <div class="action">
+                          <a class="btn btn-sm btn-default" href="#">Certificate
+                            <i class="fa fa-fw fa-print visible-xs"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="slat-nested">
+                        <div class="slat slat-callout">
+                          <div class="slat-default">
+                            <div class="title">CE - AHIMA</div>
+                            <ul class="meta">
+                              <li>
+                                <span class="meta-label">Discipline:</span><span class="meta-value">Pharmacist, Nuclear</span></li>
+                              <li>
+                                <span class="meta-label">Credits:</span><span class="meta-value">4.00 AMA PRA Category 1 Credit™</span></li>
+                              <li>
+                                <span class="meta-label">License:</span><span class="meta-value">123456789011112</span></li>
+                              <li>
+                                <span class="meta-label">State:</span><span class="meta-value">TN</span></li>
+                            </ul>
+                            <div class="action">
+                              <a class="btn btn-sm btn-default" href="#">Certificate
+                                <i class="fa fa-fw fa-print visible-xs"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slat slat-callout">
+                          <div class="slat-default">
+                            <div class="title">CE - AAPC</div>
+                            <ul class="meta">
+                              <li>
+                                <span class="meta-label">Discipline:</span><span class="meta-value">Emergency Medical Technician - First Responder</span></li>
+                              <li>
+                                <span class="meta-label">Credits:</span><span class="meta-value">2.00 Contact Hours</span></li>
+                              <li>
+                                <span class="meta-label">License:</span><span class="meta-value">123456789011112</span></li>
+                              <li>
+                                <span class="meta-label">State:</span><span class="meta-value">TN</span></li>
+                            </ul>
+                            <div class="action">
+                              <a class="btn btn-sm btn-default" href="#">Certificate
+                                <i class="fa fa-fw fa-print visible-xs"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">Performance Appraisal</div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Self Assessment</span></li>
+                          <li>
+                            <span class="meta-label">Rater:</span><span class="meta-value">Jane Doe</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Completed:
+                            </span><span class="meta-value">Dec 15, 2013</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="goals" role="tabpanel" class="hidden">
+                  <section class="section clearfix">
+                    <div class="date-range">
+                      <div class="form-group date-selector">
+                        <div class="pull-left">
+                          <label class="control-label mt-lg">Date Range:</label>
+                        </div>
+                        <div class="pull-left mt">
+                          <select class="form-control date-range__control">
+                            <optgroup label="Presets">
+                              <option>Since January 1</option>
+                              <option>Last 6 months</option>
+                              <option selected="">Last 12 months</option>
+                              <option>Last 24 months</option>
+                              <option>Previous Calendar Year</option>
+                              <option>Complete History</option>
+                            </optgroup>
+                            <optgroup label="Custom">
+                              <option value="custom">Custom Range</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                        <div class="date-range__custom collapse">
+                          <div class="row">
+                            <div class="col-sm-6 mt">
+                              <div class="form-group">
+                                <label class="control-label">Start:</label>
+                                <div class="input-group date">
+                                  <input type="text" class="form-control">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                      <i class="fa fa-calendar"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 mt">
+                              <div class="form-group">
+                                <label class="control-label">End:</label>
+                                <div class="input-group date">
+                                  <input type="text" class="form-control">
+                                  <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                      <i class="fa fa-calendar"></i>
+                                    </button>
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </section>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">
+                          <a data-hijax="true" data-target="#manage-goal-modal-container" href="#">Reduce Logging Errors
+                          </a>
+                        </div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Individual</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">In Progress</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value"><span class="meta-callout-label">Due:</span>Aug 18, 2017</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">
+                          <a data-hijax="true" data-target="#manage-goal-modal-container" href="#">Improve Safety Ratings
+                          </a>
+                        </div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Individual</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">In Progress</span></li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value"><span class="meta-callout-label">Due:</span>Aug 18, 2017</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="slat slat-callout">
+                      <div class="slat-default">
+                        <div class="title">
+                          <a data-hijax="true" data-target="#manage-goal-modal-container" href="#">Improve Patient Satisfaction
+                          </a>
+                        </div>
+                        <ul class="meta">
+                          <li>
+                            <span class="meta-type">Individual</span></li>
+                          <li>
+                            <span class="meta-label">Status:</span><span class="meta-value">Not Yet Started</span>
+                          </li>
+                          <li class="meta-callout">
+                            <span class="meta-label">Due:
+                            </span><span class="meta-value"><span class="meta-callout-label">Due:</span>Aug 18, 2017</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                <div id="notes" role="tabpanel" class="hidden">
+                    <section class="section">
+                      <h2 class="mb-lg">
+                        <a href="#modal-note-add-employee" data-toggle="modal" class="btn btn-blue pull-right">Add Note</a>
+                        Results<br class="visible-sm visible-xs"/>
+                        <small>Showing 1-10 of 15</small>
+                      </h2>
+                      <?php
+
+                                            $content = '
+                                            <section class="section">
+                                            <h5>Detail</h5>
+                                            <p>This is a longer form area for the note detail. The text is input into a textarea without any wysiwyg controls but seems to be able to hold a large amount of text.</p>
+                                            </section>
+                                            <section class="section">
+                                            <h5>Attachments</h5>
+                                            <ul class="list-unstyled">
+                                            <li><i class="fa fa-paperclip"></i> <a href="#">This is a document</a></li>
+                                            </ul>
+                                            </section>
+                                            ';
+                                            $slat = array(
+                                             'title' => 'This is my note',
+                                             'meta' => array(
+                                                 array(
+                                                     'label' => 'Regarding:',
+                                                     'value' => 'Stephanie Juniper',
+                                                 ),
+                                                 array(
+                                                     'label' => 'Updated: ',
+                                                     'value' => 'Mar 1, 2014 at 2:13pm',
+                                                     'attributes' => array(
+                                                         array('class','meta-callout'),
+                                                     )
+                                                 ),
+
+                                             ),
+                                             'action' => array(
+                                                 'type' => 'custom',
+                                                 'content' => '<div class="action"><a class="btn btn-sm btn-default" href="#modal-note-edit" data-toggle="modal">Manage <i class="fa fa-fw fa-pencil visible-xs"></i></a></div>',
+                                             ),
+                                             'nested' => array(
+                                                 'hide' => array($content),
+                                             )
+                                         );
+                                            echo createSlat($slat);
+
+                                            echo createSlat($slat);
+
+                                            echo createSlat($slat);
+
+                                            echo createSlat($slat);
+
+                                            echo createSlat($slat);
+
+                                            ?>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /layout -->
+    <!-- <?php include ('includes/modals/_modal-dashboard-team.php'); include ('includes/modals/_modal-dashboard-team-message-all.php'); include ('includes/modals/_modal-dashboard-upload-photo.php'); include ('includes/modals/_modal-message-single.php'); include ('includes/modals/_modal-note-add-employee.php'); include ('includes/modals/_modal-note-edit.php'); include ('includes/modals/_modal-documents-employee.php'); include ('includes/modals/_modal-document-add-employee.php'); ?> -->
+    <!-- Modal -->
+    <div id="modal-print" class="modal modal-transcript fade" tabindex="-1" role="dialog" aria-labelledby="modal-print-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4 id="modal-print-label" class="modal-title">Customize &amp; Print</h4>
+          </div>
+          <div class="modal-body">
+            <fieldset>
+              <legend>Choose a Range:</legend>
+              <select id="printRangeSelect" class="form-control">
+                <optgroup label="Presets">
+                  <option>Since January 1</option>
+                  <option>Last 6 months</option>
+                  <option selected="">Last 12 months</option>
+                  <option>Last 24 months</option>
+                  <option>Previous Calendar Year</option>
+                  <option>Complete History</option>
+                </optgroup>
+                <optgroup label="Custom">
+                  <option value="custom">Custom Range</option>
+                </optgroup>
+              </select>
+            </fieldset>
+            <fieldset id="printRangeCustom" class="hide">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>Start:</label>
+                    <div class="input-group date">
+                      <input type="text" class="form-control">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                          <i class="fa fa-calendar"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <label>End:</label>
+                    <div class="input-group date">
+                      <input type="text" class="form-control">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                          <i class="fa fa-calendar"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Sort By:</legend>
+              <select class="form-control">
+                <option selected="selected">Date</option>
+                <option>Name</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>Completions</legend>
+              <select class="form-control">
+                <option selected="selected">All</option>
+                <option>Assigned only</option>
+                <option>Elective only</option>
+                <option>Learning Events only</option>
+                <option>CE Credits only</option>
+                <option>Assessments only</option>
+              </select>
+            </fieldset>
+            <div class="collapse" id="print-options">
+              <fieldset>
+                <legend>Student Demographics
+                  <small>Include checked items</small>
+                </legend>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Student User ID</label>
+                      </li>
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Job Title</label>
+                      </li>
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Job Category</label>
+                      </li>
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Department</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Hire/Re-hire Date</label>
+                      </li>
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Active Date</label>
+                      </li>
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Review Date</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Transcript Data
+                  <small>Include checked items</small>
+                </legend>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <label class="checkbox"><input type="checkbox" checked="checked">Estimated Time</label>
+                      </li>
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Course Score</label>
+                      </li>
+                      <li>
+                        <label class="checkbox"><input type="checkbox">CE Credit</label>
+                      </li>
+
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <label class="checkbox"><input type="checkbox">Time with Completion Date</label>
+                      </li>
+                      <li>
+                        <label class="checkbox"><input type="checkbox" checked="checked">Learning Event Comments</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Learning Events
+                  <small>Include checked items</small>
+                </legend>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <label class="checkbox"><input type="checkbox" checked="checked">Administrator-entered</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <label class="checkbox"><input type="checkbox" checked="checked">Student-entered</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend>Assessments
+                  <small>Include checked items</small>
+                </legend>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <label class="checkbox"><input type="checkbox" checked="checked">Self Assessments</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled">
+                      <li>
+                        <label class="checkbox"><input type="checkbox" checked="checked">Peer Assessments</label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <p>
+              <a href="#" data-toggle="collapse" data-target="#print-options" data-toggle-text="Show Additional Options|Hide Additional Options">Show Additional Options</a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" data-dismiss="modal">Continue</button>
+            <button class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
+
+    <!-- Modal -->
+    <div id="modal-job-description" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4 class="modal-title">Job Description</h4>
+          </div>
+          <div class="modal-body">
+            <section class="section section-job">
+              <section class="section">
+                <h2>Registered Nurse</h2>
+                <p>Responsible for the directing of patient care for a designated shift. Reports to the Nursing Coordinator and coordinates with all related departments within limits of patient care issues for a designated shift.</p>
+              </section>
+              <section class="section">
+                <h3>Job Requirements</h3>
+
+                <section class="section">
+                  <h4>Minimum Education</h4>
+                  <ul>
+                    <li>Graduate of an accredited school of nursing.</li>
+                    <li>Bachelor’s degree in nursing (BSN) preferred.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Minimum Work Experience</h4>
+                  <ul>
+                    <li>Minimum 1 year post-graduate acute care hospital experience preferred.</li>
+                    <li>Minimum 1 year medical-surgical nursing experience preferred.</li>
+                    <li>Experience preferred in appropriate clinical care areas.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Required Licenses</h4>
+                  <ul>
+                    <li>Registered Nurses</li>
+                    <li>Current RN licensure in the state.</li>
+                    <li>CPR certification.</li>
+                    <li>Basic Life Support (BLS) certification required.</li>
+                    <li>ACLS, PALS, or NRP certification per specialty/unit requirements.</li>
+                    <li>Advanced certification in field of specialty / expertise preferred.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Required Skills</h4>
+                  <ul>
+                    <li>Ability to function independently, and as part of a team.</li>
+                    <li>Empathy for the needs of patients.</li>
+                    <li>Effective oral and written communication skills.</li>
+                    <li>Ability to communicate through spoken and written English.</li>
+                    <li>Detail oriented, with ability to prioritize and multitask.</li>
+                    <li>Ability to apply sound judgment with clinical skills for optimal patient care.</li>
+                    <li>Demonstrates flexibility by accepting and supporting changes in work assignments as related to department and patient needs.</li>
+                    <li>Strong interpersonal communication and customer service skills.</li>
+                    <li>Basic computer skills.</li>
+                    <li>Proficient in working with all ages and patient populations.</li>
+                    <li>Knowledge of appropriate equipment, policies, procedures, and strategies to promote effective patient outcomes.</li>
+                  </ul>
+                </section>
+
+              </section>
+
+              <section class="section">
+                <h3>Functional Demands</h3>
+
+                <section class="section">
+                  <h4>Physical</h4>
+                  <ul>
+                    <li>Prolonged periods of standing and walking.</li>
+                    <li>Lifting, pushing, pulling up to 40 pounds.</li>
+                    <li>Transferring, repositioning patients.</li>
+                    <li>Reaching, stooping, bending, kneeling, and crouching for patient care functions.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Mental</h4>
+                  <ul>
+                    <li>Ability to perform effectively in a stressful and fast-paced environment.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Other</h4>
+                  <ul>
+                    <li>Ability to pass all required health and other screening tests.</li>
+                  </ul>
+                </section>
+              </section>
+
+              <section class="section">
+                <h3>Organization Expectations</h3>
+
+                <section class="section">
+                  <h4>Professionalism</h4>
+                  <ul>
+                    <li>Maintains competency and knowledge of current standards of practice, trends, and developments in related scope of practice through reading, seminars, conferences, and continuing education.</li>
+                    <li>Participates in ongoing quality improvement activities.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Service</h4>
+                  <ul>
+                    <li>Promotes culture of safety for patients and employees through proper identification, reporting, documentation, and prevention.</li>
+                    <li>Maintains hospital standards for a clean and quiet patient environment to maintain a positive patient care experience.</li>
+                    <li>Demonstrates excellent customer service through his/her attitude and actions, consistent with the standards contained in the Vision, Mission, and Values of the organization.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Compliance</h4>
+                  <ul>
+                    <li>Adheres to infection-control policies and protocols, medication administration and storage procedures, and controlled substance regulations.</li>
+                    <li>Maintains compliance with organization’s policies, as well as established practices, protocols, and procedures of the position, department, and applicable professional standards.</li>
+                    <li>Complies with organizational and regulatory policies for handling confidential patient information.</li>
+                    <li>Adheres to professional standards, hospital policies and procedures, federal, state, and local requirements, and TJC standards and/or standards from other accrediting bodies.</li>
+                  </ul>
+                </section>
+              </section>
+
+              <section class="section">
+                <h3>Essential Functions</h3>
+
+                <section class="section">
+                  <h4>Patient Care</h4>
+                  <ul>
+                    <li>Identifies patient care requirements by establishing rapport with patients and families.</li>
+                    <li>Maintains a compassionate and caring environment by providing emotional, psychological, and spiritual support to patients, and their friends and families.</li>
+                    <li>Provides direct patient care to assigned patients and assists in the care of other patients as needed.</li>
+                    <li>Administers medications and nursing interventions to achieve progress toward positive patient outcomes, or to stabilize a patient’s condition and/or prevent complications.</li>
+                    <li>Assesses patients’ response to medication, therapy, and treatments and makes appropriate adjustments and modifications to treatment plan as indicated or directed by supervisor or physician.
+                    </li>
+                    <li>Creates a plan of care, individualized to patient needs and reflective of patient goals.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Communication</h4>
+                  <ul>
+                    <li>Assesses educational needs of patient and family regarding medication, care, therapy, and diet, and tailors communication to the individual’s needs.</li>
+                    <li>Empowers patients and promotes positive outcomes by establishing patient care goals; teaching patient, friends, and family about condition, medications, and self-care skills; and listening to concerns and answering questions.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Teamwork</h4>
+                  <ul>
+                    <li>Supervises care, treatment, and services of patient care provided by LPNs, CNAs, and other staff on assigned unit and shift.</li>
+                    <li>Reports patient concerns and changes in condition to supervisor and/or physician in a timely manner.</li>
+                    <li>Maintains continuity among nursing teams by documenting and communicating actions, irregularities, and continuing needs.</li>
+                    <li>Fosters collaboration between health care teams by communicating information, responding to requests, building rapport, and participating in team problem-solving activities.</li>
+                  </ul>
+                </section>
+
+                <section class="section">
+                  <h4>Other</h4>
+                  <ul>
+                    <li>Maintains confidentiality and security of patients’ medical information.</li>
+                  </ul>
+                </section>
+              </section>
+            </section>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success">Print</button>
+            <button class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
+    <!-- Modal -->
+    <div id="modal-message-single" class="modal fade modal-lg" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              <i class="fa fa-times"></i>
+            </button>
+            <h4 class="modal-title">Message Brad Bruno</h4>
+          </div>
+          <div class="modal-body" style="max-height:initial;">
+            <div class="form-group">
+              <div class="row">
+                <label class="control-label col-sm-12">To</label>
+              </div>
+              <div class="row">
+                <div class="col-xs-6">
+                  <input type="text" name="subject_group" class="form-control hidden-xs" value="bbruno@jupiterhealth.org">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <label class="control-label  col-sm-12">CC</label>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <input type="text" name="subject_group" class="form-control" disabled="disabled" value="User@CurrentUserEmail.com">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label">Subject</label>
+              <input type="text" name="subject_group" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <label class="control-label">Message</label>
+              <textarea class="form-control" name="message_group" rows="3" placeholder="Message"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Send Message</button>
+            <button class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
+    <!-- Modal -->
+
+    <!-- /modal -->
+
+  <!-- site footer -->
+  <div class="site-footer ">
+      <div class="fp">
+        <div class="container"></div>
+      </div>
+      <div class="container">
+
+        <div class="legal">
+          <div class="divider"></div>
+          <div class="logo">
+            <img src="./content/images/logo-hstream-exclusive.svg" alt="Available Exclusively with hStream" class="hstream-logo">
+          </div>
+          <div class="copyright">Copyright &copy;
+            HealthStream, Inc. All Rights Reserved.</div>
+          <div class="build">Build: 13.01.28.895.8 | O:STS2 | S:192.231.71.2</div>
+        </div>
+      </div>
+    </div>
+
+  <!-- /site footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="/scripts/jquery.js"></script> -->
+    <script src="./admin-assets/js/jquery.ui.sortable.js"></script>
+    <script src="./admin-assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="./admin-assets/js/bootstrap.js"></script>
+    <script src="./admin-assets/js/healthstream.utilities.applauncher.js"></script>
+    <script src="./admin-assets/js/dataTables.js"></script>
+    <script src="http://hstm-platform.patternmanager.com/scripts/dataTables.rowReorder.min.js"></script>
+    <script src="./admin-assets/js/prototype.datatables.js"></script>
+    <script src="./admin-assets/js/healthstream.filtermini.js"></script>
+    <!-- <script src="/scripts/hovercard.js"></script> -->
+
+    <!-- <script src="/scripts/cropper.js"></script> -->
+    <script src="./admin-assets/js/prototype.dashboard-profile.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+</div>

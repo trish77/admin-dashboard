@@ -1,0 +1,36 @@
+// General Style
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansLight") format("svg");
+}
+
+.border-bottom-2 {
+  border-bottom: 2px solid #ced4da !important;
+}
+
+.border-grey {
+  border-color: #ced4da;
+}
+
+
+.badge {
+  line-height: 14px;
+
+  .close {
+    line-height: 14px;
+    font-size: 12px;
+    color: #fff;
+    padding-left: 8px;
+    opacity: 1;
+  }
+}
+.form-check-label {
+  font-size: .85rem;
+}
+
+.search-bar {
+  height: calc(1.5em + 0.75rem + 10px) !important;
+}

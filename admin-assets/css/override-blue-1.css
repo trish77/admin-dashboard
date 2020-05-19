@@ -1,0 +1,504 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300,400,600,700,800;
+  src: url(../fonts/OpenSans-Regular-webfont.eot);
+  src: url(../fonts/OpenSans-Regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/OpenSans-Regular-webfont.woff) format('woff'), url(../fonts/OpenSans-Regular-webfont.ttf) format('truetype'), url(../fonts/OpenSans-Regular-webfont.svg#OpenSansLight) format('svg');
+
+}
+body {
+  background: #eee;
+}
+body a {
+  color: #006699;
+}
+body a:hover {
+  color: #004d66;
+}
+body a:visited {
+  color: #551a8b;
+}
+body,
+input,
+textarea,
+select,
+button,
+.RadComboBoxDropDown_Default li {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+body[contenteditable="true"] {
+  background: #fff;
+  min-width: 100%;
+}
+form[action*="SiteMap.aspx"] .txs {
+  font-size: 14px !important;
+}
+#identity-bar {
+  background: #fff;
+}
+#identity-bar td:first-child {
+  padding-left: 5px;
+}
+#identity-bar .txxs {
+  font-size: 12px;
+}
+#identity-bar a {
+  color: #006699;
+  /*img {
+            display: none;
+        }*/
+}
+#identity-bar a:hover {
+  color: #004d66;
+}
+// #identity-bar #identity-logout {
+//   display: block;
+//   background: url('../images/Override/logout-orange.png') left center no-repeat;
+//   width: 60px;
+//   height: 26px;
+//   overflow: hidden;
+//   float: right;
+//   margin-right: 10px;
+// }
+#identity-bar #identity-logout img {
+  display: none;
+}
+#mb,
+.mb {
+  background: #f3f3f3;
+  border-top: 1px solid #ddd;
+}
+#mb .nm,
+.mb .nm {
+  background: none;
+}
+#mb .nm .level1,
+.mb .nm .level1 {
+  height: auto;
+}
+#mb .nb,
+.mb .nb {
+  /*border-top: 5px solid @theme-primary-darker;*/
+  background: #0099cc;
+  height: 10px;
+  margin: 0;
+  overflow: hidden;
+  filter: -;
+}
+#mb ul,
+.mb ul {
+  overflow: hidden;
+}
+#mb li a,
+.mb li a {
+  padding: 15px 15px;
+  border: none;
+  color: #333;
+  line-height: 1;
+  text-decoration: none;
+  font-weight: normal;
+}
+#mb li a.nt,
+.mb li a.nt {
+  filter: -;
+  background: #f3f3f3;
+  font-size: 14px;
+}
+#mb li a.nt:hover,
+.mb li a.nt:hover {
+  text-decoration: none;
+  background: #eee;
+}
+#mb li a.nts,
+.mb li a.nts {
+  background: #ddd;
+  font-size: 14px;
+}
+#mb li a.ntd,
+.mb li a.ntd {
+  filter: -;
+  background: #f3f3f3;
+  color: #777;
+}
+#mb #mb-highlight,
+.mb #mb-highlight {
+  float: right;
+}
+#mb #mb-highlight a,
+.mb #mb-highlight a {
+  display: inline-block;
+  height: auto;
+  width: auto;
+  max-width: 250px;
+  text-align: right;
+  text-decoration: none;
+  padding: 0;
+}
+#mb #mb-highlight img,
+.mb #mb-highlight img {
+  display: none;
+}
+#mb #mb-highlight span,
+.mb #mb-highlight span {
+  display: inline-block;
+  height: auto;
+}
+#mb #mb-highlight span.wrap,
+.mb #mb-highlight span.wrap {
+  padding-left: 20px;
+  background: url('../images/Override/icon-info.png') left center no-repeat;
+}
+#mb #mb-highlight span.innerWrap,
+.mb #mb-highlight span.innerWrap {
+  display: inline-block;
+  padding: 0 45px 0 0;
+  height: 44px;
+  line-height: 46px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 180px;
+  background: url('../images/Override/btn-more.png') right center no-repeat;
+}
+.occ {
+  background: #fff;
+  width: 97%;
+  margin: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.occ.brdr {
+  border: none;
+}
+table.occ {
+  width: 97%;
+}
+#pf,
+.fp {
+  border-top: 5px solid #007aa3;
+  background: #eee;
+  margin: 0;
+  padding: 0 0 100px;
+}
+#pf .sm,
+.fp .sm {
+  background: #0099cc;
+  color: #fff;
+  padding: 10px 20px 15px;
+}
+#pf .txxs,
+.fp .txxs {
+  padding: 20px;
+  text-align: left;
+}
+#pf #pf-logo,
+.fp #pf-logo {
+  display: block;
+  width: 150px;
+  height: 30px;
+  background: url("../images/Override/healthstream-logo.svg") 0 0 no-repeat;
+  margin-bottom: 10px;
+}
+#pf #pf-logo img,
+.fp #pf-logo img {
+  display: none;
+}
+body.mbody {
+  background: #eee;
+}
+div#pc {
+  width: 100%;
+  background: #fff;
+  /*.pb10,
+    #courseContainer_ft {
+        img {
+            display: none;
+        }
+    }*/
+}
+div#pc .container_16 {
+  width: 100% !important;
+  margin: 0;
+}
+div#pc .ca {
+  padding-top: 10px;
+}
+#pb {
+  display: none;
+}
+/*table.ft,
+table.ftl3,
+table.ftr3 {
+    img {
+        display: none;
+    }
+}*/
+table.ftl3 img,
+table.ftl img,
+.ftl3 img,
+.ftl img {
+  display: none;
+}
+.clrlft {
+  clear: left;
+}
+.featureTitleicon_back > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/ArrowLeft_Admin.png') no-repeat;
+  /* Width of new image */
+  width: 29px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 29px;
+}
+.featureTitleicon_search > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/Admin_search.png') no-repeat;
+  /* Width of new image */
+  width: 34px;
+  /* Height of new image */
+  height: 20px;
+  /* Equal to width of new image */
+  padding-left: 34px;
+}
+.featureTitleicon_add > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/Admin_plus.png') no-repeat;
+  /* Width of new image */
+  width: 34px;
+  /* Height of new image */
+  height: 20px;
+  /* Equal to width of new image */
+  padding-left: 34px;
+}
+.featureTitleicon_preview > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-PreviewRF.png') no-repeat;
+  /* Width of new image */
+  width: 38px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 38px;
+}
+.featureTitleicon_permissions > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-PermissionsRF.png') no-repeat;
+  /* Width of new image */
+  width: 35px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 35px;
+}
+.featureTitleicon_coursePublish > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-PublishRF.png') no-repeat;
+  /* Width of new image */
+  width: 47px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 47px;
+}
+.featureTitleicon_scanStudents > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-ScanStudentsRF.png') no-repeat;
+  /* Width of new image */
+  width: 39px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 39px;
+}
+.featureTitleicon_virtualClassLaunch > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-VirtualClassLaunchRF.png') no-repeat;
+  /* Width of new image */
+  width: 39px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 39px;
+}
+.featureTitleicon_register > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-ClassRegisterStudents.png') no-repeat;
+  /* Width of new image */
+  width: 38px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 38px;
+}
+.featureTitleicon_registerMgmt > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-ClassManageRegistration.png') no-repeat;
+  /* Width of new image */
+  width: 39px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 39px;
+}
+.featureTitleicon_grade > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-GradeStudentsRF.png') no-repeat;
+  /* Width of new image */
+  width: 41px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 41px;
+}
+.featureTitleicon_classCopy > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-Copy.png') no-repeat;
+  /* Width of new image */
+  width: 36px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 36px;
+}
+.featureTitleicon_roster > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-ReportRF.png') no-repeat;
+  /* Width of new image */
+  width: 36px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 36px;
+}
+.featureTitleicon_newClassCalendar > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-ClassAddCalendarRF.png') no-repeat;
+  /* Width of new image */
+  width: 37px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 37px;
+}
+.featureTitleicon_newClass > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-ClassAddRF.png') no-repeat;
+  /* Width of new image */
+  width: 39px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 39px;
+}
+.featureTitleicon_recurringClass > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-ClassAddrecurringRF.png') no-repeat;
+  /* Width of new image */
+  width: 38px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 38px;
+}
+.featureTitleicon_manage > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-Manage.png') no-repeat;
+  /* Width of new image */
+  width: 38px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 38px;
+}
+.featureTitleicon_promote > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-Promote.png') no-repeat;
+  /* Width of new image */
+  width: 43px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 43px;
+}
+.featureTitleicon_print > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-Print.png') no-repeat;
+  /* Width of new image */
+  width: 41px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 41px;
+}
+.featureTitleicon_grantSimStoreAccess > img {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('../images/Override/iconLG-GrantSimtoreAccess.png') no-repeat;
+  /* Width of new image */
+  width: 41px;
+  /* Height of new image */
+  height: 24px;
+  /* Equal to width of new image */
+  padding-left: 41px;
+}

@@ -1,0 +1,170 @@
+#ph,
+.ph {
+    background: #fff url('../images/logo-General_Hospital-large.png') 15px center no-repeat;
+    border-top: 3px solid #094579;
+}
+#mb .nb,
+.mb .nb {
+    background: #094579;
+    border-top-color: #073761;
+}
+
+#pf,
+.fp {
+    border-top-color: #073761;
+}
+
+#pf .sm,
+.fp .sm {
+    background: #094579;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+.hs-landingpage-container {
+    width: auto;
+    height: 730px;
+    background-image: url('../images/hs-landingpage-portfolio-background.jpg');
+    position: relative;
+}
+
+.hs-landingpage-container .wrap {
+    position: absolute;
+    top: 80px;
+    left: 70px;
+}
+
+.hs-landingpage-container h1,
+.hs-landingpage-container .h1 {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #30487b;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 0;
+    letter-spacing: -1px;
+}
+
+.hs-landingpage-container h2,
+.hs-landingpage-container .h2 {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    color: #545353;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 25px;
+    margin-bottom: 52px;
+}
+
+.hs-landingpage-container li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.hs-landingpage-container ul.navigation {
+    margin: 0;
+    padding: 0;
+    width: 360px;
+    text-align: center;
+}
+
+.hs-landingpage-container ul.navigation a.btn {
+    width: 360px;
+    height: 70px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid #3e8f3e;
+    display: block;
+    text-align: center;
+    line-height: 70px;
+    background-color: #419641;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5cb85c), to(#419641));
+    background-image: -webkit-linear-gradient(top, #5cb85c, #419641);
+    background-image: -moz-linear-gradient(top, #5cb85c, #419641);
+    background-image: -o-linear-gradient(top, #5cb85c, #419641);
+    background-image: linear-gradient(to bottom, #5cb85c, #419641);
+    *background-image: url('../images/hs-landingpage-button-background.jpg');
+    *background-repeat: repeat-x;
+    text-decoration: none;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    margin-top: 18px;
+    text-shadow: #1b5f1b 1px 1px 1px;
+}
+
+.hs-landingpage-container ul.navigation a.btn:hover {
+    background-color: #5cb85c;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#419641), to(#5cb85c));
+    background-image: -webkit-linear-gradient(top, #419641, #5cb85c);
+    background-image: -moz-linear-gradient(top, #419641, #5cb85c);
+    background-image: -o-linear-gradient(top, #419641, #5cb85c);
+    background-image: linear-gradient(to bottom, #419641, #5cb85c);
+    *background-image: url('../images/hs-landingpage-button-background-hover.jpg');
+    *background-repeat: repeat-x;
+}
+
+.hs-landingpage-container ul.navigation .dont-show {
+    display: inline-block;
+    color: #3b3a3a;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 15px;
+}
+
+.hs-landingpage-container .bottom-bar {
+    bottom: 0;
+    position: absolute;
+    background-image: url('../images/hs-landingpage-portfolio-bottom-bar-background.png');
+    background-repeat: repeat;
+    height: 260px;
+    width: 96%;
+    padding: 0px;
+    margin: 0px;
+    color: #ffffff;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    padding-left: 35px;
+}
+
+.hs-landingpage-container .bottom-bar ul {
+    margin-top: 0px;
+    padding-top: 0px;
+    position: absolute;
+    width: 90%;
+    padding-bottom: 2%;
+    border-bottom: 1px solid #ffffff;
+}
+
+.hs-landingpage-container .bottom-bar li {
+    float: left;
+    padding-top: 3%;
+}
+
+.hs-landingpage-container .bottom-bar li .bold {
+    text-transform: uppercase;
+}
+
+.hs-landingpage-container .bottom-bar .one,
+.hs-landingpage-container .bottom-bar .two,
+.hs-landingpage-container .bottom-bar .three {
+    width: 33%;
+    display: block;
+}
+
+.hs-landingpage-container .bottom-bar .fine-print {
+    position: absolute;
+    bottom: 30px;
+    font-size: 14px;
+    text-align: center;
+    width: 93%;
+}
+
+
+
+

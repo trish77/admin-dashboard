@@ -1,0 +1,320 @@
+.site-header .branding {
+  position: relative;
+}
+
+.site-header .nav-account.nav-account-open {
+  z-index: 999;
+}
+
+.layout.layout-dashboard-manager {
+  border-top: 5px solid #007aa3;
+  background-color: #eee;
+}
+
+.layout.layout-dashboard-manager .panel-student{
+  margin-bottom: 22px;
+}
+
+.layout.layout-dashboard-manager .panel-students-actions {
+  max-height: 850px;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+}
+.panel.panel-direct-reports .panel-body a.team-member-link
+/*.panel.panel-my-team .panel-body a.team-member-link*/
+{
+  padding: 0 5px;
+  margin: 0;
+  border: none;
+}
+/*.layout.layout-dashboard-manager .panel-my-team .media,*/
+.layout.layout-dashboard-manager .panel-students-list .media,
+.layout.layout-dashboard-manager .panel-students .media {
+    background-color: #fff;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+.layout.layout-dashboard-manager .panel-students .media {
+  padding: 0;
+}
+
+/*.layout.layout-dashboard-manager .panel-my-team .media:hover,*/
+.layout.layout-dashboard-manager .panel-students-list .media:hover {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    transition: background-color .2s ease-in-out;
+}
+
+.layout.layout-dashboard-manager .panel-students .media:hover {
+  background: transparent
+}
+.panel.panel-direct-reports .panel-body a.team-member-link:hover
+/*.panel.panel-my-team .panel-body a.team-member-link:hover*/ {
+  background-color: transparent;
+  border:none;
+  transition: none;
+  padding: 0 5px;
+  margin: 0;
+}
+.media .slat {
+  padding: 5px;
+  margin: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-left: 3px solid #ccc;
+  transition: background-color .5s ease-in-out;  
+}
+.media .slat:hover, .media .slat.active {
+  padding: 5px;
+  margin: 0;
+  background-color: #dcdcdc;
+  border: 1px solid #e1e1e1;
+  border-left: 3px solid #ccc;
+  transition: background-color .2s ease-in-out;  
+}
+.panel.panel-students .panel-body, .panel.panel-my-team .panel-body {
+    max-height: 944px;
+    overflow-y: auto;
+    height: 100%;
+}
+.panel.panel-students-list .panel-body, .panel.panel-my-team .panel-body {
+  max-height: 544px;
+  overflow-y: auto;
+  height: 100%;
+  padding: 5px
+}
+.panel-students-list a:hover,
+.panel-students a:hover {
+  text-decoration: none;
+}
+.panel-students-list .panel-body a:hover{
+  background-color: #eee;
+  border: 1px solid #e1e1e1;
+  border-left: 3px solid #ccc;
+  transition: background-color .2s ease-in-out; 
+}
+
+.header-image {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.kebab-dropdown li a {
+  white-space: nowrap;
+}
+
+.refresh-widget-data a:hover,
+.filter-widget-data a:hover {
+  color: #fff !important;
+  background-color: #09c;
+}
+
+.refresh-widget-data a,
+.filter-widget-data a {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  padding: 8px 0 0 2px;
+}
+
+.refresh-widget-data,
+.filter-widget-data {
+  text-align: center;
+  z-index: 9999;
+  position: relative;
+}
+
+  .refresh-widget-data a {
+    display: block;
+    top: -10px;
+    left: 0px;
+    transition: none;
+  }
+
+  .filter-widget-data a {
+    display: block;
+    bottom: -219px;
+    left: 0px;
+    transition: none;
+  }
+
+.course {
+  width: 45% !important;
+}
+
+.richText {
+  margin-top: 20px !important;
+  box-shadow: 0 0 5px 0 #999 !important;
+}
+
+.richText .richText-editor {
+  height: 150px
+}
+
+.spellcheck {
+  background-image: url("../admin-assets/images/spellchkr.png");
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.input-group-addon {
+  padding: 0;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0;
+}
+
+.richText-dropdown {
+  z-index: 99999;
+}
+
+.input-group-addon {
+  position: relative;
+  left: -10px;
+}
+
+.hidden {
+  display: none !important
+}
+
+.px-10 {
+  padding: 0 10px;
+}
+
+.modal-body .bottom {
+  position: relative;
+  right: 20px;
+  bottom: 0 !important;
+}
+
+.panel-my-team {
+  margin-top: 0;
+}
+
+.header-image {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.kebab-dropdown li a {
+  white-space: nowrap;
+}
+
+.refresh-widget-data a:hover,
+.filter-widget-data a:hover {
+  color: #fff !important;
+  background-color: #09c;
+}
+
+.refresh-widget-data a,
+.filter-widget-data a {
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+  padding: 8px 0 0 2px;
+}
+
+.refresh-widget-data,
+.filter-widget-data,
+.assignments-refresh-widget-data {
+  text-align: center;
+  z-index: 9999;
+  position: relative;
+}
+
+.refresh-widget-data a {
+  display: block;
+  top: -10px;
+  left: 0px;
+  transition: none;
+}
+
+.filter-widget-data a,
+.assignments-refresh-widget-data a {
+  display: block;
+  bottom: -219px;
+  left: 0;
+  transition: none;
+}
+
+.course {
+  width: 45% !important;
+}
+
+.richText {
+  margin-top: 20px !important;
+  box-shadow: 0 0 5px 0 #999 !important;
+}
+
+.richText .richText-editor {
+  height: 150px
+}
+
+.spellcheck {
+  background-image: url("../admin-assets/images/spellchkr.png");
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.input-group-addon {
+  padding: 0;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0;
+}
+
+.richText-dropdown {
+  z-index: 99999;
+}
+
+.input-group-addon {
+  position: relative;
+  left: -10px;
+}
+
+.hidden {
+  display: none !important
+}
+
+.px-10 {
+  padding: 0 10px;
+}
+
+.modal-body .bottom {
+  position: relative;
+  right: 20px;
+  bottom: 0 !important;
+}
+
+.panel-my-team {
+  margin-top: 0;
+}
+
+/***** admin hlc settings ******/
+.fp {
+    border-top: 5px solid #007aa3;
+    background: #eee;
+    margin: 0;
+}
+
+.ph {
+    background: 15px center no-repeat #fff url("../../admin-assets/images/logo-healthstream-large.png");
+    border-top: 3px solid #0099cc;
+    height: 80px;
+    width: 100%;
+}
+
+.mb {
+    background: #f3f3f3;
+    border-top: 1px solid #ddd;
+}

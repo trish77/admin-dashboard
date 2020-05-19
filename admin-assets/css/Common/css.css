@@ -1,0 +1,40 @@
+body {font-family: Trebuchet,Tahoma,Verdana;min-width:800px;padding:0 0 0 0;margin:0 0 0 0;}
+.ph {width: 100%;height:65px;background-color: #081F5B;background-image:url(/HLC/Images/hlcLogo.jpg); background-repeat:no-repeat;}
+.pf {width: 100%;padding:10px;text-align:center;}
+.nm {TEXT-ALIGN:center;BACKGROUND-COLOR:#CCCCCC;}
+.nm .level1 {PADDING-RIGHT: 10px; PADDING-LEFT: 10px; HEIGHT:21px;}
+.nb {FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#8DB1BA',endColorStr='#ffffff',gradientType='0'); MARGIN-BOTTOM: 10px; HEIGHT: 10px; BACKGROUND-COLOR: #8db1ba;}
+.nt {BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#003399',endColorStr='#081F5B',gradientType='0'); PADDING-BOTTOM: 3px; BORDER-LEFT: #e4f1f8 1px solid; CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-COLOR: #003399; TEXT-DECORATION: none;}
+.nt:hover {TEXT-DECORATION: underline;}
+.nts {BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; BORDER-LEFT: #e4f1f8 1px solid; CURSOR: pointer; COLOR: #ffffff; PADDING-TOP: 3px; BORDER-BOTTOM: #8db1ba 1px solid; BACKGROUND-COLOR: #8db1ba; TEXT-DECORATION: none;}
+.nts:hover {TEXT-DECORATION: underline;}
+.ntd {BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr='#003399',endColorStr='#081F5B',gradientType='0'); PADDING-BOTTOM: 3px; BORDER-LEFT: #e4f1f8 1px solid; CURSOR:text; COLOR:#CCCCCC;PADDING-TOP: 3px; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-COLOR: #003399; TEXT-DECORATION: none;}
+.ntd:hover {TEXT-DECORATION:none;}
+.ntd .wrap .innerWrap {cursor:text;}
+.nl {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; COLOR: black; PADDING-TOP: 2px; TEXT-DECORATION: none;}
+.nl .wrap .innerWrap IMG {MARGIN-RIGHT: 2px;MARGIN-TOP:0px;}
+.nl:hover {TEXT-DECORATION: underline;}
+.nls {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; COLOR: black; PADDING-TOP: 2px; TEXT-DECORATION: none;}
+.nls .wrap .innerWrap IMG {MARGIN-RIGHT: 2px;MARGIN-TOP:0px;}
+.nls:hover {TEXT-DECORATION: underline;}
+.nld {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; COLOR: black; PADDING-TOP: 2px; TEXT-DECORATION: none;}
+.nld .wrap .innerWrap IMG {MARGIN-RIGHT: 2px;}
+.nld:hover {TEXT-DECORATION: none;}
+.nh {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; COLOR: black; PADDING-TOP: 2px; TEXT-DECORATION: none;}
+.nh .wrap .innerWrap IMG {MARGIN-RIGHT: 2px;}
+.nh:hover {TEXT-DECORATION: underline;}
+.nhs {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; COLOR: black; PADDING-TOP: 2px; TEXT-DECORATION: none;}
+.nhs .wrap .innerWrap IMG {MARGIN-RIGHT: 2px;}
+.nhs:hover {TEXT-DECORATION: underline;}
+.nhd {PADDING-RIGHT: 5px; PADDING-LEFT: 5px; COLOR: black; PADDING-TOP: 2px; TEXT-DECORATION: none;}
+.nhd .wrap .innerWrap IMG {MARGIN-RIGHT: 2px;}
+.nhd:hover {TEXT-DECORATION: none;}
+.sm {}
+TEXTAREA {font-family: Trebuchet,Tahoma,Verdana;}
+.logo-large {background-image:url(/HLCThemes/56716/logo-General_Hospital-large.png);}
+.logo-small {background-image:url(/HLCThemes/56716/logo-General_Hospital-small.png);}
+.theme-primary {background-color:#094579;}
+.theme-accent {background-color:#fc7b00;}
+.theme-focus-bn {background-color:#5cb85c;}
+.theme-focus-bn-text {background-color:#FFF;}
+.theme-focus-bn-border {background-color:#FFF;}
