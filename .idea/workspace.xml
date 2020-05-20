@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1326a858-b1ad-490c-be72-1370840c3c53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1326a858-b1ad-490c-be72-1370840c3c53" name="Default Changelist" comment="removing old files dist not in use currently">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -29,6 +28,7 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\tbonnette\AppData\Roaming\npm\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
@@ -47,7 +47,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589817237587</updated>
-      <workItem from="1589817239313" duration="17065000" />
+      <workItem from="1589817239313" duration="18063000" />
     </task>
     <task id="LOCAL-00001" summary="removing old files dist not in use currently">
       <created>1589999278322</created>
@@ -56,7 +56,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589999278323</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="removing old files dist not in use currently">
+      <created>1589999393537</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589999393537</updated>
+    </task>
+    <task id="LOCAL-00003" summary="npm update/install package fix">
+      <created>1589999971989</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589999971989</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -64,25 +78,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removing old files dist not in use currently" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing old files dist not in use currently" />
+    <MESSAGE value="npm update/install package fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="npm update/install package fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1368" y="184" key="#Notifications" timestamp="1589917445874">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1368" y="184" key="#Notifications/0.0.1920.1050/-1920.0.1920.1050/1920.0.1280.689@-1920.0.1920.1050" timestamp="1589917445874" />
-    <state x="617" y="122" width="1231" height="812" key="CommitChangelistDialog2" timestamp="1589999275626">
+    <state x="617" y="122" width="1231" height="812" key="CommitChangelistDialog2" timestamp="1589999970625">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="617" y="122" width="1231" height="812" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1589999275626" />
+    <state x="617" y="122" width="1231" height="812" key="CommitChangelistDialog2/0.0.1920.1050/-1920.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1589999970625" />
     <state x="-1459" y="168" key="SettingsEditor" timestamp="1589909748687">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
     <state x="-1459" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050/1920.0.1280.689@-1920.0.1920.1050" timestamp="1589909748687" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1589999287681">
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2" timestamp="1590000011222">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-1368" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050/1920.0.1280.689@-1920.0.1920.1050" timestamp="1589917433103" />
-    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1589999287681" />
+    <state x="552" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1050/-1920.0.1920.1050/1920.0.1280.689@0.0.1920.1050" timestamp="1590000011222" />
   </component>
 </project>
