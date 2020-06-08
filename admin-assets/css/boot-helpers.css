@@ -19,6 +19,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+    content: "\f00d"
+}
+
+.primary .fa-lg {
+    font-size: 22px;
+}
+
 body {
     font-size: auto !important;
 }
@@ -565,6 +575,10 @@ a {
     font-style: italic;
 }
 
+.btn-white {
+    background: #fff;
+    border: 1px solid #ccc;
+}
 .btn-default {
     color: #333;
     background-color: #fff;
@@ -656,4 +670,8 @@ a {
 }
 .layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .secondary-metric .secondary-label {
     width: 50px;
+}
+
+ .input-lg, .search-panel.input-group-btn button {
+    height: 48px;
 }

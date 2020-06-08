@@ -1,0 +1,48 @@
+[
+  {
+    "text": "CORP - ACME HealthCare",
+    "tags": [4],
+    "nodes": [
+      {
+        "text": "HEX01 - ACME Express Clinic",
+        "tags": [2]
+      },
+      {
+        "text": "GEN01 - ACME General Medical Center",
+        "tags": [0]
+      }
+    ]
+  },
+  {
+    text: 'CORP - ACME Community HealthCare',
+    href: 'parent2',
+    nodes: [{
+      text: 'CORP - ACME Community Enterprise',
+      nodes: [{
+        text: 'ASER - ACME Southeast Region',
+        href: '#child1',
+      }, {
+        text: 'ACHS - Cortes Hospital',
+        href: '#child2',
+      }, {
+        text: 'AMHS - Magellan Hospital',
+        href: '#child2'
+      }
+      ]
+    },
+      {
+        text: 'Ascension',
+        href: '#parent3',
+        nodes: [{
+          text: 'HEX01 - ACME Express Clinic',
+          href: '#child1',
+        }, {
+          text: 'GEN01 - ACME General Medical Center',
+          href: '#child2'
+        }
+        ]
+
+      }
+    ]
+  }
+]

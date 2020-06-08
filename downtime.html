@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./admin-assets/css/healthstream.app.css">
+  <link rel="stylesheet" href="./admin-assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./admin-assets/css/boot-helpers.css">
+
+  <style>
+    body {
+      background: url("./assets/img/download.png") no-repeat;
+      height: 1000px;
+      overflow: scroll;
+
+    }
+  </style>
+</head>
+<body>
+
+</body>
+<script src="admin-assets/js/jquery.js"></script>
+<script src="admin-assets/js/bootstrap.js"></script>
+<script src="admin-assets/js/gritter.js"></script>
+<script>
+
+
+  $.gritter.add({
+    title: ' Planned Maintenance Downtime',
+    type: 'info',
+    image: './admin-assets/images/icon-info.png',
+    text: 'Begins 9:00 pm ET Fri. Jun. 3 through 3:00 am Sat. Jun. 4. The HLC will not be accessible.',
+    sticky: true
+  })
+</script>
+
+</html>

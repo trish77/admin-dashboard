@@ -14,6 +14,8 @@
   <link rel="stylesheet" type="text/css" href="./admin-assets/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="./admin-assets/css/admin-dashboard.css">
   <link rel="stylesheet" type="text/css" href="./admin-assets/css/boot-helpers.css">
+  <link rel="stylesheet" type="text/css" href="./admin-assets/css/bootstrap-treeview.css">
+
   <style></style>
 </head>
 <body>
@@ -24,7 +26,7 @@
 </div>
 <!-- site-header -->
 <div class="site-header">
-  <div class="container-fluid p0">
+  <div class="container p0">
     <div class="row m-0 pb-3">
       <div class="branding">
         <a href="/">
@@ -38,47 +40,132 @@
           <i class="fa fa-user"></i>
           <img src="admin-assets/images/avatar-default.png" data-pin-nopin="true" alt="avatar">
         </div>
-        <a href="alerts.php" class="alerts"><span class="badge">3</span></a>
-          <div class="institution"><a href="#">Jupiter Healthcare</a></div>
-          <div class="logout"><a href="#">Logout</a></div>
+        <a href="#" class="alerts"><span class="badge">3</span></a>
+        <div class="institution"><a href="#">Jupiter Healthcare</a></div>
+        <div class="logout"><a href="#">Logout</a></div>
         <a href="#" class="trigger-open trigger-open-account"><i class="fa fa-angle-down"></i></a>
         <a href="#" class="trigger-close"><i class="fa fa-times"></i></a>
         <ul class="nav">
-          <li><a href="/account-settings.php">Account Settings</a></li>
-          <li class="hide-header-open"><a href="/account-settings.php?view=password">Manage Password</a></li>
-          <li><a href="/alerts.php">Alerts <span class="badge">3</span></a></li>
+          <li><a href="">Account Settings</a></li>
+          <li class="hide-header-open"><a href="">Manage Password</a></li>
+          <li><a href="">Alerts <span class="badge">3</span></a></li>
           <li class="hide-header-open logout"><a href="#">Logout</a></li>
         </ul>
       </nav>
     </div>
-      <nav class="nav-main">
-        <ul class="nav">
-          <li><a href="">People</a></li>
-          <li><a href="">Courses</a></li>
-          <li><a href="">Simulation</a></li>
-          <li><a href="">Assessments</a></li>
-          <li><a href="">Education</a></li>
-          <li><a href="">Reports</a></li>
-          <li><a href="">Tools</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">My Profile</a></li>
-        </ul>
-      </nav>
-
+  </div>
+  <div class="w-100 p0">
+    <nav class="nav-main">
+      <div class="container">
+          <ul class="nav">
+            <li><a href="">People</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Assessments</a></li>
+            <li><a href="">Education</a></li>
+            <li><a href="">Reports</a></li>
+            <li><a href="">Tools</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">My Profile</a></li>
+          </ul>
+      </div>
+    </nav>
   </div>
 </div>
+
 <!-- /site-header -->
 <div class="layout layout-dashboard-manager">
   <div class="container">
-    <div class="row mt">
-      <div class="pull-right">
-        <a href="#modal-widget-store" data-toggle="modal" class="btn btn-default px-10 btn-block">
-          <i class="fa fa-fw fa-gear"></i>
-        </a>
+    <div class="row border-bottom mt">
+      <div class="col-sm-4 col-md-4 col-lg-4" style="margin-top: 15px">
+        <h3 class="m0">Welcome, Jack</h3>
+        <p>Viewing Jupiter Healthcare</p>
+      </div>
+      <div class="col-sm-8 col-md-4 col-lg-8" style="margin-top: 15px">
+      <form class="primary">
+
+        <input type="hidden" name="search_param" value="all" id="search_param">
+        <div class="input-group">
+          <div class="input-group-btn search-panel">
+            <button type="button" class="btn btn-lg border-right-0 btn-white dropdown-toggle" data-toggle="dropdown">
+              <span id="search_concept">In Students</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu scrollable-dropdown" role="menu">
+              <li><a href="#">In Students</a></li>
+              <li><a href="#">In Administrators</a></li>
+              <li><a href="#">In Assignments</a></li>
+              <li><a href="#">In Courses</a></li>
+              <li><a href="#">In Classes</a></li>
+              <li><a href="#">In Learning Events</a></li>
+              <li><a href="#">In Student Groups</a></li>
+              <li><a href="#">In Departments</a></li>
+              <li><a href="#">In Job Titles</a></li>
+            </ul>
+          </div>
+          <input type="text" class="form-control input-lg" id="search" placeholder="Search">
+          <span class="input-group-btn">
+            <a href="#" class="btn btn-focus btn-success btn-lg" type="button"><i class="fa fa-search fa-lg"></i></a>
+          </span>
+        </div>
+      </form>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6 col-md-4 col-lg-3" style="margin-top: 15px">
+        <!-- START panel-->
+        <div class="panel panel-default" id="widgetAssessmentTasksV2">
+          <div class="panel-heading portlet-handler">
+            <div class="panel-title">Students</div>
+            <div class="kebab">
+              <figure></figure>
+              <figure class="middle"></figure>
+              <p class="cross">x</p>
+              <figure></figure>
+              <ul class="kebab-dropdown">
+                <li>
+                  <div class="kebab-mlink">
+                    <span class="kebab-mlink-label">Date Range:</span>
+                    <button class="btn btn-xs btn-link is-active js-toggle-days" data-days="30">30d</button>
+                    <button class="btn btn-xs btn-link js-toggle-days" data-days="60">60d</button>
+                    <button class="btn btn-xs btn-link js-toggle-days" data-days="90">90d</button>
+                  </div>
+                </li>
+                <li>
+                  <a href="#"
+                     class="js-toggle-widget-kebab kebab-hide-widget kebab-hide-task-widget">Hide Widget</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="list-menu-wrap">
+            <ul class="list-menu">
+              <li>
+                <span>Active</span>
+                <span>
+                  <span class="badge badge-primary">3,343</span>
+                </span>
+              </li>
+              <li>
+                <span>On Leave</span>
+                <span>
+                  <span class="badge badge-warning">72</span>
+                </span>
+              </li>
+              <li>
+                <span>New</span>
+                <span>
+                  <span class="badge badge-success">33</span>
+                </span>
+              </li>
+            </ul>
+          <div class="py-2 text-center">
+            <button class="btn btn-default  btn-md">Add Student</button>
+          </div>
+        </div>
+
+        </div>
+        <!-- END panel-->
+
+        <!-- START panel-->
         <div class="panel panel-default panel-students-list">
           <div class="panel-heading">
             <div class="panel-title">Students</div>
@@ -416,13 +503,16 @@
             </div>
           </div>
         </div>
+        <!-- END panel-->
+
+        <!-- START panel-->
         <div class="panel panel-default panel-organization-hier" style="margin-top: 15px">
           <div class="panel-heading">
-            <div class="panel-title">Organization Hiearchy</div>
+            <div class="panel-title">Organization Hierarchy</div>
           </div>
           <div class="panel-body">
             <div class="employee-container">
-              <div id="treeview"></div>
+              <div id="treeview1"></div>
             </div>
           </div>
           <div class="panel-footer clearfix">
@@ -440,7 +530,10 @@
             </div>
           </div>
         </div>
-        <div class="panel panel-default panel-my-team" style="margin-top: 15px">
+        <!-- END panel-->
+
+        <!-- START panel-->
+      <!--  <div class="panel panel-default panel-my-team" style="margin-top: 15px">
           <div class="panel-heading">
             <div class="panel-title">Organization Management</div>
           </div>
@@ -455,7 +548,7 @@
               <a href="#" class="team-member-link">
                 Add Organization
               </a>
-              <a href="#" class="show-modal--manage-organization team-member-link">
+              <a href="#" class="show-modal&#45;&#45;manage-organization team-member-link">
                 Manage Organizations
               </a>
               <a href="" class="team-member-link">
@@ -488,7 +581,8 @@
               </button>
             </div>
           </div>
-        </div>
+        </div>-->
+        <!-- END panel-->
       </div>
       <div class="col-sm-6 col-md-8 col-lg-9">
         <div class="portlets-wrapper">
@@ -518,13 +612,16 @@
                         </li>
                         <li>
                           <div class="kebab-mlink">
-                            <span class="kebab-mlink-label">Sort By:</span>
+                            <span class="kebab-mlink-label">Show:</span>
                             <ul>
                               <li>
                                 <a href="#" class="team-member-link">Expired</a>
                               </li>
                               <li>
                                 <a href="#" class="team-member-link">Expiring</a>
+                              </li>
+                              <li>
+                                <a href="#" class="team-member-link">All</a>
                               </li>
                             </ul>
                           </div>
@@ -535,17 +632,10 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="refresh-widget-data">
+                   <div class="refresh-widget-data">
                       <a href="#">
                             <span class="refresh-widget-data-icon">
                               <em class="fa fa-refresh"></em>
-                            </span>
-                      </a>
-                    </div>
-                    <div class="filter-widget-data">
-                      <a href="#">
-                            <span class="filter-widget-data-icon">
-                              <em class="fa fa-filter"></em>
                             </span>
                       </a>
                     </div>
@@ -590,8 +680,9 @@
                 </div>
               </div>
               <!-- END panel-->
+
               <!-- START panel-->
-              <div class="panel panel-default panel-metrics student-assignments" id="widgetAssignments">
+             <!-- <div class="panel panel-default panel-metrics student-assignments" id="widgetAssignments">
                 <div class="panel-body text-center">
                   <div class="metric-box-header portlet-handler">
                     <br />
@@ -629,13 +720,13 @@
                         </li>
                       </ul>
                     </div>
-                    <!--  <div class="assignments-refresh-widget-data">
+                    &lt;!&ndash;  <div class="assignments-refresh-widget-data">
                         <a href="#">
                           <span class="refresh-widget-data-icon">
                             <em class="fa fa-refresh"></em>
                           </span>
                         </a>
-                      </div>-->
+                      </div>&ndash;&gt;
                     <div class="filter-widget-data">
                       <a href="#">
                             <span class="refresh-widget-data-icon">
@@ -682,14 +773,14 @@
                     </div>
                   </a>
                 </div>
-              </div>
+              </div>-->
               <!-- END panel-->
             </div>
             <!-- END panel COLUMN 1-->
             <!-- START panel COLUMN 2-->
             <div class="col-md-6 col-lg-4" id="portlet-2" data-toggle="portlet">
               <!-- START panel-->
-              <div class="panel panel-default panel-my-team">
+            <!--  <div class="panel panel-default panel-my-team">
                 <div class="panel-heading">
                   <div class="panel-title">Student Management</div>
                 </div>
@@ -704,7 +795,7 @@
                     <a href="#" class="manage-students team-member-link">
                       Manage Students
                     </a>
-                    <a href="#" class="show-modal--manage-organization team-member-link">
+                    <a href="#" class="show-modal&#45;&#45;manage-organization team-member-link">
                       Reassign Students
                     </a>
                   </div>
@@ -722,10 +813,11 @@
                         </span>
                   </div>
                 </div>
-              </div>
+              </div>-->
               <!-- END panel-->
+
               <!-- START panel-->
-              <div class="panel panel-default panel-my-team">
+            <!--  <div class="panel panel-default panel-my-team">
                 <div class="panel-heading">
                   <div class="panel-title">Student Group Management</div>
                 </div>
@@ -755,13 +847,14 @@
                         </span>
                   </div>
                 </div>
-              </div>
+              </div>-->
               <!-- END panel-->
+
               <!-- START panel-->
-              <div class="panel panel-default panel-metrics cert-widget" id="widgetOutstandingCertifications">
+              <!--<div class="panel panel-default panel-metrics cert-widget" id="widgetOutstandingCertifications">
                 <div class="panel-body text-center">
                   <div class="metric-box-header portlet-handler">
-                    <!-- <span class="highlight-text">22</span> -->
+                    &lt;!&ndash; <span class="highlight-text">22</span> &ndash;&gt;
                     Employees with
                     <br />
                     <span class="highlight-text">Outstanding Certifications</span>
@@ -828,63 +921,16 @@
                     </div>
                   </a>
                 </div>
-              </div>
+              </div>-->
               <!-- END panel-->
             </div>
             <!-- END panel-->
             <!-- END panel COLUMN 2-->
+
             <!-- START panel COLUMN 3-->
             <div class="col-md-6 col-lg-4 " id="portlet-3" data-toggle="portlet">
               <!-- START panel-->
-              <div class="panel panel-default" id="widgetAssessmentTasksV2">
-                <div class="panel-heading portlet-handler">
-                  <div class="panel-title">Assessment Tasks</div>
-                  <div class="kebab">
-                    <figure></figure>
-                    <figure class="middle"></figure>
-                    <p class="cross">x</p>
-                    <figure></figure>
-                    <ul class="kebab-dropdown">
-                      <li>
-                        <a href="#"
-                           class="js-toggle-widget-kebab kebab-hide-widget kebab-hide-task-widget">Hide Widget</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="list-menu-wrap">
-                  <ul class="list-menu">
-                    <li>
-                      <span>To Rate</span>
-                      <span>
-                            <span class="badge badge-primary">3</span>
-                          </span>
-                    </li>
-                    <li>
-                      <span>To Approve</span>
-                      <span>
-                            <span class="badge badge-primary">2</span>
-                          </span>
-                    </li>
-                    <li>
-                      <span>To Review</span>
-                      <span>
-                            <span class="badge badge-primary">3</span>
-                          </span>
-                    </li>
-                    <li>
-                      <span>To Sign Off</span>
-                      <span>
-                            <span class="badge badge-primary">7</span>
-                          </span>
-                    </li>
-                  </ul>
-                  <a href="/assessment-overview.php" class="list-menu-overlay" title="View All Assessment Tasks"></a>
-                </div>
-              </div>
-              <!-- END panel-->
-              <!-- START panel-->
-              <div class="panel panel-default myteam__widget-reporting" id="widgetReporting">
+             <!-- <div class="panel panel-default myteam__widget-reporting" id="widgetReporting">
                 <div class="panel-heading portlet-handler">
                   <div class="panel-title">Reporting</div>
                   <div class="kebab">
@@ -909,7 +955,7 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div>-->
               <!-- END panel-->
             </div>
             <!-- END panel COLUMN 3-->
@@ -923,18 +969,16 @@
 <div class="site-footer ">
   <div class="focus focus-promo">
     <div class="container">
-
     </div>
   </div>
   <div class="container">
-
     <div class="legal">
       <div class="divider"></div>
-      <div class="logo"><img src="/admin-assets/images/logo-hstream-exclusive.svg" class="hstream-logo" alt="Available Exclusively with hStream"></div>
+      <div class="logo"><img src="./admin-assets/images/logo-hstream-exclusive.svg" class="hstream-logo"
+                             alt="Available Exclusively with hStream"></div>
       <div class="copyright">Copyright © 2020 HealthStream, Inc. All Rights Reserved.</div>
       <div class="build">Build: 13.01.28.895.8 | O:STS2 | S:192.231.71.2</div>
     </div>
-
   </div>
 </div>
 <!--    <?php - KEPT FOR REFERENCE
@@ -3870,8 +3914,6 @@ include ('includes/modals/_modal-message-group.php');
   </div>
 </div>
 <!-- end modal windows-->
-
-
 <!-- Global site tag (gtag.js) - Google Analytics  THIS WILL CHANGE!! -->
 <!--<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-53664464-1"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -3916,11 +3958,31 @@ include ('includes/modals/_modal-message-group.php');
 <!--    <script src="./admin-assets/js/fullcalendar.js"></script>-->
 <script src="./admin-assets/js/prototype.admin-dashboard.js"></script>
 <script src="./admin-assets/js/jquery.richtext.js"></script>
-<script src="./admin-assets/js/tree.js"></script>
+<script src="./admin-assets/js/bootstrap-treeview.js"></script>
 <script>
-  $(document).ready(function () {
+
+  $(document).ready(function(e){
+
     $('.content').richText();
+
+    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+      e.preventDefault();
+      var param = $(this).attr("href").replace("#","");
+      var concept = $(this).text();
+      $('.search-panel span#search_concept').text(concept);
+      $('.input-group #search_param').val(param);
+    });
   });
+  var a = document.getElementByTagName('a').item(0);
+  $(a).on('keyup', function(evt){
+    console.log(evt);
+    if(evt.keycode === 13){
+
+      alert('search?');
+    }
+
+  });
+
 </script>
 <!--    <script>
       (function (i, s, o, g, r, a, m) {
@@ -4093,89 +4155,57 @@ include ('includes/modals/_modal-message-group.php');
 
   $(function () {
 
-    /*   var defaultData = [
-      {
-      text: 'CORP - ACME HealthCare',
-      href: '#parent1',
-      nodes: [{
-        text: 'CORP - ACME HealthCare Enterprise',
-        nodes: [{
-          text: 'HEX01 - ACME Express Clinic',
-          href: '#child1',
-        }, {
-          text: 'GEN01 - ACME General Medical Center',
-          href: '#child2'
-        }
-      }]
-      },
-      {
-        text: 'CORP - ACME Community HealthCare',
-        href: 'parent2',
-        nodes: [{
-          text: 'CORP - ACME Community Enterprise',
-          nodes: [{
-            text: 'ASER - ACME Southeast Region',
-            href: '#child1',
-          }, {
-            text: 'ACHS - Cortes Hospital',
-            href: '#child2',
-          }, {
-            text: 'AMHS - Magellan Hospital',
-            href: '#child2'
-          }]
-        },
-      },
-      {
-        text: 'Ascension',
-        href: '#parent3',
-          nodes: [{
-            text: 'HEX01 - ACME Express Clinic',
-            href: '#child1',
-          }, {
-            text: 'GEN01 - ACME General Medical Center',
-            href: '#child2'
-          }]
-      }
-      }]*/
 
-    /*     var tree = [
-           {
-             text: "Parent 1",
-             nodes: [
-               {
-                 text: "Child 1",
-                 nodes: [
-                   {
-                     text: "Grandchild 1"
-                   },
-                   {
-                     text: "Grandchild 2"
-                   }
-                 ]
-               },
-               {
-                 text: "Child 2"
-               }
-             ]
-           },
-           {
-             text: "Parent 2"
-           },
-           {
-             text: "Parent 3"
-           },
-           {
-             text: "Parent 4"
-           },
-           {
-             text: "Parent 5"
+   var defaultData = [
+     {
+       "text": "CORP - ACME HealthCare",
+       "tags": [4],
+       "nodes": [
+         {
+           "text": "HEX01 - ACME Express Clinic",
+           "tags": [2]
+         },
+         {
+           "text": "GEN01 - ACME General Medical Center",
+           "tags": [0]
+         }
+       ]
+     },
+     {
+       text: 'CORP - ACME Community HealthCare',
+       href: 'parent2',
+       nodes: [{
+         text: 'CORP - ACME Community Enterprise',
+         nodes: [{
+           text: 'ASER - ACME Southeast Region',
+           href: '#child1',
+         }, {
+           text: 'ACHS - Cortes Hospital',
+           href: '#child2',
+         }, {
+           text: 'AMHS - Magellan Hospital',
+           href: '#child2'
+         }
+         ]
+       },
+         {
+           text: 'Ascension',
+           href: '#parent3',
+           nodes: [{
+             text: 'HEX01 - ACME Express Clinic',
+             href: '#child1',
+           }, {
+             text: 'GEN01 - ACME General Medical Center',
+             href: '#child2'
            }
-         ];
+           ]
 
-         $('#treeview1').treeview({
-           data: tree
-         });
- */
+         }
+       ]
+     }
+   ];
+
+
 
     $("#org").click(function (e) {
       $("#treeview1, .outstandingAssignmentsHeader, .outstanding-assessments-table, .btn-export").toggleClass("hidden");
@@ -4187,6 +4217,10 @@ include ('includes/modals/_modal-message-group.php');
       $("#studentSearchForm").addClass("hidden");
     });
 
+    var $ajaxTree = $('#treeview1').treeview({
+      data: defaultData
+
+    });
   });
 </script>
 </body>
