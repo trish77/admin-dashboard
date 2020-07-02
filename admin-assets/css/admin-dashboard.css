@@ -127,13 +127,6 @@
   position: relative;
 }
 
-  .refresh-widget-data a {
-    display: block;
-    top: -10px;
-    left: 0px;
-    transition: none;
-  }
-
   .filter-widget-data a {
     display: block;
     bottom: -219px;
@@ -155,7 +148,7 @@
 }
 
 .spellcheck {
-  background-image: url("../admin-assets/images/spellchkr.png");
+  background-image: url("../../admin-assets/images/spellchkr.png");
   height: 32px;
   width: 32px;
   display: inline-block;
@@ -232,8 +225,8 @@
 
 .refresh-widget-data a {
   display: block;
-  top: -10px;
-  left: 0px;
+  bottom: -219px;
+  left: 0;
   transition: none;
 }
 
@@ -258,6 +251,7 @@
   height: 150px
 }
 
+/*
 .spellcheck {
   background-image: url("../admin-assets/images/spellchkr.png");
   height: 32px;
@@ -265,6 +259,7 @@
   display: inline-block;
   background-repeat: no-repeat;
 }
+*/
 
 .input-group-addon {
   padding: 0;
