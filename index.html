@@ -111,8 +111,20 @@
     </div>
     <div class="row">
       <div class="col-sm-6 col-md-4 col-lg-3" style="margin-top: 15px">
+
+        <div class="panel panel-default panel-setting">
+          <ul class="myteam__dashboard-options">
+            <li>
+              <a href="#modal-widget-store" data-toggle="modal" class="btn btn-default btn-block">
+                <i class="fa fa-fw fa-gear"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <!-- START panel-->
-        <div class="panel panel-default panel-metrics" id="widgetAssessmentTasksV2">
+        <div class="panel panel-default panel-metrics" id="widgetStudents">
           <div class="panel-heading portlet-handler">
             <div class="panel-title">Students</div>
             <div class="kebab">
@@ -200,22 +212,6 @@
                             <button class="btn btn-xs btn-link is-active js-toggle-days" data-days="30">30d</button>
                             <button class="btn btn-xs btn-link js-toggle-days" data-days="60">60d</button>
                             <button class="btn btn-xs btn-link js-toggle-days" data-days="90">90d</button>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="kebab-mlink">
-                            <span class="kebab-mlink-label">Show:</span>
-                            <ul>
-                              <li>
-                                <a href="#" data-status="expired" class="js-toggle-status">Expired</a>
-                              </li>
-                              <li>
-                                <a href="#" data-status="expiring" class="js-toggle-status">Expiring</a>
-                              </li>
-                              <li>
-                                <a href="#" data-status="all" class="js-toggle-status">All</a>
-                              </li>
-                            </ul>
                           </div>
                         </li>
                         <li>
@@ -3637,7 +3633,71 @@
     </div>
   </div>
 </div>
+<div id="modal-widget-store" class="modal fade modal-widget-store">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title">Manage Widgets</h4>
+      </div>
+      <div class="modal-body">
+        <div class="table-header">Widgets <div class="table-header pull-right">Show Widget</div>
+        </div>
 
+        <div class="list-group">
+
+          <a href="#" class="list-group-item ws-student-widget">
+            <table class="wd-wide">
+              <tbody>
+              <tr>
+                <td class="wd-md">
+                  <div class="p">
+                    <h4 class="media-box-heading">Student</h4>
+                  </div>
+                </td>
+                <td class="wd-xs">
+                  <div class="p pull-right">
+                    <label class="switch switch-primary switch-lg">
+                      <input type="checkbox" checked="checked" name="studentwidgetvisible"
+                             class="js-toggle-widget-switch" data-widget="widgetStudents">
+                      <span></span>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </a>
+          <a href="#" class="list-group-item ws-expiring-widget">
+            <table class="wd-wide">
+              <tbody>
+              <tr>
+                <td class="wd-md">
+                  <div class="p">
+                    <h4 class="media-box-heading">Expiring Courses</h4>
+                    <!-- <small class="text-muted">Vestibulum ante ipsum primis in faucibus orci</small> -->
+                  </div>
+                </td>
+                <td class="wd-xs">
+                  <div class="p pull-right">
+                    <label class="switch switch-primary switch-lg">
+                      <input type="checkbox" checked="checked" name="expiringcoursesvisible"
+                             class="js-toggle-widget-switch" data-widget="widgetExpiringCourse">
+                      <span></span>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
 <!-- end modal windows-->
 <!-- Global site tag (gtag.js) - Google Analytics  THIS WILL CHANGE!! -->
 <!--<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-53664464-1"></script>-->
