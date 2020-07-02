@@ -28,58 +28,6 @@ $.fn.extend({
 });
 
 $(function () {
-  $(".expand-panel-warning").click(function () {
-    $(".action-results-row-warning").slideDown("slow");
-    $(".expand-panel-warning").hide();
-  });
-  $(".action-results-row-warning .collapse-panel").click(function () {
-    $(".action-results-row-warning").slideUp("slow");
-    $(".expand-panel-warning").show();
-  });
-
-  $(".view-chart").click(function (e) {
-    var ieversion = checkIEVersion();
-    var newWindow = "";
-
-    //If not IE9, then open in new window - otherwise open in new tab/window
-    if (ieversion != "9.0") {
-      e.preventDefault();
-
-      var url = "dashboard-manager-team-chart-test9.php";
-      var title = "OrgChart";
-      var w = screen.width * 0.65;
-      var h = screen.height * 0.6;
-
-      // Fixes dual-screen position                         Most browsers      Firefox
-      var dualScreenLeft = window.screenLeft != undefined
-        ? window.screenLeft
-        : screen.left;
-      var dualScreenTop = window.screenTop != undefined
-        ? window.screenTop
-        : screen.top;
-
-      var width = window.innerWidth
-        ? window.innerWidth
-        : document.documentElement.clientWidth
-          ? document.documentElement.clientWidth
-          : screen.width;
-      var height = window.innerHeight
-        ? window.innerHeight
-        : document.documentElement.clientHeight
-          ? document.documentElement.clientHeight
-          : screen.height;
-
-      var left = width / 2 - w / 2 + dualScreenLeft + 75;
-      var top = height / 2 - h / 2 + dualScreenTop;
-
-      newWindow = window.open(url, title, "resizable=1,toolbar=0,menubar=0,location=0,status=0,scrollbars=1, width=" + w + ", height=" + h + ", top=" + top + ", left=" + left);
-
-      // Puts focus on the newWindow
-      if (window.focus) {
-        newWindow.focus();
-      }
-    }
-  });
 
   $(".date-range__control").on("change", function () {
     var $control = $(this);
@@ -123,50 +71,12 @@ $(function () {
     }
   });
 
-  $(".modal-cert .show-hidden-items input").click(function (e) {
-    if ($(this).is(":checked")) {
-      // $('.cert-table').show();
-      // $('#certTable_wrapper').show();
-      $(".section.cert-results").show();
-      $(".certHeader").show();
-      $(".section.no-cert-results").hide();
-      // $('#certTable_filter').show();
-      // $('#certTable_wrapper .bottom').show();
-    } else {
-      // $('#certTable_wrapper').hide();
-      // $('.cert-table').hide();
-      // $('#certTable_filter').hide();
-      // $('#certTable_wrapper .bottom').hide();
-      $(".section.cert-results").hide();
-      $(".certHeader").hide();
-      $(".section.no-cert-results").show();
-    }
-  });
-
   $(".kebab").click(function (e) {
     e.stopPropagation();
     var dropdown = $(this).find(".kebab-dropdown");
     dropdown.toggleClass("active");
   });
 
-  // $('.kebab-hide-widget').click(function(e) {
-  //     e.stopPropagation();
-  //     if ($(this).hasClass('kebab-hide-license-widget')) {
-  //         $('.ws-license-widget').find('.ws-toggle-widget').text('Show');
-  //     } else if ($(this).hasClass('kebab-hide-cert-widget')) {
-  //         $('.ws-cert-widget').find('.ws-toggle-widget').text('Show');
-  //     } else if ($(this).hasClass('kebab-hide-assignment-widget')) {
-  //         $('.ws-assignment-widget').find('.ws-toggle-widget').text('Show');
-  //     } else if ($(this).hasClass('kebab-hide-assessment-widget')) {
-  //         $('.ws-assessment-widget').find('.ws-toggle-widget').text('Show');
-  //     } else if ($(this).hasClass('kebab-hide-card-widget')) {
-  //         $('.ws-card-widget').find('.ws-toggle-widget').text('Show');
-  //     } else if ($(this).hasClass('kebab-hide-knowledgeq-widget')) {
-  //         $('.ws-card-widget').find('.ws-toggle-widget').text('Show');
-  //         $(this).parents('.panel-knowledgeq').fadeOut();
-  //     }
-  //     $(this).parents('.panel-metrics').fadeOut();
-  // });
 
   $(document).click(function (e) {
     var container = $(".kebab-dropdown.active");
@@ -183,131 +93,16 @@ $(function () {
     $(".ws-task-widget").find(".ws-toggle-widget").text("Show");
   });
 
-  $(".kebab-show-hidden-employees.hidden-licenses").click(function () {
-    $(".modal-license .show-hidden").prop("checked", true);
-    $("#modal-license").modal();
-    $(".modal-license").find(".hidden").addClass("hidden-show-item").addClass("item-highlight");
-  });
-  $(".kebab-show-hidden-employees.hidden-certifications").click(function () {
-    $(".modal-cert .show-hidden").prop("checked", true);
-    $("#modal-cert").modal();
-    $(".modal-cert").find(".hidden").addClass("hidden-show-item").addClass("item-highlight");
-  });
-  $(".kebab-show-hidden-employees.hidden-assignments").click(function () {
-    $(".modal-dashboard-assignment .show-hidden").prop("checked", true);
-    $("#modal-dashboard-assignment").modal();
-    $(".modal-dashboard-assignment").find(".hidden").addClass("hidden-show-item").addClass("item-highlight");
-  });
-  $(".kebab-show-hidden-employees.hidden-assessments").click(function () {
-    $(".modal-dashboard-assessment .show-hidden").prop("checked", true);
-    $("#modal-dashboard-assessment").modal();
-    $(".modal-dashboard-assessment").find(".hidden").addClass("hidden-show-item").addClass("item-highlight");
-  });
-  $(".kebab-show-hidden-employees.hidden-assessments").click(function () {
-    $(".modal-dashboard-assessment .show-hidden").prop("checked", true);
-    $("#modal-dashboard-assessment").modal();
-    $(".modal-dashboard-assessment").find(".hidden").addClass("hidden-show-item").addClass("item-highlight");
-  });
-  $(".kebab-show-hidden-employees.hidden-cards").click(function () {
-    $(".modal-dashboard-cards .show-hidden").prop("checked", true);
-    $("#modal-dashboard-cards").modal();
-    $(".modal-dashboard-cards").find(".hidden").addClass("hidden-show-item").addClass("item-highlight");
-  });
-
-  $(".show-modal-license").click(function () {
-    $(".modal-license .show-hidden").prop("checked", false);
-    $("#modal-license").modal();
-    $(".modal-license").find(".hidden-show-item").removeClass("hidden-show-item").addClass("item-highlight");
-  });
   $(".show-modal-expiring").click(function () {
     $(".modal-expiring .show-hidden").prop("checked", false);
     $("#modal-expiring").modal();
     $(".modal-expiring").find(".hidden-show-item").removeClass("hidden-show-item").addClass("item-highlight");
   });
 
-  $(".show-modal-cert").click(function () {
-    $(".modal-cert .show-hidden").prop("checked", false);
-    $("#modal-cert").modal();
-    $(".modal-cert").find(".hidden-show-item").removeClass("hidden-show-item").addClass("item-highlight");
-  });
-  $(".show-modal-assignments").click(function () {
-    $(".modal-dashboard-assignment .show-hidden").prop("checked", false);
-    $("#modal-dashboard-assignment").modal();
-    $(".modal-dashboard-assignment").find(".hidden-show-item").removeClass("hidden-show-item").addClass("item-highlight");
+  $(".student-status").click(function () {
+    $("#student-status").modal();
   });
 
-  $(".show-modal-cards").click(function () {
-    $(".modal-dashboard-cards .show-hidden").prop("checked", false);
-    $("#modal-dashboard-cards").modal();
-    $(".modal-dashboard-cards").find(".hidden-show-item").removeClass("hidden-show-item").addClass("item-highlight");
-  });
-
-  $(".show-modal--manage-organization").click(function () {
-    $("#manage-organization").modal();
-  });
-
-  $(".manage-students").click(function () {
-    $("#manage-students").modal();
-  });
-
-  $(".manage-org-properties").click(function () {
-    $("#org-properties").modal();
-  });
-
-  $(".ws-toggle-license-widget").click(function () {
-    if ($(".license-widget").is(":visible")) {
-      $(".license-widget").fadeOut();
-      $(this).text("Show");
-    } else {
-      $(".license-widget").fadeIn();
-      $(this).text("Hide");
-    }
-  });
-  $(".ws-toggle-cert-widget").click(function () {
-    if ($(".cert-widget").is(":visible")) {
-      $(".cert-widget").fadeOut();
-      $(this).text("Show");
-    } else {
-      $(".cert-widget").fadeIn();
-      $(this).text("Hide");
-    }
-  });
-  $(".ws-toggle-assignment-widget").click(function () {
-    if ($(".assignment-widget").is(":visible")) {
-      $(".assignment-widget").fadeOut();
-      $(this).text("Show");
-    } else {
-      $(".assignment-widget").fadeIn();
-      $(this).text("Hide");
-    }
-  });
-  $(".ws-toggle-assessment-widget").click(function () {
-    if ($(".assessment-widget").is(":visible")) {
-      $(".assessment-widget").fadeOut();
-      $(this).text("Show");
-    } else {
-      $(".assessment-widget").fadeIn();
-      $(this).text("Hide");
-    }
-  });
-  $(".ws-toggle-task-widget").click(function () {
-    if ($(".assessment-tasks-widget").is(":visible")) {
-      $(".assessment-tasks-widget").fadeOut();
-      $(this).text("Show");
-    } else {
-      $(".assessment-tasks-widget").fadeIn();
-      $(this).text("Hide");
-    }
-  });
-  $(".ws-toggle-card-widget").click(function () {
-    if ($(".cards-widget").is(":visible")) {
-      $(".cards-widget").fadeOut();
-      $(this).text("Show");
-    } else {
-      $(".cards-widget").fadeIn();
-      $(this).text("Hide");
-    }
-  });
 });
 
 function getInternetExplorerVersion() {
@@ -344,132 +139,6 @@ function checkIEVersion() {
   window.HealthStream = window.HealthStream || {};
   var healthStream = window.HealthStream;
 
-  healthStream.licenseSearchResults = {};
-  healthStream.licenseSearchResults.resultsDataTable = function () {
-    var LicensesTable = $("#licenseTable").DataTable({
-      bSortClasses: false,
-      paging: true,
-      order: [
-        [3, "asc"]
-      ],
-      dom: 'ft<"bottom"rlip>',
-      columnDefs: [
-        {
-          visible: false,
-          targets: "hideOnLoad"
-        }, {
-          orderable: false,
-          targets: "unsortable"
-        }
-      ],
-      language: {
-        search: "Search: _INPUT_",
-        info: "Showing _START_ to _END_ of _MAX_ licenses",
-        searchPlaceholder: "",
-        lengthMenu: "Show _MENU_ licenses",
-        paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
-        }
-      },
-      pageLength: 10
-    });
-
-    LicensesTable.columns().iterator("column", function (ctx, idx) {
-      $(LicensesTable.column(idx).header()).append('<span class="sort-icon"/>');
-    });
-
-    $(".show-hidden-licenses").click(function (e) {
-      var checked = this.checked;
-      LicensesTable.rows().every(function () {
-        var row = this.node();
-        if (checked) {
-          if ($(row).hasClass("hidden")) {
-            $(row).addClass("hidden-show-item").addClass("item-highlight");
-          }
-        } else {
-          if ($(row).hasClass("hidden")) {
-            $(row).removeClass("hidden-show-item").addClass("item-highlight");
-          }
-        }
-      });
-      LicensesTable.draw();
-    });
-
-    expandMobileRow();
-    generateDynamicDataTitles();
-    customizeColumns(LicensesTable);
-
-    keepDropDownMenuOpen();
-    updateTableHeaderFooter();
-    //place default info into Results header
-    function updateTableHeaderFooter() {
-      $(".dataTables_info").hide();
-      $(".licenseHeader").html($("#licenseTable_info").html());
-      $("#licenseTable_filter input").css("width", "250px");
-    }
-    //reinitialize jquery when table is redrawn (pagination)
-    $(".dataTable").on("draw.dt", function () {
-      expandMobileRow();
-      generateDynamicDataTitles();
-      updateTableHeaderFooter();
-    });
-  };
-
-  healthStream.upcomingClassesSearchResults = {};
-  healthStream.upcomingClassesSearchResults.resultsDataTable = function () {
-    var upcomingClassesTable = $("#UpcomingClassesTable").DataTable({
-      bSortClasses: false,
-      paging: true,
-      order: [
-        [3, "asc"]
-      ],
-      dom: 'ft<"bottom"rlip>',
-      columnDefs: [
-        {
-          visible: false,
-          targets: "hideOnLoad"
-        }, {
-          orderable: false,
-          targets: "unsortable"
-        }
-      ],
-      language: {
-        search: "Search: _INPUT_",
-        info: "Showing _START_ to _END_ of _MAX_ employees",
-        searchPlaceholder: "",
-        lengthMenu: "Show _MENU_ employees",
-        paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
-        }
-      },
-      pageLength: 10
-    });
-
-    upcomingClassesTable.columns().iterator("column", function (ctx, idx) {
-      $(upcomingClassesTable.column(idx).header()).append('<span class="sort-icon"/>');
-    });
-
-    expandMobileRow();
-    generateDynamicDataTitles();
-    customizeColumns(upcomingClassesTable);
-    keepDropDownMenuOpen();
-    updateTableHeaderFooter();
-    //place default info into Results header
-    function updateTableHeaderFooter() {
-      $(".dataTables_info").hide();
-      $(".upcomingClassesHeader").html($("#UpcomingClassesTable_info").html());
-      $("#UpcomingClassesTable_filter input").css("width", "250px");
-    }
-    //reinitialize jquery when table is redrawn (pagination)
-    $(".dataTable").on("draw.dt", function () {
-      expandMobileRow();
-      generateDynamicDataTitles();
-      updateTableHeaderFooter();
-    });
-  };
-
   healthStream.expiringCourseSearchResults = {};
   healthStream.expiringCourseSearchResults.resultsDataTable = function () {
     var expiringCourseTable = $("#expiringCourseTable").DataTable({
@@ -487,15 +156,16 @@ function checkIEVersion() {
       ],
       language: {
         search: "Search: _INPUT_",
-        info: "Showing _START_ to _END_ of _MAX_ employees",
+        info: "Showing _START_ to _END_ of _MAX_ courses",
         searchPlaceholder: "",
-        lengthMenu: "Show _MENU_ employees",
+        lengthMenu: "Show _MENU_ courses",
         paginate: {
           previous: '<i class="fa fa-chevron-left"></i>',
           next: '<i class="fa fa-chevron-right"></i>'
         }
       },
-      pageLength: 10
+      lengthMenu: [5,10,50,100],
+      pageLength: 5
     });
 
     expiringCourseTable.columns().iterator("column", function (ctx, idx) {
@@ -538,15 +208,16 @@ function checkIEVersion() {
       ],
       language: {
         search: "Search: _INPUT_",
-        info: "Showing _START_ to _END_ of _MAX_ employees",
+        info: "Showing _START_ to _END_ of _MAX_ courses",
         searchPlaceholder: "",
-        lengthMenu: "Show _MENU_ employees",
+        lengthMenu: "Show _MENU_ courses",
         paginate: {
           previous: '<i class="fa fa-chevron-left"></i>',
           next: '<i class="fa fa-chevron-right"></i>'
         }
       },
-      pageLength: 10
+      lengthMenu: [5,10,50,100],
+      pageLength: 5
     });
 
     expiredCourseTable.columns().iterator("column", function (ctx, idx) {
@@ -572,9 +243,9 @@ function checkIEVersion() {
     });
   };
 
-  healthStream.certSearchResults = {};
-  healthStream.certSearchResults.resultsDataTable = function () {
-    var CertsTable = $("#certTable").DataTable({
+  healthStream.allCourseSearchResults = {};
+  healthStream.allCourseSearchResults.resultsDataTable = function () {
+    var allCourseTable = $("#allCourseTable").DataTable({
       bSortClasses: false,
       paging: true,
       order: [
@@ -583,58 +254,38 @@ function checkIEVersion() {
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
         {
-          visible: false,
-          targets: "hideOnLoad"
-        }, {
           orderable: false,
           targets: "unsortable"
         }
       ],
       language: {
         search: "Search: _INPUT_",
-        info: "Showing _START_ to _END_ of _MAX_ licenses",
+        info: "Showing _START_ to _END_ of _MAX_ courses",
         searchPlaceholder: "",
-        lengthMenu: "Show _MENU_ licenses",
+        lengthMenu: "Show _MENU_ courses",
         paginate: {
           previous: '<i class="fa fa-chevron-left"></i>',
           next: '<i class="fa fa-chevron-right"></i>'
         }
       },
-      pageLength: 10
+      lengthMenu: [5,10,50,100],
+      pageLength: 5
     });
 
-    CertsTable.columns().iterator("column", function (ctx, idx) {
-      $(CertsTable.column(idx).header()).append('<span class="sort-icon"/>');
-    });
-
-    $(".show-hidden-certs").click(function (e) {
-      var checked = this.checked;
-      CertsTable.rows().every(function () {
-        var row = this.node();
-        if (checked) {
-          if ($(row).hasClass("hidden")) {
-            $(row).addClass("hidden-show-item").addClass("item-highlight");
-          }
-        } else {
-          if ($(row).hasClass("hidden")) {
-            $(row).removeClass("hidden-show-item").addClass("item-highlight");
-          }
-        }
-      });
-      CertsTable.draw();
+    allCourseTable.columns().iterator("column", function (ctx, idx) {
+      $(allCourseTable.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
     expandMobileRow();
     generateDynamicDataTitles();
-    customizeColumns(CertsTable);
-
+    customizeColumns(allCourseTable);
     keepDropDownMenuOpen();
     updateTableHeaderFooter();
     //place default info into Results header
     function updateTableHeaderFooter() {
       $(".dataTables_info").hide();
-      $(".certHeader").html($("#certTable_info").html());
-      $("#certTable_filter input").css("width", "250px");
+      $(".allCourseHeader").html($("#allCourseTable_info").html());
+      $("#allCourseTable_filter input").css("width", "250px");
     }
     //reinitialize jquery when table is redrawn (pagination)
     $(".dataTable").on("draw.dt", function () {
@@ -644,9 +295,9 @@ function checkIEVersion() {
     });
   };
 
-  healthStream.assignmentSearchResults = {};
-  healthStream.assignmentSearchResults.resultsDataTable = function () {
-    var AssignmentsTable = $("#assignmentsTable").DataTable({
+  healthStream.activeStudentResults = {};
+  healthStream.activeStudentResults.resultsDataTable = function () {
+    var activeStudentsTable = $("#studentsActiveTable").DataTable({
       bSortClasses: false,
       paging: true,
       order: [
@@ -675,13 +326,13 @@ function checkIEVersion() {
       pageLength: 10
     });
 
-    AssignmentsTable.columns().iterator("column", function (ctx, idx) {
-      $(AssignmentsTable.column(idx).header()).append('<span class="sort-icon"/>');
+    activeStudentsTable.columns().iterator("column", function (ctx, idx) {
+      $(activeStudentsTable.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
     $(".show-hidden-assignments").click(function (e) {
       var checked = this.checked;
-      AssignmentsTable.rows().every(function () {
+      activeStudentsTable.rows().every(function () {
         var row = this.node();
         if (checked) {
           if ($(row).hasClass("hidden")) {
@@ -693,20 +344,20 @@ function checkIEVersion() {
           }
         }
       });
-      AssignmentsTable.draw();
+      activeStudentsTable.draw();
     });
 
     expandMobileRow();
     generateDynamicDataTitles();
-    customizeColumns(AssignmentsTable);
+    customizeColumns(activeStudentsTable);
 
     keepDropDownMenuOpen();
     updateTableHeaderFooter();
     //place default info into Results header
     function updateTableHeaderFooter() {
       $(".dataTables_info").hide();
-      $(".outstandingAssignmentsHeader").html($("#assignmentsTable_info").html());
-      $("#assignmentsTable_filter input").css("width", "250px");
+      $(".ActiveStudentsTableHeader").html($("#studentsActiveTable_info").html());
+      $("#studentsActiveTable_filter input").css("width", "250px");
     }
     //reinitialize jquery when table is redrawn (pagination)
     $(".dataTable").on("draw.dt", function () {
@@ -716,9 +367,9 @@ function checkIEVersion() {
     });
   };
 
-  healthStream.studentSearchResults = {};
-  healthStream.studentSearchResults.resultsDataTable = function () {
-    var manageStudentsTable = $("#manageStudentsTable").DataTable({
+  healthStream.uniqueStudentResults = {};
+  healthStream.uniqueStudentResults.resultsDataTable = function () {
+    var uniqueStudentsTable = $("#studentsUniqueTable").DataTable({
       bSortClasses: false,
       paging: true,
       order: [
@@ -747,38 +398,21 @@ function checkIEVersion() {
       pageLength: 10
     });
 
-    manageStudentsTable.columns().iterator("column", function (ctx, idx) {
-      $(manageStudentsTable.column(idx).header()).append('<span class="sort-icon"/>');
+    uniqueStudentsTable.columns().iterator("column", function (ctx, idx) {
+      $(uniqueStudentsTable.column(idx).header()).append('<span class="sort-icon"/>');
     });
-
-    /*     $(".show-hidden-assignments").click(function (e) {
-                              var checked = this.checked;
-                              manageStudentsTable.rows().every(function () {
-                                var row = this.node();
-                                if (checked) {
-                                  if ($(row).hasClass("hidden")) {
-                                    $(row).addClass("hidden-show-item").addClass("item-highlight");
-                                  }
-                                } else {
-                                  if ($(row).hasClass("hidden")) {
-                                    $(row).removeClass("hidden-show-item").addClass("item-highlight");
-                                  }
-                                }
-                              });
-                              manageStudentsTable.draw();
-                            }); */
 
     expandMobileRow();
     generateDynamicDataTitles();
-    customizeColumns(manageStudentsTable);
+    customizeColumns(uniqueStudentsTable);
 
     keepDropDownMenuOpen();
     updateTableHeaderFooter();
     //place default info into Results header
     function updateTableHeaderFooter() {
       $(".dataTables_info").hide();
-      $(".manageStudentsTableHeader").html($("#manageStudentsTable_info").html());
-      $("#manageStudentsTable_filter input").css("width", "250px");
+      $(".UniqueStudentsTableHeader").html($("#studentsUniqueTable_info").html());
+      $("#studentsUniqueTable_filter input").css("width", "250px");
     }
     //reinitialize jquery when table is redrawn (pagination)
     $(".dataTable").on("draw.dt", function () {
@@ -788,13 +422,13 @@ function checkIEVersion() {
     });
   };
 
-  healthStream.assessmentSearchResults = {};
-  healthStream.assessmentSearchResults.resultsDataTable = function () {
-    var AssessmentsTable = $("#assessmentsTable").DataTable({
+  healthStream.leaveStudentResults = {};
+  healthStream.leaveStudentResults.resultsDataTable = function () {
+    var leaveStudentsTable = $("#studentsLeaveTable").DataTable({
       bSortClasses: false,
       paging: true,
       order: [
-        [4, "asc"]
+        [1, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
@@ -807,9 +441,9 @@ function checkIEVersion() {
         }
       ],
       language: {
-        search: "Search: _INPUT_",
+        search: "_INPUT_",
         info: "Showing _START_ to _END_ of _MAX_ records",
-        searchPlaceholder: "",
+        searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
           previous: '<i class="fa fa-chevron-left"></i>',
@@ -819,38 +453,76 @@ function checkIEVersion() {
       pageLength: 10
     });
 
-    AssessmentsTable.columns().iterator("column", function (ctx, idx) {
-      $(AssessmentsTable.column(idx).header()).append('<span class="sort-icon"/>');
-    });
-
-    $(".show-hidden-assessments").click(function (e) {
-      var checked = this.checked;
-      AssessmentsTable.rows().every(function () {
-        var row = this.node();
-        if (checked) {
-          if ($(row).hasClass("hidden")) {
-            $(row).addClass("hidden-show-item").addClass("item-highlight");
-          }
-        } else {
-          if ($(row).hasClass("hidden")) {
-            $(row).removeClass("hidden-show-item").addClass("item-highlight");
-          }
-        }
-      });
-      AssessmentsTable.draw();
+    leaveStudentsTable.columns().iterator("column", function (ctx, idx) {
+      $(leaveStudentsTable.column(idx).header()).append('<span class="sort-icon"/>');
     });
 
     expandMobileRow();
     generateDynamicDataTitles();
-    customizeColumns(AssessmentsTable);
+    customizeColumns(leaveStudentsTable);
 
     keepDropDownMenuOpen();
     updateTableHeaderFooter();
     //place default info into Results header
     function updateTableHeaderFooter() {
       $(".dataTables_info").hide();
-      $(".outstandingAssessmentsHeader").html($("#assessmentsTable_info").html());
-      $("#assessmentsTable_filter input").css("width", "250px");
+      $(".LeaveStudentsTableHeader").html($("#studentsLeaveTable_info").html());
+      $("#studentsLeaveTable_filter input").css("width", "250px");
+    }
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on("draw.dt", function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.newStudentResults = {};
+  healthStream.newStudentResults.resultsDataTable = function () {
+    var newStudentsTable = $("#studentsNewTable").DataTable({
+      bSortClasses: false,
+      paging: true,
+      order: [
+        [1, "asc"]
+      ],
+      dom: 'ft<"bottom"rlip>',
+      columnDefs: [
+        {
+          visible: false,
+          targets: "hideOnLoad"
+        }, {
+          orderable: false,
+          targets: "unsortable"
+        }
+      ],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="fa fa-chevron-left"></i>',
+          next: '<i class="fa fa-chevron-right"></i>'
+        }
+      },
+      pageLength: 10
+    });
+
+    newStudentsTable.columns().iterator("column", function (ctx, idx) {
+      $(newStudentsTable.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(newStudentsTable);
+
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $(".NewStudentsTableHeader").html($("#studentsNewTable_info").html());
+      $("#studentsNewTable_filter input").css("width", "250px");
     }
     //reinitialize jquery when table is redrawn (pagination)
     $(".dataTable").on("draw.dt", function () {
@@ -916,74 +588,19 @@ function checkIEVersion() {
     });
   };
 
-  healthStream.myTeamMesageAllTable = {};
-  healthStream.myTeamMesageAllTable.resultsDataTable = function () {
-    var teamTable = $("#myTeamMessageAllTable").DataTable({
-      bSortClasses: false,
-      paging: true,
-      order: [
-        [1, "asc"]
-      ],
-      dom: 'ft<"bottom"rlip>',
-      columnDefs: [
-        {
-          visible: false,
-          targets: "hideOnLoad"
-        }, {
-          orderable: false,
-          targets: "unsortable"
-        }
-      ],
-      language: {
-        search: "Search: _INPUT_",
-        info: "Showing _START_ to _END_ of _MAX_ records",
-        searchPlaceholder: "",
-        lengthMenu: "Show _MENU_ records",
-        paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
-        }
-      },
-      pageLength: 10
-    });
-
-    teamTable.columns().iterator("column", function (ctx, idx) {
-      $(teamTable.column(idx).header()).append('<span class="sort-icon"/>');
-    });
-
-    expandMobileRow();
-    generateDynamicDataTitles();
-    customizeColumns(teamTable);
-
-    keepDropDownMenuOpen();
-    updateTableHeaderFooter();
-    //place default info into Results header
-    function updateTableHeaderFooter() {
-      $(".dataTables_info").hide();
-      $(".myTeamMessageAllTableHeader").html($("#myTeamMessageAllTable_info").html());
-      $("#myTeamMessageAllTable_filter input").css("width", "250px");
-    }
-    //reinitialize jquery when table is redrawn (pagination)
-    $(".dataTable").on("draw.dt", function () {
-      expandMobileRow();
-      generateDynamicDataTitles();
-      updateTableHeaderFooter();
-    });
-  };
-
   $(window).on("load", function () {
     $.fn.DataTable.ext.pager.numbers_length = 5;
 
-    healthStream.studentSearchResults.resultsDataTable();
-    healthStream.certSearchResults.resultsDataTable();
-    healthStream.upcomingClassesSearchResults.resultsDataTable();
     healthStream.expiringCourseSearchResults.resultsDataTable();
     healthStream.expiredCourseSearchResults.resultsDataTable();
-    healthStream.studentSearchResults.resultsDataTable();
-    healthStream.licenseSearchResults.resultsDataTable();
-    healthStream.myTeamMesageAllTable.resultsDataTable();
-    healthStream.assessmentSearchResults.resultsDataTable();
-    healthStream.assignmentSearchResults.resultsDataTable();
+    healthStream.allCourseSearchResults.resultsDataTable();
+    healthStream.activeStudentResults.resultsDataTable();
+    healthStream.newStudentResults.resultsDataTable();
+    healthStream.uniqueStudentResults.resultsDataTable();
+    healthStream.leaveStudentResults.resultsDataTable();
+
+  //  healthStream.myTeamMesageAllTable.resultsDataTable();
+
   });
 })(window, jQuery);
 
@@ -993,19 +610,6 @@ $(function () {
 
   HealthStream.utilities.applauncher();
 
-  var upcomingClassesData = {
-    datasets: [
-      {
-        data: [
-          13, 36
-        ],
-        backgroundColor: ["rgba(59, 185, 220, 1)", "rgba(243, 243, 243, 1)"]
-      }
-    ],
-
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: ["Upcoming Classes",, "No Upcoming Classes"]
-  };
 
   function animateLeft($src, $tgt) {
     var $parent = $src.parent();
@@ -1029,6 +633,7 @@ $(function () {
     });
   }
 
+/*
   $(".team-view-next").click(function () {
     $(".first-10-employees").animate({
       right: 262
@@ -1049,41 +654,7 @@ $(function () {
     }, 500);
   });
 
-  // var upcomingClassesChart = new Chart($('#upcomingClassesChart'), {
-  //     type: 'doughnut',
-  //     data: {
-  //         datasets: [{
-  //             data: [13, 20],
-  //             backgroundColor: [
-  //                 'rgba(59, 185, 220, 1)',
-  //                 'rgba(243, 243, 243, 1)',
-  //             ],
-  //         }],
-  //         labels: [
-  //             'Scheduled Soon',
-  //         ]
-  //     },
-  //     options: {
-  //         legend: {
-  //             display: false
-  //         },
-  //         tooltips: {
-  //             enabled: true
-  //         },
-  //         cutoutPercentage: 85,
-  //         tooltips: {
-  //             mode: 'index',
-  //             intersect: false,
-  //         },
-  //         hover: {
-  //             mode: 'index',
-  //             intersect: true
-  //         },
-  //         maintainAspectRatio: false,
-  //         responsive: true,
-  //     }
-
-  // });
+*/
 
   var upcomingExpirationsData = {
     datasets: [
@@ -1124,114 +695,6 @@ $(function () {
   });
   upcomingExpirationsChart;
 
-  var StudentAssignmentsChartData = {
-    datasets: [
-      {
-        data: [
-          213, 1120, 3211
-        ],
-        backgroundColor: ["rgba(254, 157, 63, 1)", "rgba(59, 185, 220, 1)",  "rgba(243, 243, 243, 1)"]
-      }
-    ],
-
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: ["Past Due", "Due Soon", "Completed"]
-  };
-
-  var StudentAssignmentsChart = new Chart($("#StudentAssignmentsChart"), {
-    type: "doughnut",
-    data: StudentAssignmentsChartData,
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
-        enabled: true
-      },
-      cutoutPercentage: 90,
-      tooltips: {
-        mode: "index",
-        intersect: false
-      },
-      hover: {
-        mode: "index",
-        intersect: true
-      },
-      maintainAspectRatio: false,
-      responsive: true
-    }
-  });
-  StudentAssignmentsChart;
-
-  var outstandingCertificationsData = {
-    datasets: [
-      {
-        data: [
-          234, 1123, 3789
-        ],
-        backgroundColor: ["rgba(254, 157, 63, 1)", "rgba(59, 185, 220, 1)",  "rgba(243, 243, 243, 1)"]
-      }
-    ],
-
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: ["Overdue", "Due Soon", "All Good!"]
-  };
-
-  var outstandingCertificationsChart = new Chart($("#OutstandingCertificationsChart"), {
-    type: "doughnut",
-    data: outstandingCertificationsData,
-    options: {
-      legend: {
-        display: false
-      },
-      tooltips: {
-        enabled: true
-      },
-      cutoutPercentage: 85,
-      tooltips: {
-        mode: "index",
-        intersect: false
-      },
-      hover: {
-        mode: "index",
-        intersect: true
-      },
-      animation: {
-        onComplete: function (animation) {
-          $(".svg-box").addClass("animate-in");
-        }
-      },
-      maintainAspectRatio: false,
-      responsive: true
-    }
-  });
-
-  $('[data-toggle="tooltip"]').tooltip();
-
-  $(".btn-message-team-continue").click(function (e) {
-    e.preventDefault();
-    if ($(".modal-team-message-all input[type=checkbox]:checked").length < 1) {
-      $(".error-message").show();
-    } else {
-      $(".error-message").hide();
-      $("#modal-team-message-all").modal("hide");
-      $("#modal-message-group").modal("show");
-    }
-  });
-
-  var outstandingCovid19LearningData = {
-    datasets: [
-      {
-        data: [
-          3, 2, 44
-        ],
-        backgroundColor: ["rgba(254, 157, 63, 1)", "rgba(59, 185, 220, 1)", "rgba(243, 243, 243, 1)"]
-      }
-    ],
-
-    // These labels appear in the legend and in the tooltips when hovering different arcs
-    labels: ["Past Due", "Due Soon", "Not Outstanding"]
-  };
 
   $('[data-toggle="tooltip"]').tooltip();
 
@@ -1266,9 +729,7 @@ $(function () {
   });
 
   //Start Validate Send Group Message
-
   var form = $("#SendGroupMessage");
-
   $(".btn-send-message").click(function () {
     form.validate().settings.ignore = ":disabled,:hidden";
     if (form.valid()) {
@@ -1324,88 +785,5 @@ $(function () {
   });
 
 
-
-    /*   var defaultData = [
-      {
-      text: 'CORP - ACME HealthCare',
-      href: '#parent1',
-      nodes: [{
-        text: 'CORP - ACME HealthCare Enterprise',
-        nodes: [{
-          text: 'HEX01 - ACME Express Clinic',
-          href: '#child1',
-        }, {
-          text: 'GEN01 - ACME General Medical Center',
-          href: '#child2'
-        }
-      }]
-      },
-      {
-        text: 'CORP - ACME Community HealthCare',
-        href: 'parent2',
-        nodes: [{
-          text: 'CORP - ACME Community Enterprise',
-          nodes: [{
-            text: 'ASER - ACME Southeast Region',
-            href: '#child1',
-          }, {
-            text: 'ACHS - Cortes Hospital',
-            href: '#child2',
-          }, {
-            text: 'AMHS - Magellan Hospital',
-            href: '#child2'
-          }]
-        },
-      },
-      {
-        text: 'Ascension',
-        href: '#parent3',
-          nodes: [{
-            text: 'HEX01 - ACME Express Clinic',
-            href: '#child1',
-          }, {
-            text: 'GEN01 - ACME General Medical Center',
-            href: '#child2'
-          }]
-      }
-      }]*/
-
-    var tree = [
-      {
-        text: "Parent 1",
-        nodes: [
-          {
-            text: "Child 1",
-            nodes: [
-              {
-                text: "Grandchild 1"
-              },
-              {
-                text: "Grandchild 2"
-              }
-            ]
-          },
-          {
-            text: "Child 2"
-          }
-        ]
-      },
-      {
-        text: "Parent 2"
-      },
-      {
-        text: "Parent 3"
-      },
-      {
-        text: "Parent 4"
-      },
-      {
-        text: "Parent 5"
-      }
-    ];
-
-    $('#treeview1').treeview({
-      data: tree
-    });
 
   });

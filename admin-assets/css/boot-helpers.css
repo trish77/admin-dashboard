@@ -617,6 +617,10 @@ a {
     display: inline-block !important;
 }
 
+.d-none {
+    display: none !important;
+}
+
 .border-0 {
     border: none !important;
 }
@@ -674,4 +678,23 @@ a {
 
  .input-lg, .search-panel.input-group-btn button {
     height: 48px;
+}
+
+.treeview .list-group-item {
+    border: none;
+}
+#student-status .modal-dialog,
+#modal-expiring .modal-dialog {
+    width: 78%;
+}
+
+.badge-info {
+  background-color:  #6fa8dc;
+}
+
+.show-hidden-items {
+    clear: left;
+    float: left;
+    margin-top: 0;
+    padding-top: 5px;
 }
