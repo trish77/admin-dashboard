@@ -41,7 +41,7 @@
           <img src="admin-assets/images/avatar-default.png" data-pin-nopin="true" alt="avatar">
         </div>
         <a href="#" class="alerts"><span class="badge">3</span></a>
-        <div class="institution"><a href="#">Trinity Healthcare</a></div>
+        <div class="institution"><a href="#">Acme General Medical Center</a></div>
         <div class="logout"><a href="#">Logout</a></div>
         <a href="#" class="trigger-open trigger-open-account"><i class="fa fa-angle-down"></i></a>
         <a href="#" class="trigger-close"><i class="fa fa-times"></i></a>
@@ -78,7 +78,7 @@
     <div class="row border-bottom mt">
       <div class="col-sm-4 col-md-4 col-lg-4" style="margin-top: 15px">
         <h3 class="m0">Welcome, Jack</h3>
-        <p>Viewing Trinity Healthcare</p>
+        <p>Viewing Acme General Medical Center</p>
       </div>
       <div class="col-sm-8 col-md-4 col-lg-8" style="margin-top: 15px">
       <form class="primary">
@@ -139,6 +139,7 @@
                     <button class="btn btn-xs btn-link is-active js-toggle-days" data-days="30">30d</button>
                     <button class="btn btn-xs btn-link js-toggle-days" data-days="60">60d</button>
                     <button class="btn btn-xs btn-link js-toggle-days" data-days="90">90d</button>
+                    <button class="btn btn-xs btn-link js-toggle-days" data-days="90">180d</button>
                   </div>
                 </li>
                 <li>
@@ -212,6 +213,7 @@
                             <button class="btn btn-xs btn-link is-active js-toggle-days" data-days="30">30d</button>
                             <button class="btn btn-xs btn-link js-toggle-days" data-days="60">60d</button>
                             <button class="btn btn-xs btn-link js-toggle-days" data-days="90">90d</button>
+                            <button class="btn btn-xs btn-link js-toggle-days" data-days="90">180d</button>
                           </div>
                         </li>
                         <li>
@@ -1716,13 +1718,8 @@
            Students</h4>
       </div>
       <div class="modal-body">
-        <div class="studentStatusFilter border-bottom form-inline pb-3 mb-5 text-muted">
-          <div class="radio pr-4">
-            <label>
-              <input type="radio" name="student-status"  value="uniqueStudents">
-              <span>Unique</span>
-            </label>
-          </div>
+      <!--  <div class="studentStatusFilter border-bottom form-inline pb-3 mb-2 text-muted">
+
           <div class="radio pr-4">
             <label>
               <input type="radio" name="student-status" value="activeStudents" checked="">
@@ -1741,1884 +1738,1331 @@
               <span>New</span>
             </label>
           </div>
-        </div>
-        <div id="uniqueStudents" class="sstatus hide">
-          <h3 class="my-3">Unique Students</h3>
-          <div class="UniqueStudentsTableHeader text-muted" style="float:left"></div>
+        </div>-->
 
-          <table class="table table-striped student-unique-table dataTable" id="studentsUniqueTable">
-            <thead>
-            <tr>
-              <th class="student">Student Name</th>
-              <th class="jobCategory">Job Category</th>
-              <th class="jobtitle">Job Title</th>
-              <th class="institution">Institution Name</th>
-              <th class="instCode">Institution Code</th>
-              <th class="logDate">Last Login Date</th>
-              <th class="createDate">Created Date</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>Joeseph Mathiers</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Reynald Lopez</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Stacey Silvers</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Chrisitan Valerson</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Amber L Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Britney Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Stacy Connors</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Joel Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Janice Leblanc</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Janice Lee Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Reginald Demon</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kimberly Wilson</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Smith</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Melissa Marstone</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jonas Connect</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Dave Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Amanda Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Axel Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jaclyn Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Renald Demona</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kim Golden</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Dunners</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Hashim Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Larry Connect</td>
-              <td>Physical Therapy</td>
-              <td>Athletic Trainer Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Tara Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>NeuroMuscular Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Johnathan Demon</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2014 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Tomas Demons</td>
-              <td>Nursing</td>
-              <td>Nurse RN </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Renaldo Demonstration</td>
-              <td>Cardiology</td>
-              <td>Lead Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kimberly Y Gold</td>
-              <td>Cardiology</td>
-              <td>Senior Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Dunnstone</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee Marvele</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Maria Theresa L Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Managing Therapist Advanced Therapy</td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Joni Connection</td>
-              <td>Physical Therapy</td>
-              <td>Therapist Specialist HydroTherapy </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Jeffery Demon</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jane Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>John Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jack Mathers</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Carmen Lopez</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kim Silvers</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Chris Dunn</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Karen Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Britney Willimas</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Stacy Conn</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Johnathan Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Phil Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Reg Demon</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kimberly A Smyth</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Stone</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee T Marstone</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Mary L Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jonas Jeffers</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Dennis Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Haily Price</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Lisa Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jaclyn Smith</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Ray Demona</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kim Marvels</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>David Dunnerson</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Marc Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Hashim Hanish</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Larry Cransson</td>
-              <td>Physical Therapy</td>
-              <td>Athletic Trainer Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Tara White</td>
-              <td>Physical Therapy</td>
-              <td>NeuroMuscular Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Carmen Laliente</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Johnathan Dessiere</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2014 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Tomas Luce</td>
-              <td>Nursing</td>
-              <td>Nurse RN </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Elroy Demonstration</td>
-              <td>Cardiology</td>
-              <td>Lead Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Eric Y Gold</td>
-              <td>Cardiology</td>
-              <td>Senior Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Deborah Dunnstone</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Chase Marstone</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Maria Lostani</td>
-              <td>Physical Therapy</td>
-              <td>Managing Therapist Advanced Therapy</td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Joni Masteron</td>
-              <td>Physical Therapy</td>
-              <td>Therapist Specialist HydroTherapy </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Jeffery Dalton</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-        <div id="activeStudents" class="sstatus">
-          <h3 class="my-3">Active Students</h3>
-          <div class="ActiveStudentsTableHeader font-italic text-muted pull-left clearfix"></div>
-          <div class="show-hidden-items">
-            <div class="checkbox c-checkbox">
-              <label class="text-muted">
-                <input type="checkbox" class="show-hidden-assignments" />
-                <span class="fa fa-check"></span>Show Duplicate Students
-              </label>
+        <ul class="nav nav-tabs mb-5" role="tablist">
+          <li role="presentation" ><a href="#activeStudents" aria-controls="active" role="tab" data-toggle="tab">Active Students</a></li>
+          <li role="presentation"><a href="#leaveStudents" aria-controls="onleave" role="tab" data-toggle="tab">On Leave Students</a></li>
+          <li role="presentation"><a href="#newStudents" aria-controls="new" role="tab" data-toggle="tab">New Students</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="activeStudents">
+            <div class="active table-view">
+              <h3 class="my-3">Active Students</h3>
+              <div class="ActiveStudentsTableHeader font-italic text-muted pull-left clearfix"></div>
+              <div class="show-hidden-items">
+                <div class="checkbox c-checkbox">
+                  <label class="text-muted">
+                    <input type="checkbox" class="show-hidden-assignments" />
+                    <span class="fa fa-check"></span>Show Duplicate Students
+                  </label>
+                </div>
+              </div>
+                <table class="table table-striped student-active-table dataTable" id="studentsActiveTable">
+                <thead>
+                <tr>
+                  <th class="student">Student Name</th>
+                  <th class="userId">User ID</th>
+                  <th class="jobCategory">Job Category</th>
+                  <th class="jobtitle">Job Title</th>
+                  <th class="institution">Institution Name</th>
+                  <th class="instCode">Institution Code</th>
+                  <th class="logDate">Last Login Date</th>
+                  <th class="createDate">Created Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="hidden">
+                  <td>Jane Demonstration</td>
+                  <td>JaneDemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Jane Demonstration</td>
+                  <td>JaneDemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>John Demonstration</td>
+                  <td>JohnDemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>John Demonstration</td>
+                  <td>JDemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jack Mathers</td>
+                  <td>JackDemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Renald Lopez</td>
+                  <td>RDemo</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kim Silvers</td>
+                  <td>KSDemo</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>11/1/2018 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>David Dunnerston</td>
+                  <td>DDDemo</td>
+                  <td>Nursing</td>
+                  <td>Senior Nurse Assistant  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Karren M Stone</td>
+                  <td>KMSDemo</td>
+                  <td>Nursing</td>
+                  <td>Lead Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Britney Williams</td>
+                  <td>bwDemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>4/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Britney Williams</td>
+                  <td>bwDemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>4/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Stacy Connect</td>
+                  <td>stconnect</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Stacy Connection</td>
+                  <td>stconnect</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Joel Demonstration</td>
+                  <td>joeldemon</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Janice Demonstration</td>
+                  <td>jandemo1</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Janice Demonstration</td>
+                  <td>jandemo1</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Johnathan Demonstration</td>
+                  <td>jnthdemo1</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/18/2020 9:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Phil Demonstration</td>
+                  <td>phdemo1</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Reginald Demon</td>
+                  <td>regdemo</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kimberly A Smyth</td>
+                  <td>kimademo1</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>1/1/2019 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Regan Dunnstone</td>
+                  <td>reganddemo1</td>
+                  <td>Nursing</td>
+                  <td>Counselor</td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Lee T Marstone</td>
+                  <td>ltmdemo1</td>
+                  <td>Nursing</td>
+                  <td> Nurse Anesthetist  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>9/1/2019 11:35 AM</td>
+                  <td>1/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Mary L Demonstration</td>
+                  <td>demo2</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>4/7/2020 12:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jonas Connect</td>
+                  <td>jonconndemo1</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Dennis Demonstration</td>
+                  <td>dendemon1</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Amanda Demonstration</td>
+                  <td>amandemo1</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Axel Demonstration</td>
+                  <td>axdemona</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jaclyn Demonstration</td>
+                  <td>jacdemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Renald Demona</td>
+                  <td>demo3</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kim Golden</td>
+                  <td>kmgdndemo1</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>11/1/2018 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Regan Dunners</td>
+                  <td>demotest</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Lee Stone</td>
+                  <td>testdemo</td>
+                  <td>Nursing</td>
+                  <td>Lead Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Hashim Demonstration</td>
+                  <td>demo1test</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>4/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Larry Connect</td>
+                  <td>lardemo1</td>
+                  <td>Physical Therapy</td>
+                  <td>Athletic Trainer Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Tara Demonstration</td>
+                  <td>trardemo1</td>
+                  <td>Physical Therapy</td>
+                  <td>NeuroMuscular Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Janice Demonstration</td>
+                  <td>jandemo1</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Johnathan Demon</td>
+                  <td>demo5</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/18/2020 9:35 PM</td>
+                  <td>5/7/2014 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Tomas Demons</td>
+                  <td>demo6</td>
+                  <td>Nursing</td>
+                  <td>Nurse RN </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Renaldo Demonstration</td>
+                  <td>demo7</td>
+                  <td>Cardiology</td>
+                  <td>Lead Surgical Technician </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kimberly Y Gold</td>
+                  <td>test2</td>
+                  <td>Cardiology</td>
+                  <td>Senior Surgical Nurse </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>1/1/2019 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Regan Dunnstone</td>
+                  <td>regdunns</td>
+                  <td>Nursing</td>
+                  <td>Counselor</td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Lee Marstone</td>
+                  <td>lemars1</td>
+                  <td>Nursing</td>
+                  <td> Nurse Anesthetist  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>9/1/2019 11:35 AM</td>
+                  <td>1/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Maria Theresa L Demonstration</td>
+                  <td>mtldemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Managing Therapist Advanced Therapy</td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>4/7/2020 12:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Joni Connection</td>
+                  <td>joniconn</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist Specialist HydroTherapy </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Jeffery Demon</td>
+                  <td>demojeff</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jane Demonstration</td>
+                  <td>janedemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>John Demonstration</td>
+                  <td>johndemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jack Mathers</td>
+                  <td>jkmathtest</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Renald Lopez</td>
+                  <td>renlopz</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Kim Silvers</td>
+                  <td>kmsilv</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>11/1/2018 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Chris Dunn</td>
+                  <td>chdunn</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Amber L Stone</td>
+                  <td>amblstne</td>
+                  <td>Nursing</td>
+                  <td>Lead Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Britney Demonstration</td>
+                  <td>britdemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>4/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Stacy Connect</td>
+                  <td>stacyconns</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Joel Demonstration</td>
+                  <td>joeldemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Janice T Demonstration</td>
+                  <td>jantdemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Johnathan Demonstration</td>
+                  <td>jontdemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/18/2020 9:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Phil Demonstration</td>
+                  <td>philtestdemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Reg Demon</td>
+                  <td>tegdemo</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kimberly A Smithson</td>
+                  <td>kimasmthson</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>1/1/2019 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Regan Smith</td>
+                  <td>regsmith</td>
+                  <td>Nursing</td>
+                  <td>Counselor</td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Lee T Marstone</td>
+                  <td>ltmarst</td>
+                  <td>Nursing</td>
+                  <td> Nurse Anesthetist  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>9/1/2019 11:35 AM</td>
+                  <td>1/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Mary K Demonstration</td>
+                  <td>mkdemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>4/7/2020 12:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jonas Jeffers</td>
+                  <td>jonjeffs</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Dennis Demonstration</td>
+                  <td>denndemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Haily Price</td>
+                  <td>hailyp</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Lisa Demonstration</td>
+                  <td>lisad</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jaclyn Smith</td>
+                  <td>jaclyns</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Ray Demona</td>
+                  <td>raydemon</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kim Marvels</td>
+                  <td>kimmarvel</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>11/1/2018 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>David Dunnerson</td>
+                  <td>daviddunn</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Marc Stone</td>
+                  <td>marcstone</td>
+                  <td>Nursing</td>
+                  <td>Lead Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Hashim Hanish</td>
+                  <td>hashhan</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>4/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Larry Cransson</td>
+                  <td>larrycranss</td>
+                  <td>Physical Therapy</td>
+                  <td>Athletic Trainer Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Tara White</td>
+                  <td>twhite</td>
+                  <td>Physical Therapy</td>
+                  <td>NeuroMuscular Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Carmen Laliente</td>
+                  <td>carmlal</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Johnathan Dessiere</td>
+                  <td>johnthdess</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/18/2020 9:35 PM</td>
+                  <td>5/7/2014 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Tomas Luce</td>
+                  <td>tlucce</td>
+                  <td>Nursing</td>
+                  <td>Nurse RN </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Elroy Demonstration</td>
+                  <td>elrdemo</td>
+                  <td>Cardiology</td>
+                  <td>Lead Surgical Technician </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Eric Y Gold</td>
+                  <td>ericgold</td>
+                  <td>Cardiology</td>
+                  <td>Senior Surgical Nurse </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>1/1/2019 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Deborah Dunnstone</td>
+                  <td>debdunns</td>
+                  <td>Nursing</td>
+                  <td>Counselor</td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Chase Marstone</td>
+                  <td>chasemar</td>
+                  <td>Nursing</td>
+                  <td> Nurse Anesthetist  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>9/1/2019 11:35 AM</td>
+                  <td>1/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Maria Lostani</td>
+                  <td>marlost</td>
+                  <td>Physical Therapy</td>
+                  <td>Managing Therapist Advanced Therapy</td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>4/7/2020 12:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Joni Masteron</td>
+                  <td>jonimaster</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist Specialist HydroTherapy </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Jeffery Dalton</td>
+                  <td>jeffdalt</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>ACME Rehab Services</td>
+                  <td>REHAB</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                </tbody>
+              </table>
+              </div>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="leaveStudents">
+            <div class="onleave table-view">
+              <h3 class="my-3">On Leave Students</h3>
+              <div class="LeaveStudentsTableHeader text-muted" style="float:left"></div>
+              <table class="table table-striped student-leave-table dataTable" id="studentsLeaveTable">
+                <thead>
+                <tr>
+                  <th class="student">Student Name</th>
+                  <th class="userId">User ID</th>
+                  <th class="jobCategory">Job Category</th>
+                  <th class="jobtitle">Job Title</th>
+                  <th class="institution">Institution Name</th>
+                  <th class="instCode">Institution Code</th>
+                  <th class="logDate">Last Login Date</th>
+                  <th class="createDate">Created Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><a href="">Jane Demonstration</a></td>
+                  <td>demo2</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>John Demonstration</td>
+                  <td>demo1</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jack Demonstration</td>
+                  <td>demo3</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Renald Demonstration</td>
+                  <td>demo4</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kim Golden</td>
+                  <td>kimgold</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>11/1/2018 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Regan Dunn</td>
+                  <td>regand</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Lee Stone</td>
+                  <td>leestone</td>
+                  <td>Nursing</td>
+                  <td>Lead Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Student Demonstration</td>
+                  <td>demo5</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>4/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Student Connect</td>
+                  <td>democonn</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Test Demonstration</td>
+                  <td>testdemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Janice Demonstration</td>
+                  <td>jandemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Johnathan Demonstration</td>
+                  <td>jonthdemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/18/2020 9:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Thomas Demonstration</td>
+                  <td>thdemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Renaldo Demonstration</td>
+                  <td>rendemo</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kimberly Golden</td>
+                  <td>kimgolden</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>1/1/2019 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Regan Dunnstone</td>
+                  <td>regdunn</td>
+                  <td>Nursing</td>
+                  <td>Counselor</td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Lee Marstone</td>
+                  <td>lmarstone1</td>
+                  <td>Nursing</td>
+                  <td> Nurse Anesthetist  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>9/1/2019 11:35 AM</td>
+                  <td>1/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Maria L Demonstration</td>
+                  <td>mariademo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>4/7/2020 12:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jon Connect</td>
+                  <td>jconn1</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Jeff Demonstration</td>
+                  <td>jeffdemo</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                </tbody>
+              </table>
             </div>
           </div>
-          <table class="table table-striped student-active-table dataTable" id="studentsActiveTable">
-            <thead>
-            <tr>
-              <th class="student">Student Name</th>
-              <th class="jobCategory">Job Category</th>
-              <th class="jobtitle">Job Title</th>
-              <th class="institution">Institution Name</th>
-              <th class="instCode">Institution Code</th>
-              <th class="logDate">Last Login Date</th>
-              <th class="createDate">Created Date</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="hidden">
-              <td>Jane Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Jane Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>John Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>John Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jack Mathers</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Renald Lopez</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kim Silvers</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>David Dunnerston</td>
-              <td>Nursing</td>
-              <td>Senior Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Karren M Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Britney Williams</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Britney Williams</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Stacy Connect</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Stacy Connection</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Joel Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Janice Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Janice Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Johnathan Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Phil Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Reginald Demon</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kimberly A Smyth</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Regan Dunnstone</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Lee T Marstone</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Mary L Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jonas Connect</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Dennis Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Amanda Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Axel Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jaclyn Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Renald Demona</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kim Golden</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Dunners</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Hashim Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Larry Connect</td>
-              <td>Physical Therapy</td>
-              <td>Athletic Trainer Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Tara Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>NeuroMuscular Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Janice Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Johnathan Demon</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2014 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Tomas Demons</td>
-              <td>Nursing</td>
-              <td>Nurse RN </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Renaldo Demonstration</td>
-              <td>Cardiology</td>
-              <td>Lead Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kimberly Y Gold</td>
-              <td>Cardiology</td>
-              <td>Senior Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Dunnstone</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Lee Marstone</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Maria Theresa L Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Managing Therapist Advanced Therapy</td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Joni Connection</td>
-              <td>Physical Therapy</td>
-              <td>Therapist Specialist HydroTherapy </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Jeffery Demon</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jane Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>John Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jack Mathers</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Renald Lopez</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Kim Silvers</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Chris Dunn</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Amber L Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Britney Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Stacy Connect</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Joel Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Janice T Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Johnathan Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Phil Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Reg Demon</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kimberly A Smithson</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Smith</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee T Marstone</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Mary K Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jonas Jeffers</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Dennis Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Haily Price</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Lisa Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jaclyn Smith</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Ray Demona</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kim Marvels</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>David Dunnerson</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Marc Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Hashim Hanish</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Larry Cransson</td>
-              <td>Physical Therapy</td>
-              <td>Athletic Trainer Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Tara White</td>
-              <td>Physical Therapy</td>
-              <td>NeuroMuscular Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Carmen Laliente</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Johnathan Dessiere</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2014 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Tomas Luce</td>
-              <td>Nursing</td>
-              <td>Nurse RN </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Elroy Demonstration</td>
-              <td>Cardiology</td>
-              <td>Lead Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Eric Y Gold</td>
-              <td>Cardiology</td>
-              <td>Senior Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Deborah Dunnstone</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Chase Marstone</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Maria Lostani</td>
-              <td>Physical Therapy</td>
-              <td>Managing Therapist Advanced Therapy</td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Joni Masteron</td>
-              <td>Physical Therapy</td>
-              <td>Therapist Specialist HydroTherapy </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Jeffery Dalton</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>ACME Rehab Services</td>
-              <td>REHAB</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            </tbody>
-          </table>
+
+          <div role="tabpanel" class="tab-pane" id="newStudents">
+            <div class="new table-view">
+              <h3 class="my-3">New Students</h3>
+              <div class="NewStudentsTableHeader text-muted" style="float:left"></div>
+              <table class="table table-striped student-new-table dataTable" id="studentsNewTable">
+                <thead>
+                <tr>
+                  <th class="student">Student  Name</th>
+                  <th class="userId">User ID</th>
+                  <th class="jobCategory">Job  Category</th>
+                  <th class="jobtitle">Job  Title</th>
+                  <th class="institution">Institution<br> Name</th>
+                  <th class="instCode">Institution<br> Code</th>
+                  <th class="createdBy">Manual / <br>Imported</th>
+                  <th class="logDate">Last <br> Login Date</th>
+                  <th class="createDate">Created<br> Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Renald Demonstration</td>
+                  <td>demo1</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Manual</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kim Golden</td>
+                  <td>demo2</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Manual</td>
+                  <td>11/1/2018 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Regan Dunn</td>
+                  <td>demo3</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Lee Stone</td>
+                  <td>demo4</td>
+                  <td>Nursing</td>
+                  <td>Lead Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Student Demonstration</td>
+                  <td>demo5</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>4/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Student Connect</td>
+                  <td>demo6</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Test Demonstration</td>
+                  <td>demo7</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Janice Demonstration</td>
+                  <td>demo8</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Manual</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td>Johnathan Demonstration</td>
+                  <td>demo9</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/18/2020 9:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Thomas Demonstration</td>
+                  <td>demo10</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Renaldo Demonstration</td>
+                  <td>demo11</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Kimberly Golden</td>
+                  <td>demo12</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>1/1/2019 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td>Regan Dunnstone</td>
+                  <td>demo13</td>
+                  <td>Nursing</td>
+                  <td>Counselor</td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Manual</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Lee Marstone</td>
+                  <td>demo14</td>
+                  <td>Nursing</td>
+                  <td> Nurse Anesthetist  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>9/1/2019 11:35 AM</td>
+                  <td>1/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Maria L Demonstration</td>
+                  <td>demo15</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>4/7/2020 12:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td>Jon Connect</td>
+                  <td>demo16</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td>Jeff Demonstration</td>
+                  <td>demo17</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-        <div id="leaveStudents" class="sstatus hide">
-          <h3 class="my-3">On Leave Students</h3>
-          <div class="LeaveStudentsTableHeader text-muted" style="float:left"></div>
-          <table class="table table-striped student-leave-table dataTable" id="studentsLeaveTable">
-            <thead>
-            <tr>
-              <th class="student">Student Name</th>
-              <th class="jobCategory">Job Category</th>
-              <th class="jobtitle">Job Title</th>
-              <th class="institution">Institution Name</th>
-              <th class="instCode">Institution Code</th>
-              <th class="logDate">Last Login Date</th>
-              <th class="createDate">Created Date</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td><a href="">Jane Demonstration</a></td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>John Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jack Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Renald Demonstration</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kim Golden</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Dunn</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee Stone</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Student Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Student Connect</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Test Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Janice Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Johnathan Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Thomas Demonstration</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Renaldo Demonstration</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kimberly Golden</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Dunnstone</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee Marstone</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Maria L Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jon Connect</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Jeff Demonstration</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-        <div id="newStudents" class="sstatus hide">
-          <h3 class="my-3">New Students</h3>
-          <div class="NewStudentsTableHeader text-muted" style="float:left"></div>
-          <table class="table table-striped student-new-table dataTable" id="studentsNewTable">
-            <thead>
-            <tr>
-              <th class="student">Student  Name</th>
-              <th class="userId">User ID</th>
-              <th class="jobCategory">Job  Category</th>
-              <th class="jobtitle">Job  Title</th>
-              <th class="institution">Institution<br> Name</th>
-              <th class="instCode">Institution<br> Code</th>
-              <th class="createdBy">Manual / <br>Imported</th>
-              <th class="logDate">Last <br> Login Date</th>
-              <th class="createDate">Created<br> Date</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>Renald Demonstration</td>
-              <td>demo1</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>Manual</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kim Golden</td>
-              <td>demo2</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>Manual</td>
-              <td>11/1/2018 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Dunn</td>
-              <td>demo3</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>Imported</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee Stone</td>
-              <td>demo4</td>
-              <td>Nursing</td>
-              <td>Lead Nurse  </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>Imported</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Student Demonstration</td>
-              <td>demo5</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>Imported</td>
-              <td>4/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Student Connect</td>
-              <td>demo6</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>Imported</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Test Demonstration</td>
-              <td>demo7</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme General Medical Center</td>
-              <td>GEN01</td>
-              <td>Imported</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Janice Demonstration</td>
-              <td>demo8</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Manual</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr class="hidden">
-              <td>Johnathan Demonstration</td>
-              <td>demo9</td>
-              <td>Nursing</td>
-              <td>Nurse Assistant </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Imported</td>
-              <td>6/18/2020 9:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Thomas Demonstration</td>
-              <td>demo10</td>
-              <td>Nursing</td>
-              <td>Nurse  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Imported</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>1/7/2015 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Renaldo Demonstration</td>
-              <td>demo11</td>
-              <td>Cardiology</td>
-              <td>Surgical Technician </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Imported</td>
-              <td>6/1/2018 11:35 AM</td>
-              <td>5/7/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Kimberly Golden</td>
-              <td>demo12</td>
-              <td>Cardiology</td>
-              <td>Surgical Nurse </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Imported</td>
-              <td>1/1/2019 11:35 AM</td>
-              <td>5/17/2014 8:05 AM</td>
-            </tr>
-            <tr>
-              <td>Regan Dunnstone</td>
-              <td>demo13</td>
-              <td>Nursing</td>
-              <td>Counselor</td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Manual</td>
-              <td>6/1/2020 9:35 AM</td>
-              <td>11/7/2016 6:35 PM</td>
-            </tr>
-            <tr>
-              <td>Lee Marstone</td>
-              <td>demo14</td>
-              <td>Nursing</td>
-              <td> Nurse Anesthetist  </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Imported</td>
-              <td>9/1/2019 11:35 AM</td>
-              <td>1/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Maria L Demonstration</td>
-              <td>demo15</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Imported</td>
-              <td>4/7/2020 12:35 PM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            <tr>
-              <td>Jon Connect</td>
-              <td>demo16</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Imported</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>2/7/2017 9:35 PM</td>
-            </tr>
-            <tr>
-              <td>Jeff Demonstration</td>
-              <td>demo17</td>
-              <td>Physical Therapy</td>
-              <td>Therapist </td>
-              <td>Acme Express Clinic</td>
-              <td>HEX01</td>
-              <td>Imported</td>
-              <td>6/7/2020 9:35 AM</td>
-              <td>5/7/2018 8:35 AM</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default btn-export-mobile">
           <em class="fa fa-download"></em>
