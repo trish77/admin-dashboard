@@ -145,7 +145,7 @@ function checkIEVersion() {
       bSortClasses: false,
       paging: true,
       order: [
-        [3, "asc"]
+        [0, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
@@ -197,7 +197,7 @@ function checkIEVersion() {
       bSortClasses: false,
       paging: true,
       order: [
-        [3, "asc"]
+        [0, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
@@ -249,7 +249,7 @@ function checkIEVersion() {
       bSortClasses: false,
       paging: true,
       order: [
-        [3, "asc"]
+        [0, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
@@ -301,7 +301,7 @@ function checkIEVersion() {
       bSortClasses: false,
       paging: true,
       order: [
-        [1, "asc"]
+        [0, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
@@ -373,7 +373,7 @@ function checkIEVersion() {
       bSortClasses: false,
       paging: true,
       order: [
-        [1, "asc"]
+        [0, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
@@ -428,7 +428,7 @@ function checkIEVersion() {
       bSortClasses: false,
       paging: true,
       order: [
-        [1, "asc"]
+        [0, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
@@ -483,7 +483,7 @@ function checkIEVersion() {
       bSortClasses: false,
       paging: true,
       order: [
-        [1, "asc"]
+        [0, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
@@ -538,7 +538,7 @@ function checkIEVersion() {
       bSortClasses: false,
       paging: true,
       order: [
-        [1, "asc"]
+        [0, "asc"]
       ],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [

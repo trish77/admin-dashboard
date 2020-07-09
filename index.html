@@ -322,7 +322,7 @@
 
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" ><a href="#expiring" aria-controls="expiring" role="tab" data-toggle="tab">Expiring Courses</a></li>
+          <li role="presentation" class="active" ><a href="#expiring" aria-controls="expiring" role="tab" data-toggle="tab">Expiring Courses</a></li>
           <li role="presentation"><a href="#expired" aria-controls="expired" role="tab" data-toggle="tab">Expired Courses</a></li>
           <li role="presentation"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">Expired / Expiring</a></li>
         </ul>
@@ -337,14 +337,15 @@
               <table class="table table-striped expiring-course-table dataTable" id="expiringCourseTable">
                 <thead>
                 <tr>
-                  <th class="course" style="width: 45%">Course</th>
+                  <th class="course">Course</th>
                   <th class="version">Course  <br>Version</th>
                   <th class="affiliation">Affiliation</th>
                   <th class="owner">Course Owner</th>
+                  <th class="creator">Created By</th>
                   <th class="expires">Expiration<br /> Date</th>
                   <th class="expiresdays">Days to <br /> Expire</th>
-                  <th>Expiration Reason</th>
-                  <th>Course Review Date</th>
+                  <th>Expiration <br />Reason</th>
+                  <th>Course <br /> Review Date</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -357,6 +358,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>Test 1</td>
                   <td class="text-attention">7/6/20</td>
                   <td>34</td>
                   <td>Outdated</td>
@@ -371,6 +373,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>Acme</td>
                   <td class="text-attention">4/6/20</td>
                   <td>44</td>
                   <td>Outdated</td>
@@ -384,6 +387,7 @@
                   <td class="team-action">
                     Trinity Health
                   </td>
+                  <td>HSTM</td>
                   <td>HSTM</td>
                   <td class="text-attention">
                     8/16/20
@@ -401,6 +405,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>ACME</td>
                   <td class="text-attention">
                     7/1/20
                   </td>
@@ -416,6 +421,7 @@
                   <td class="team-action">
                     Trinity Health
                   </td>
+                  <td>HSTM</td>
                   <td>HSTM</td>
                   <td class="text-attention">
                     8/10/20
@@ -433,6 +439,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>M Wilson</td>
                   <td class="text-attention">
                     7/16/20
                   </td>
@@ -449,6 +456,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>demo1</td>
                   <td class="text-attention">
                     7/20/20
                   </td>
@@ -464,6 +472,7 @@
                   <td class="team-action">
                     Trinity Health
                   </td>
+                  <td>HSTM</td>
                   <td>HSTM</td>
                   <td class="text-attention">
                     8/1/20
@@ -481,6 +490,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>Acme</td>
                   <td class="text-attention">
                     8/1/20
                   </td>
@@ -496,6 +506,7 @@
                   <td class="team-action">
                     Trinity Health
                   </td>
+                  <td>HSTM</td>
                   <td>HSTM</td>
                   <td class="text-attention">
                     7/16/20
@@ -513,6 +524,7 @@
                     Trinity Health
                   </td>
                   <td>ACME Healthcare Enterprise</td>
+                  <td>HSTM</td>
                   <td class="text-attention">
                     4/16/20
                   </td>
@@ -529,6 +541,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>M Wilson</td>
                   <td class="text-attention">
                     8/30/20
                   </td>
@@ -544,6 +557,7 @@
                   <td class="team-action">
                     Trinity Health
                   </td>
+                  <td>HSTM</td>
                   <td>HSTM</td>
                   <td class="text-attention">
                     8/16/20
@@ -561,6 +575,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>M Wilson</td>
                   <td class="text-attention">
                     8/16/20
                   </td>
@@ -577,6 +592,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>M Wilson</td>
                   <td class="text-attention">
                     8/16/20
                   </td>
@@ -592,6 +608,7 @@
                   <td class="team-action">
                     Trinity Health
                   </td>
+                  <td>HSTM</td>
                   <td>HSTM</td>
                   <td class="text-attention">
                     8/16/20
@@ -609,6 +626,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>M Wilson</td>
                   <td class="text-attention">
                     8/16/20
                   </td>
@@ -625,6 +643,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>Acme</td>
                   <td class="text-attention">
                     8/16/20
                   </td>
@@ -640,6 +659,7 @@
                   <td class="team-action">
                     Trinity Health
                   </td>
+                  <td>HSTM</td>
                   <td>HSTM</td>
                   <td class="text-attention">
                     8/16/20
@@ -657,6 +677,7 @@
                     Trinity Health
                   </td>
                   <td>HSTM</td>
+                  <td>M Wilson</td>
                   <td class="text-attention">
                     8/16/20
                   </td>
@@ -677,13 +698,13 @@
                 <thead>
                 <tr>
                   <th class="course" style="width: 45%">Course</th>
-                  <th class="version">Course  Version</th>
+                  <th class="version">Course <br/> Version</th>
                   <th class="affiliation">Affiliation</th>
                   <th class="owner">Course Owner</th>
-                  <th class="expireddate">Expiration Date</th>
+                  <th class="expireddate">Expiration<br/>Date</th>
                   <th class="expiresdays">Days Expired</th>
-                  <th class="reason">Expiration Reason</th>
-                  <th class="reviewdate">Course Review Date</th>
+                  <th class="reason">Expiration <br/> Reason</th>
+                  <th class="reviewdate">Course <br/>Review Date</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -1034,8 +1055,8 @@
                     <br />
                     Expire
                   </th>
-                  <th>Expiration Reason</th>
-                  <th>Course Review Date</th>
+                  <th>Expiration <br/>Reason</th>
+                  <th>Course<br/> Review Date</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -1740,8 +1761,8 @@
           </div>
         </div>-->
 
-        <ul class="nav nav-tabs mb-5" role="tablist">
-          <li role="presentation" ><a href="#activeStudents" aria-controls="active" role="tab" data-toggle="tab">Active Students</a></li>
+        <ul class="nav nav-tabs mb-5ymc" role="tablist">
+          <li role="presentation" class="active" ><a href="#activeStudents" aria-controls="active" role="tab" data-toggle="tab">Active Students</a></li>
           <li role="presentation"><a href="#leaveStudents" aria-controls="onleave" role="tab" data-toggle="tab">On Leave Students</a></li>
           <li role="presentation"><a href="#newStudents" aria-controls="new" role="tab" data-toggle="tab">New Students</a></li>
         </ul>
@@ -1775,7 +1796,7 @@
                 </thead>
                 <tbody>
                 <tr class="hidden">
-                  <td>Jane Demonstration</td>
+                  <td><a href="">Jane Demonstration</a></td>
                   <td>JaneDemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -1785,7 +1806,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Jane Demonstration</td>
+                  <td><a href="">Jane Demonstration</a></td>
                   <td>JaneDemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -1795,7 +1816,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>John Demonstration</td>
+                  <td><a href="">John Demonstration</a></td>
                   <td>JohnDemo</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -1815,7 +1836,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jack Mathers</td>
+                  <td><a href="">Jack Mathers</a></td>
                   <td>JackDemo</td>
                   <td>Nursing</td>
                   <td>Nurse  </td>
@@ -1825,7 +1846,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Renald Lopez</td>
+                  <td><a href="">Renald Lopez</a></td>
                   <td>RDemo</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -1835,7 +1856,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kim Silvers</td>
+                  <td><a href="">Kim Silvers</a></td>
                   <td>KSDemo</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -1855,7 +1876,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Karren M Stone</td>
+                  <td><a href="">Karren M Stone</a></td>
                   <td>KMSDemo</td>
                   <td>Nursing</td>
                   <td>Lead Nurse  </td>
@@ -1865,7 +1886,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Britney Williams</td>
+                  <td><a href="">Britney Williams</a></td>
                   <td>bwDemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -1875,7 +1896,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Britney Williams</td>
+                  <td><a href="">Britney Williams</a></td>
                   <td>bwDemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -1885,7 +1906,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Stacy Connect</td>
+                  <td><a href="">Stacy Connect</a></td>
                   <td>stconnect</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -1905,7 +1926,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Joel Demonstration</td>
+                  <td><a href="">Joel Demonstration</a></td>
                   <td>joeldemon</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -1915,7 +1936,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Janice Demonstration</td>
+                  <td><a href="">Janice Demonstration</a></td>
                   <td>jandemo1</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -1935,7 +1956,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Johnathan Demonstration</td>
+                  <td><a href="">Johnathan Demonstration</a></td>
                   <td>jnthdemo1</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -1945,7 +1966,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Phil Demonstration</td>
+                  <td><a href="">Phil Demonstration</a></td>
                   <td>phdemo1</td>
                   <td>Nursing</td>
                   <td>Nurse  </td>
@@ -1955,7 +1976,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Reginald Demon</td>
+                  <td><a href="">Reginald Demon</a></td>
                   <td>regdemo</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -1965,7 +1986,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kimberly A Smyth</td>
+                  <td><a href="">Kimberly A Smyth</a></td>
                   <td>kimademo1</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -1975,7 +1996,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Regan Dunnstone</td>
+                  <td><a href="">Regan Dunnstone</a></td>
                   <td>reganddemo1</td>
                   <td>Nursing</td>
                   <td>Counselor</td>
@@ -1995,7 +2016,7 @@
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Mary L Demonstration</td>
+                  <td><a href="">Mary L Demonstration</a></td>
                   <td>demo2</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2005,7 +2026,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jonas Connect</td>
+                  <td><a href="">Jonas Connect</a></td>
                   <td>jonconndemo1</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2025,7 +2046,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Amanda Demonstration</td>
+                  <td><a href="">Amanda Demonstration</a></td>
                   <td>amandemo1</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2035,7 +2056,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Axel Demonstration</td>
+                  <td><a href="">Axel Demonstration</a></td>
                   <td>axdemona</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2045,7 +2066,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jaclyn Demonstration</td>
+                  <td><a href="">Jaclyn Demonstration</a></td>
                   <td>jacdemo</td>
                   <td>Nursing</td>
                   <td>Nurse  </td>
@@ -2055,7 +2076,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Renald Demona</td>
+                  <td><a href="">Renald Demona</a></td>
                   <td>demo3</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -2065,7 +2086,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kim Golden</td>
+                  <td><a href="">Kim Golden</a></td>
                   <td>kmgdndemo1</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -2075,7 +2096,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Regan Dunners</td>
+                  <td><a href="">Regan Dunners</a></td>
                   <td>demotest</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant  </td>
@@ -2085,7 +2106,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Lee Stone</td>
+                  <td><a href="">Lee Stone</a></td>
                   <td>testdemo</td>
                   <td>Nursing</td>
                   <td>Lead Nurse  </td>
@@ -2095,7 +2116,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Hashim Demonstration</td>
+                  <td><a href="">Hashim Demonstration</a></td>
                   <td>demo1test</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2105,7 +2126,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Larry Connect</td>
+                  <td><a href="">Larry Connect</a></td>
                   <td>lardemo1</td>
                   <td>Physical Therapy</td>
                   <td>Athletic Trainer Therapist </td>
@@ -2115,7 +2136,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Tara Demonstration</td>
+                  <td><a href="">Tara Demonstration</a></td>
                   <td>trardemo1</td>
                   <td>Physical Therapy</td>
                   <td>NeuroMuscular Therapist </td>
@@ -2125,7 +2146,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Janice Demonstration</td>
+                  <td><a href="">Janice Demonstration</a></td>
                   <td>jandemo1</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2135,7 +2156,7 @@
                   <td>2/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Johnathan Demon</td>
+                  <td><a href="">Johnathan Demon</a></td>
                   <td>demo5</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2145,7 +2166,7 @@
                   <td>5/7/2014 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Tomas Demons</td>
+                  <td><a href="">Tomas Demons</a></td>
                   <td>demo6</td>
                   <td>Nursing</td>
                   <td>Nurse RN </td>
@@ -2155,7 +2176,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Renaldo Demonstration</td>
+                  <td><a href="">Renaldo Demonstration</a></td>
                   <td>demo7</td>
                   <td>Cardiology</td>
                   <td>Lead Surgical Technician </td>
@@ -2165,7 +2186,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kimberly Y Gold</td>
+                  <td><a href="">Kimberly Y Gold</a></td>
                   <td>test2</td>
                   <td>Cardiology</td>
                   <td>Senior Surgical Nurse </td>
@@ -2175,7 +2196,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Regan Dunnstone</td>
+                  <td><a href="">Regan Dunnstone</a></td>
                   <td>regdunns</td>
                   <td>Nursing</td>
                   <td>Counselor</td>
@@ -2185,7 +2206,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Lee Marstone</td>
+                  <td><a href="">Lee Marstone</a></td>
                   <td>lemars1</td>
                   <td>Nursing</td>
                   <td> Nurse Anesthetist  </td>
@@ -2195,7 +2216,7 @@
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Maria Theresa L Demonstration</td>
+                  <td><a href="">Maria Theresa L Demonstration</a></td>
                   <td>mtldemo</td>
                   <td>Physical Therapy</td>
                   <td>Managing Therapist Advanced Therapy</td>
@@ -2205,7 +2226,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Joni Connection</td>
+                  <td><a href="">Joni Connection</a></td>
                   <td>joniconn</td>
                   <td>Physical Therapy</td>
                   <td>Therapist Specialist HydroTherapy </td>
@@ -2215,7 +2236,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Jeffery Demon</td>
+                  <td><a href="">Jeffery Demon</a></td>
                   <td>demojeff</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2225,7 +2246,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jane Demonstration</td>
+                  <td><a href="">Jane Demonstration</a></td>
                   <td>janedemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2235,7 +2256,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>John Demonstration</td>
+                  <td><a href="">John Demonstration</a></td>
                   <td>johndemo</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2245,7 +2266,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jack Mathers</td>
+                  <td><a href="">Jack Mathers</a></td>
                   <td>jkmathtest</td>
                   <td>Nursing</td>
                   <td>Nurse  </td>
@@ -2265,7 +2286,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Kim Silvers</td>
+                  <td><a href="">Kim Silvers</a></td>
                   <td>kmsilv</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -2275,7 +2296,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Chris Dunn</td>
+                  <td><a href="">Chris Dunn</a></td>
                   <td>chdunn</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant  </td>
@@ -2285,7 +2306,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Amber L Stone</td>
+                  <td><a href="">Amber L Stone</a></td>
                   <td>amblstne</td>
                   <td>Nursing</td>
                   <td>Lead Nurse  </td>
@@ -2295,7 +2316,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Britney Demonstration</td>
+                  <td><a href="">Britney Demonstration</a></td>
                   <td>britdemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2305,7 +2326,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Stacy Connect</td>
+                  <td><a href="">Stacy Connecter</a></td>
                   <td>stacyconns</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2315,7 +2336,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Joel Demonstration</td>
+                  <td><a href="">Joel Demonstration</a></td>
                   <td>joeldemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2325,7 +2346,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Janice T Demonstration</td>
+                  <td><a href="">Janice T Demonstration</a></td>
                   <td>jantdemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2335,7 +2356,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Johnathan Demonstration</td>
+                  <td><a href="">Johnathan P Demonstration</a></td>
                   <td>jontdemo</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2355,7 +2376,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Reg Demon</td>
+                  <td><a href="">Reg Demon</a></td>
                   <td>tegdemo</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -2365,7 +2386,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kimberly A Smithson</td>
+                  <td><a href="">Kimberly A Smithson</a></td>
                   <td>kimasmthson</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -2375,7 +2396,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Regan Smith</td>
+                  <td><a href="">Regan Smiths</a></td>
                   <td>regsmith</td>
                   <td>Nursing</td>
                   <td>Counselor</td>
@@ -2385,7 +2406,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Lee T Marstone</td>
+                  <td><a href="">Leo T Marstone</a></td>
                   <td>ltmarst</td>
                   <td>Nursing</td>
                   <td> Nurse Anesthetist  </td>
@@ -2395,7 +2416,7 @@
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Mary K Demonstration</td>
+                  <td><a href="">Mary K Demonsta</a></td>
                   <td>mkdemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2405,7 +2426,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jonas Jeffers</td>
+                  <td><a href="">Jonas Jeffers</a></td>
                   <td>jonjeffs</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2415,7 +2436,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Dennis Demonstration</td>
+                  <td><a href="">Dennis Demonstration</a></td>
                   <td>denndemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2425,7 +2446,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Haily Price</td>
+                  <td><a href="">Haily Price</a></td>
                   <td>hailyp</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2435,7 +2456,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Lisa Demonstration</td>
+                  <td><a href="">Lisa Demonstration</a></td>
                   <td>lisad</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2445,7 +2466,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jaclyn Smith</td>
+                  <td><a href="">Jaclyn Smith</a></td>
                   <td>jaclyns</td>
                   <td>Nursing</td>
                   <td>Nurse  </td>
@@ -2455,7 +2476,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Ray Demona</td>
+                  <td><a href="">Ray Demona</a></td>
                   <td>raydemon</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -2465,7 +2486,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kim Marvels</td>
+                  <td><a href="">Kim Marvels</a></td>
                   <td>kimmarvel</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -2475,7 +2496,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>David Dunnerson</td>
+                  <td><a href="">David Dunnerson</a></td>
                   <td>daviddunn</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant  </td>
@@ -2485,7 +2506,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Marc Stone</td>
+                  <td><a href="">Marc Stone</a></td>
                   <td>marcstone</td>
                   <td>Nursing</td>
                   <td>Lead Nurse  </td>
@@ -2495,7 +2516,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Hashim Hanish</td>
+                  <td><a href="">Hashim Hanish</a></td>
                   <td>hashhan</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2505,7 +2526,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Larry Cransson</td>
+                  <td><a href="">Larry Cransson</a></td>
                   <td>larrycranss</td>
                   <td>Physical Therapy</td>
                   <td>Athletic Trainer Therapist </td>
@@ -2515,7 +2536,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Tara White</td>
+                  <td><a href="">Tara White</a></td>
                   <td>twhite</td>
                   <td>Physical Therapy</td>
                   <td>NeuroMuscular Therapist </td>
@@ -2525,7 +2546,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Carmen Laliente</td>
+                  <td><a href="">Carmen Laliente</a></td>
                   <td>carmlal</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2535,7 +2556,7 @@
                   <td>2/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Johnathan Dessiere</td>
+                  <td><a href="">Johnathan Dessiere</a></td>
                   <td>johnthdess</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2545,7 +2566,7 @@
                   <td>5/7/2014 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Tomas Luce</td>
+                  <td><a href="">Tomas Luce</a></td>
                   <td>tlucce</td>
                   <td>Nursing</td>
                   <td>Nurse RN </td>
@@ -2555,7 +2576,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Elroy Demonstration</td>
+                  <td><a href="">Elroy Demonstration</a></td>
                   <td>elrdemo</td>
                   <td>Cardiology</td>
                   <td>Lead Surgical Technician </td>
@@ -2565,7 +2586,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Eric Y Gold</td>
+                  <td><a href="">Eric Y Gold</a></td>
                   <td>ericgold</td>
                   <td>Cardiology</td>
                   <td>Senior Surgical Nurse </td>
@@ -2575,7 +2596,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Deborah Dunnstone</td>
+                  <td><a href="">Deborah Dunnstone</a></td>
                   <td>debdunns</td>
                   <td>Nursing</td>
                   <td>Counselor</td>
@@ -2585,7 +2606,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Chase Marstone</td>
+                  <td><a href="">Chase Marstone</a></td>
                   <td>chasemar</td>
                   <td>Nursing</td>
                   <td> Nurse Anesthetist  </td>
@@ -2595,7 +2616,7 @@
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Maria Lostani</td>
+                  <td><a href="">Maria Lostani</a></td>
                   <td>marlost</td>
                   <td>Physical Therapy</td>
                   <td>Managing Therapist Advanced Therapy</td>
@@ -2605,7 +2626,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Joni Masteron</td>
+                  <td><a href="">Joni Masteron</a></td>
                   <td>jonimaster</td>
                   <td>Physical Therapy</td>
                   <td>Therapist Specialist HydroTherapy </td>
@@ -2615,7 +2636,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Jeffery Dalton</td>
+                  <td><a href="">Jeffery Dalton</a></td>
                   <td>jeffdalt</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2658,7 +2679,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>John Demonstration</td>
+                  <td><a href="">John Demonstration</a></td>
                   <td>demo1</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2668,7 +2689,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jack Demonstration</td>
+                  <td><a href="">Jack Demonstration</a></td>
                   <td>demo3</td>
                   <td>Nursing</td>
                   <td>Nurse  </td>
@@ -2678,7 +2699,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Renald Demonstration</td>
+                  <td><a href="">Renald Demonstration</a></td>
                   <td>demo4</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -2688,7 +2709,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kim Golden</td>
+                  <td><a href="">Kim Golden</a></td>
                   <td>kimgold</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -2698,7 +2719,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Regan Dunn</td>
+                  <td><a href="">Regan Dunn</a></td>
                   <td>regand</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant  </td>
@@ -2708,7 +2729,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Lee Stone</td>
+                  <td><a href="">Lee Stone</a></td>
                   <td>leestone</td>
                   <td>Nursing</td>
                   <td>Lead Nurse  </td>
@@ -2718,7 +2739,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Student Demonstration</td>
+                  <td><a href="">Student Demonstration</a></td>
                   <td>demo5</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2728,7 +2749,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Student Connect</td>
+                  <td><a href="">Student Connect</a></td>
                   <td>democonn</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2738,7 +2759,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Test Demonstration</td>
+                  <td><a href="">Test Demonstration</a></td>
                   <td>testdemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2748,7 +2769,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Janice Demonstration</td>
+                  <td><a href="">Janice Demonstration</a></td>
                   <td>jandemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2758,7 +2779,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Johnathan Demonstration</td>
+                  <td><a href="">Johnathan Demonstration</a></td>
                   <td>jonthdemo</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2768,7 +2789,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Thomas Demonstration</td>
+                  <td><a href="">Thomas Demonstration</a></td>
                   <td>thdemo</td>
                   <td>Nursing</td>
                   <td>Nurse  </td>
@@ -2778,7 +2799,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Renaldo Demonstration</td>
+                  <td><a href="">Renaldo Demonstration</a></td>
                   <td>rendemo</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -2788,7 +2809,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kimberly Golden</td>
+                  <td><a href="">Kimberly Golden</a></td>
                   <td>kimgolden</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -2798,7 +2819,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Regan Dunnstone</td>
+                  <td><a href="">Regan Dunnstone</a></td>
                   <td>regdunn</td>
                   <td>Nursing</td>
                   <td>Counselor</td>
@@ -2808,7 +2829,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Lee Marstone</td>
+                  <td><a href="">Lee Marstone</a></td>
                   <td>lmarstone1</td>
                   <td>Nursing</td>
                   <td> Nurse Anesthetist  </td>
@@ -2818,7 +2839,7 @@
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Maria L Demonstration</td>
+                  <td><a href="">Maria L Demonstration</a></td>
                   <td>mariademo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2828,7 +2849,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jon Connect</td>
+                  <td><a href="">Jon Connect</a></td>
                   <td>jconn1</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2838,7 +2859,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Jeff Demonstration</td>
+                  <td><a href="">Jeff Demonstration</a></td>
                   <td>jeffdemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2872,7 +2893,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                  <td>Renald Demonstration</td>
+                  <td><a href="">Renald Demonstration</a></td>
                   <td>demo1</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -2883,7 +2904,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kim Golden</td>
+                  <td><a href="">Kim B Golden</a></td>
                   <td>demo2</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -2894,7 +2915,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Regan Dunn</td>
+                  <td><a href="">Regan Z Dunn</a></td>
                   <td>demo3</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant  </td>
@@ -2905,7 +2926,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Lee Stone</td>
+                  <td><a href="">Lee W Stoner</a></td>
                   <td>demo4</td>
                   <td>Nursing</td>
                   <td>Lead Nurse  </td>
@@ -2916,7 +2937,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Student Demonstration</td>
+                  <td><a href="">Student E Demonstration</a></td>
                   <td>demo5</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2927,7 +2948,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Student Connect</td>
+                  <td><a href="">Student A Conn</a></td>
                   <td>demo6</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2938,7 +2959,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Test Demonstration</td>
+                  <td><a href="">Test T Demonstration</a></td>
                   <td>demo7</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2949,7 +2970,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Janice Demonstration</td>
+                  <td><a href="">Janice M Demonstration</a></td>
                   <td>demo8</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -2960,7 +2981,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td>Johnathan Demonstration</td>
+                  <td><a href="">Johnathan P Demonstration</a></td>
                   <td>demo9</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant </td>
@@ -2971,7 +2992,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Thomas Demonstration</td>
+                  <td><a href="">Thomas H Demonstration</a></td>
                   <td>demo10</td>
                   <td>Nursing</td>
                   <td>Nurse  </td>
@@ -2982,7 +3003,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Renaldo Demonstration</td>
+                  <td><a href="">Reny F Demonstration</a></td>
                   <td>demo11</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -2993,7 +3014,7 @@
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Kimberly Golden</td>
+                  <td><a href="">Kimberly A Golden</a></td>
                   <td>demo12</td>
                   <td>Cardiology</td>
                   <td>Surgical Nurse </td>
@@ -3004,7 +3025,7 @@
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr>
-                  <td>Regan Dunnstone</td>
+                  <td><a href="">Regan T Dunnstone</a></td>
                   <td>demo13</td>
                   <td>Nursing</td>
                   <td>Counselor</td>
@@ -3015,7 +3036,7 @@
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Lee Marstone</td>
+                  <td><a href="">Lee A Marstoni</a></td>
                   <td>demo14</td>
                   <td>Nursing</td>
                   <td> Nurse Anesthetist  </td>
@@ -3026,7 +3047,7 @@
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Maria L Demonstration</td>
+                  <td><a href="">Marshall L Demonstration</a></td>
                   <td>demo15</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -3037,7 +3058,7 @@
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td>Jon Connect</td>
+                  <td><a href="">Jon C Connect</a></td>
                   <td>demo16</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -3048,7 +3069,7 @@
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr>
-                  <td>Jeff Demonstration</td>
+                  <td><a href="">Jeff V Demonstration</a></td>
                   <td>demo17</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
@@ -3179,7 +3200,7 @@
 <script src="./admin-assets/js/jquery.storageapi.js"></script>
 <script src="./admin-assets/js/classList.js"></script>
 <script src="./admin-assets/js/charts2.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script src="./admin-assets/js/portlet.js"></script>
 <script src="./admin-assets/js/anychart-base.js"></script>
 <script src="./admin-assets/js/anychart-ui.js"></script>
