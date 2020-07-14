@@ -534,6 +534,61 @@ function checkIEVersion() {
     });
   };
 
+  healthStream.inactiveStudentResults = {};
+  healthStream.inactiveStudentResults.resultsDataTable = function () {
+    var inactiveStudentsTable = $("#studentsInactiveTable").DataTable({
+      bSortClasses: false,
+      paging: true,
+      order: [
+        [0, "asc"]
+      ],
+      dom: 'ft<"bottom"rlip>',
+      columnDefs: [
+        {
+          visible: false,
+          targets: "hideOnLoad"
+        }, {
+          orderable: false,
+          targets: "unsortable"
+        }
+      ],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="fa fa-chevron-left"></i>',
+          next: '<i class="fa fa-chevron-right"></i>'
+        }
+      },
+      pageLength: 10
+    });
+
+    inactiveStudentsTable.columns().iterator("column", function (ctx, idx) {
+      $(inactiveStudentsTable.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(inactiveStudentsTable);
+
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $(".InactiveStudentsTableHeader").html($("#studentsInactiveTable_info").html());
+      $("#studentsInactiveTable_filter input").css("width", "250px");
+    }
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on("draw.dt", function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
   healthStream.studentSearchResults = {};
   healthStream.studentSearchResults.resultsDataTable = function () {
     var teamTable = $("#myTeamTable").DataTable({
@@ -600,6 +655,8 @@ function checkIEVersion() {
     healthStream.newStudentResults.resultsDataTable();
     healthStream.uniqueStudentResults.resultsDataTable();
     healthStream.leaveStudentResults.resultsDataTable();
+    healthStream.inactiveStudentResults.resultsDataTable();
+
 
   //  healthStream.myTeamMesageAllTable.resultsDataTable();
 
