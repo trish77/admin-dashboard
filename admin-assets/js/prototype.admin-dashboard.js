@@ -47,24 +47,26 @@ $(function () {
     }
   });
 
+
+
   $(".hide-unhide").click(function (e) {
     if ($(this).hasClass("btn")) {
       e.preventDefault();
-      $(this).closest("tr").removeClass("hidden").removeClass("hidden-show-item").addClass("item-highlight");
+      $(this).closest("tr").removeClass("hidden-show-item").addClass("item-highlight");
       $(this).removeClass("unhide-item").removeClass("hide-item").removeClass("hide-unhide").text("Message");
       $(this).parents(".btn-group").find(".dropdown-menu").find(".unhide-item").removeClass("unhide-item").addClass("hide-item").text("Hide");
     } else {
       if ($(this).hasClass("hide-item")) {
         e.preventDefault();
         $(this).parents(".btn-group").find("a").first().text("Un-hide");
-        $(this).closest("tr").addClass("hidden").addClass("item-highlight");
+        $(this).closest("tr").addClass("item-highlight");
         if ($(".show-hidden").is(":checked")) {
           $(this).closest("tr").addClass("hidden-show-item");
         }
         $(this).removeClass("hide-item").addClass("unhide-item").text("Un-hide");
       } else {
         e.preventDefault();
-        $(this).closest("tr").removeClass("hidden").removeClass("hidden-show-item").addClass("item-highlight");
+        $(this).closest("tr").removeClass("hidden-show-item").addClass("item-highlight");
         $(this).removeClass("unhide-item").addClass("hide-item").text("Hide");
         $(this).parents(".btn-group").find(".hide-item").first().removeClass("hide-item").removeClass("hide-unhide").text("Message");
       }

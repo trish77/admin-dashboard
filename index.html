@@ -1777,7 +1777,7 @@
                 <div class="checkbox c-checkbox">
                   <label class="text-muted">
                     <input type="checkbox" class="show-hidden-assignments" />
-                    <span class="fa fa-check"></span>Show Duplicate Students
+                    <span class="fa fa-check"></span>Highlight Duplicate Students
                   </label>
                 </div>
               </div>
@@ -3003,7 +3003,7 @@
                   <td>1/7/2015 8:35 AM</td>
                 </tr>
                 <tr>
-                  <td><a href="">Reny F Demonstration</a></td>
+                  <td><a href="">Renaldo F Demonstration</a></td>
                   <td>demo11</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician </td>
@@ -3164,6 +3164,7 @@
   <!-- /.modal-dialog -->
 </div>
 <!-- end modal windows-->
+</div>
 <!-- Global site tag (gtag.js) - Google Analytics  THIS WILL CHANGE!! -->
 <!--<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-53664464-1"></script>-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -3242,33 +3243,6 @@
 
   });
 
-</script>
-<!--    <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        },
-        i[r].l = 1 * new Date();
-        a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m
-          .parentNode
-          .insertBefore(a, m)
-      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-      ga('create', 'UA-53664464-1', 'auto');
-
-      ga('set', 'dimension1', '37543e1d-bed7-11dc-b2a6-000423af2193');
-      ga('set', 'dimension2', 'Insight Institute: HealthStream Training');
-      ga('set', 'dimension3', '099c5b94-a6cb-11de-8289-001517135511');
-      ga('set', 'dimension4', 'Insight Institute');
-
-      ga('send', 'pageview');
-    </script>-->
-<script>
   // PROTOTYPE ONLY
   $(function () {
     $('.js-toggle-days').on('click', function () {
@@ -3281,26 +3255,6 @@
       $panel
         .find('.js-toggle-days-target')
         .text(days);
-    });
-
-    $('.js-toggle-status').on('click', function () {
-      var status = $(this).attr('data-status');
-      var $modal = $(this).find('#modal-expiring');
-      var $table = $modal.hasClass('.table-view');
-      if(status === "expired") {
-          $table
-            .hasClass('expired')
-            .addClass('d-block')
-            .next('.expiring', '.all')
-            .addClass('d-none')
-
-      }
-    /*    .find('.js-toggle-status')
-        .removeClass('is-active');
-      $(this).addClass('is-active');
-      $panel
-        .find('.js-toggle-days-target')
-        .text(days);*/
     });
 
 
@@ -3320,48 +3274,10 @@
         .attr('id');
       $('.js-toggle-widget-switch[data-widget="' + widget + '"]').click();
     });
-  });
-</script>
-<script>
-  $(function () {
-
-    $('#interrupt-failure-example').click(function () {
-      HealthStream
-        .utilities
-        .interrupt({
-          type: 'failure',
-          title: 'There seems to be a problem.',
-          text: 'This is the interrupt text. It can hold N characters in length and wrap to multiple lines.',
-          actions: [
-            {
-              label: 'Check Google'
-            }
-          ]
-        });
-    });
 
     $(".search").on("click", function () {
       $(".outstandingAssignmentsHeader, .outstanding-assessments-table, .btn-export").toggleClass("hidden")
     });
-
-
-
-
-    /*    $(".studentStatusFilter[name=unique-status]").on("click", function() {
-          $("#uniqueStudents").toggleClass('d-none')
-        });
-
-        $(".studentStatusFilter[name=active-status]").on("click", function() {
-          $("#activeStudents").toggleClass('d-block')
-        });
-
-        $(".studentStatusFilter[name=leave-status]").on("click", function() {
-          $("#leaveStudents").toggleClass('d-none')
-        });
-
-        $(".studentStatusFilter[name=new-status]").on("click", function() {
-          $("#newStudents").toggleClass('d-block')
-        });*/
 
   });
 
