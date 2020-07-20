@@ -692,9 +692,27 @@ a {
   background-color:  #6fa8dc;
 }
 
+.badge-warning-lt {
+    background-color: rgb(148, 97, 193);
+}
+
 .show-hidden-items {
     clear: left;
     float: left;
     margin-top: 0;
     padding-top: 5px;
+}
+
+#widgetStudents {
+    padding-bottom: 10px;
+}
+
+#widgetStudents .download-widget-data a {
+    bottom: -22-px;
+    right: 12px;
+    padding-top: 5px;
+}
+
+#widgetStudents .metric-box-footer {
+    padding-top: 10px;
 }

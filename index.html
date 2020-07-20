@@ -127,6 +127,13 @@
         <div class="panel panel-default panel-metrics" id="widgetStudents">
           <div class="panel-heading portlet-handler">
             <div class="panel-title">Students</div>
+            <div class="download-widget-data">
+              <a href="#">
+                  <span class="download-widget-data-icon">
+                    <em class="fa fa-download"></em>
+                  </span>
+              </a>
+            </div>
             <div class="kebab">
               <figure></figure>
               <figure class="middle"></figure>
@@ -149,45 +156,51 @@
               </ul>
             </div>
           </div>
-          <div class="list-menu-wrap">
-            <ul class="list-menu">
-              <a href="#" class="student-status">
-                <li>
-                  <span>Unique</span>
-                  <span><span class="badge badge-info">3,043</span></span>
-                </li>
-                <li>
-                  <span>Active</span>
-                  <span>
+          <div class="metric-box">
+            <div class="list-menu-wrap">
+              <ul class="list-menu">
+                <a href="#" class="student-status">
+                  <li>
+                    <span>Unique</span>
+                    <span><span class="badge badge-info">3,043</span></span>
+                  </li>
+                  <li>
+                    <span>Active</span>
+                    <span>
                     <span class="badge badge-primary">3,343</span>
                   </span>
-                </li>
-                <li>
-                  <span>On Leave</span>
-                  <span>
+                  </li>
+                  <li>
+                    <span>On Leave</span>
+                    <span>
                     <span class="badge badge-warning">72</span>
                   </span>
-                </li>
-                <li>
-                  <span>New</span>
-                  <span>
+                  </li>
+                  <li>
+                    <span>Inactive</span>
+                    <span>
+                    <span class="badge badge-warning-lt">53</span>
+                  </span>
+                  </li>
+                  <li>
+                    <span>New</span>
+                    <span>
                     <span class="badge badge-success">30</span>
                   </span>
-                </li>
-              </a>
-            </ul>
-          <div class="py-2 text-center">
-            <button class="btn btn-default btn-md w-90">Add Student</button>
-          </div>
-            <div class="metric-box-footer mb-3">
-              updated - last
-              <span class="js-toggle-days-target">30</span>
-              days
+                  </li>
+                </a>
+              </ul>
+              <div class="py-2 text-center">
+                <button class="btn btn-default btn-md w-90">Add Student</button>
+              </div>
             </div>
+          </div>
+          <div class="metric-box-footer mb-3">
+            updated - last
+            <span class="js-toggle-days-target">30</span>
+            days
+          </div>
         </div>
-
-        </div>
-
       </div>
       <div class="col-sm-6 col-md-8 col-lg-9">
         <div class="portlets-wrapper">
@@ -196,7 +209,7 @@
             <!-- START panel COLUMN 1-->
             <div class="col-md-6 col-lg-4" id="portlet-1" data-toggle="portlet">
               <!-- START New panel-->
-              <div class="panel panel-default panel-metrics expiring-widget" id="widgetExpiringCourse">
+            <div class="panel panel-default panel-metrics expiring-widget" id="widgetExpiringCourse">
                 <div class="panel-body text-center">
                   <div class="metric-box-header portlet-handler">
                     <br />
@@ -341,10 +354,9 @@
                   <th class="version">Course  <br>Version</th>
                   <th class="affiliation">Affiliation</th>
                   <th class="owner">Course Owner</th>
-                  <th class="creator">Created By</th>
+                  <th class="creator">Course Author</th>
                   <th class="expires">Expiration<br /> Date</th>
                   <th class="expiresdays">Days to <br /> Expire</th>
-                  <th>Expiration <br />Reason</th>
                   <th>Course <br /> Review Date</th>
                 </tr>
                 </thead>
@@ -361,7 +373,6 @@
                   <td>Test 1</td>
                   <td class="text-attention">7/6/20</td>
                   <td>34</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -376,7 +387,6 @@
                   <td>Acme</td>
                   <td class="text-attention">4/6/20</td>
                   <td>44</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -444,7 +454,6 @@
                     7/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -461,7 +470,6 @@
                     7/20/20
                   </td>
                   <td>25</td>
-                  <td>Outdated</td>
                   <td>8/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -478,7 +486,6 @@
                     8/1/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>11/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -495,7 +502,6 @@
                     8/1/20
                   </td>
                   <td>40</td>
-                  <td>Obsolete</td>
                   <td>10/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -512,7 +518,6 @@
                     7/16/20
                   </td>
                   <td>24</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -529,7 +534,6 @@
                     4/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -546,7 +550,6 @@
                     8/30/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -563,7 +566,6 @@
                     8/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -580,7 +582,6 @@
                     8/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -597,7 +598,6 @@
                     8/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -614,7 +614,6 @@
                     8/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -631,7 +630,6 @@
                     8/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -648,7 +646,6 @@
                     8/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -665,7 +662,6 @@
                     8/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -682,7 +678,6 @@
                     8/16/20
                   </td>
                   <td>40</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 </tbody>
@@ -703,7 +698,6 @@
                   <th class="owner">Course Owner</th>
                   <th class="expireddate">Expiration<br/>Date</th>
                   <th class="expiresdays">Days Expired</th>
-                  <th class="reason">Expiration <br/> Reason</th>
                   <th class="reviewdate">Course <br/>Review Date</th>
                 </tr>
                 </thead>
@@ -719,7 +713,6 @@
                   <td>HSTM</td>
                   <td class="text-attention">4/6/20</td>
                   <td>34</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -733,7 +726,6 @@
                   <td>HSTM</td>
                   <td class="text-attention">4/6/20</td>
                   <td>34</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -749,7 +741,6 @@
                     5/16/20
                   </td>
                   <td>34</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -765,7 +756,6 @@
                     4/1/20
                   </td>
                   <td>66</td>
-                  <td>Outdated</td>
                   <td>1/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -781,7 +771,6 @@
                     4/10/20
                   </td>
                   <td>68</td>
-                  <td>Obsolete</td>
                   <td>6/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -797,7 +786,6 @@
                     3/16/20
                   </td>
                   <td>90</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -813,7 +801,6 @@
                     4/20/20
                   </td>
                   <td>66</td>
-                  <td>Outdated</td>
                   <td>8/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -829,7 +816,6 @@
                     6/1/20
                   </td>
                   <td>25</td>
-                  <td>Outdated</td>
                   <td>11/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -845,7 +831,6 @@
                     6/1/20
                   </td>
                   <td>26</td>
-                  <td>Obsolete</td>
                   <td>10/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -861,7 +846,6 @@
                     6/16/20
                   </td>
                   <td>10</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -877,7 +861,6 @@
                     4/16/20
                   </td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -893,7 +876,6 @@
                     5/30/20
                   </td>
                   <td>27</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -909,7 +891,6 @@
                     4/16/20
                   </td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -925,7 +906,6 @@
                     4/16/20
                   </td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -941,7 +921,6 @@
                     5/16/20
                   </td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -957,7 +936,6 @@
                     5/16/20
                   </td>
                   <td>30</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -973,7 +951,6 @@
                     4/16/20
                   </td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -989,7 +966,6 @@
                     5/16/20
                   </td>
                   <td>30</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1005,7 +981,6 @@
                     5/16/20
                   </td>
                   <td>30</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1021,7 +996,6 @@
                     2/16/20
                   </td>
                   <td>120</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 </tbody>
@@ -1055,7 +1029,6 @@
                     <br />
                     Expire
                   </th>
-                  <th>Expiration <br/>Reason</th>
                   <th>Course<br/> Review Date</th>
                 </tr>
                 </thead>
@@ -1073,7 +1046,6 @@
                   <td class="text-attention">4/6/20</td>
                   <td></td>
                   <td>34</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1088,7 +1060,6 @@
                   <td class="text-attention">4/6/20</td>
                   <td></td>
                   <td>34</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1105,7 +1076,6 @@
                   </td>
                   <td></td>
                   <td>34</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1122,7 +1092,6 @@
                   </td>
                   <td></td>
                   <td>66</td>
-                  <td>Outdated</td>
                   <td>1/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1139,7 +1108,6 @@
                   </td>
                   <td></td>
                   <td>68</td>
-                  <td>Obsolete</td>
                   <td>6/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1156,7 +1124,6 @@
                   </td>
                   <td></td>
                   <td>90</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1173,7 +1140,6 @@
                   </td>
                   <td></td>
                   <td>66</td>
-                  <td>Outdated</td>
                   <td>8/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1190,7 +1156,6 @@
                   </td>
                   <td></td>
                   <td>25</td>
-                  <td>Outdated</td>
                   <td>11/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1207,7 +1172,6 @@
                   </td>
                   <td></td>
                   <td>26</td>
-                  <td>Obsolete</td>
                   <td>10/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1224,7 +1188,6 @@
                   </td>
                   <td></td>
                   <td>10</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1241,7 +1204,6 @@
                   </td>
                   <td></td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1258,7 +1220,6 @@
                   </td>
                   <td></td>
                   <td>27</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1275,7 +1236,6 @@
                   </td>
                   <td></td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1292,7 +1252,6 @@
                   </td>
                   <td></td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1309,7 +1268,6 @@
                   </td>
                   <td></td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1326,7 +1284,6 @@
                   </td>
                   <td></td>
                   <td>30</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1343,7 +1300,6 @@
                   </td>
                   <td></td>
                   <td>60</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1360,7 +1316,6 @@
                   </td>
                   <td></td>
                   <td>30</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1377,7 +1332,6 @@
                   </td>
                   <td></td>
                   <td>30</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1394,7 +1348,6 @@
                   </td>
                   <td></td>
                   <td>120</td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
 
@@ -1413,7 +1366,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1430,7 +1382,6 @@
                   </td>
                   <td>6</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>1/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1447,7 +1398,6 @@
                   </td>
                   <td>65</td>
                   <td></td>
-                  <td>Obsolete</td>
                   <td>6/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1464,7 +1414,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1481,7 +1430,6 @@
                   </td>
                   <td>25</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>8/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1498,7 +1446,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>11/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1515,7 +1462,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Obsolete</td>
                   <td>10/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1532,7 +1478,6 @@
                   </td>
                   <td>24</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1549,7 +1494,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1566,7 +1510,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1583,7 +1526,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1600,7 +1542,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1617,7 +1558,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1634,7 +1574,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1651,7 +1590,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1668,7 +1606,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1685,7 +1622,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 <tr data-id="1">
@@ -1702,7 +1638,6 @@
                   </td>
                   <td>40</td>
                   <td></td>
-                  <td>Outdated</td>
                   <td>4/30/20</td>
                 </tr>
                 </tbody>
@@ -1711,8 +1646,6 @@
           </div>
           </div>
         </div>
-
-
 
       <div class="modal-footer">
         <button type="button" class="btn btn-default btn-export-mobile">
@@ -1764,8 +1697,9 @@
         <ul class="nav nav-tabs mb-5ymc" role="tablist">
           <li role="presentation" class="active" ><a href="#activeStudents" aria-controls="active" role="tab" data-toggle="tab">Active Students</a></li>
           <li role="presentation"><a href="#leaveStudents" aria-controls="onleave" role="tab" data-toggle="tab">On Leave Students</a></li>
-          <li role="presentation"><a href="#newStudents" aria-controls="new" role="tab" data-toggle="tab">New Students</a></li>
           <li role="presentation"><a href="#inactiveStudents" aria-controls="new" role="tab" data-toggle="tab">Inactive Students</a></li>
+          <li role="presentation"><a href="#newStudents" aria-controls="new" role="tab" data-toggle="tab">New Students</a></li>
+
         </ul>
 
         <!-- Tab panes -->
@@ -2874,217 +2808,6 @@
             </div>
           </div>
 
-          <div role="tabpanel" class="tab-pane" id="newStudents">
-            <div class="new table-view">
-              <h3 class="my-3">New Students</h3>
-              <div class="NewStudentsTableHeader text-muted" style="float:left"></div>
-              <table class="table table-striped student-new-table dataTable" id="studentsNewTable">
-                <thead>
-                <tr>
-                  <th class="student">Student  Name</th>
-                  <th class="userId">User ID</th>
-                  <th class="jobCategory">Job  Category</th>
-                  <th class="jobtitle">Job  Title</th>
-                  <th class="institution">Institution<br> Name</th>
-                  <th class="instCode">Institution<br> Code</th>
-                  <th class="createdBy">Manual / <br>Imported</th>
-                  <th class="logDate">Last <br> Login Date</th>
-                  <th class="createDate">Created<br> Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td><a href="">Renald Demonstration</a></td>
-                  <td>demo1</td>
-                  <td>Cardiology</td>
-                  <td>Surgical Technician </td>
-                  <td>Acme General Medical Center</td>
-                  <td>GEN01</td>
-                  <td>Manual</td>
-                  <td>6/1/2018 11:35 AM</td>
-                  <td>5/7/2014 8:05 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Kim B Golden</a></td>
-                  <td>demo2</td>
-                  <td>Cardiology</td>
-                  <td>Surgical Nurse </td>
-                  <td>Acme General Medical Center</td>
-                  <td>GEN01</td>
-                  <td>Manual</td>
-                  <td>11/1/2018 11:35 AM</td>
-                  <td>5/17/2014 8:05 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Regan Z Dunn</a></td>
-                  <td>demo3</td>
-                  <td>Nursing</td>
-                  <td>Nurse Assistant  </td>
-                  <td>Acme General Medical Center</td>
-                  <td>GEN01</td>
-                  <td>Imported</td>
-                  <td>6/1/2020 9:35 AM</td>
-                  <td>11/7/2016 6:35 PM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Lee W Stoner</a></td>
-                  <td>demo4</td>
-                  <td>Nursing</td>
-                  <td>Lead Nurse  </td>
-                  <td>Acme General Medical Center</td>
-                  <td>GEN01</td>
-                  <td>Imported</td>
-                  <td>6/1/2020 9:35 AM</td>
-                  <td>1/7/2015 8:35 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Student E Demonstration</a></td>
-                  <td>demo5</td>
-                  <td>Physical Therapy</td>
-                  <td>Therapist </td>
-                  <td>Acme General Medical Center</td>
-                  <td>GEN01</td>
-                  <td>Imported</td>
-                  <td>4/7/2020 9:35 AM</td>
-                  <td>5/7/2018 8:35 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Student A Conn</a></td>
-                  <td>demo6</td>
-                  <td>Physical Therapy</td>
-                  <td>Therapist </td>
-                  <td>Acme General Medical Center</td>
-                  <td>GEN01</td>
-                  <td>Imported</td>
-                  <td>6/7/2020 9:35 AM</td>
-                  <td>2/7/2017 9:35 PM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Test T Demonstration</a></td>
-                  <td>demo7</td>
-                  <td>Physical Therapy</td>
-                  <td>Therapist </td>
-                  <td>Acme General Medical Center</td>
-                  <td>GEN01</td>
-                  <td>Imported</td>
-                  <td>6/7/2020 9:35 AM</td>
-                  <td>5/7/2018 8:35 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Janice M Demonstration</a></td>
-                  <td>demo8</td>
-                  <td>Physical Therapy</td>
-                  <td>Therapist </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Manual</td>
-                  <td>6/7/2020 9:35 AM</td>
-                  <td>5/7/2018 8:35 AM</td>
-                </tr>
-                <tr class="hidden">
-                  <td><a href="">Johnathan P Demonstration</a></td>
-                  <td>demo9</td>
-                  <td>Nursing</td>
-                  <td>Nurse Assistant </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Imported</td>
-                  <td>6/18/2020 9:35 PM</td>
-                  <td>5/7/2018 8:35 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Thomas H Demonstration</a></td>
-                  <td>demo10</td>
-                  <td>Nursing</td>
-                  <td>Nurse  </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Imported</td>
-                  <td>6/1/2020 9:35 AM</td>
-                  <td>1/7/2015 8:35 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Renaldo F Demonstration</a></td>
-                  <td>demo11</td>
-                  <td>Cardiology</td>
-                  <td>Surgical Technician </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Imported</td>
-                  <td>6/1/2018 11:35 AM</td>
-                  <td>5/7/2014 8:05 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Kimberly A Golden</a></td>
-                  <td>demo12</td>
-                  <td>Cardiology</td>
-                  <td>Surgical Nurse </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Imported</td>
-                  <td>1/1/2019 11:35 AM</td>
-                  <td>5/17/2014 8:05 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Regan T Dunnstone</a></td>
-                  <td>demo13</td>
-                  <td>Nursing</td>
-                  <td>Counselor</td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Manual</td>
-                  <td>6/1/2020 9:35 AM</td>
-                  <td>11/7/2016 6:35 PM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Lee A Marstoni</a></td>
-                  <td>demo14</td>
-                  <td>Nursing</td>
-                  <td> Nurse Anesthetist  </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Imported</td>
-                  <td>9/1/2019 11:35 AM</td>
-                  <td>1/7/2018 8:35 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Marshall L Demonstration</a></td>
-                  <td>demo15</td>
-                  <td>Physical Therapy</td>
-                  <td>Therapist </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Imported</td>
-                  <td>4/7/2020 12:35 PM</td>
-                  <td>5/7/2018 8:35 AM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Jon C Connect</a></td>
-                  <td>demo16</td>
-                  <td>Physical Therapy</td>
-                  <td>Therapist </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Imported</td>
-                  <td>6/7/2020 9:35 AM</td>
-                  <td>2/7/2017 9:35 PM</td>
-                </tr>
-                <tr>
-                  <td><a href="">Jeff V Demonstration</a></td>
-                  <td>demo17</td>
-                  <td>Physical Therapy</td>
-                  <td>Therapist </td>
-                  <td>Acme Express Clinic</td>
-                  <td>HEX01</td>
-                  <td>Imported</td>
-                  <td>6/7/2020 9:35 AM</td>
-                  <td>5/7/2018 8:35 AM</td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
           <div role="tabpanel" class="tab-pane" id="inactiveStudents">
             <div class="new table-view">
               <h3 class="my-3">Inactive Students</h3>
@@ -3283,6 +3006,217 @@
                 <tr>
                   <td><a href="">Jeff Dane</a></td>
                   <td>demoz17</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="newStudents">
+            <div class="new table-view">
+              <h3 class="my-3">New Students</h3>
+              <div class="NewStudentsTableHeader text-muted" style="float:left"></div>
+              <table class="table table-striped student-new-table dataTable" id="studentsNewTable">
+                <thead>
+                <tr>
+                  <th class="student">Student  Name</th>
+                  <th class="userId">User ID</th>
+                  <th class="jobCategory">Job  Category</th>
+                  <th class="jobtitle">Job  Title</th>
+                  <th class="institution">Institution<br> Name</th>
+                  <th class="instCode">Institution<br> Code</th>
+                  <th class="createdBy">Manual / <br>Imported</th>
+                  <th class="logDate">Last <br> Login Date</th>
+                  <th class="createDate">Created<br> Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><a href="">Renald Demonstration</a></td>
+                  <td>demo1</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Manual</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Kim B Golden</a></td>
+                  <td>demo2</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Manual</td>
+                  <td>11/1/2018 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Regan Z Dunn</a></td>
+                  <td>demo3</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Lee W Stoner</a></td>
+                  <td>demo4</td>
+                  <td>Nursing</td>
+                  <td>Lead Nurse  </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Student E Demonstration</a></td>
+                  <td>demo5</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>4/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Student A Conn</a></td>
+                  <td>demo6</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Test T Demonstration</a></td>
+                  <td>demo7</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>Imported</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Janice M Demonstration</a></td>
+                  <td>demo8</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Manual</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr class="hidden">
+                  <td><a href="">Johnathan P Demonstration</a></td>
+                  <td>demo9</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/18/2020 9:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Thomas H Demonstration</a></td>
+                  <td>demo10</td>
+                  <td>Nursing</td>
+                  <td>Nurse  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>1/7/2015 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Renaldo F Demonstration</a></td>
+                  <td>demo11</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Technician </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/1/2018 11:35 AM</td>
+                  <td>5/7/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Kimberly A Golden</a></td>
+                  <td>demo12</td>
+                  <td>Cardiology</td>
+                  <td>Surgical Nurse </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>1/1/2019 11:35 AM</td>
+                  <td>5/17/2014 8:05 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Regan T Dunnstone</a></td>
+                  <td>demo13</td>
+                  <td>Nursing</td>
+                  <td>Counselor</td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Manual</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>11/7/2016 6:35 PM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Lee A Marstoni</a></td>
+                  <td>demo14</td>
+                  <td>Nursing</td>
+                  <td> Nurse Anesthetist  </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>9/1/2019 11:35 AM</td>
+                  <td>1/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Marshall L Demonstration</a></td>
+                  <td>demo15</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>4/7/2020 12:35 PM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Jon C Connect</a></td>
+                  <td>demo16</td>
+                  <td>Physical Therapy</td>
+                  <td>Therapist </td>
+                  <td>Acme Express Clinic</td>
+                  <td>HEX01</td>
+                  <td>Imported</td>
+                  <td>6/7/2020 9:35 AM</td>
+                  <td>2/7/2017 9:35 PM</td>
+                </tr>
+                <tr>
+                  <td><a href="">Jeff V Demonstration</a></td>
+                  <td>demo17</td>
                   <td>Physical Therapy</td>
                   <td>Therapist </td>
                   <td>Acme Express Clinic</td>
