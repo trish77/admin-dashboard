@@ -29,26 +29,6 @@ $.fn.extend({
 
 $(function () {
 
-  $(".date-range__control").on("change", function () {
-    var $control = $(this);
-    var $custom = $control.siblings(".date-range__custom");
-    if ($control.val() === "custom") {
-      $custom.addClass("date-range__custom--open");
-    } else {
-      $custom.removeClass("date-range__custom--open");
-    }
-  });
-
-  $("#rangeSelect").on("change", function () {
-    if ($(this).val() === "custom") {
-      $("#rangeCustom").removeClass("hide");
-    } else {
-      $("#rangeCustom").addClass("hide");
-    }
-  });
-
-
-
   $(".hide-unhide").click(function (e) {
     if ($(this).hasClass("btn")) {
       e.preventDefault();
@@ -100,10 +80,12 @@ $(function () {
     $("#modal-expiring").modal();
     $(".modal-expiring").find(".hidden-show-item").removeClass("hidden-show-item").addClass("item-highlight");
   });
+/*
 
   $(".student-status").click(function () {
     $("#student-status").modal();
   });
+*/
 
 });
 
@@ -658,14 +640,10 @@ function checkIEVersion() {
     healthStream.inactiveStudentResults.resultsDataTable();
 
 
-  //  healthStream.myTeamMesageAllTable.resultsDataTable();
-
   });
 })(window, jQuery);
 
 $(function () {
-  //Testing this feature in Prototype only.  Not Dev ready.
-  var hoverHTMLDemoBasic = '<img src="/content/images/prototype-actors/brynn.jpg" alt="Contact" class="media-object img-circle img-thumbnail thumb96 hcard-image">' + '<div class="hcard-name"><h3 class="mt0">Marie S. Chambers<br><small>Nurse Manager - Acute Care</small></h3>' + '<p class="text-muted">17 Tasks / <span class="text-warning">3 Past Due</span></p>' + '<div class="hcard-data-item"><i class="fa fa-fw fa-phone"  style="margin-top:10px;"></i>567-123-4567</div>' + '<div class="hcard-data-item"><i class="fa fa-fw fa-laptop"></i><a href="#modal-message-single" data-toggle="modal">mchambers@jupiterhealth.net</a></div>' + "</div>" + '<div class="hcard-bottom"><a href="dashboard-profile-dev-ready.php" class="btn btn-xs btn-default">View Profile</a> ' + '<a  href="#modal-message-single" data-toggle="modal" class="btn btn-xs btn-default">Message</a></div>';
 
   HealthStream.utilities.applauncher();
 
@@ -692,28 +670,6 @@ $(function () {
     });
   }
 
-/*
-  $(".team-view-next").click(function () {
-    $(".first-10-employees").animate({
-      right: 262
-    }, 500);
-
-    $(".next-10-employees").show().css({right: -262}).animate({
-      right: 0
-    }, 500);
-  });
-
-  $(".team-view-previous").click(function () {
-    $(".next-10-employees").animate({
-      left: 262
-    }, 500);
-
-    $(".first-10-employees").show().css({left: -262}).animate({
-      left: 0
-    }, 500);
-  });
-
-*/
 
   var upcomingExpirationsData = {
     datasets: [
@@ -754,95 +710,7 @@ $(function () {
   });
   upcomingExpirationsChart;
 
-
   $('[data-toggle="tooltip"]').tooltip();
-
-  $(".btn-message-team-continue").click(function (e) {
-    e.preventDefault();
-    if ($(".modal-team-message-all input[type=checkbox]:checked").length < 1) {
-      $(".error-message").show();
-    } else {
-      $(".error-message").hide();
-      $("#modal-team-message-all").modal("hide");
-      $("#modal-message-group").modal("show");
-    }
-  });
-
-  //search employees - POC only.
-  $(".btn-search-employees").click(function () {
-    $(".team-member-link").hide();
-    var txt = $(".text-search-employees").val();
-
-    $(".team-member-link").each(function () {
-      if ($(this).find(".employee-name").text().toUpperCase().indexOf(txt.toUpperCase()) != -1) {
-        $(this).fadeIn(450);
-      }
-    });
-    $(".number-employees").text($(".team-member-link:visible").length);
-  });
-
-  $(".btn-search-employees-clear").click(function () {
-    $(".text-search-employees").val("");
-    $(".btn-search-employees").click();
-    $(".number-employees").text($(".team-member-link:visible").length);
-  });
-
-  //Start Validate Send Group Message
-  var form = $("#SendGroupMessage");
-  $(".btn-send-message").click(function () {
-    form.validate().settings.ignore = ":disabled,:hidden";
-    if (form.valid()) {
-      $("#modal-message-group").modal("hide");
-      return true;
-    } else {
-      form.validate().focusInvalid();
-      return false;
-    }
-  });
-  var validator = form.validate({
-    ignore: [],
-    errorPlacement: function errorPlacement(error, element) {
-      element.before(error);
-    },
-    focusInvalid: true,
-    rules: {
-      subject_group: {
-        required: true
-      },
-      message_group: {
-        required: true
-      }
-    },
-    errorClass: "help-block",
-
-    highlight: function (element, errorClass, validClass) {
-      var elem = $(element);
-      elem.parents(".form-group").addClass("has-error");
-    },
-
-    unhighlight: function (element, errorClass, validClass) {
-      var elem = $(element);
-      elem.parents(".form-group").removeClass("has-error");
-    }
-  });
-
-  $("#modal-message-group").on("hidden.bs.modal", function (e) {
-    $(this).find("#subject_group, #message_group").val("").end();
-  });
-  //End Validate Send Group Message
-
-  $(".toggle-select-all").click(function () {
-    $(".team-message-all-table .checkbox:enabled").prop("checked", $(this).prop("checked"));
-  });
-
-  $("section.section.cert-results").hide();
-  $(".certHeader").hide();
-
-  $("body").on("click", "#searchStudentBtn", function () {
-    $(".hidden, .modal-footer").removeClass("hidden");
-    $("#studentSearchForm").addClass("hidden");
-  });
-
 
 
   });
