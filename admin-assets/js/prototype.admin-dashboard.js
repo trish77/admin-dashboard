@@ -80,12 +80,10 @@ $(function () {
     $("#modal-expiring").modal();
     $(".modal-expiring").find(".hidden-show-item").removeClass("hidden-show-item").addClass("item-highlight");
   });
-/*
 
   $(".student-status").click(function () {
     $("#student-status").modal();
   });
-*/
 
 });
 

@@ -672,10 +672,37 @@ a {
 .site-header .nav-main .nav>li.active>a, .site-header .nav-main .nav>li.active>a:hover {
     background: #ddd;
 }
+
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary {
+    top: 25px;
+}
+
 .layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .secondary-metric .secondary-label {
     width: 50px;
 }
 
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric {
+    width: 100%;
+    margin: -7px auto 0;
+}
+
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric .tertiary-value {
+    font-weight: 300 !important;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-indent: -1px;
+    text-align: center;
+}
+
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric .tertiary-label {
+    display: inline-block;
+    font-size: 11px;
+    width: 45px;
+    text-align: left;
+    margin-top: 5px;
+    line-height: 11.5px;
+}
  .input-lg, .search-panel.input-group-btn button {
     height: 48px;
 }

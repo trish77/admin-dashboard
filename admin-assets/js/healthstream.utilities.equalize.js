@@ -27,7 +27,7 @@
                     .each(function(){
                         var $t = $(this),
                         newHeight = equalHeight,
-                        ignoreBefore = 992; // @screen-md
+                        ignoreBefore = 600; // @screen-md
 
                         if ( $(window).innerWidth() >= ignoreBefore ) {
                             $t.addClass('equalized').css('min-height',newHeight);
