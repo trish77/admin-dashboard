@@ -708,6 +708,46 @@ $(function () {
   });
   upcomingExpirationsChart;
 
+
+  var upcomingExpirationsData2 = {
+    datasets: [
+      {
+        data: [
+          9, 130
+        ],
+        backgroundColor: ["rgba(254, 157, 63, 1)", "rgba(59, 185, 220, 1)"]
+      }
+    ],
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    labels: ["Expired", "Expiring Soon", "All Good!"]
+  };
+
+  var upcomingExpirationsChart2 = new Chart($("#UpcomingExpirationsChart2"), {
+    type: "doughnut",
+    data: upcomingExpirationsData2,
+    options: {
+      legend: {
+        display: false
+      },
+      tooltips: {
+        enabled: true
+      },
+      cutoutPercentage: 85,
+      tooltips: {
+        mode: "index",
+        intersect: false
+      },
+      hover: {
+        mode: "index",
+        intersect: true
+      },
+      maintainAspectRatio: false,
+      responsive: true
+    }
+  });
+  upcomingExpirationsChart2;
+
   $('[data-toggle="tooltip"]').tooltip();
 
 

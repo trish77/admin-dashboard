@@ -87,18 +87,18 @@
         <div class="input-group">
           <div class="input-group-btn search-panel">
             <button type="button" class="btn btn-lg border-right-0 btn-white dropdown-toggle" data-toggle="dropdown">
-              <span id="search_concept"> Students</span> <span class="caret"></span>
+              <span id="search_concept">In Students</span> <span class="caret"></span>
             </button>
             <ul class="dropdown-menu scrollable-dropdown" role="menu">
-              <li><a href="#"> Students</a></li>
-              <li><a href="#"> Administrators</a></li>
-              <li><a href="#"> Assignments</a></li>
-              <li><a href="#"> Courses</a></li>
-              <li><a href="#"> Classes</a></li>
-              <li><a href="#"> Learning Events</a></li>
-              <li><a href="#"> Student Groups</a></li>
-              <li><a href="#"> Departments</a></li>
-              <li><a href="#"> Job Titles</a></li>
+              <li><a href="#">In Students</a></li>
+              <li><a href="#">In Administrators</a></li>
+              <li><a href="#">In Assignments</a></li>
+              <li><a href="#">In Courses</a></li>
+              <li><a href="#">In Classes</a></li>
+              <li><a href="#">In Learning Events</a></li>
+              <li><a href="#">In Student Groups</a></li>
+              <li><a href="#">In Departments</a></li>
+              <li><a href="#">In Job Titles</a></li>
             </ul>
           </div>
           <input type="text" class="form-control input-lg" id="search" placeholder="Search">
@@ -252,7 +252,7 @@
                   </div>
                   <a href="#" data-toggle="modal"  class="show-modal-expiring">
                     <div class="metric-box expiring-courses">
-                      <div class="metric-center-summary">
+                     <!-- <div class="metric-center-summary">
                         <div class="primary-metric">
                           <div class="primary-value">
                             <div class="metric-value">9</div>
@@ -269,8 +269,7 @@
                             <div class="metric-value">Expiring Soon</div>
                           </div>
                         </div>
-
-                      </div>
+                      </div>-->
                       <div class="chart-container">
                         <canvas id="UpcomingExpirationsChart" height="175" width="175"></canvas>
                       </div>
@@ -288,13 +287,88 @@
             <!-- END panel COLUMN 1-->
             <!-- START panel COLUMN 2-->
             <div class="col-md-6 col-lg-4" id="portlet-2" data-toggle="portlet">
-
+              <!-- START New panel-->
+              <div class="panel panel-default panel-metrics expiring-bar-widget" id="widgetExpiringCourse">
+                <div class="panel-body text-center">
+                  <div class="metric-box-header portlet-handler">
+                    <br />
+                    <span class="highlight-text">Expiring Courses</span>
+                    <div class="kebab">
+                      <figure></figure>
+                      <figure class="middle"></figure>
+                      <p class="cross">x</p>
+                      <figure></figure>
+                      <ul class="kebab-dropdown">
+                        <li>
+                          <div class="kebab-mlink">
+                            <span class="kebab-mlink-label">Date Range:</span>
+                            <button class="btn btn-xs btn-link is-active js-toggle-days" data-days="30">30d</button>
+                            <button class="btn btn-xs btn-link js-toggle-days" data-days="60">60d</button>
+                            <button class="btn btn-xs btn-link js-toggle-days" data-days="90">90d</button>
+                            <button class="btn btn-xs btn-link js-toggle-days" data-days="90">180d</button>
+                          </div>
+                        </li>
+                        <li>
+                          <a href="#"
+                             class="js-toggle-widget-kebab kebab-hide-widget kebab-hide-expiring-widget">Hide Widget</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="refresh-widget-data">
+                      <a href="#">
+                            <span class="refresh-widget-data-icon">
+                              <em class="fa fa-refresh"></em>
+                            </span>
+                      </a>
+                    </div>
+                    <div class="download-widget-data">
+                      <a href="#">
+                            <span class="download-widget-data-icon">
+                              <em class="fa fa-download"></em>
+                            </span>
+                      </a>
+                    </div>
+                  </div>
+                  <a href="#" data-toggle="modal"  class="show-modal-expiring">
+                    <div class="metric-box expiring-courses">
+                      <div class="metric-center-summary">
+                        <div class="primary-metric">
+                          <div class="primary-value">
+                            <div class="metric-value">9</div>
+                          </div>
+                          <div class="primary-label">
+                            <div class="metric-value">Expired</div>
+                          </div>
+                        </div>
+                        <div class="secondary-metric">
+                          <div class="secondary-value">
+                            <div class="metric-value">130</div>
+                          </div>
+                          <div class="secondary-label">
+                            <div class="metric-value">Expiring Soon</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chart-container">
+                        <canvas id="UpcomingExpirationsBarChart" height="175" width="175"></canvas>
+                      </div>
+                    </div>
+                    <div class="metric-box-footer">
+                      expiring within
+                      <span class="js-toggle-days-target">60</span>
+                      days
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- END panel-->
             </div>
             <!-- END panel-->
             <!-- END panel COLUMN 2-->
 
             <!-- START panel COLUMN 3-->
             <div class="col-md-6 col-lg-4 " id="portlet-3" data-toggle="portlet">
+
             </div>
             <!-- END panel COLUMN 3-->
           </div>
@@ -3250,7 +3324,6 @@
         </div>
 
         <div class="list-group">
-
           <a href="#" class="list-group-item ws-student-widget">
             <table class="wd-wide">
               <tbody>
@@ -3280,7 +3353,6 @@
                 <td class="wd-md">
                   <div class="p">
                     <h4 class="media-box-heading">Expiring Courses</h4>
-                    <!-- <small class="text-muted">Vestibulum ante ipsum primis in faucibus orci</small> -->
                   </div>
                 </td>
                 <td class="wd-xs">
@@ -3303,7 +3375,6 @@
   </div>
   <!-- /.modal-dialog -->
 </div>
-
 <!-- end modal windows-->
 
 <!-- Global site tag (gtag.js) - Google Analytics  THIS WILL CHANGE!! -->
