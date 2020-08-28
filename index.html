@@ -82,26 +82,25 @@
       </div>
       <div class="col-sm-8 col-md-4 col-lg-8" style="margin-top: 15px">
       <form class="primary">
-
         <input type="hidden" name="search_param" value="all" id="search_param">
         <div class="input-group">
           <div class="input-group-btn search-panel">
             <button type="button" class="btn btn-lg border-right-0 btn-white dropdown-toggle" data-toggle="dropdown">
-              <span id="search_concept"> Students</span> <span class="caret"></span>
+              <span id="search_concept">Students</span> <span class="caret"></span>
             </button>
             <ul class="dropdown-menu scrollable-dropdown" role="menu">
-              <li><a href="#"> Students</a></li>
-              <li><a href="#"> Administrators</a></li>
-              <li><a href="#"> Assignments</a></li>
-              <li><a href="#"> Courses</a></li>
-              <li><a href="#"> Classes</a></li>
-              <li><a href="#"> Learning Events</a></li>
-              <li><a href="#"> Student Groups</a></li>
-              <li><a href="#"> Departments</a></li>
-              <li><a href="#"> Job Titles</a></li>
+              <li><a href="#">Students</a></li>
+              <li><a href="#">Administrators</a></li>
+              <li><a href="#">Assignments</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Classes</a></li>
+              <li><a href="#">Learning Events</a></li>
+              <li><a href="#">Student Groups</a></li>
+              <li><a href="#">Departments</a></li>
+              <li><a href="#">Job Titles</a></li>
             </ul>
           </div>
-          <input type="text" class="form-control input-lg" id="search" placeholder="Search">
+          <input type="text" class="form-control input-lg" id="search" placeholder="Search" />
           <span class="input-group-btn">
             <a href="#" class="btn btn-focus btn-success btn-lg" type="button"><i class="fa fa-search fa-lg"></i></a>
           </span>
@@ -159,7 +158,7 @@
           <div class="metric-box">
             <div class="list-menu-wrap">
               <ul class="list-menu">
-                <a href="#" data-toggle="modal" data-target="#student-status" class="student-status">
+                <a href="#" data-toggle="modal" data-target="student-status" class="student-status">
                   <li>
                     <span>Unique</span>
                     <span><span class="badge badge-info">3,043</span></span>
@@ -269,7 +268,6 @@
                             <div class="metric-value">Expiring Soon</div>
                           </div>
                         </div>
-
                       </div>
                       <div class="chart-container">
                         <canvas id="UpcomingExpirationsChart" height="175" width="175"></canvas>
@@ -1659,8 +1657,6 @@
           </div>
         </div> <!-- end modal body -->
 
-
-
       <div class="modal-footer">
         <button type="button" class="btn btn-default btn-export-mobile">
           <em class="fa fa-download"></em>
@@ -1674,7 +1670,6 @@
       </div>
     </div> <!-- end modal-content body -->
   </div>
-
 </div>
 <div id="student-status" class="modal fade modal-xl student-status dashboard-modal-table is-hstream">
   <div class="modal-dialog">
@@ -1683,11 +1678,9 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
           <i class="fa fa-times"></i>
         </button>
-        <h4 class="modal-title">
-           Students</h4>
+        <h4 class="modal-title">Students</h4>
       </div>
         <div class="modal-body">
-
           <ul class="nav nav-tabs mb-5" role="tablist">
             <li role="presentation" class="active" ><a href="#activeStudents" aria-controls="active" role="tab" data-toggle="tab">Active Students</a></li>
             <li role="presentation"><a href="#leaveStudents" aria-controls="onleave" role="tab" data-toggle="tab">On Leave Students</a></li>
@@ -3250,7 +3243,6 @@
         </div>
 
         <div class="list-group">
-
           <a href="#" class="list-group-item ws-student-widget">
             <table class="wd-wide">
               <tbody>
@@ -3354,6 +3346,10 @@
 <script>
 
   $(document).ready(function(e){
+
+    $(".student-status").click(function () {
+      $("#student-status").modal();
+    });
 
     $('.content').richText();
 
