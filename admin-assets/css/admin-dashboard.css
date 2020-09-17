@@ -9,6 +9,7 @@
 .layout.layout-dashboard-manager {
   border-top: 5px solid #007aa3;
   background-color: #eee;
+  max-height: 750px;
 }
 
 .layout.layout-dashboard-manager .panel-student{
