@@ -555,6 +555,10 @@ a {
     font-size: .9rem !important;
 }
 
+.text-large {
+    font-size: 2.4rem !important;
+}
+
 .text-warning {
     color: #fc7b00;
 }
@@ -579,6 +583,11 @@ a {
     background: #fff;
     border: 1px solid #ccc;
 }
+
+.btn-sm {
+    padding: 5px 6px !important;
+}
+
 .btn-default {
     color: #333;
     background-color: #fff;
@@ -669,77 +678,7 @@ a {
   align-self: flex-start !important;
 }
 
-.site-header .nav-main .nav>li.active>a, .site-header .nav-main .nav>li.active>a:hover {
-    background: #ddd;
-}
+/* Admin dash overrides  */
 
-.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary {
-    top: 40px;
-}
 
-.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .secondary-metric .secondary-label {
-    width: 50px;
-}
-
-.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric {
-    width: 100%;
-    margin: -7px auto 0;
-}
-
-.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric .tertiary-value {
-    font-weight: 300 !important;
-    display: inline-block;
-    font-size: 20px;
-    letter-spacing: -1px;
-    text-indent: -1px;
-    text-align: center;
-}
-
-.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric .tertiary-label {
-    display: inline-block;
-    font-size: 11px;
-    width: 45px;
-    text-align: left;
-    margin-top: 5px;
-    line-height: 11.5px;
-}
- .input-lg, .search-panel.input-group-btn button {
-    height: 48px;
-}
-
-.treeview .list-group-item {
-    border: none;
-}
-#student-status .modal-dialog,
-#modal-expiring .modal-dialog {
-    width: 78%;
-}
-
-.badge-info {
-  background-color:  #6fa8dc;
-}
-
-.badge-warning-lt {
-    background-color: rgb(162, 162, 162);
-}
-
-.show-hidden-items {
-    clear: left;
-    float: left;
-    margin-top: 0;
-    padding-top: 5px;
-}
-
-#widgetStudents {
-    padding-bottom: 10px;
-}
-
-#widgetStudents .download-widget-data a {
-    bottom: -22-px;
-    right: 12px;
-    padding-top: 5px;
-}
-
-#widgetStudents .metric-box-footer {
-    padding-top: 10px;
-}
+/*  end admin dash overrides  */

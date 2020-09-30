@@ -622,6 +622,157 @@ function checkIEVersion() {
     });
   };
 
+ /* function format ( d ) {
+    // `d` is the original data object for the row
+    return '<table class="table table-striped">'+
+        '<tr>'+
+        '<td>Course Name:</td>'+
+        '<td>'+ d[4] +'</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>Current Registration:</td>'+
+        '<td>'+d[5]+'</td>'+
+        '<td>Building Room:</td>'+
+        '<td>'+ d[6] +'</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>Instructors:</td>'+
+        '<td>'+d[7]+'</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>Created By:</td>'+
+        '<td>'+d[8]+'</td>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>Updated By:</td>'+
+        '<td>'+d[9]+'</td>'+
+        '</tr>'+
+        '</table>';
+  }*/
+  healthStream.upcomingClassesSearchResults = {};
+  healthStream.upcomingClassesSearchResults.resultsDataTable = function () {
+    var upcomingClassesTable = $("#upcomingClassesTable").DataTable({
+      bSortClasses: false,
+      paging: true,
+      select: true,
+      responsive: true,
+      order: [[1, "asc"]],
+      dom: 'ft<"bottom"rlip>',
+     /* columnDefs:[
+        { targets: [ 0 ], orderable: false, visible: false, className: 'details-control', data: null, defaultContent: '' },
+        { targets: [ 4, 5, 6, 7, 8, 9 ],  visible: false }
+
+      ],*/
+      language: {
+        search: "Search: _INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="fa fa-chevron-left"></i>',
+          next: '<i class="fa fa-chevron-right"></i>'
+        }
+      },
+      pageLength: 10
+    });
+
+/*
+    $('#upcomingClassesTable tbody').on('click', 'td.details-control', function () {
+      var tr = $(this).closest('tr');
+      var row = upcomingClassesTable.row(tr);
+
+      if (row.child.isShown()) {
+        // This row is already open - close it
+        row.child.hide();
+        tr.removeClass('shown');
+      } else {
+        // Open this row
+        row.child(format(row.data())).show();
+        tr.addClass('shown');
+      }
+    });
+*/
+
+  /*  upcomingClassesTable.columns().iterator("column", function (ctx, idx) {
+      $(upcomingClassesTable.column(idx).header()).append('<span class="sort-icon"/>');
+    });*/
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(upcomingClassesTable);
+
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $(".UpcomingClassesTableHeader").html($("#upcomingClassesTable_info").html());
+      $("#upcomingClassesTable_filter input").css("width", "250px");
+    }
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on("draw.dt", function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.ungradedClassesSearchResults = {};
+  healthStream.ungradedClassesSearchResults.resultsDataTable = function () {
+    var ungradedClassesTable = $("#ungradedClassesTable").DataTable({
+      bSortClasses: false,
+      paging: true,
+      order: [
+        [0, "asc"]
+      ],
+      dom: 'ft<"bottom"rlip>',
+      columnDefs: [
+        {
+          width: "35px",
+          visible: false,
+          targets: "hideOnLoad"
+        }, {
+          orderable: false,
+          targets: "unsortable"
+        }
+      ],
+      language: {
+        search: "Search: _INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="fa fa-chevron-left"></i>',
+          next: '<i class="fa fa-chevron-right"></i>'
+        }
+      },
+      pageLength: 10
+    });
+
+    ungradedClassesTable.columns().iterator("column", function (ctx, idx) {
+      $(ungradedClassesTable.column(idx).header()).append('<span class="sort-icon"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(ungradedClassesTable);
+
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $(".UngradedClassesTableHeader").html($("#ungradedClassesTable_info").html());
+      $("#ungradedClassesTable_filter input").css("width", "250px");
+    }
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on("draw.dt", function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
   $(window).on("load", function () {
     $.fn.DataTable.ext.pager.numbers_length = 5;
 
@@ -633,6 +784,8 @@ function checkIEVersion() {
     healthStream.uniqueStudentResults.resultsDataTable();
     healthStream.leaveStudentResults.resultsDataTable();
     healthStream.inactiveStudentResults.resultsDataTable();
+    healthStream.upcomingClassesSearchResults.resultsDataTable();
+    healthStream.ungradedClassesSearchResults.resultsDataTable();
 
 
   });

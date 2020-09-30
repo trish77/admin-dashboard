@@ -9,7 +9,6 @@
 .layout.layout-dashboard-manager {
   border-top: 5px solid #007aa3;
   background-color: #eee;
-  max-height: 750px;
 }
 
 .layout.layout-dashboard-manager .panel-student{
@@ -49,6 +48,81 @@
 .layout.layout-dashboard-manager .panel-students .media:hover {
   background: transparent
 }
+.site-header .nav-main .nav>li.active>a, .site-header .nav-main .nav>li.active>a:hover {
+  background: #ddd;
+}
+
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary {
+  top: 40px;
+}
+
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .secondary-metric .secondary-label {
+  width: 50px;
+}
+
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric {
+  width: 100%;
+  margin: -7px auto 0;
+}
+
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric .tertiary-value {
+  font-weight: 300 !important;
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: -1px;
+  text-indent: -1px;
+  text-align: center;
+}
+
+.layout.layout-dashboard-manager .panel-metrics .metric-box .metric-center-summary .tertiary-metric .tertiary-label {
+  display: inline-block;
+  font-size: 11px;
+  width: 45px;
+  text-align: left;
+  margin-top: 5px;
+  line-height: 11.5px;
+}
+
+.panel .dm-calendar__content.panel-body {
+  height: 100%;
+}
+
+.dm-calendar__list, .dm-calendar__list2 {
+  list-style: none;
+  padding: 0 15px;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 450px !important;
+}
+
+.input-lg, .search-panel.input-group-btn button {
+  height: 48px;
+}
+
+.treeview .list-group-item {
+  border: none;
+}
+#student-status .modal-dialog,
+#modal-expiring .modal-dialog {
+  width: 78%;
+}
+
+.badge-info {
+  background-color:  #6fa8dc;
+}
+
+.badge-warning-lt {
+  background-color: rgb(162, 162, 162);
+}
+
+.show-hidden-items {
+  clear: left;
+  float: left;
+  margin-top: 0;
+  padding-top: 5px;
+}
+
 .panel.panel-direct-reports .panel-body a.team-member-link:hover
 /*.panel.panel-my-team .panel-body a.team-member-link:hover*/ {
   background-color: transparent;
@@ -202,17 +276,53 @@
 
 .refresh-widget-data a,
 .filter-widget-data a,
-.assignments-refresh-widget-data a {
+.assignments-refresh-widget-data a,
+.panel-metrics a {
   display: block;
   bottom: -219px;
   left: 0;
   transition: none;
 }
 
+#widgetStudents {
+  padding-bottom: 10px;
+}
+
+#widgetExpiringCourse .download-widget-data a,
+#widgetStudents .download-widget-data a {
+  bottom: -222px;
+  left: 216px;
+  padding-top: 5px;
+}
+
+#widgetUpcomingClasses .download-widget-data a,
+#widgetExpiringCourse .download-widget-data a {
+  left: 200px;
+}
+
+#widgetStudents .metric-box-footer {
+  padding-top: 10px;
+}
+
 th.course {
   width: 35% !important;
 }
 
+table.dataTable td.select-checkbox:after, table.dataTable td.select-checkbox:before {
+  left: 10px;
+}
+
+table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected  {
+  background-color: hsl(200deg 100% 40% / 19%);
+}
+
+.details-control {
+  background: url('../images/plus-alt.png') no-repeat center center;
+  cursor: pointer;
+}
+tr.shown td.details-control {
+  background: url('../images/minus-alt.png') no-repeat center center;
+}
 /***** admin hlc settings ******/
 .fp {
     border-top: 5px solid #007aa3;
