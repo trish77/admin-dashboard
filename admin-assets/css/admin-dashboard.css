@@ -209,12 +209,6 @@
     transition: none;
   }
 
-
-#studentsActiveTable_wrapper .hidden {
-  display: table-row!important;
-  visibility: visible!important;
-}
-
 .richText {
   margin-top: 20px !important;
   box-shadow: 0 0 5px 0 #999 !important;
@@ -303,6 +297,36 @@
 #widgetStudents .metric-box-footer {
   padding-top: 10px;
 }
+
+.dup.hidden-show-item {
+  display: table-row !important;
+  visibility: visible !important;
+  border: 2px dotted #ddd;
+  -webkit-animation: fadein .5s;
+  -moz-animation: fadein .5s;
+  -ms-animation: fadein .5s;
+  -o-animation: fadein .5s;
+  animation: fadein .5s;
+}
+
+.dup.hidden-show-item td {
+  -webkit-animation: fadein .5s;
+  -moz-animation: fadein .5s;
+  -ms-animation: fadein .5s;
+  -o-animation: fadein .5s;
+  animation: fadein .5s;
+}
+
+.dup.hidden-show-item td {
+  background-color: #f9f9e5 !important;
+}
+
+#studentsActiveTable_wrapper .dup.hidden,
+#studentsActiveTable_wrapper .unique.hidden
+{
+  display: none;
+}
+
 
 th.course {
   width: 35% !important;

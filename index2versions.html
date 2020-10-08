@@ -332,19 +332,720 @@
                 </div>
               </div>
               <!-- END panel-->
-
+              <!-- START panel-->
+              <div class="panel panel-default panel-metrics cards-widget" id="widgetUpcomingClasses">
+                <div class="panel-body text-center">
+                  <div class="metric-box-header portlet-handler">
+                    <div class="highlight-text">Upcoming Classes</div>
+                    <div class="kebab">
+                      <figure></figure>
+                      <figure class="middle"></figure>
+                      <p class="cross">x</p>
+                      <figure></figure>
+                      <ul class="kebab-dropdown">
+                        <li>
+                          <div class="kebab-mlink">
+                            <span class="kebab-mlink-label">Within:</span>
+                            <button class="btn btn-xs btn-link is-active js-toggle-days" data-days="30">30d</button>
+                            <button class="btn btn-xs btn-link js-toggle-days" data-days="60">60d</button>
+                            <button class="btn btn-xs btn-link js-toggle-days" data-days="90">90d</button>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="js-toggle-widget-kebab" href="#">Hide Widget</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="download-widget-data">
+                      <a href="#">
+                        <span class="download-widget-data-icon">
+                            <em class="fa fa-download"></em>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <a data-toggle="modal" href="#modal-upcoming-classes">
+                    <div class="dm-split">
+                      <div class="dm-split__metric is-registered">
+                        <div class="dm-split__value">1233</div>
+                        <div class="dm-split__label">
+                          <span>Upcoming</span>
+                        </div>
+                      </div>
+                      <div class="dm-split__metric is-unregistered">
+                        <div class="dm-split__value">321</div>
+                        <div class="dm-split__label">
+                          <span>Ungraded</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="metric-box-footer">
+                    within <span class="js-toggle-days-target">30</span> days
+                  </div>
+                </div>
+              </div>
+              <!-- END panel-->
             </div>
             <!-- END panel COLUMN 1-->
             <!-- START panel COLUMN 2-->
-            <div class="col-md-6 col-lg-4" data-toggle="portlet" id="portlet-2">
-              <!-- START panel-->
+            <div class="col-md-8 col-lg-8" data-toggle="portlet" id="portlet-2">
+              <div class="panel panel-default" id="widgetCalendar">
+                <div class="panel-heading portlet-handler">
+                  <div class="panel-title">Class Calendar</div>
+                  <div class="kebab">
+                    <figure></figure>
+                    <figure class="middle"></figure>
+                    <p class="cross">x</p>
+                    <figure></figure>
+                    <ul class="kebab-dropdown">
+                      <li>
+                        <a class="js-toggle-widget-kebab kebab-hide-widget" href="#">Hide Widget</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dm-calendar has-results is-list" id="calender-small">
+                  <div class="dm-calendar__nav">
+                    <div>September</div>
+                  </div>
+                  <div class="dm-calendar__content panel-body">
 
-              <!-- END panel-->
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="active" role="presentation">
+                        <a aria-controls="active" data-toggle="tab" href="#upcoming"
+                           role="tab">Upcoming Classes
+                        </a>
+                      </li>
+                      <li role="presentation">
+                        <a aria-controls="ungraded" data-toggle="tab" href="#ungraded"
+                           role="tab">Ungraded Classes
+                        </a>
+                      </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div class="tab-pane active" id="upcoming" role="tabpanel">
+                        <ul class="dm-calendar__list">
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">1</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - November (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class - November (Limited Registration)
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Nov 15, 2020, 9:00am - 11am CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 p-1 mt-4 text-center">
+                                <span class="text-large">4</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Critical Care Issues for Senior Patients"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Critical Care Issues for Senior Patients
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Nov 15, 2020, 1:00pm - 2:00pm CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 mt-4">
+                                <span class="text-large">7</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Budgeting and Planning for Managers
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Dec 15, 2020, 9:00am - 10:00am CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">11</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - December (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class - December (Limited Registration)
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Wed Nov 25, 2020, 10:00am - 11:30am CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">13</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Heart Monitor Orientation - 5 day
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div class="col-md-7 p-0 pt-2 text-sm text-muted">Tue Nov 16, 2020, 9:00am CT</div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">16</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - November (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Nov 15, 2020, 9:00am - 10:00am CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">18</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Heart Monitor Live Training"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Heart Monitor Live Training
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Thu Nov 22, 2020, 9:00am - 12:pm CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">21</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - November (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class - November (Limited Registration)
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div class="col-md-7 p-0 pt-2 text-sm text-muted">Fri Nov 18, 2020, 9:00am CT</div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">24</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Acute Pain Management - Autumn '19'"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Acute Pain Management - Autumn '19'
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Nov 15, 2020, 9:00am CT</div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">31</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - September (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class - September (Limited Registration)
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Nov 15, 2019, 9:00am CT</div>
+                                    <div class="col-md-5 p-0 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+
+                        <div class="text-center">
+                          <ul class="pagination example"></ul>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="ungraded" role="tabpanel">
+                        <ul class="dm-calendar__list2">
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">1</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - November (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class - November (Limited Registration)
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Nov 15, 2019, 9:00am - 11am CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 p-1 mt-4 text-center">
+                                <span class="text-large">4</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Critical Care Issues for Senior Patients"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Critical Care Issues for Senior Patients
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Nov 15, 2019, 1:00pm - 2:00pm CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 mt-4">
+                                <span class="text-large">7</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Budgeting and Planning for Managers
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Dec 15, 2019, 9:00am - 10:00am CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">11</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - December (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class - December (Limited Registration)
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Wed Mar 25, 2020, 10:00am - 11:30am CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">13</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Heart Monitor Orientation - 5 day
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div class="col-md-7 p-0 pt-2 text-sm text-muted">Tue Feb 16, 2020, 9:00am CT</div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">16</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - November (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Mar 1, 2020, 9:00am - 10:00am CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">18</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Heart Monitor Live Training"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Heart Monitor Live Training
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div
+                                            class="col-md-7 p-0 pt-2 text-sm text-muted">Thu Jun 22, 2020, 9:00am - 12:pm CT
+                                    </div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">21</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - November (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class - November (Limited Registration)
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div class="col-md-7 p-0 pt-2 text-sm text-muted">Fri Jul 18, 2020, 9:00am CT</div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">24</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold" data-original-title="Acute Pain Management - Autumn '19'"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Acute Pain Management - Autumn '19'
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Jul 25, 2020, 9:00am CT</div>
+                                    <div class="col-md-5 p-0 pt-2 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="row border-bottom">
+                              <div class="col-md-1 text-center p-1 mt-4">
+                                <span class="text-large">31</span>
+                              </div>
+                              <div class="col-md-11 pl-0 pt-2">
+                                <div class="row">
+                                  <div class="col-md-12 mt-2">
+                                    <a class="pt-2 text-bold"
+                                       data-original-title="Pain Management Class - September (Limited Registration)"
+                                       data-toggle="tooltip"
+                                       title="">
+                                      Pain Management Class - September (Limited Registration)
+                                    </a>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12 align-items-center py-2">
+                                    <div class="col-md-7 p-0 pt-2 text-sm text-muted">Mon Aug 15, 2019, 9:00am CT</div>
+                                    <div class="col-md-5 p-0 text-right">
+                                      <a class="text-bold class-details"
+                                         href="#">View Details
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+
+                        <div class="text-center">
+                          <ul class="pagination example"></ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div> <!-- END panel-body -->
+                </div>
+              </div><!-- END panel-->
             </div><!-- END panel COLUMN 2-->
 
             <!-- START panel COLUMN 3-->
-             <div class="col-md-6 col-lg-4 " data-toggle="portlet" id="portlet-3">
-             </div>
+            <!-- <div class="col-md-6 col-lg-4 " data-toggle="portlet" id="portlet-3">
+             </div>-->
             <!-- END panel COLUMN 3-->
           </div>
           <!-- END row-->
@@ -1765,7 +2466,7 @@
                 <div class="checkbox c-checkbox">
                   <label class="text-muted">
                     <input class="show-hidden-assignments" type="checkbox"/>
-                    <span class="fa fa-check"></span>Filter Duplicate Students
+                    <span class="fa fa-check"></span>Highlight Duplicate Students
                   </label>
                 </div>
               </div>
@@ -1777,7 +2478,6 @@
                   <th class="jobCategory">Job Category</th>
                   <th class="jobtitle">Job Title</th>
                   <th class="institution">Institution Name</th>
-                  <th class="instDept">Department</th>
                   <th class="instCode">Institution Code</th>
                   <th class="logDate">Last Login Date</th>
                   <th class="createDate">Created Date</th>
@@ -1792,12 +2492,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Administration</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr class="hidden">
                   <td>
                     <a href="">Jane Demonstration</a>
                   </td>
@@ -1805,7 +2504,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Finance</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
@@ -1818,23 +2516,21 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Billing</td>
-                  <td>GEN01</td>
-                  <td>6/1/2020 9:35 AM</td>
-                  <td>5/7/2018 8:35 AM</td>
-                </tr>
-                <tr class="dup">
-                  <td><a href="#">John Demonstration</a></td>
-                  <td>JohnDemo</td>
-                  <td>Nursing</td>
-                  <td>Nurse Assistant</td>
-                  <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
+                  <td>John Demonstration</td>
+                  <td>JDemo</td>
+                  <td>Nursing</td>
+                  <td>Nurse Assistant</td>
+                  <td>Acme General Medical Center</td>
+                  <td>GEN01</td>
+                  <td>6/1/2020 9:35 AM</td>
+                  <td>5/7/2018 8:35 AM</td>
+                </tr>
+                <tr>
                   <td>
                     <a href="">Jack Mathers</a>
                   </td>
@@ -1842,12 +2538,11 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Renald Lopez</a>
                   </td>
@@ -1855,12 +2550,11 @@
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Kim Silvers</a>
                   </td>
@@ -1868,13 +2562,12 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>11/1/2018 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td><a href="">David Dunnerston</a></td>
+                  <td>David Dunnerston</td>
                   <td>DDDemo</td>
                   <td>Nursing</td>
                   <td>Senior Nurse Assistant</td>
@@ -1883,7 +2576,7 @@
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Karren M Stone</a>
                   </td>
@@ -1891,12 +2584,11 @@
                   <td>Nursing</td>
                   <td>Lead Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>IT Support</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Britney Williams</a>
                   </td>
@@ -1904,7 +2596,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Administration</td>
                   <td>GEN01</td>
                   <td>4/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
@@ -1917,12 +2608,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Finance</td>
                   <td>GEN01</td>
                   <td>4/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Stacy Connect</a>
                   </td>
@@ -1930,34 +2620,21 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Training</td>
-                  <td>GEN01</td>
-                  <td>6/7/2020 9:35 AM</td>
-                  <td>2/7/2017 9:35 PM</td>
-                </tr>
-                <tr class="dup">
-                  <td><a href="">Stacy Connection</a></td>
-                  <td>stconnect</td>
-                  <td>Physical Therapy</td>
-                  <td>Therapist</td>
-                  <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr class="hidden">
-                  <td><a href="">Stacy Connection</a></td>
+                  <td>Stacy Connection</td>
                   <td>stconnect</td>
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Joel Demonstration</a>
                   </td>
@@ -1965,12 +2642,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Janice Demonstration</a>
                   </td>
@@ -1978,18 +2654,16 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td> <a href="">Janice Demonstration</a></td>
+                  <td>Janice Demonstration</td>
                   <td>jandemo1</td>
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
@@ -2002,12 +2676,11 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/18/2020 9:35 PM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Phil Demonstration</a>
                   </td>
@@ -2015,25 +2688,23 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Reginald Demon</a>
                   </td>
                   <td>regdemo</td>
-                  <td>Cardiac Surgeon</td>
+                  <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiolog</td>
                   <td>HEX01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Kimberly A Smyth</a>
                   </td>
@@ -2041,7 +2712,6 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Surgical</td>
                   <td>HEX01</td>
                   <td>1/1/2019 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
@@ -2054,23 +2724,21 @@
                   <td>Nursing</td>
                   <td>Counselor</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr class="hidden">
-                  <td> <a href="">Lee T Marstone</a></td>
+                  <td>Lee T Marstone</td>
                   <td>ltmdemo1</td>
                   <td>Nursing</td>
-                  <td>Nurse Anesthetist</td>
+                  <td> Nurse Anesthetist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>9/1/2019 11:35 AM</td>
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Mary L Demonstration</a>
                   </td>
@@ -2078,12 +2746,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>4/7/2020 12:35 PM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Jonas Connect</a>
                   </td>
@@ -2091,23 +2758,21 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
                 <tr class="hidden">
-                  <td> <a href="">Dennis Demonstration</a></td>
+                  <td>Dennis Demonstration</td>
                   <td>dendemon1</td>
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Amanda Demonstration</a>
                   </td>
@@ -2115,12 +2780,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Axel Demonstration</a>
                   </td>
@@ -2128,12 +2792,11 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Jaclyn Demonstration</a>
                   </td>
@@ -2141,12 +2804,11 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Renald Demona</a>
                   </td>
@@ -2154,12 +2816,11 @@
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme General Medical Center</td>
-                  <td>Surgical</td>
                   <td>GEN01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Kim Golden</a>
                   </td>
@@ -2167,12 +2828,11 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Surgical</td>
                   <td>GEN01</td>
                   <td>11/1/2018 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Regan Dunners</a>
                   </td>
@@ -2180,12 +2840,11 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Lee Stone</a>
                   </td>
@@ -2193,12 +2852,11 @@
                   <td>Nursing</td>
                   <td>Lead Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing Administration</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Hashim Demonstration</a>
                   </td>
@@ -2206,12 +2864,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>4/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Larry Connect</a>
                   </td>
@@ -2219,12 +2876,11 @@
                   <td>Physical Therapy</td>
                   <td>Athletic Trainer Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Tara Demonstration</a>
                   </td>
@@ -2232,12 +2888,11 @@
                   <td>Physical Therapy</td>
                   <td>NeuroMuscular Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr class="hidden">
                   <td>
                     <a href="">Janice Demonstration</a>
                   </td>
@@ -2245,38 +2900,35 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
-                    <a href="">Johnathan Demo</a>
+                    <a href="">Johnathan Demon</a>
                   </td>
                   <td>demo5</td>
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/18/2020 9:35 PM</td>
                   <td>5/7/2014 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
-                    <a href="">Tomas Damona</a>
+                    <a href="">Tomas Demons</a>
                   </td>
                   <td>demo6</td>
                   <td>Nursing</td>
                   <td>Nurse RN</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing Admin</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Renaldo Demonstration</a>
                   </td>
@@ -2284,12 +2936,11 @@
                   <td>Cardiology</td>
                   <td>Lead Surgical Technician</td>
                   <td>Acme Express Clinic</td>
-                  <td>Surgical</td>
                   <td>HEX01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Kimberly Y Gold</a>
                   </td>
@@ -2297,12 +2948,11 @@
                   <td>Cardiology</td>
                   <td>Senior Surgical Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Surgical</td>
                   <td>HEX01</td>
                   <td>1/1/2019 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
-                <tr class="hidden">
+                <tr>
                   <td>
                     <a href="">Regan Dunnstone</a>
                   </td>
@@ -2310,25 +2960,23 @@
                   <td>Nursing</td>
                   <td>Counselor</td>
                   <td>Acme Express Clinic</td>
-                  <td>Admin</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
                 <tr class="hidden">
                   <td>
-                    <a href="">Lee T Marstone</a>
+                    <a href="">Lee Marstone</a>
                   </td>
                   <td>lemars1</td>
                   <td>Nursing</td>
                   <td> Nurse Anesthetist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>9/1/2019 11:35 AM</td>
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Maria Theresa L Demonstration</a>
                   </td>
@@ -2336,12 +2984,11 @@
                   <td>Physical Therapy</td>
                   <td>Managing Therapist Advanced Therapy</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>4/7/2020 12:35 PM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Joni Connection</a>
                   </td>
@@ -2349,38 +2996,35 @@
                   <td>Physical Therapy</td>
                   <td>Therapist Specialist HydroTherapy</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
-                <tr class="hidden">
+                <tr>
                   <td>
-                    <a href="">Jeffery Dalton</a>
+                    <a href="">Jeffery Demon</a>
                   </td>
                   <td>demojeff</td>
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
-                    <a href="">Jane Demon</a>
+                    <a href="">Jane Demonstration</a>
                   </td>
-                  <td>jane-demon</td>
+                  <td>janedemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">John Demonstration</a>
                   </td>
@@ -2388,12 +3032,11 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Jack Mathers</a>
                   </td>
@@ -2401,18 +3044,16 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td> <a href="">Renald Lopez</a></td>
+                  <td>Renald Lopez</td>
                   <td>renlopz</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
@@ -2425,12 +3066,11 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>11/1/2018 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Chris Dunn</a>
                   </td>
@@ -2438,12 +3078,11 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Amber L Stone</a>
                   </td>
@@ -2451,12 +3090,11 @@
                   <td>Nursing</td>
                   <td>Lead Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Britney Demonstration</a>
                   </td>
@@ -2464,12 +3102,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>4/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Stacy Connecter</a>
                   </td>
@@ -2477,12 +3114,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
-                <tr class="hidden">
+                <tr>
                   <td>
                     <a href="">Joel Demonstration</a>
                   </td>
@@ -2490,12 +3126,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Janice T Demonstration</a>
                   </td>
@@ -2503,12 +3138,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Johnathan P Demonstration</a>
                   </td>
@@ -2516,23 +3150,21 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/18/2020 9:35 PM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
                 <tr class="hidden">
-                  <td> <a href="">Phil Demonstration</a></td>
+                  <td>Phil Demonstration</td>
                   <td>philtestdemo</td>
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Reg Demon</a>
                   </td>
@@ -2540,12 +3172,11 @@
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Kimberly A Smithson</a>
                   </td>
@@ -2553,12 +3184,11 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>1/1/2019 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Regan Smiths</a>
                   </td>
@@ -2566,12 +3196,11 @@
                   <td>Nursing</td>
                   <td>Counselor</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Leo T Marstone</a>
                   </td>
@@ -2579,12 +3208,11 @@
                   <td>Nursing</td>
                   <td> Nurse Anesthetist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>9/1/2019 11:35 AM</td>
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Mary K Demonsta</a>
                   </td>
@@ -2592,12 +3220,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>4/7/2020 12:35 PM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Jonas Jeffers</a>
                   </td>
@@ -2605,12 +3232,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Dennis Demonstration</a>
                   </td>
@@ -2618,12 +3244,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Haily Price</a>
                   </td>
@@ -2631,12 +3256,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Lisa Demonstration</a>
                   </td>
@@ -2644,12 +3268,11 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Jaclyn Smith</a>
                   </td>
@@ -2657,12 +3280,11 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Ray Demona</a>
                   </td>
@@ -2670,12 +3292,11 @@
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Kim Marvels</a>
                   </td>
@@ -2683,12 +3304,11 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>11/1/2018 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">David Dunnerson</a>
                   </td>
@@ -2696,12 +3316,11 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Marc Stone</a>
                   </td>
@@ -2709,12 +3328,11 @@
                   <td>Nursing</td>
                   <td>Lead Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Hashim Hanish</a>
                   </td>
@@ -2722,25 +3340,23 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>4/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Larry Cransson</a>
                   </td>
                   <td>larrycranss</td>
                   <td>Physical Therapy</td>
                   <td>Athletic Trainer Therapist</td>
-                  <td>Clinical</td>
                   <td>ACME Rehab Services</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Tara White</a>
                   </td>
@@ -2748,12 +3364,11 @@
                   <td>Physical Therapy</td>
                   <td>NeuroMuscular Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Carmen Laliente</a>
                   </td>
@@ -2761,12 +3376,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Johnathan Dessiere</a>
                   </td>
@@ -2774,12 +3388,11 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/18/2020 9:35 PM</td>
                   <td>5/7/2014 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Tomas Luce</a>
                   </td>
@@ -2787,12 +3400,11 @@
                   <td>Nursing</td>
                   <td>Nurse RN</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Elroy Demonstration</a>
                   </td>
@@ -2800,12 +3412,11 @@
                   <td>Cardiology</td>
                   <td>Lead Surgical Technician</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Eric Y Gold</a>
                   </td>
@@ -2813,12 +3424,11 @@
                   <td>Cardiology</td>
                   <td>Senior Surgical Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>1/1/2019 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Deborah Dunnstone</a>
                   </td>
@@ -2826,12 +3436,11 @@
                   <td>Nursing</td>
                   <td>Counselor</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Chase Marstone</a>
                   </td>
@@ -2839,12 +3448,11 @@
                   <td>Nursing</td>
                   <td> Nurse Anesthetist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>9/1/2019 11:35 AM</td>
                   <td>1/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Maria Lostani</a>
                   </td>
@@ -2852,12 +3460,11 @@
                   <td>Physical Therapy</td>
                   <td>Managing Therapist Advanced Therapy</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>4/7/2020 12:35 PM</td>
                   <td>5/7/2018 8:35 AM</td>
                 </tr>
-                <tr class="unique">
+                <tr>
                   <td>
                     <a href="">Joni Masteron</a>
                   </td>
@@ -2865,12 +3472,11 @@
                   <td>Physical Therapy</td>
                   <td>Therapist Specialist HydroTherapy</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Jeffery Dalton</a>
                   </td>
@@ -2878,7 +3484,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>ACME Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
@@ -2900,11 +3505,9 @@
                   <th class="jobCategory">Job Category</th>
                   <th class="jobtitle">Job Title</th>
                   <th class="institution">Institution Name</th>
-                  <th class="instCode">Department</th>
                   <th class="instCode">Institution Code</th>
                   <th class="logDate">Last Login Date</th>
                   <th class="createDate">Created Date</th>
-                  <th class="createDate">Inactivation Date</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -2916,11 +3519,9 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
-                  <td>5/1/2019 11:35 AM</td>
                 </tr>
                 <tr class="hidden">
                   <td>
@@ -2930,11 +3531,9 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
-                  <td>11/1/2019 1:35 PM</td>
                 </tr>
                 <tr>
                   <td>
@@ -2944,13 +3543,11 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
-                  <td>6/1/2019 11:35 AM</td>
                 </tr>
-                <tr class="dup">
+                <tr>
                   <td>
                     <a href="">Renald Demonstration</a>
                   </td>
@@ -2958,11 +3555,9 @@
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
-                  <td>7/1/2019 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -2972,11 +3567,9 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>11/1/2018 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
-                  <td>1/1/2020 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -2986,11 +3579,9 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
-                  <td>5/1/2020 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3000,11 +3591,9 @@
                   <td>Nursing</td>
                   <td>Lead Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
-                  <td>7/11/2019 9:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3014,11 +3603,9 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>4/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
-                  <td>4/21/2019 10:05 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3028,11 +3615,9 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
-                  <td>8/21/2019 1:15 PM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3042,28 +3627,23 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
-                  <td>4/1/2019 10:35 AM</td>
                 </tr>
                 <tr>
                   <td>
                     <a href="">Janice Demonstration</a>
                   </td>
-                  <td>jan-demo</td>
+                  <td>jandemo</td>
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
-                  <td>1/1/2019 11:35 AM</td>
-
                 </tr>
-                <tr class="dup">
+                <tr class="hidden">
                   <td>
                     <a href="">Johnathan Demonstration</a>
                   </td>
@@ -3071,11 +3651,9 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/18/2020 9:35 PM</td>
                   <td>5/7/2018 8:35 AM</td>
-                  <td>9/1/2019 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3085,25 +3663,21 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>1/7/2020 8:35 AM</td>
-                  <td>5/1/2019 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
                     <a href="">Renaldo Demonstration</a>
                   </td>
-                  <td>renodemo</td>
+                  <td>rendemo</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>6/1/2018 11:35 AM</td>
                   <td>5/7/2014 8:05 AM</td>
-                  <td>9/1/2019 9:00 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3113,11 +3687,9 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>1/1/2019 11:35 AM</td>
                   <td>5/17/2014 8:05 AM</td>
-                  <td>7/21/2019 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3127,11 +3699,9 @@
                   <td>Nursing</td>
                   <td>Counselor</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>6/1/2020 9:35 AM</td>
                   <td>11/7/2016 6:35 PM</td>
-                  <td>11/1/2019 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3141,11 +3711,9 @@
                   <td>Nursing</td>
                   <td> Nurse Anesthetist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>9/1/2019 11:35 AM</td>
                   <td>1/7/2018 8:35 AM</td>
-                  <td>5/12/2019 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3155,11 +3723,9 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>4/7/2020 12:35 PM</td>
                   <td>5/7/2018 8:35 AM</td>
-                  <td>5/17/2019 11:35 AM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3169,11 +3735,9 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
-                  <td>5/12/2019 1:35 PM</td>
                 </tr>
                 <tr>
                   <td>
@@ -3183,11 +3747,9 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
-                  <td>12/1/2019 1:35 PM</td>
                 </tr>
                 </tbody>
               </table>
@@ -3206,7 +3768,6 @@
                   <th class="jobCategory">Job Category</th>
                   <th class="jobtitle">Job Title</th>
                   <th class="institution">Institution<br> Name</th>
-                  <th class="department">Department</th>
                   <th class="instCode">Institution<br> Code</th>
                   <th class="createdBy">Manual / <br>Imported</th>
                   <th class="logDate">Last <br> Login Date</th>
@@ -3222,7 +3783,6 @@
                   <td>Cardiology</td>
                   <td>Surgeon</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>Manual</td>
                   <td>6/1/2018 11:35 AM</td>
@@ -3236,7 +3796,6 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse II</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>Manual</td>
                   <td>11/1/2018 11:35 AM</td>
@@ -3250,7 +3809,6 @@
                   <td>Nursing</td>
                   <td>Senior Nurse</td>
                   <td>Acme Memorial Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN02</td>
                   <td>Imported</td>
                   <td>6/1/2020 9:35 AM</td>
@@ -3264,7 +3822,6 @@
                   <td>Nursing</td>
                   <td>Lead Nurse</td>
                   <td>Acme Healthcare Enterprise</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>Imported</td>
                   <td>6/1/2020 9:35 AM</td>
@@ -3278,7 +3835,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>Imported</td>
                   <td>4/7/2020 9:35 AM</td>
@@ -3292,7 +3848,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>Imported</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3306,7 +3861,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>Imported</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3320,7 +3874,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Rehab Services</td>
-                  <td>Clinical</td>
                   <td>REHAB</td>
                   <td>Manual</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3334,7 +3887,6 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/18/2020 9:35 PM</td>
@@ -3348,7 +3900,6 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/1/2020 9:35 AM</td>
@@ -3362,7 +3913,6 @@
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/1/2018 11:35 AM</td>
@@ -3376,7 +3926,6 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>1/1/2019 11:35 AM</td>
@@ -3390,7 +3939,6 @@
                   <td>Nursing</td>
                   <td>Counselor</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>Manual</td>
                   <td>6/1/2020 9:35 AM</td>
@@ -3404,7 +3952,6 @@
                   <td>Nursing</td>
                   <td> Nurse Anesthetist</td>
                   <td>Acme Memorial Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN02</td>
                   <td>Imported</td>
                   <td>9/1/2019 11:35 AM</td>
@@ -3418,7 +3965,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>4/7/2020 12:35 PM</td>
@@ -3432,7 +3978,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3446,7 +3991,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3469,7 +4013,6 @@
                   <th class="jobCategory">Job Category</th>
                   <th class="jobtitle">Job Title</th>
                   <th class="institution">Institution<br> Name</th>
-                  <th class="dept">Department</th>
                   <th class="instCode">Institution<br> Code</th>
                   <th class="createdBy">Manual / <br>Imported</th>
                   <th class="logDate">Last <br> Login Date</th>
@@ -3479,13 +4022,12 @@
                 <tbody>
                 <tr>
                   <td>
-                    <a href="">Renaldo Demonstration</a>
+                    <a href="">Renald Demonstration</a>
                   </td>
-                  <td>demo11</td>
+                  <td>demo1</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>Manual</td>
                   <td>6/1/2018 11:35 AM</td>
@@ -3499,7 +4041,6 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Cardiology</td>
                   <td>GEN01</td>
                   <td>Manual</td>
                   <td>11/1/2018 11:35 AM</td>
@@ -3513,7 +4054,6 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>Imported</td>
                   <td>6/1/2020 9:35 AM</td>
@@ -3527,7 +4067,6 @@
                   <td>Nursing</td>
                   <td>Lead Nurse</td>
                   <td>Acme General Medical Center</td>
-                  <td>Nursing</td>
                   <td>GEN01</td>
                   <td>Imported</td>
                   <td>6/1/2020 9:35 AM</td>
@@ -3541,7 +4080,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>Imported</td>
                   <td>4/7/2020 9:35 AM</td>
@@ -3555,7 +4093,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>Imported</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3569,7 +4106,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme General Medical Center</td>
-                  <td>Clinical</td>
                   <td>GEN01</td>
                   <td>Imported</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3583,7 +4119,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>Manual</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3597,7 +4132,6 @@
                   <td>Nursing</td>
                   <td>Nurse Assistant</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/18/2020 9:35 PM</td>
@@ -3611,7 +4145,6 @@
                   <td>Nursing</td>
                   <td>Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/1/2020 9:35 AM</td>
@@ -3619,13 +4152,12 @@
                 </tr>
                 <tr>
                   <td>
-                    <a href="">Renaldo F Veraz</a>
+                    <a href="">Renaldo F Demonstration</a>
                   </td>
                   <td>demo11</td>
                   <td>Cardiology</td>
                   <td>Surgical Technician</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/1/2018 11:35 AM</td>
@@ -3639,7 +4171,6 @@
                   <td>Cardiology</td>
                   <td>Surgical Nurse</td>
                   <td>Acme Express Clinic</td>
-                  <td>Cardiology</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>1/1/2019 11:35 AM</td>
@@ -3653,7 +4184,6 @@
                   <td>Nursing</td>
                   <td>Counselor</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>Manual</td>
                   <td>6/1/2020 9:35 AM</td>
@@ -3667,7 +4197,6 @@
                   <td>Nursing</td>
                   <td> Nurse Anesthetist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Nursing</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>9/1/2019 11:35 AM</td>
@@ -3681,7 +4210,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>4/7/2020 12:35 PM</td>
@@ -3695,7 +4223,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3709,7 +4236,6 @@
                   <td>Physical Therapy</td>
                   <td>Therapist</td>
                   <td>Acme Express Clinic</td>
-                  <td>Clinical</td>
                   <td>HEX01</td>
                   <td>Imported</td>
                   <td>6/7/2020 9:35 AM</td>
@@ -3823,6 +4349,888 @@
   </div>
   <!-- /.modal-dialog -->
 </div>
+<div id="modal-upcoming-classes" class="modal fade modal-xl dashboard-modal-table">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title">Upcoming / Ungraded Classes</h4>
+      </div>
+      <div class="modal-body">
+
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active" role="presentation">
+            <a aria-controls="active" data-toggle="tab" href="#upcoming"
+               role="tab">Upcoming Classes
+            </a>
+          </li>
+          <li role="presentation">
+            <a aria-controls="ungraded" data-toggle="tab" href="#ungraded"
+               role="tab">Ungraded Classes
+            </a>
+          </li>
+        </ul>
+        <div class="alert alert-info mt-4" role="alert">
+          <span class="fa fa-info-circle mr-2"></span>Click on the table row, shift or control click to select multiple rows and click Export to CSV to download the report.
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active pt-3" id="upcoming" role="tabpanel">
+            <div class="UpcomingClassesTableHeader text-muted"></div>
+            <table class="table table-striped dt-responsive  upcoming-classes-table dataTable" id="upcomingClassesTable">
+              <thead>
+              <tr>
+                <th >Class Name</th>
+                <th>Start Date/Time</th>
+                <th>End Date/Time</th>
+                <th class="none">Course Name</th>
+                <th class="none">Current Registration/Class Size</th>
+                <th class="none">Building/Room</th>
+                <th class="none">Instructors</th>
+                <th class="none">Created By</th>
+                <th class="none">Updated By</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Directed In-Service Training - Home Health Agencies"
+                     data-toggle="tooltip"
+                     title="">
+                    Directed In-Service Training - Home Health Agencies
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Oct 16, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Oct 16, 2020, 10:00am CT</div>
+                </td>
+                <td>ACME Classroom1_30 sept</td>
+                <td>Univ 3/ 300</td>
+                <td>155/178</td>
+                <td>Admin Jason Jackson</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Critical Care Issues for Senior Patients"
+                     data-toggle="tooltip"
+                     title="">
+                    Critical Care Issues for Senior Patients
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jun 16, 2021, 9:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jun 16, 2021, 11:00am CT</div>
+                </td>
+                <td>ACME Classroom1_30</td>
+                <td>Main / 203</td>
+                <td>133/138</td>
+                <td>John Lennon</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Pain Management Class - December (Limited Registration)"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Class - December (Limited Registration)
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 16, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 16, 2021, 10:00am CT</div>
+                </td>
+                <td>Annual Class</td>
+                <td>Main Bldg / 103</td>
+                <td>266/322</td>
+                <td>Dan Wilson</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">
+                    Heart Monitor Orientation - 5 day
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 17, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 17, 2021, 10:00am CT</div>
+                </td>
+                <td>Annual Class</td>
+                <td>St Thomas  / 203</td>
+                <td>222/277</td>
+                <td>Jason Jackson</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Pain Management Class - November (Limited Registration)"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Class
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Dec 16, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Dec 16, 2020, 10:00am CT</div>
+                </td>
+                <td>HR Policy Class</td>
+                <td>Main / 203</td>
+                <td>145/199</td>
+                <td>Admin David</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Live Training"
+                     data-toggle="tooltip"
+                     title="">
+                    Heart Monitor Live Training
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Dec 6, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Dec 6, 2020, 10:00am CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Main 1 / 1103</td>
+                <td>122/322</td>
+                <td>David Lee</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Pain Management Webinar"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Webinar
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Nov 30, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Nov 30, 2020, 11:00am CT</div>
+                </td>
+                <td>Human Resources Annual</td>
+                <td>Main B2 / 23</td>
+                <td>144/155</td>
+                <td>Stephen Jenkins</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Geriatric Trauma"
+                     data-toggle="tooltip"
+                     title="">
+                    Geriatric Trauma
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jan 16, 2021, 1:00pm </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jun 16, 2021, 3:00pm CT</div>
+                </td>
+                <td>HR Policy Competencies</td>
+                <td>Main / 203</td>
+                <td>222/226</td>
+                <td>Bonnie Tyler</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Geriatric Trauma"
+                     data-toggle="tooltip"
+                     title="">
+                    Geriatric Trauma
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 26, 2021, 3:00pm </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 26, 2021, 4:00pm CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Main A2/ 3</td>
+                <td>324/327</td>
+                <td>Adam Levine</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">Heart Monitor Orientation - 5 day
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Oct 15, 2020, 10:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Oct 15, 2020, 12:00pm CT</div>
+                </td>
+                <td>Annual Policies Class</td>
+                <td>Main B/ 203</td>
+                <td>22/167</td>
+                <td>Ariel Jackson</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Nov 3, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Nov 3, 2020, 10:00am CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Main University/ 100</td>
+                <td>155/268 </td>
+                <td>LeeAnn Marie Jehosan</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Managers
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Dec 7, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Dec 7, 2020, 10:00am CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Bldg A / 113</td>
+                <td>122/188 </td>
+                <td>Michael Leigh</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 16, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 16, 2021, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>University Bldg 12 / 203</td>
+                <td>145/222</td>
+                <td>Barry Mesonia</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jan 14, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jan 14, 2021, 10:00am CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Unversity Main / 203</td>
+                <td>12/166</td>
+                <td>Joel C Cranston</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">Heart Monitor Orientation - 5 day
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Nov 5, 2020, 10:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Nov 5, 2020, 12:00pm CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Bldg D / 23</td>
+                <td>134/155</td>
+                <td>Charles Jackson</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Oct 3, 2020, 9:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Oct 3, 2020, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td> 22 / 1103</td>
+                <td>Bldg 3 / 301</td>
+                <td>Marie Jehosan</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Managers
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jun 18, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jun 18, 2021, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>33/124</td>
+                <td>Bldg 3 / 301</td>
+                <td>Barry Dunstion</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 16, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 16, 2021, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>University Bldg 12 / 103</td>
+                <td>55/76</td>
+                <td>Cora Morano</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Feb 11, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Fb 11, 2021, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Unversity Bldg 2 / 203</td>
+                <td>122/144</td>
+                <td>John C Franklin</td>
+                <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
+                <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane pt-3" id="ungraded" role="tabpanel">
+            <div class="UngradedClassesTableHeader text-muted"></div>
+            <table class="table table-striped ungraded-classes-table dataTable" id="ungradedClassesTable">
+              <thead>
+              <tr>
+                <th></th>
+                <th>Class Name</th>
+                <th>Start Date/Time</th>
+                <th>End Date/Time</th>
+                <th>Course Name</th>
+                <th>Current Registration/Class Size</th>
+                <th>Building/Room</th>
+                <th>Instructors</th>
+                <th>Created By</th>
+                <th>Updated By</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Directed In-Service Training - Home Health Agencies"
+                     data-toggle="tooltip"
+                     title="">
+                    Directed In-Service Training - Home Health Agencies
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue May 16, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue May 16, 2020, 10:00am CT</div>
+                </td>
+                <td>ACME Classroom1_30 sept</td>
+                <td>Univ 3/ 300</td>
+                <td>155/178</td>
+                <td>Admin Jason Jackson</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Critical Care Issues for Senior Patients"
+                     data-toggle="tooltip"
+                     title="">
+                    Critical Care Issues for Senior Patients
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jun 16, 2020, 9:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jun 16, 2020, 11:00am CT</div>
+                </td>
+                <td>ACME Classroom1_30</td>
+                <td>Main / 203</td>
+                <td>133/138</td>
+                <td>John Lennon</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Pain Management Class - December (Limited Registration)"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Class - December (Limited Registration)
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 16, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 16, 2021, 10:00am CT</div>
+                </td>
+                <td>Annual Class</td>
+                <td>Main Bldg / 103</td>
+                <td>266/322</td>
+                <td>Dan Wilson</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">
+                    Heart Monitor Orientation - 5 day
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 17, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 17, 2020, 10:00am CT</div>
+                </td>
+                <td>Annual Class</td>
+                <td>St Thomas  / 203</td>
+                <td>222/277</td>
+                <td>Jason Jackson</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Pain Management Class - November (Limited Registration)"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Class
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jun 6, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jun 6, 2020, 10:00am CT</div>
+                </td>
+                <td>HR Policy Class</td>
+                <td>Main / 203</td>
+                <td>145/199</td>
+                <td>Admin David</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Live Training"
+                     data-toggle="tooltip"
+                     title="">
+                    Heart Monitor Live Training
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Feb 6, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Feb 6, 2020, 10:00am CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Main 1 / 1103</td>
+                <td>122/322</td>
+                <td>David Lee</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Pain Management Webinar"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Webinar
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Mar 30, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Mar 30, 2020, 11:00am CT</div>
+                </td>
+                <td>Human Resources Annual</td>
+                <td>Main B2 / 23</td>
+                <td>144/155</td>
+                <td>Stephen Jenkins</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Geriatric Trauma"
+                     data-toggle="tooltip"
+                     title="">
+                    Geriatric Trauma
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jan 16, 2020, 1:00pm </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jun 16, 2020, 3:00pm CT</div>
+                </td>
+                <td>HR Policy Competencies</td>
+                <td>Main / 203</td>
+                <td>222/226</td>
+                <td>Bonnie Tyler</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Geriatric Trauma"
+                     data-toggle="tooltip"
+                     title="">
+                    Geriatric Trauma
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 26, 2020, 3:00pm </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 26, 2020, 4:00pm CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Main A2/ 3</td>
+                <td>324/327</td>
+                <td>Adam Levine</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">Heart Monitor Orientation - 5 day
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Apr 15, 2020, 10:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Apr 15, 2020, 12:00pm CT</div>
+                </td>
+                <td>Annual Policies Class</td>
+                <td>Main B/ 203</td>
+                <td>22/167</td>
+                <td>Ariel Jackson</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Aug 3, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Aug 3, 2020, 10:00am CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Main University/ 100</td>
+                <td>155/268 </td>
+                <td>LeeAnn Marie Jehosan</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Managers
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jul 7, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jul 7, 2020, 10:00am CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Bldg A / 113</td>
+                <td>122/188 </td>
+                <td>Michael Leigh</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 26, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 26, 2020, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>University Bldg 12 / 203</td>
+                <td>145/222</td>
+                <td>Barry Mesonia</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jan 14, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jan 14, 2020, 10:00am CT</div>
+                </td>
+                <td>Policy Class</td>
+                <td>Unversity Main / 203</td>
+                <td>12/166</td>
+                <td>Joel C Cranston</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">Heart Monitor Orientation - 5 day
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Mar 5, 2020, 10:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Mar 5, 2020, 12:00pm CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Bldg D / 23</td>
+                <td>134/155</td>
+                <td>Charles Jackson</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jul 3, 2020, 9:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jul 3, 2020, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td> 22 / 1103</td>
+                <td>Bldg 3 / 301</td>
+                <td>Marie Jehosan</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Managers
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jun 18, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jun 18, 2020, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>33/124</td>
+                <td>Bldg 3 / 301</td>
+                <td>Barry Dunstion</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 12, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 12, 2021, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>University Bldg 12 / 103</td>
+                <td>55/76</td>
+                <td>Cora Morano</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Feb 11, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Feb 11, 2020, 10:00am CT</div>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Unversity Bldg 2 / 203</td>
+                <td>122/144</td>
+                <td>John C Franklin</td>
+                <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
+                <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-export-mobile"><em class="fa fa-download"></em> </button>
+        <button type="button" class="btn btn-default btn-export"><em class="fa fa-download"></em> Export to CSV</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+        <div class="paginate"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- end modal windows-->
 
@@ -3853,7 +5261,6 @@
 <script src="./admin-assets/js/prototype.validation/formValidation.min.js"></script>
 <script src="./admin-assets/js/prototype.validation/framework/bootstrap.min.js"></script>
 <script src="./admin-assets/js/dataTables.js"></script>
-<script src="./admin-assets/js/datatables.min.js"></script>
 <script src="./admin-assets/js/responsive.bootstrap.js"></script>
 <!--<script src="http://hstm-platform.patternmanager.com/scripts/dataTables.rowReorder.min.js"></script>-->
 <script src="./admin-assets/js/prototype.datatables.js"></script>

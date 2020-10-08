@@ -59,7 +59,6 @@ $(function () {
     dropdown.toggleClass("active");
   });
 
-
   $(document).click(function (e) {
     var container = $(".kebab-dropdown.active");
 
@@ -237,6 +236,20 @@ function checkIEVersion() {
           targets: "unsortable"
         }
       ],
+      buttons: {
+        buttons:
+            [
+              {
+                extend: 'collection',
+                text: '<i class="fas fa-download pointer"> <span class="sans">Download</span></i>',
+                className: 'pointer',
+                buttons:
+                    [
+                      'excel', 'csv'
+                    ]
+              }
+            ]
+      },
       language: {
         search: "Search: _INPUT_",
         info: "Showing _START_ to _END_ of _MAX_ courses",
@@ -292,6 +305,21 @@ function checkIEVersion() {
           targets: "unsortable"
         }
       ],
+      buttons: {
+        buttons:
+            [
+              {
+                extend: 'collection',
+                text: '<i class="fas fa-download pointer"> <span class="sans">Download</span></i>',
+                className: 'pointer',
+                buttons:
+                    [
+                      'excel', 'csv'
+                    ],
+                dropup: true
+              }
+            ]
+      },
       language: {
         search: "_INPUT_",
         info: "Showing _START_ to _END_ of _MAX_ records",
@@ -317,35 +345,44 @@ function checkIEVersion() {
           if ($(row).hasClass("hidden")) {
             $(row).addClass("hidden-show-item").addClass("item-highlight");
           }
+          if ($(row).hasClass("unique")) {
+            $(row).addClass("hidden");
+          }
+          if ($(row).hasClass("dup")) {
+            $(row).addClass("hidden-show-item").addClass("item-highlight");
+          }
         } else {
-          if ($(row).hasClass("hidden")) {
-            $(row).removeClass("hidden-show-item").addClass("item-highlight");
+          if ($(row).hasClass("hidden") || ("dup")) {
+            $(row).removeClass("hidden hidden-show-item item-highlight");
+
           }
         }
-      });
+
       activeStudentsTable.draw();
     });
 
-    expandMobileRow();
-    generateDynamicDataTitles();
-    customizeColumns(activeStudentsTable);
-
-    keepDropDownMenuOpen();
-    updateTableHeaderFooter();
-    //place default info into Results header
-    function updateTableHeaderFooter() {
-      $(".dataTables_info").hide();
-      $(".ActiveStudentsTableHeader").html($("#studentsActiveTable_info").html());
-      $("#studentsActiveTable_filter input").css("width", "250px");
-    }
-    //reinitialize jquery when table is redrawn (pagination)
-    $(".dataTable").on("draw.dt", function () {
       expandMobileRow();
       generateDynamicDataTitles();
+      customizeColumns(activeStudentsTable);
+
+      keepDropDownMenuOpen();
       updateTableHeaderFooter();
+
+      //place default info into Results header
+      function updateTableHeaderFooter() {
+        $(".dataTables_info").hide();
+        $(".ActiveStudentsTableHeader").html($("#studentsActiveTable_info").html());
+        $("#studentsActiveTable_filter input").css("width", "250px");
+      }
+
+      //reinitialize jquery when table is redrawn (pagination)
+      $(".dataTable").on("draw.dt", function () {
+        expandMobileRow();
+        generateDynamicDataTitles();
+        updateTableHeaderFooter();
+      });
     });
   };
-
   healthStream.uniqueStudentResults = {};
   healthStream.uniqueStudentResults.resultsDataTable = function () {
     var uniqueStudentsTable = $("#studentsUniqueTable").DataTable({
@@ -571,6 +608,7 @@ function checkIEVersion() {
     var teamTable = $("#myTeamTable").DataTable({
       bSortClasses: false,
       paging: true,
+      pagingType: "full_numbers",
       order: [
         [0, "asc"]
       ],
@@ -585,6 +623,20 @@ function checkIEVersion() {
           targets: "unsortable"
         }
       ],
+      buttons: {
+        buttons:
+        [
+          {
+            extend: 'collection',
+            text: '<i class="fas fa-download pointer"> <span class="sans">Download</span></i>',
+            className: 'pointer',
+            buttons:
+              [
+                'excel', 'csv'
+              ]
+          }
+        ]
+      },
       language: {
         search: "Search: _INPUT_",
         info: "Showing _START_ to _END_ of _MAX_ records",
