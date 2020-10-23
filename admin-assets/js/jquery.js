@@ -1,4 +1,4 @@
-/*!
+/*
  * jQuery JavaScript Library v3.5.1
  * https://jquery.com/
  *
@@ -35,7 +35,6 @@
 	} else {
 		factory( global );
 	}
-
 // Pass this if window is not defined yet
 } )( typeof window !== "undefined" ? window : this, function( window, noGlobal ) {
 
