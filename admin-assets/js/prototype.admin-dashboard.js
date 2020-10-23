@@ -305,21 +305,6 @@ function checkIEVersion() {
           targets: "unsortable"
         }
       ],
-      buttons: {
-        buttons:
-            [
-              {
-                extend: 'collection',
-                text: '<i class="fas fa-download pointer"> <span class="sans">Download</span></i>',
-                className: 'pointer',
-                buttons:
-                    [
-                      'excel', 'csv'
-                    ],
-                dropup: true
-              }
-            ]
-      },
       language: {
         search: "_INPUT_",
         info: "Showing _START_ to _END_ of _MAX_ records",
@@ -383,6 +368,7 @@ function checkIEVersion() {
       });
     });
   };
+
   healthStream.uniqueStudentResults = {};
   healthStream.uniqueStudentResults.resultsDataTable = function () {
     var uniqueStudentsTable = $("#studentsUniqueTable").DataTable({

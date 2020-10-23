@@ -1709,13 +1709,16 @@
       </div> <!-- end modal body -->
 
       <div class="modal-footer">
-        <button class="btn btn-default btn-export-mobile" type="button">
-          <em class="fa fa-download"></em>
-        </button>
-        <button class="btn btn-default btn-export" type="button">
-          <em class="fa fa-download"></em>
-          Export to CSV
-        </button>
+        <div class="btn-group">
+          <button class="btn btn-default" type="submit">Download</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><button>Save as Excel</button></li>
+            <li><button>Save as CSV</button></li>
+          </ul>
+        </div>
         <button aria-hidden="true" class="btn btn-default" data-dismiss="modal" type="button">Close</button>
         <div class="paginate"></div>
       </div>
@@ -3722,13 +3725,16 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-default btn-export-mobile" type="button">
-            <em class="fa fa-download"></em>
-          </button>
-          <button class="btn btn-default btn-export" type="button">
-            <em class="fa fa-download"></em>
-            Export to CSV
-          </button>
+          <div class="btn-group">
+            <button class="btn btn-default" type="submit">Download</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><button>Save as Excel</button></li>
+              <li><button>Save as CSV</button></li>
+            </ul>
+          </div>
           <button aria-hidden="true" class="btn btn-default" data-dismiss="modal" type="button">Close</button>
           <div class="paginate"></div>
         </div>

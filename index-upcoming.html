@@ -1760,13 +1760,16 @@
       </div> <!-- end modal body -->
 
       <div class="modal-footer">
-        <button class="btn btn-default btn-export-mobile" type="button">
-          <em class="fa fa-download"></em>
-        </button>
-        <button class="btn btn-default btn-export" type="button">
-          <em class="fa fa-download"></em>
-          Export to CSV
-        </button>
+        <div class="btn-group">
+          <button class="btn btn-default" type="submit">Download</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><button>Save as Excel</button></li>
+            <li><button>Save as CSV</button></li>
+          </ul>
+        </div>
         <button aria-hidden="true" class="btn btn-default" data-dismiss="modal" type="button">Close</button>
         <div class="paginate"></div>
       </div>
@@ -1828,7 +1831,7 @@
                   <th class="jobCategory">Job Category</th>
                   <th class="jobtitle">Job Title</th>
                   <th class="institution">Institution Name</th>
-                  <th class="dept">Department</th>
+                  <th class="instDept">Department</th>
                   <th class="instCode">Institution Code</th>
                   <th class="logDate">Last Login Date</th>
                   <th class="createDate">Created Date</th>
@@ -2786,8 +2789,8 @@
                   <td>larrycranss</td>
                   <td>Physical Therapy</td>
                   <td>Athletic Trainer Therapist</td>
-                  <td>ACME Rehab Services</td>
                   <td>Clinical</td>
+                  <td>ACME Rehab Services</td>
                   <td>REHAB</td>
                   <td>6/7/2020 9:35 AM</td>
                   <td>2/7/2017 9:35 PM</td>
@@ -2952,7 +2955,7 @@
                   <th class="jobCategory">Job Category</th>
                   <th class="jobtitle">Job Title</th>
                   <th class="institution">Institution Name</th>
-                  <th class="dept">Department</th>
+                  <th class="instCode">Department</th>
                   <th class="instCode">Institution Code</th>
                   <th class="logDate">Last Login Date</th>
                   <th class="createDate">Created Date</th>
@@ -3113,6 +3116,7 @@
                   <td>6/7/2020 9:35 AM</td>
                   <td>5/7/2018 8:35 AM</td>
                   <td>1/1/2019 11:35 AM</td>
+
                 </tr>
                 <tr class="dup">
                   <td>
@@ -3256,12 +3260,12 @@
                   <th class="userId">User ID</th>
                   <th class="jobCategory">Job Category</th>
                   <th class="jobtitle">Job Title</th>
-                  <th class="institution">Institution Name</th>
+                  <th class="institution">Institution<br> Name</th>
                   <th class="department">Department</th>
-                  <th class="instCode">Institution Code</th>
-                  <th class="createdBy">Manual / Imported</th>
-                  <th class="logDate">Last Login Date</th>
-                  <th class="createDate">Created Date</th>
+                  <th class="instCode">Institution<br> Code</th>
+                  <th class="createdBy">Manual / <br>Imported</th>
+                  <th class="logDate">Last <br> Login Date</th>
+                  <th class="createDate">Created<br> Date</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -3521,10 +3525,10 @@
                   <th class="jobtitle">Job Title</th>
                   <th class="institution">Institution<br> Name</th>
                   <th class="dept">Department</th>
-                  <th class="instCode">Institution Code</th>
-                  <th class="createdBy">Manual / Imported</th>
-                  <th class="logDate">Last Login Date</th>
-                  <th class="createDate">Created Date</th>
+                  <th class="instCode">Institution<br> Code</th>
+                  <th class="createdBy">Manual / <br>Imported</th>
+                  <th class="logDate">Last <br> Login Date</th>
+                  <th class="createDate">Created<br> Date</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -3772,13 +3776,16 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-default btn-export-mobile" type="button">
-            <em class="fa fa-download"></em>
-          </button>
-          <button class="btn btn-default btn-export" type="button">
-            <em class="fa fa-download"></em>
-            Export to CSV
-          </button>
+          <div class="btn-group">
+            <button class="btn btn-default" type="submit">Download</button>
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><button>Save as Excel</button></li>
+              <li><button>Save as CSV</button></li>
+            </ul>
+          </div>
           <button aria-hidden="true" class="btn btn-default" data-dismiss="modal" type="button">Close</button>
           <div class="paginate"></div>
         </div>
@@ -3905,14 +3912,14 @@
               <thead>
               <tr>
                 <th>Class Name</th>
+                <th>Instructors:</th>
                 <th>Start Date/Time</th>
                 <th>End Date/Time</th>
-                <th class="none">Course Name</th>
-                <th class="none">Current Registration/Class Size</th>
-                <th class="none">Building/Room</th>
-                <th class="none">Instructors</th>
-                <th class="none">Created By</th>
-                <th class="none">Updated By</th>
+                <th class="none">Course Name:</th>
+                <th class="none">Current Registration/Class Size:</th>
+                <th class="none">Building/Room:</th>
+                <th class="none">Created By:</th>
+                <th class="none">Updated By:</th>
               </tr>
               </thead>
               <tbody>
@@ -3925,6 +3932,7 @@
                     Directed In-Service Training - Home Health Agencies
                   </a>
                 </td>
+                <td>Admin Jason Jackson</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Tue Oct 16, 2020, 8:00am </div>
                 </td>
@@ -3934,7 +3942,6 @@
                 <td>ACME Classroom1_30 sept</td>
                 <td>Univ 3/ 300</td>
                 <td>155/178</td>
-                <td>Admin Jason Jackson</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -3946,6 +3953,7 @@
                     Critical Care Issues for Senior Patients
                   </a>
                 </td>
+                <td>John Lennon</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Tue Jun 16, 2021, 9:00am </div>
                 </td>
@@ -3955,7 +3963,6 @@
                 <td>ACME Classroom1_30</td>
                 <td>Main / 203</td>
                 <td>133/138</td>
-                <td>John Lennon</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -3968,6 +3975,7 @@
                     Pain Management Class - December (Limited Registration)
                   </a>
                 </td>
+                <td>Dan Wilson</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Tue Jan 16, 2021, 8:00am </div>
                 </td>
@@ -3977,7 +3985,6 @@
                 <td>Annual Class</td>
                 <td>Main Bldg / 103</td>
                 <td>266/322</td>
-                <td>Dan Wilson</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -3989,6 +3996,7 @@
                     Heart Monitor Orientation - 5 day
                   </a>
                 </td>
+                <td>Jason Jackson</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Wed Jan 17, 2021, 8:00am </div>
                 </td>
@@ -3998,7 +4006,6 @@
                 <td>Annual Class</td>
                 <td>St Thomas  / 203</td>
                 <td>222/277</td>
-                <td>Jason Jackson</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4011,6 +4018,7 @@
                     Pain Management Class
                   </a>
                 </td>
+                <td>Admin David</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Tue Dec 16, 2020, 8:00am </div>
                 </td>
@@ -4020,7 +4028,6 @@
                 <td>HR Policy Class</td>
                 <td>Main / 203</td>
                 <td>145/199</td>
-                <td>Admin David</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4032,6 +4039,7 @@
                     Heart Monitor Live Training
                   </a>
                 </td>
+                <td>David Lee</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Fri Dec 6, 2020, 8:00am </div>
                 </td>
@@ -4041,7 +4049,6 @@
                 <td>Policy Class</td>
                 <td>Main 1 / 1103</td>
                 <td>122/322</td>
-                <td>David Lee</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4053,6 +4060,7 @@
                     Pain Management Webinar
                   </a>
                 </td>
+                <td>Stephen Jenkins</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Fri Nov 30, 2020, 8:00am </div>
                 </td>
@@ -4062,7 +4070,6 @@
                 <td>Human Resources Annual</td>
                 <td>Main B2 / 23</td>
                 <td>144/155</td>
-                <td>Stephen Jenkins</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4074,6 +4081,7 @@
                     Geriatric Trauma
                   </a>
                 </td>
+                <td>Bonnie Tyler</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Thu Jan 16, 2021, 1:00pm </div>
                 </td>
@@ -4083,7 +4091,6 @@
                 <td>HR Policy Competencies</td>
                 <td>Main / 203</td>
                 <td>222/226</td>
-                <td>Bonnie Tyler</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4095,6 +4102,7 @@
                     Geriatric Trauma
                   </a>
                 </td>
+                <td>Adam Levine</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Tue Jan 26, 2021, 3:00pm </div>
                 </td>
@@ -4104,7 +4112,6 @@
                 <td>Policy Class</td>
                 <td>Main A2/ 3</td>
                 <td>324/327</td>
-                <td>Adam Levine</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4115,6 +4122,7 @@
                      title="">Heart Monitor Orientation - 5 day
                   </a>
                 </td>
+                <td>Ariel Jackson</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Fri Oct 15, 2020, 10:00am </div>
                 </td>
@@ -4124,7 +4132,6 @@
                 <td>Annual Policies Class</td>
                 <td>Main B/ 203</td>
                 <td>22/167</td>
-                <td>Ariel Jackson</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4135,6 +4142,7 @@
                      title="">Budgeting and Planning for Assistants
                   </a>
                 </td>
+                <td>LeeAnn Marie Jehosan</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Tue Nov 3, 2020, 8:00am </div>
                 </td>
@@ -4144,7 +4152,6 @@
                 <td>Policy Class</td>
                 <td>Main University/ 100</td>
                 <td>155/268 </td>
-                <td>LeeAnn Marie Jehosan</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4155,6 +4162,7 @@
                      title="">Budgeting and Planning for Managers
                   </a>
                 </td>
+                <td>Michael Leigh</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Thu Dec 7, 2020, 8:00am </div>
                 </td>
@@ -4164,7 +4172,6 @@
                 <td>Policy Class</td>
                 <td>Bldg A / 113</td>
                 <td>122/188 </td>
-                <td>Michael Leigh</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4175,6 +4182,7 @@
                      title="">Budgeting and Planning for Assistants
                   </a>
                 </td>
+                <td>Barry Mesonia</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Wed Jan 16, 2021, 8:00am </div>
                 </td>
@@ -4184,7 +4192,6 @@
                 <td>Health Care Policy Class</td>
                 <td>University Bldg 12 / 203</td>
                 <td>145/222</td>
-                <td>Barry Mesonia</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4195,6 +4202,7 @@
                      title="">Budgeting and Planning for Assistants
                   </a>
                 </td>
+                <td>Joel C Cranston</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Mon Jan 14, 2021, 8:00am </div>
                 </td>
@@ -4204,7 +4212,6 @@
                 <td>Policy Class</td>
                 <td>Unversity Main / 203</td>
                 <td>12/166</td>
-                <td>Joel C Cranston</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
               </tr>
@@ -4215,6 +4222,7 @@
                      title="">Heart Monitor Orientation - 5 day
                   </a>
                 </td>
+                <td>Charles Jackson</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Mon Nov 5, 2020, 10:00am </div>
                 </td>
@@ -4224,7 +4232,6 @@
                 <td>Health Care Policy Class</td>
                 <td>Bldg D / 23</td>
                 <td>134/155</td>
-                <td>Charles Jackson</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
               </tr>
@@ -4235,6 +4242,7 @@
                      title="">Budgeting and Planning for Assistants
                   </a>
                 </td>
+                <td>Marie Jehosan</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Tue Oct 3, 2020, 9:00am </div>
                 </td>
@@ -4244,7 +4252,6 @@
                 <td>Health Care Policy Class</td>
                 <td> 22 / 1103</td>
                 <td>Bldg 3 / 301</td>
-                <td>Marie Jehosan</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
               </tr>
@@ -4255,6 +4262,7 @@
                      title="">Budgeting and Planning for Managers
                   </a>
                 </td>
+                <td>Barry Dunstion</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Thu Jun 18, 2021, 8:00am </div>
                 </td>
@@ -4264,7 +4272,6 @@
                 <td>Health Care Policy Class</td>
                 <td>33/124</td>
                 <td>Bldg 3 / 301</td>
-                <td>Barry Dunstion</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
               </tr>
@@ -4275,6 +4282,7 @@
                      title="">Budgeting and Planning for Assistants
                   </a>
                 </td>
+                <td>Cora Morano</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Wed Jan 16, 2021, 8:00am </div>
                 </td>
@@ -4284,7 +4292,6 @@
                 <td>Health Care Policy Class</td>
                 <td>University Bldg 12 / 103</td>
                 <td>55/76</td>
-                <td>Cora Morano</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
               </tr>
@@ -4295,6 +4302,7 @@
                      title="">Budgeting and Planning for Assistants
                   </a>
                 </td>
+                <td>John C Franklin</td>
                 <td>
                   <div class="p-0 w-100 text-muted">Mon Feb 11, 2021, 8:00am </div>
                 </td>
@@ -4304,7 +4312,6 @@
                 <td>Health Care Policy Class</td>
                 <td>Unversity Bldg 2 / 203</td>
                 <td>122/144</td>
-                <td>John C Franklin</td>
                 <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
                 <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
               </tr>
@@ -4746,8 +4753,16 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default btn-export-mobile"><em class="fa fa-download"></em> </button>
-        <button type="button" class="btn btn-default btn-export"><em class="fa fa-download"></em> Export to CSV</button>
+        <div class="btn-group dropup">
+          <button class="btn btn-default" type="submit">Download</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-up"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><button>Save as Excel</button></li>
+            <li><button>Save as CSV</button></li>
+          </ul>
+        </div>
         <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
         <div class="paginate"></div>
       </div>
@@ -4784,7 +4799,7 @@
 <script src="./admin-assets/js/healthstream.checkable.js"></script>-->
 <script src="./admin-assets/js/prototype.validation/formValidation.min.js"></script>
 <script src="./admin-assets/js/prototype.validation/framework/bootstrap.min.js"></script>
-<!--<script src="./admin-assets/js/dataTables.js"></script>-->
+<script src="./admin-assets/js/dataTables.js"></script>
 <script src="./admin-assets/js/datatables.min.js"></script>
 <script src="./admin-assets/js/responsive.bootstrap.js"></script>
 <!--<script src="http://hstm-platform.patternmanager.com/scripts/dataTables.rowReorder.min.js"></script>-->

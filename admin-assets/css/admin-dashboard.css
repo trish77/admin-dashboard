@@ -104,6 +104,7 @@
   border: none;
 }
 #student-status .modal-dialog,
+#modal-upcoming-classes .modal-dialog,
 #modal-expiring .modal-dialog {
   width: 78%;
 }
@@ -253,7 +254,7 @@
 .modal-body .bottom {
   position: relative;
   right: 20px;
-  bottom: 0 !important;
+  bottom: -70px !important;
 }
 
 .panel-my-team {
@@ -344,6 +345,42 @@ table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected  {
   background: url('../images/plus-alt.png') no-repeat center center;
   cursor: pointer;
 }
+
+
+element.style {
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+table.dataTable td, table.dataTable th {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+td, th {
+  padding: 0;
+}
+*, .gritter-item p, .gritter-title {
+  word-wrap: break-word;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheet
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+table.dataTable tbody td.selected, table.dataTable tbody th.selected, table.dataTable tbody tr.selected {
+  color: #70b9d1;
+  font-weight: bold;
+}
+
 tr.shown td.details-control {
   background: url('../images/minus-alt.png') no-repeat center center;
 }
