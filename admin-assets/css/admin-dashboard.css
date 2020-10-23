@@ -271,8 +271,9 @@
 
 .refresh-widget-data a,
 .filter-widget-data a,
-.assignments-refresh-widget-data a,
-.panel-metrics a {
+.assignments-refresh-widget-data a
+
+ {
   display: block;
   bottom: -219px;
   left: 0;
@@ -281,6 +282,11 @@
 
 #widgetStudents {
   padding-bottom: 10px;
+}
+
+#widgetStudents .refresh-widget-data a {
+  bottom: -233px;
+  padding-top: 6px;
 }
 
 #widgetExpiringCourse .download-widget-data a,
