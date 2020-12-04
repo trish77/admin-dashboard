@@ -660,33 +660,6 @@ function checkIEVersion() {
     });
   };
 
- /* function format ( d ) {
-    // `d` is the original data object for the row
-    return '<table class="table table-striped">'+
-        '<tr>'+
-        '<td>Course Name:</td>'+
-        '<td>'+ d[4] +'</td>'+
-        '</tr>'+
-        '<tr>'+
-        '<td>Current Registration:</td>'+
-        '<td>'+d[5]+'</td>'+
-        '<td>Building Room:</td>'+
-        '<td>'+ d[6] +'</td>'+
-        '</tr>'+
-        '<tr>'+
-        '<td>Instructors:</td>'+
-        '<td>'+d[7]+'</td>'+
-        '</tr>'+
-        '<tr>'+
-        '<td>Created By:</td>'+
-        '<td>'+d[8]+'</td>'+
-        '</tr>'+
-        '<tr>'+
-        '<td>Updated By:</td>'+
-        '<td>'+d[9]+'</td>'+
-        '</tr>'+
-        '</table>';
-  }*/
   healthStream.upcomingClassesSearchResults = {};
   healthStream.upcomingClassesSearchResults.resultsDataTable = function () {
     var upcomingClassesTable = $("#upcomingClassesTable").DataTable({
@@ -696,11 +669,34 @@ function checkIEVersion() {
       responsive: true,
       order: [[1, "asc"]],
       dom: 'ft<"bottom"rlip>',
-     /* columnDefs:[
-        { targets: [ 0 ], orderable: false, visible: false, className: 'details-control', data: null, defaultContent: '' },
-        { targets: [ 4, 5, 6, 7, 8, 9 ],  visible: false }
+      columnDefs: [
+        {
+         // orderable: false,
+          targets: [0],
+          width: '250px'
+        },
+        {
+          targets: [1],
+          width: '100px'
+        },
+        {
+          targets: [2],
+          width: '100px'
+        },
+        {
+          targets: [3],
+          width: '100px'
+        },
+        {
+          targets: [4],
+          width: '80px'
+        },
+        {
+          targets: [5],
+          width: '80px'
+        }
 
-      ],*/
+      ],
       language: {
         search: "Search: _INPUT_",
         info: "Showing _START_ to _END_ of _MAX_ records",
@@ -731,9 +727,9 @@ function checkIEVersion() {
     });
 */
 
-  /*  upcomingClassesTable.columns().iterator("column", function (ctx, idx) {
+    upcomingClassesTable.columns().iterator("column", function (ctx, idx) {
       $(upcomingClassesTable.column(idx).header()).append('<span class="sort-icon"/>');
-    });*/
+    });
 
     expandMobileRow();
     generateDynamicDataTitles();
@@ -760,18 +756,14 @@ function checkIEVersion() {
     var ungradedClassesTable = $("#ungradedClassesTable").DataTable({
       bSortClasses: false,
       paging: true,
-      order: [
-        [0, "asc"]
-      ],
+      select: true,
+      responsive: true,
+      order: [[1, "asc"]],
       dom: 'ft<"bottom"rlip>',
       columnDefs: [
-        {
-          width: "35px",
-          visible: false,
-          targets: "hideOnLoad"
-        }, {
+       {
           orderable: false,
-          targets: "unsortable"
+          targets: "0"
         }
       ],
       language: {

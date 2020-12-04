@@ -199,7 +199,7 @@
 .refresh-widget-data,
 .filter-widget-data {
   text-align: center;
-  z-index: 9999;
+  z-index: 999;
   position: relative;
 }
 
@@ -254,7 +254,7 @@
 .modal-body .bottom {
   position: relative;
   right: 20px;
-  bottom: -70px !important;
+  bottom: -55px !important;
 }
 
 .panel-my-team {
@@ -265,7 +265,7 @@
 .filter-widget-data,
 .assignments-refresh-widget-data {
   text-align: center;
-  z-index: 9999;
+  z-index: 999;
   position: relative;
 }
 
@@ -352,9 +352,11 @@ table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected  {
   cursor: pointer;
 }
 
-
-element.style {
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td.dtr-control:before, table.dataTable.dtr-inline.collapsed > tbody > tr.parent > th.dtr-control:before {
+  content: '-';
+  background-color: rgba(209, 209, 209, 0.4);
 }
+
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
   padding: 8px;
   line-height: 1.42857143;
@@ -377,7 +379,7 @@ td, th {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-user agent stylesheet
+
 td {
   display: table-cell;
   vertical-align: inherit;
@@ -389,6 +391,42 @@ table.dataTable tbody td.selected, table.dataTable tbody th.selected, table.data
 
 tr.shown td.details-control {
   background: url('../images/minus-alt.png') no-repeat center center;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td.dtr-control, table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th.dtr-control {
+  width: 300px !important;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > td.dtr-control, table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th.dtr-control {
+  width: 300px !important;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details {
+  margin-left: 23px;
+}
+
+#allCourseTable_wrapper .bottom,
+#expiredCourseTable_wrapper .bottom,
+#expiringCourseTable_wrapper .bottom
+{
+  top: 65px;
+}
+
+#upcomingClassesTable_wrapper .bottom,
+#ungradedClassesTable_wrapper .bottom {
+  top: 70px;
+}
+
+.meta-type {
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #777;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 /***** admin hlc settings ******/
 .fp {
