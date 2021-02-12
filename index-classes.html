@@ -41,7 +41,7 @@
           <i class="fa fa-user"></i>
           <img alt="avatar" data-pin-nopin="true" src="admin-assets/images/avatar-default.png">
         </div>
-        <a class="alerts" href="#"><span class="badge">3</span></a>
+
         <div class="institution">
           <a href="#">Acme General Medical Center</a>
         </div>
@@ -56,9 +56,6 @@
           </li>
           <li class="hide-header-open">
             <a href="">Manage Password</a>
-          </li>
-          <li>
-            <a href="">Alerts <span class="badge">3</span></a>
           </li>
           <li class="hide-header-open logout">
             <a href="#">Logout</a>
@@ -265,86 +262,6 @@
             <!-- START panel COLUMN 1-->
             <div class="col-md-6 col-lg-4" data-toggle="portlet" id="portlet-1">
               <!-- START New panel-->
-              <div class="panel panel-default panel-metrics expiring-widget" id="widgetExpiringCourse">
-                <div class="panel-body text-center">
-                  <div class="metric-box-header portlet-handler">
-                    <span class="highlight-text">Expiring Courses</span>
-                    <div class="kebab">
-                      <figure></figure>
-                      <figure class="middle"></figure>
-                      <p class="cross">x</p>
-                      <figure></figure>
-                      <ul class="kebab-dropdown">
-                        <li>
-                          <div class="kebab-mlink">
-                            <span class="kebab-mlink-label">Date Range:</span>
-                            <button class="btn btn-xs btn-link is-active js-toggle-days" data-days="30">30d</button>
-                            <button class="btn btn-xs btn-link js-toggle-days" data-days="60">60d</button>
-                            <button class="btn btn-xs btn-link js-toggle-days" data-days="90">90d</button>
-                            <button class="btn btn-xs btn-link js-toggle-days" data-days="90">180d</button>
-                          </div>
-                        </li>
-                        <li>
-                          <a class="js-toggle-widget-kebab kebab-hide-widget kebab-hide-expiring-widget"
-                             href="#">Hide Widget
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="refresh-widget-data">
-                      <a href="#">
-                            <span class="refresh-widget-data-icon">
-                              <em class="fa fa-refresh"></em>
-                            </span>
-                      </a>
-                    </div>
-                    <div class="download-widget-data">
-                      <a href="#">
-                            <span class="download-widget-data-icon">
-                              <em class="fa fa-download"></em>
-                            </span>
-                      </a>
-                    </div>
-                  </div>
-                  <a class="show-modal-expiring" data-toggle="modal" href="#">
-                    <div class="metric-box expiring-courses">
-                      <div class="metric-center-summary">
-                        <div class="primary-metric">
-                          <div class="primary-value">
-                            <div class="metric-value">9</div>
-                          </div>
-                          <div class="primary-label">
-                            <div class="metric-value">Expired</div>
-                          </div>
-                        </div>
-                        <div class="secondary-metric">
-                          <div class="secondary-value">
-                            <div class="metric-value">130</div>
-                          </div>
-                          <div class="secondary-label">
-                            <div class="metric-value">Expiring Soon</div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="chart-container">
-                        <canvas height="175" id="UpcomingExpirationsChart" width="175"></canvas>
-                      </div>
-                    </div>
-                    <div class="metric-box-footer">
-                      expiring within
-                      <span class="js-toggle-days-target">60</span>
-                      days
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <!-- END panel-->
-
-            </div>
-            <!-- END panel COLUMN 1-->
-            <!-- START panel COLUMN 2-->
-            <div class="col-md-6 col-lg-4" data-toggle="portlet" id="portlet-2">
-              <!-- START panel-->
               <div class="panel panel-default panel-metrics cards-widget" id="widgetUpcomingClasses">
                 <div class="panel-body text-center">
                   <div class="metric-box-header portlet-handler">
@@ -405,6 +322,14 @@
                 </div>
               </div>
               <!-- END panel-->
+
+            </div>
+            <!-- END panel COLUMN 1-->
+            <!-- START panel COLUMN 2-->
+            <div class="col-md-6 col-lg-4" data-toggle="portlet" id="portlet-2">
+              <!-- START panel-->
+
+              <!-- END panel-->
             </div><!-- END panel COLUMN 2-->
 
             <!-- START panel COLUMN 3-->
@@ -435,1361 +360,7 @@
 </div>
 
 <!--modal windows-->
-<div class="modal fade modal-xl modal-expiring dashboard-modal-table is-hstream" id="modal-expiring">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button aria-hidden="true" class="close" data-dismiss="modal" type="button">
-          <i class="fa fa-times"></i>
-        </button>
-        <h4 class="modal-title">Expiring/Expired Courses in 30 days</h4>
-      </div>
-      <div class="modal-body">
-        <div class="modal-header-left pull-left"></div>
 
-        <!-- radio filters -->
-        <div class="courseStatusFilter border-bottom form-inline pb-3 mb-2 text-muted">
-          <div class="radio pr-4">
-            <label>
-              <input checked="" name="course-status" type="radio" value="all">
-              <span>All Courses</span>
-            </label>
-          </div>
-          <div class="radio pr-4">
-            <label>
-              <input name="course-status" type="radio" value="expired">
-              <span>Expired</span>
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input name="course-status" type="radio" value="expiring">
-              <span>Expiring</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- course table views -->
-        <div>
-          <div class="cstatus hide" id="expiring">
-            <div class="table-view expiring">
-              <h3 class="mt-5">Expiring Courses</h3>
-              <hr>
-              <div class="expiringCourseHeader text-muted" style="float:left"></div>
-              <table class="table table-striped expiring-course-table dataTable" id="expiringCourseTable">
-                <thead>
-                <tr>
-                  <th class="course">Course</th>
-                  <th class="version">Course <br>Version</th>
-                  <th class="affiliation">Affiliation</th>
-                  <th class="owner">Course Owner</th>
-                  <th class="creator">Course Author</th>
-                  <th class="expires">Expiration<br/> Date</th>
-                  <th class="expiresdays">Days to <br/> Expire</th>
-                  <th>Course <br/> Review Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Free Technology Resources for the NPD Specialist (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>Test 1</td>
-                  <td class="text-attention">7/6/20</td>
-                  <td>34</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>Acme</td>
-                  <td class="text-attention">4/6/20</td>
-                  <td>44</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: Pediatric ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>ACME</td>
-                  <td class="text-attention">
-                    7/1/20
-                  </td>
-                  <td>6</td>
-                  <td>1/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Challenges to Providing Pass-Through Dollars for Nurse Residency ProgramsÂ (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/10/20
-                  </td>
-                  <td>65</td>
-                  <td>6/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">ECG ST-Segment Monitoring for the Identification of Ischemia, Injury, or Infarction (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>M Wilson</td>
-                  <td class="text-attention">
-                    7/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">EEG Monitoring for Seizures in the NICU</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>demo1</td>
-                  <td class="text-attention">
-                    7/20/20
-                  </td>
-                  <td>25</td>
-                  <td>8/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">EEG Monitoring for Seizures in the NICU (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/1/20
-                  </td>
-                  <td>40</td>
-                  <td>11/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Engaging Teaching Strategies for Diverse Learners (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>Acme</td>
-                  <td class="text-attention">
-                    8/1/20
-                  </td>
-                  <td>40</td>
-                  <td>10/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Creative Teaching Strategies: It's All About Engagement (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    7/16/20
-                  </td>
-                  <td>24</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>ACME Healthcare Enterprise</td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>M Wilson</td>
-                  <td class="text-attention">
-                    8/30/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Diagnostic Coding: Pediatric ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>M Wilson</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>M Wilson</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Engaging Teaching Strategies for Diverse Learners (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>M Wilson</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">EEG Monitoring for Seizures in the NICU (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>Acme</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">EEG Monitoring for Seizures in the NICU</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">ECG ST-Segment Monitoring for the Identification of Ischemia, Injury, or Infarction (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td>M Wilson</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td>4/30/20</td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="cstatus hide" id="expired">
-            <div class="table-view expired">
-              <h3 class="mt-5">Expired Courses</h3>
-              <hr>
-              <div class="expiredCourseHeader text-muted" style="float:left"></div>
-              <table class="table table-striped expired-course-table dataTable" id="expiredCourseTable">
-                <thead>
-                <tr>
-                  <th class="course" style="width: 45%">Course</th>
-                  <th class="version">Course <br/> Version</th>
-                  <th class="affiliation">Affiliation</th>
-                  <th class="owner">Course Owner</th>
-                  <th class="expireddate">Expiration<br/>Date</th>
-                  <th class="expiresdays">Days Expired</th>
-                  <th class="reviewdate">Course <br/>Review Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Free Technology Resources for the NPD Specialist (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">4/6/20</td>
-                  <td>34</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">4/6/20</td>
-                  <td>34</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td>34</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: Pediatric ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/1/20
-                  </td>
-                  <td>66</td>
-                  <td>1/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Challenges to Providing Pass-Through Dollars for Nurse Residency ProgramsÂ (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/10/20
-                  </td>
-                  <td>68</td>
-                  <td>6/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">ECG ST-Segment Monitoring for the Identification of Ischemia, Injury, or Infarction (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    3/16/20
-                  </td>
-                  <td>90</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">EEG Monitoring for Seizures in the NICU</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/20/20
-                  </td>
-                  <td>66</td>
-                  <td>8/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">EEG Monitoring for Seizures in the NICU (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    6/1/20
-                  </td>
-                  <td>25</td>
-                  <td>11/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Engaging Teaching Strategies for Diverse Learners (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    6/1/20
-                  </td>
-                  <td>26</td>
-                  <td>10/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Creative Teaching Strategies: It's All About Engagement (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    6/16/20
-                  </td>
-                  <td>10</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>ACME Healthcare Enterprise</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/30/20
-                  </td>
-                  <td>27</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Diagnostic Coding: Pediatric ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td>30</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Engaging Teaching Strategies for Diverse Learners (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">EEG Monitoring for Seizures in the NICU (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td>30</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">EEG Monitoring for Seizures in the NICU</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td>30</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">ECG ST-Segment Monitoring for the Identification of Ischemia, Injury, or Infarction (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    2/16/20
-                  </td>
-                  <td>120</td>
-                  <td>4/30/20</td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="cstatus" id="all">
-            <div class="all table-view">
-              <h3 class="mt-5">All Courses - Expired / Expiring</h3>
-              <hr>
-              <div class="allCourseHeader text-muted" style="float:left"></div>
-              <table class="table table-striped all-course-table dataTable" id="allCourseTable">
-                <thead>
-                <tr>
-                  <th class="course" style="width: 45%">Course</th>
-                  <th class="version">Course
-                    <br>
-                    Version
-                  </th>
-                  <th class="affiliation">Affiliation</th>
-                  <th class="affiliation">Course Owner</th>
-                  <th class="expires">Expiration
-                    <br/>
-                    Date
-                  </th>
-                  <th class="expiresdays">Days
-                    <br/>
-                    Expired
-                  </th>
-                  <th class="expiresdays">Days to
-                    <br/>
-                    Expire
-                  </th>
-                  <th>Course<br/> Review Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                <!-- expired -->
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Free Technology Resources for the NPD Specialist (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">4/6/20</td>
-                  <td></td>
-                  <td>34</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">4/6/20</td>
-                  <td></td>
-                  <td>34</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td></td>
-                  <td>34</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: Pediatric ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/1/20
-                  </td>
-                  <td></td>
-                  <td>66</td>
-                  <td>1/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Challenges to Providing Pass-Through Dollars for Nurse Residency ProgramsÂ (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/10/20
-                  </td>
-                  <td></td>
-                  <td>68</td>
-                  <td>6/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">ECG ST-Segment Monitoring for the Identification of Ischemia, Injury, or Infarction (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    3/16/20
-                  </td>
-                  <td></td>
-                  <td>90</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">EEG Monitoring for Seizures in the NICU</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/20/20
-                  </td>
-                  <td></td>
-                  <td>66</td>
-                  <td>8/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">EEG Monitoring for Seizures in the NICU (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    6/1/20
-                  </td>
-                  <td></td>
-                  <td>25</td>
-                  <td>11/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Engaging Teaching Strategies for Diverse Learners (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    6/1/20
-                  </td>
-                  <td></td>
-                  <td>26</td>
-                  <td>10/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Creative Teaching Strategies: It's All About Engagement (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    6/16/20
-                  </td>
-                  <td></td>
-                  <td>10</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>ACME Healthcare Enterprise</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td></td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/30/20
-                  </td>
-                  <td></td>
-                  <td>27</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td></td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Diagnostic Coding: Pediatric ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td></td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td></td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td></td>
-                  <td>30</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Engaging Teaching Strategies for Diverse Learners (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td></td>
-                  <td>60</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">EEG Monitoring for Seizures in the NICU (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td></td>
-                  <td>30</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">EEG Monitoring for Seizures in the NICU</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    5/16/20
-                  </td>
-                  <td></td>
-                  <td>30</td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">ECG ST-Segment Monitoring for the Identification of Ischemia, Injury, or Infarction (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    2/16/20
-                  </td>
-                  <td></td>
-                  <td>120</td>
-                  <td>4/30/20</td>
-                </tr>
-
-                <!-- expiring -->
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: Pediatric ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    7/1/20
-                  </td>
-                  <td>6</td>
-                  <td></td>
-                  <td>1/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Challenges to Providing Pass-Through Dollars for Nurse Residency ProgramsÂ (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/10/20
-                  </td>
-                  <td>65</td>
-                  <td></td>
-                  <td>6/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">ECG ST-Segment Monitoring for the Identification of Ischemia, Injury, or Infarction (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    7/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">EEG Monitoring for Seizures in the NICU</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    7/20/20
-                  </td>
-                  <td>25</td>
-                  <td></td>
-                  <td>8/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">EEG Monitoring for Seizures in the NICU (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/1/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>11/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Engaging Teaching Strategies for Diverse Learners (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/1/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>10/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Creative Teaching Strategies: It's All About Engagement (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    7/16/20
-                  </td>
-                  <td>24</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>ACME Healthcare Enterprise</td>
-                  <td class="text-attention">
-                    4/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/30/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="#">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Diagnostic Coding: Pediatric ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Diagnostic Coding: ICD-10-CM Chapter 21 - Factors Influencing Health Status</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Developing an Orientation Program for the Ambulatory Setting (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">Engaging Teaching Strategies for Diverse Learners (ANPD)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">EEG Monitoring for Seizures in the NICU (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">EEG Monitoring for Seizures in the NICU</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                <tr data-id="1">
-                  <td>
-                    <a href="dashboard-profile-dev-ready.php#professional">ECG ST-Segment Monitoring for the Identification of Ischemia, Injury, or Infarction (CNE/CME)</a>
-                  </td>
-                  <td>607</td>
-                  <td class="team-action">
-                    Trinity Health
-                  </td>
-                  <td>HSTM</td>
-                  <td class="text-attention">
-                    8/16/20
-                  </td>
-                  <td>40</td>
-                  <td></td>
-                  <td>4/30/20</td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div> <!-- end modal body -->
-
-      <div class="modal-footer">
-        <div class="btn-group">
-          <button class="btn btn-default" type="submit">Download</button>
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><button>Save as Excel</button></li>
-            <li><button>Save as CSV</button></li>
-          </ul>
-        </div>
-        <button aria-hidden="true" class="btn btn-default" data-dismiss="modal" type="button">Close</button>
-        <div class="paginate"></div>
-      </div>
-    </div> <!-- end modal-content body -->
-  </div>
-</div>
 <div class="modal fade modal-xl dashboard-modal-table is-hstream" id="student-status">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -3957,8 +2528,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Univ 3/ 300</td>
                 <td>155/178</td>
+                <td>Univ 3/ 300</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -3980,8 +2551,8 @@
                   <div class="p-0 w-100 text-muted">90 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Main / 203</td>
                 <td>133/138</td>
+                <td>Main / 203</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4027,8 +2598,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>St Thomas  / 203</td>
                 <td>222/277</td>
+                <td>St Thomas  / 203</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4051,8 +2622,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Main / 203</td>
                 <td>145/199</td>
+                <td>Main / 203</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4074,8 +2645,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Main 1 / 1103</td>
                 <td>122/322</td>
+                <td>Main 1 / 1103</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4097,8 +2668,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Main B2 / 23</td>
                 <td>144/155</td>
+                <td>Main B2 / 23</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4120,8 +2691,8 @@
                   <div class="p-0 w-100 text-muted">90 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Main / 203</td>
                 <td>222/226</td>
+                <td>Main / 223</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4144,8 +2715,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Main A2/ 3</td>
                 <td>324/327</td>
+                <td>Main A2/ 3</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4166,8 +2737,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
+                <td>232/167</td>
                 <td>Main B/ 203</td>
-                <td>22/167</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4189,8 +2760,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Main University/ 100</td>
                 <td>155/268 </td>
+                <td>Main University/ 100</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4211,9 +2782,9 @@
                 <td>
                   <div class="p-0 w-100 text-muted">120 minutes</div>
                 </td>
-                <td><span class="fa text-green fa-download"></span></td>
-                <td>Bldg A / 113</td>
+                <td><span class="fa text-g0reen fa-download"></span></td>
                 <td>122/188 </td>
+                <td>Bldg A / 113</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4235,8 +2806,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>University Bldg 12 / 203</td>
                 <td>145/222</td>
+                <td>University Bldg 12 / 203</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4258,8 +2829,8 @@
                   <div class="p-0 w-100 text-muted">90 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Unversity Main / 203</td>
                 <td>12/166</td>
+                <td>Unversity Main / 203</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
               </tr>
@@ -4280,8 +2851,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Bldg D / 23</td>
                 <td>134/155</td>
+                <td>Bldg D / 23</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
               </tr>
@@ -4346,8 +2917,8 @@
                   <div class="p-0 w-100 text-muted">90 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>University Bldg 12 / 103</td>
                 <td>55/76</td>
+                <td>University Bldg 12 / 103</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
               </tr>
@@ -4368,8 +2939,8 @@
                   <div class="p-0 w-100 text-muted">60 minutes</div>
                 </td>
                 <td><span class="fa text-green fa-download"></span></td>
-                <td>Unversity Bldg 2 / 203</td>
                 <td>122/144</td>
+                <td>Unversity Bldg 2 / 203</td>
                 <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
                 <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
               </tr>
@@ -4411,8 +2982,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Univ 3/ 300</td>
                 <td>155/178</td>
+                <td>Univ 3/ 300</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4433,8 +3004,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Main / 203</td>
                 <td>133/138</td>
+                <td>Main / 203</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4457,8 +3028,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">90 Minutes</div>
                 </td>
-                <td>Main Bldg / 103</td>
                 <td>266/322</td>
+                <td>Main Bldg / 103</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4479,8 +3050,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>St Thomas  / 203</td>
                 <td>222/277</td>
+                <td>St Thomas  / 203</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4493,7 +3064,6 @@
                     Pain Management Class
                   </a>
                   <span class="meta-type">live CLASS</span>
-
                 </td>
                 <td>HR Policy Class</td>
                 <td>Admin David</td>
@@ -4503,8 +3073,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Main / 203</td>
                 <td>145/199</td>
+                <td>Main / 203</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4525,8 +3095,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Main 1 / 1103</td>
                 <td>122/322</td>
+                <td>Main 1 / 1103</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4547,8 +3117,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">120 Minutes</div>
                 </td>
-                <td>Main B2 / 23</td>
                 <td>144/155</td>
+                <td>Main B2 / 23</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4569,8 +3139,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Main / 203</td>
                 <td>222/226</td>
+                <td>Main / 203</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4582,7 +3152,6 @@
                     Geriatric Trauma
                   </a>
                   <span class="meta-type">live + online CLASS</span>
-
                 </td>
                 <td>Policy Class</td>
                 <td>Adam Levine</td>
@@ -4592,8 +3161,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Main A2/ 3</td>
                 <td>324/327</td>
+                <td>Main A2/ 3</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4613,8 +3182,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">90 Minutes</div>
                 </td>
-                <td>Main B/ 203</td>
                 <td>22/167</td>
+                <td>Main B/ 203</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
                 <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
               </tr>
@@ -4634,8 +3203,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Main University/ 100</td>
                 <td>155/268 </td>
+                <td>Main University/ 100</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4655,8 +3224,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Bldg A / 113</td>
                 <td>122/188 </td>
+                <td>Bldg A / 113</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4677,8 +3246,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>University Bldg 12 / 203</td>
                 <td>145/222</td>
+                <td>University Bldg 12 / 203</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
                 <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
               </tr>
@@ -4698,8 +3267,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">90 Minutes</div>
                 </td>
-                <td>Unversity Main / 203</td>
                 <td>12/166</td>
+                <td>Unversity Main / 203</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
               </tr>
@@ -4719,9 +3288,9 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Bldg D / 23</td>
                 <td>134/155</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Bldg D / 23</td>
                 <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
               </tr>
               <tr>
@@ -4784,8 +3353,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">90 Minutes</div>
                 </td>
-                <td>University Bldg 12 / 103</td>
                 <td>55/76</td>
+                <td>University Bldg 12 / 103</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
                 <td>Director RM on Jul 22, 2020 11:20AM CT</td>
               </tr>
@@ -4805,8 +3374,8 @@
                 <td>
                   <div class="p-0 w-100 text-muted">60 Minutes</div>
                 </td>
-                <td>Unversity Bldg 2 / 203</td>
                 <td>122/144</td>
+                <td>Unversity Bldg 2 / 203</td>
                 <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
                 <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
               </tr>
@@ -4832,8 +3401,6 @@
     </div>
   </div>
 </div>
-
-
 <!-- end modal windows-->
 
 <!-- Global site tag (gtag.js) - Google Analytics  THIS WILL CHANGE!! -->
