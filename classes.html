@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <title>Manager Dashboard | HealthStream</title>
+  <link href="./admin-assets/css/bootstrap.min.css?cache=1500665751" rel="stylesheet" type="text/css">
+  <link href="./admin-assets/css/healthstream.plugins.css?cache=1500665751" rel="stylesheet" type="text/css">
+  <link href="./admin-assets/css/healthstream.app.css?cache=1500665751" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" type="text/css" href="./admin-assets/css/healthstream.prototype.css?cache=1500665751">
+  <!--  <link rel="stylesheet" type="text/css" href="./admin-assets/css/healthstream.anychart.css?cache=1500665751">-->
+  <link href="./admin-assets/css/richtext.min.css?cache=1500665751" rel="stylesheet" type="text/css">
+  <link href="./admin-assets/css/responsive.bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="./admin-assets/css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="./admin-assets/css/admin-dashboard.css" rel="stylesheet" type="text/css">
+  <link href="./admin-assets/css/boot-helpers.css" rel="stylesheet" type="text/css">
+  <!-- <link rel="stylesheet" type="text/css" href="./admin-assets/css/bootstrap-grid.css">-->
+
+  <style></style>
+</head>
+<body>
+<div class="site-switch">
+  <img src="./admin-assets/images/Covid-19-white-small2.png">
+  <span>Free COVID-19 Training Courses</span>
+  <a href="catalog.php" id="switch-back-link">Access Now</a>
+</div>
+<!-- site-header -->
+<div class="site-header">
+  <div class="container p0">
+    <div class="row m-0 pb-3">
+      <div class="branding">
+        <a href="/">
+          <img alt="HealthStream" class="logo-large" src="./admin-assets/images/healthstream-logo.svg">
+          <img alt="HealthStream" class="logo-small" src="./admin-assets/images/healthstream-logo.svg">
+        </a>
+      </div>
+      <nav class="nav-account">
+        <div class="name">Jack H. Demonstration</div>
+        <div class="avatar">
+          <i class="fa fa-user"></i>
+          <img alt="avatar" data-pin-nopin="true" src="admin-assets/images/avatar-default.png">
+        </div>
+
+        <div class="institution">
+          <a href="#">Acme General Medical Center</a>
+        </div>
+        <div class="logout">
+          <a href="#">Logout</a>
+        </div>
+        <a class="trigger-open trigger-open-account" href="#"><i class="fa fa-angle-down"></i></a>
+        <a class="trigger-close" href="#"><i class="fa fa-times"></i></a>
+        <ul class="nav">
+          <li>
+            <a href="">Account Settings</a>
+          </li>
+          <li class="hide-header-open">
+            <a href="">Manage Password</a>
+          </li>
+          <li class="hide-header-open logout">
+            <a href="#">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="w-100 p0">
+    <nav class="nav-main">
+      <div class="container">
+        <ul class="nav">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li>
+            <a href="">People</a>
+          </li>
+          <li>
+            <a href="">Courses</a>
+          </li>
+          <li>
+            <a href="">Assessments</a>
+          </li>
+          <li>
+            <a href="">Education</a>
+          </li>
+          <li>
+            <a href="">Reports</a>
+          </li>
+          <li>
+            <a href="">Tools</a>
+          </li>
+          <li>
+            <a href="">Services</a>
+          </li>
+          <li>
+            <a href="">My Profile</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<!-- /site-header -->
+<div class="layout layout-dashboard-manager">
+  <div class="container">
+    <div class="row border-bottom mt">
+      <div class="col-sm-4 col-md-4 col-lg-4 mt-4">
+        <h3 class="m0">Welcome, Jack</h3>
+        <p>Viewing Acme General Medical Center</p>
+      </div>
+      <div class="col-sm-8 col-md-4 col-lg-8 mt-4">
+      <!--  <form class="primary">
+          <input id="search_param" name="search_param" type="hidden" value="all">
+          <div class="input-group">
+            <div class="input-group-btn search-panel">
+              <button class="btn btn-lg btn-default border-right-0 btn-white dropdown-toggle" data-toggle="dropdown" type="button">
+                <span id="search_concept">Students</span> <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                <li>
+                  <a href="#">Students</a>
+                </li>
+                <li>
+                  <a href="#">Administrators</a>
+                </li>
+                <li>
+                  <a href="#">Assignments</a>
+                </li>
+                <li>
+                  <a href="#">Courses</a>
+                </li>
+                <li>
+                  <a href="#">Classes</a>
+                </li>
+                <li>
+                  <a href="#">Learning Events</a>
+                </li>
+                <li>
+                  <a href="#">Student Groups</a>
+                </li>
+                <li>
+                  <a href="#">Departments</a>
+                </li>
+                <li>
+                  <a href="#">Job Titles</a>
+                </li>
+              </ul>
+            </div>
+            <input class="form-control input-lg" id="search" placeholder="Search" type="text"/>
+            <span class="input-group-btn">
+            <a class="btn btn-focus btn-success btn-lg" href="#" type="button"><i class="fa fa-search fa-lg"></i></a>
+          </span>
+          </div>
+        </form>-->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
+
+        <div class="panel panel-default panel-setting">
+          <ul class="myteam__dashboard-options">
+            <li>
+              <a class="btn btn-default btn-block" data-toggle="modal" href="#modal-widget-store">
+                <i class="fa fa-fw fa-gear"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- START panel-->
+
+      </div>
+      <div class="col-sm-6 col-md-8 col-lg-9">
+        <div class="portlets-wrapper">
+          <!-- START row-->
+          <div class="row">
+            <!-- START panel COLUMN 1-->
+            <div class="col-md-6 col-lg-4" data-toggle="portlet" id="portlet-1">
+              <!-- START New panel-->
+              <div class="panel panel-default panel-metrics cards-widget" id="widgetUpcomingClasses">
+                <div class="panel-body text-center">
+                  <div class="metric-box-header portlet-handler">
+                    <div class="highlight-text"> Classes</div>
+                    <div class="kebab">
+                      <figure></figure>
+                      <figure class="middle"></figure>
+                      <p class="cross">x</p>
+                      <figure></figure>
+                      <ul class="kebab-dropdown">
+                        <li>
+                          <div class="kebab-mlink">
+                            <span class="kebab-mlink-label">Within:</span>
+                            <button class="btn btn-xs btn-link is-active js-toggle-days" data-days="30">30d</button>
+                            <button class="btn btn-xs btn-link js-toggle-days" data-days="60">60d</button>
+                            <button class="btn btn-xs btn-link js-toggle-days" data-days="90">90d</button>
+                          </div>
+                        </li>
+                        <li>
+                          <a class="js-toggle-widget-kebab" href="#">Hide Widget</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="refresh-widget-data">
+                      <a href="#">
+                        <span class="refresh-widget-data-icon">
+                          <em class="fa fa-refresh"></em>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="download-widget-data">
+                      <a href="#">
+                        <span class="download-widget-data-icon">
+                            <em class="fa fa-download"></em>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <a data-toggle="modal" href="#modal-upcoming-classes">
+                    <div class="dm-split">
+                      <div class="dm-split__metric is-registered">
+                        <div class="dm-split__value">1233</div>
+                        <div class="dm-split__label">
+                          <span>Upcoming</span>
+                        </div>
+                      </div>
+                      <div class="dm-split__metric is-unregistered">
+                        <div class="dm-split__value">321</div>
+                        <div class="dm-split__label">
+                          <span>Ungraded</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="metric-box-footer">
+                    within <span class="js-toggle-days-target">30</span> days
+                  </div>
+                </div>
+              </div>
+              <!-- END panel-->
+
+            </div>
+            <!-- END panel COLUMN 1-->
+            <!-- START panel COLUMN 2-->
+            <div class="col-md-6 col-lg-4" data-toggle="portlet" id="portlet-2">
+              <!-- START panel-->
+
+              <!-- END panel-->
+            </div><!-- END panel COLUMN 2-->
+
+            <!-- START panel COLUMN 3-->
+            <!-- <div class="col-md-6 col-lg-4 " data-toggle="portlet" id="portlet-3">
+             </div>-->
+            <!-- END panel COLUMN 3-->
+          </div>
+          <!-- END row-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="focus focus-promo">
+    <div class="container">
+    </div>
+  </div>
+  <div class="container">
+    <div class="legal">
+      <div class="divider"></div>
+      <div class="logo"><img alt="Healthstream"
+                             src="./admin-assets/images/healthstream-logo.svg"></div>
+      <div class="copyright">Copyright © 2020 HealthStream, Inc. All Rights Reserved.</div>
+      <div class="build">Build: 13.01.28.895.8 | O:STS2 | S:192.231.71.2</div>
+    </div>
+  </div>
+</div>
+
+<!--modal windows-->
+
+
+<div class="modal fade modal-widget-store" id="modal-widget-store">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-hidden="true" class="close" data-dismiss="modal" type="button"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title">Manage Widgets</h4>
+      </div>
+      <div class="modal-body">
+        <div class="table-header">Widgets
+          <div class="table-header pull-right">Show Widget</div>
+        </div>
+
+        <div class="list-group">
+          <a class="list-group-item ws-student-widget" href="#">
+            <table class="wd-wide">
+              <tbody>
+              <tr>
+                <td class="wd-md">
+                  <div class="p">
+                    <h4 class="media-box-heading">Student</h4>
+                  </div>
+                </td>
+                <td class="wd-xs">
+                  <div class="p pull-right">
+                    <label class="switch switch-primary switch-lg">
+                      <input checked="checked" class="js-toggle-widget-switch" data-widget="widgetStudents"
+                             name="studentwidgetvisible" type="checkbox">
+                      <span></span>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </a>
+          <a class="list-group-item ws-expiring-widget" href="#">
+            <table class="wd-wide">
+              <tbody>
+              <tr>
+                <td class="wd-md">
+                  <div class="p">
+                    <h4 class="media-box-heading">Expiring Courses</h4>
+                    <!-- <small class="text-muted">Vestibulum ante ipsum primis in faucibus orci</small> -->
+                  </div>
+                </td>
+                <td class="wd-xs">
+                  <div class="p pull-right">
+                    <label class="switch switch-primary switch-lg">
+                      <input checked="checked" class="js-toggle-widget-switch" data-widget="widgetExpiringCourse"
+                             name="expiringcoursesvisible" type="checkbox">
+                      <span></span>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </a>
+          <a class="list-group-item ws-expiring-widget" href="#">
+            <table class="wd-wide">
+              <tbody>
+              <tr>
+                <td class="wd-md">
+                  <div class="p">
+                    <h4 class="media-box-heading">Class Calendar</h4>
+                    <!-- <small class="text-muted">Vestibulum ante ipsum primis in faucibus orci</small> -->
+                  </div>
+                </td>
+                <td class="wd-xs">
+                  <div class="p pull-right">
+                    <label class="switch switch-primary switch-lg">
+                      <input checked="checked" class="js-toggle-widget-switch" data-widget="widgetCalendar"
+                             name="classcalendarvisible" type="checkbox">
+                      <span></span>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<div id="modal-upcoming-classes" class="modal fade modal-xl dashboard-modal-table">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+        <h4 class="modal-title">Upcoming / Ungraded Classes</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active" role="presentation">
+            <a aria-controls="active" data-toggle="tab" href="#upcoming"
+               role="tab">Upcoming Classes
+            </a>
+          </li>
+          <li role="presentation">
+            <a aria-controls="ungraded" data-toggle="tab" href="#ungraded"
+               role="tab">Ungraded Classes
+            </a>
+          </li>
+        </ul>
+        <div class="alert alert-info mt-4" role="alert">
+          <span class="fa fa-info-circle mr-2"></span>Click on the table row, shift or control click to select multiple rows and click Export to CSV to download the report.
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active pt-3" id="upcoming" role="tabpanel">
+            <div class="UpcomingClassesTableHeader float-left text-muted"></div>
+            <table class="table table-striped dt-responsive upcoming-classes-table dataTable" id="upcomingClassesTable" style="width: 100%">
+              <thead>
+              <tr>
+                <th style="width:300px;">Class Name</th>
+                <th>Course Name:</th>
+                <th>Instructors:</th>
+                <th>Start Date/Time</th>
+                <th>Duration</th>
+                <th>Export Roster</th>
+                <th class="none">Current Registration/Class Size:</th>
+                <th class="none">Building/Room:</th>
+                <th class="none">Created By:</th>
+                <th class="none">Updated By:</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td style="width:250px;">
+                  <a class="pt-2 text-bold"
+                     data-original-title="Directed In-Service Training - Home Health Agencies"
+                     data-toggle="tooltip"
+                     title="">
+                    Directed In-Service Training - Home Health Agencies
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>ACME Classroom1_30 sept</td>
+                <td>Admin Jason Jackson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Oct 16, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>155/178</td>
+                <td>Univ 3/ 300</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Critical Care Issues for Senior Patients"
+                     data-toggle="tooltip"
+                     title="">
+                    Critical Care Issues for Senior Patients
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                </td>
+                <td>ACME Classroom1_30</td>
+                <td>John Lennon</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jun 16, 2021, 9:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">90 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>133/138</td>
+                <td>Main / 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:300px;">
+                  <a class="pt-2 text-bold"
+                     data-original-title="Pain Management Class - December (Limited Registration)"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Class - December (Limited Registration)
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Annual Class</td>
+                <td>Dan Wilson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 16, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>Main Bldg / 103</td>
+                <td>266/322</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:300px;">
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">
+                    Heart Monitor Orientation - 5 day
+                  </a>
+                  <span class="meta-type">live + online CLASS</span>
+                </td>
+                <td>Annual Class</td>
+                <td>Jason Jackson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 17, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>222/277</td>
+                <td>St Thomas  / 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:300px;">
+                  <a class="pt-2 text-bold"
+                     data-original-title="Pain Management Class - November (Limited Registration)"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Class
+                  </a>
+                  <span class="meta-type">live + ONLINE CLASS</span>
+                </td>
+                <td>HR Policy Class</td>
+                <td>Admin David</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Dec 16, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>145/199</td>
+                <td>Main / 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:300px;">
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Live Training"
+                     data-toggle="tooltip"
+                     title="">
+                    Heart Monitor Live Training
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                </td>
+                <td>Policy Class</td>
+                <td>David Lee</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Dec 6, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>122/322</td>
+                <td>Main 1 / 1103</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Pain Management Webinar"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Webinar
+                  </a>
+                  <span class="meta-type">live + ONLINE CLASS</span>
+                </td>
+                <td>Human Resources Annual</td>
+                <td>Stephen Jenkins</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Nov 30, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>144/155</td>
+                <td>Main B2 / 23</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Geriatric Trauma"
+                     data-toggle="tooltip"
+                     title="">
+                    Geriatric Trauma
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>HR Policy Competencies</td>
+                <td>Bonnie Tyler</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jan 16, 2021, 1:00pm </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">90 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>222/226</td>
+                <td>Main / 223</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Geriatric Trauma"
+                     data-toggle="tooltip"
+                     title="">
+                    Geriatric Trauma
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                  <span class="text-graytext small">Session 1 of 3</span>
+                </td>
+                <td>Policy Class</td>
+                <td>Adam Levine</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 26, 2021, 3:00pm </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>324/327</td>
+                <td>Main A2/ 3</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">Heart Monitor Orientation - 5 day
+                  </a>
+                  <span class="meta-type">live + ONLINE CLASS</span>
+                </td>
+                <td>Annual Policies Class</td>
+                <td>Ariel Jackson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Oct 15, 2020, 10:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>232/167</td>
+                <td>Main B/ 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                  <span class="text-graytext small">Session 2 of 3</span>
+                </td>
+                <td>Policy Class</td>
+                <td>LeeAnn Marie Jehosan</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Nov 3, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>155/268 </td>
+                <td>Main University/ 100</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Managers
+                  </a>
+                  <span class="meta-type">live + ONLINE CLASS</span>
+                  <span class="text-graytext small">Session 3 of 3</span>
+                </td>
+                <td>Policy Class</td>
+                <td>Michael Leigh</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Dec 7, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">120 minutes</div>
+                </td>
+                <td><span class="fa text-g0reen fa-download"></span></td>
+                <td>122/188 </td>
+                <td>Bldg A / 113</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">live + ONLINE CLASS</span>
+                  <span class="text-graytext small">Session 1 of 2</span>
+                </td>
+                <td>Policy Class</td>
+                <td>Barry Mesonia</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 16, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>145/222</td>
+                <td>University Bldg 12 / 203</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">live + ONLINE CLASS</span>
+                  <span class="text-graytext small">Session 2 of 2</span>
+                </td>
+                <td>Policy Class</td>
+                <td>Joel C Cranston</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jan 14, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">90 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>12/166</td>
+                <td>Unversity Main / 203</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">Heart Monitor Orientation - 5 day
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Charles Jackson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Nov 5, 2020, 10:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>134/155</td>
+                <td>Bldg D / 23</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Marie Jehosan</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Oct 3, 2020, 9:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td> 22 / 1103</td>
+                <td>Bldg 3 / 301</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td tyle="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Managers
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Barry Dunstion</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jun 18, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>33/124</td>
+                <td>Bldg 3 / 301</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td style="width:250px;">
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Cora Morano</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 16, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">90 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>55/76</td>
+                <td>University Bldg 12 / 103</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td style="width:300px;">
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>John C Franklin</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Feb 11, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 minutes</div>
+                </td>
+                <td><span class="fa text-green fa-download"></span></td>
+                <td>122/144</td>
+                <td>Unversity Bldg 2 / 203</td>
+                <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
+                <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane pt-3" id="ungraded" role="tabpanel">
+            <div class="UngradedClassesTableHeader float-left text-muted"></div>
+            <table class="table table-striped dt-responsive ungraded-classes-table dataTable" id="ungradedClassesTable" style="width: 100%">
+              <thead>
+              <tr>
+                <th>Class Name</th>
+                <th>Course Name</th>
+                <th>Instructors</th>
+                <th>Start Date/Time</th>
+                <th>Duration</th>
+                <th class="none">Current Registration/Class Size</th>
+                <th class="none">Building/Room</th>
+                <th class="none">Created By</th>
+                <th class="none">Updated By</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Directed In-Service Training - Home Health Agencies"
+                     data-toggle="tooltip"
+                     title="">
+                    Directed In-Service Training - Home Health Agencies
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>ACME Classroom1_30 sept</td>
+                <td>Admin Jason Jackson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue May 16, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>155/178</td>
+                <td>Univ 3/ 300</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Critical Care Issues for Senior Patients"
+                     data-toggle="tooltip"
+                     title="">
+                    Critical Care Issues for Senior Patients
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>ACME Classroom1_30</td>
+                <td>John Lennon</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jun 16, 2020, 9:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>133/138</td>
+                <td>Main / 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Pain Management Class - December (Limited Registration)"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Class - December (Limited Registration)
+                  </a>
+                  <span class="meta-type">live + ONLINE CLASS</span>
+
+                </td>
+                <td>Annual Class</td>
+                <td>Dan Wilson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 16, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">90 Minutes</div>
+                </td>
+                <td>266/322</td>
+                <td>Main Bldg / 103</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">
+                    Heart Monitor Orientation - 5 day
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Annual Class</td>
+                <td>Jason Jackson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 17, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>222/277</td>
+                <td>St Thomas  / 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold"
+                     data-original-title="Pain Management Class - November (Limited Registration)"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Class
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                </td>
+                <td>HR Policy Class</td>
+                <td>Admin David</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jun 6, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>145/199</td>
+                <td>Main / 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Live Training"
+                     data-toggle="tooltip"
+                     title="">
+                    Heart Monitor Live Training
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Basic Medical Equipment Class</td>
+                <td>David Lee</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Feb 6, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>122/322</td>
+                <td>Main 1 / 1103</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Pain Management Webinar"
+                     data-toggle="tooltip"
+                     title="">
+                    Pain Management Webinar
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                </td>
+                <td>Human Resources Annual</td>
+                <td>Stephen Jenkins</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Mar 30, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">120 Minutes</div>
+                </td>
+                <td>144/155</td>
+                <td>Main B2 / 23</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Geriatric Trauma"
+                     data-toggle="tooltip"
+                     title="">
+                    Geriatric Trauma
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>HR Policy Competencies</td>
+                <td>Bonnie Tyler</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jan 16, 2020, 1:00pm </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>222/226</td>
+                <td>Main / 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Geriatric Trauma"
+                     data-toggle="tooltip"
+                     title="">
+                    Geriatric Trauma
+                  </a>
+                  <span class="meta-type">live + online CLASS</span>
+                </td>
+                <td>Policy Class</td>
+                <td>Adam Levine</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jan 26, 2020, 3:00pm </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>324/327</td>
+                <td>Main A2/ 3</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">Heart Monitor Orientation - 5 day
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Annual Policies Class</td>
+                <td>Ariel Jackson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Apr 15, 2020, 10:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">90 Minutes</div>
+                </td>
+                <td>22/167</td>
+                <td>Main B/ 203</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+                <td>Jackson H. Demonstration on Oct 28, 2020 1:11PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Policy Class</td>
+                <td>LeeAnn Marie Jehosan</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Fri Aug 3, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>155/268 </td>
+                <td>Main University/ 100</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Managers
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                </td>
+                <td>Policy Class</td>
+                <td>Michael Leigh</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jul 7, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>122/188 </td>
+                <td>Bldg A / 113</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                  <span class="text-graytext small">Session 1 of 3</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Barry Mesonia</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 26, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>145/222</td>
+                <td>University Bldg 12 / 203</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+                <td>Ankaj Goel on Aug 13, 2020 2:57PM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">live CLASS</span>
+                </td>
+                <td>Policy Class</td>
+                <td>Joel C Cranston</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Jan 14, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">90 Minutes</div>
+                </td>
+                <td>12/166</td>
+                <td>Unversity Main / 203</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Heart Monitor Orientation - 5 day"
+                     data-toggle="tooltip"
+                     title="">Heart Monitor Orientation - 5 day
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Charles Jackson</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Mar 5, 2020, 10:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>134/155</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+                <td>Bldg D / 23</td>
+                <td>Artharva Pathak on Nov 30, 2016 2:22AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">Live + online CLASS</span>
+                  <span class="text-graytext small">Session 3 of 3</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Marie Jehosan</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Tue Jul 3, 2020, 9:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td> 22 / 1103</td>
+                <td>Bldg 3 / 301</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Managers"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Managers
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Barry Dunstion</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Thu Jun 18, 2020, 10:00am CT</div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>33/124</td>
+                <td>Bldg 3 / 301</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">live + online CLASS</span>
+                  <span class="text-graytext small">Session 2 of 3</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>Cora Morano</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Wed Jan 12, 2021, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">90 Minutes</div>
+                </td>
+                <td>55/76</td>
+                <td>University Bldg 12 / 103</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+                <td>Director RM on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              <tr>
+                <td>
+                  <a class="pt-2 text-bold" data-original-title="Budgeting and Planning for Assistants"
+                     data-toggle="tooltip"
+                     title="">Budgeting and Planning for Assistants
+                  </a>
+                  <span class="meta-type">ONLINE CLASS</span>
+                </td>
+                <td>Health Care Policy Class</td>
+                <td>John C Franklin</td>
+                <td>
+                  <div class="p-0 w-100 text-muted">Mon Feb 11, 2020, 8:00am </div>
+                </td>
+                <td>
+                  <div class="p-0 w-100 text-muted">60 Minutes</div>
+                </td>
+                <td>122/144</td>
+                <td>Unversity Bldg 2 / 203</td>
+                <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
+                <td>Director Nursing on Jul 22, 2020 11:20AM CT</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="btn-group dropup">
+          <button class="btn btn-default" type="submit">Download</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-caret-up"></i>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><button>Save as Excel</button></li>
+            <li><button>Save as CSV</button></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+        <div class="paginate"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal windows-->
+
+<!-- Global site tag (gtag.js) - Google Analytics  THIS WILL CHANGE!! -->
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-53664464-1"></script>
+<script src="./admin-assets/js/jquery.js"></script>
+<script src="./admin-assets/js/jquery.ui.sortable.js"></script>
+<script src="./admin-assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="./admin-assets/js/bootstrap.js"></script>
+<script src="./admin-assets/js/charts.js"></script>
+<script src="./admin-assets/js/gritter.js"></script>
+<script src="./admin-assets/js/select2.js"></script>
+<script src="./admin-assets/js/slick.js"></script>
+<script src="./admin-assets/js/tinysort.js"></script>
+<script src="./admin-assets/js/healthstream.js"></script>
+<script src="./admin-assets/js/healthstream.jquery.js"></script>
+<script src="./admin-assets/js/healthstream.utilities.applauncher.js"></script>
+<script src="./admin-assets/js/healthstream.utilities.equalize.js"></script>
+<script src="./admin-assets/js/healthstream.utilities.limitHeight.js"></script>
+<script src="./admin-assets/js/healthstream.utilities.toggleText.js"></script>
+<script src="./admin-assets/js/healthstream.utilities.growl.js"></script>
+<script src="./admin-assets/js/healthstream.utilities.interrupt.js"></script>
+<!--<script src="./admin-assets/js/healthstream.focusbar.js"></script>-->
+<script src="./admin-assets/js/healthstream.stickybar.js"></script>
+<!--<script src="./admin-assets/js/healthstream.filtermini.js"></script>
+<script src="./admin-assets/js/healthstream.checklist.js"></script>
+<script src="./admin-assets/js/healthstream.checkable.js"></script>-->
+<script src="./admin-assets/js/prototype.validation/formValidation.min.js"></script>
+<script src="./admin-assets/js/prototype.validation/framework/bootstrap.min.js"></script>
+<script src="./admin-assets/js/dataTables.js"></script>
+<script src="./admin-assets/js/datatables.min.js"></script>
+<script src="./admin-assets/js/responsive.bootstrap.js"></script>
+<!--<script src="http://hstm-platform.patternmanager.com/scripts/dataTables.rowReorder.min.js"></script>-->
+<script src="./admin-assets/js/prototype.datatables.js"></script>
+<script src="./admin-assets/js/charts2.js"></script>
+<script src="./admin-assets/js/jquery.storageapi.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="./admin-assets/js/portlet.js"></script>
+<script src="./admin-assets/js/anychart-base.js"></script>
+<script src="./admin-assets/js/anychart-ui.js"></script>
+<script src="./admin-assets/js/anychart-circular-gauge.js"></script>
+<script src="./admin-assets/js/prototype.admin-dashboard.js"></script>
+<script src="./admin-assets/js/jquery.richtext.js"></script>
+
+
+<script>
+
+  $(document).ready(function (e) {
+
+    $(".student-status").click(function () {
+      $("#student-status").modal();
+    });
+
+    $('.content').richText();
+
+
+    $('.search-panel .dropdown-menu').find('a').click(function (e) {
+      e.preventDefault();
+      var param = $(this).attr("href").replace("#", "");
+      var concept = $(this).text();
+      $('.search-panel span#search_concept').text(concept);
+      $('.input-group #search_param').val(param);
+    });
+
+    $('input[name="course-status"]').on("click", function () {
+      var uniqueStudents;
+      var inputValue = $(this).val();
+      var showElement = $("#" + inputValue);
+      showElement.removeClass("hide").siblings().addClass("hide")
+    });
+
+  });
+  var a = document.getElementsByTagName('a').item(0);
+  $(a).on('keyup', function (evt) {
+    console.log(evt);
+    if (evt.keycode === 13) {
+
+      alert('search?');
+    }
+
+  });
+
+  // PROTOTYPE ONLY
+  $(function () {
+    $('.js-toggle-days').on('click', function () {
+      var days = $(this).attr('data-days');
+      var $panel = $(this).closest('.panel');
+      $panel
+              .find('.js-toggle-days')
+              .removeClass('is-active');
+      $(this).addClass('is-active');
+      $panel
+              .find('.js-toggle-days-target')
+              .text(days);
+    });
+
+
+    $('.js-toggle-widget-switch').on('click', function () {
+      var widget = $(this).attr('data-widget');
+      if ($(this).prop('checked') === true) {
+        $('#' + widget).fadeIn();
+      } else {
+        $('#' + widget).fadeOut();
+      }
+    });
+
+    $('.js-toggle-widget-kebab').on('click', function (e) {
+      e.preventDefault();
+      var widget = $(this)
+              .closest('.panel')
+              .attr('id');
+      $('.js-toggle-widget-switch[data-widget="' + widget + '"]').click();
+    });
+
+    $(".search").on("click", function () {
+      $(".outstandingAssignmentsHeader, .outstanding-assessments-table, .btn-export").toggleClass("hidden")
+    });
+
+  });
+
+
+</script>
+</body>
+</html>
